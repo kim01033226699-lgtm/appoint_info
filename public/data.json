@@ -1,0 +1,3961 @@
+{
+  "requiredDocuments": "이클린조회,신분증,통장,등본,수료증,합격증(신입만 해당),경력증명서(교보생명위촉용)",
+  "checklist": [
+    {
+      "id": "1",
+      "text": "서울 보증보험 동의 및 결과 확인"
+    },
+    {
+      "id": "2",
+      "text": "위촉서류 업로드 완료"
+    },
+    {
+      "id": "3",
+      "text": "위촉계약서 전자서명 완료"
+    }
+  ],
+  "schedules": [
+    {
+      "round": "9-3차",
+      "deadline": "",
+      "gpOpenDate": "9/15(월)",
+      "gpOpenTime": "PM16:00",
+      "companies": [
+        {
+          "company": "메트라이프",
+          "round": "9-3차",
+          "acceptanceDeadline": "9/8(월)",
+          "gpUploadDate": "9/16(화)",
+          "recruitmentMethod": "문자(SMS) 발송_1688-7427/고정URL로 직접 제출 가능(https://brand.metlife.co.kr/ga/appt/selectMoblieCert.do)",
+          "manager": "방수현 대리 (02-6410-7411)"
+        },
+        {
+          "company": "미래에셋",
+          "round": "9-3차",
+          "acceptanceDeadline": "9/9(화)",
+          "gpUploadDate": "9/18(목)",
+          "recruitmentMethod": "알림톡(카카오톡) 발송",
+          "manager": "방수현 대리 (02-6410-7411)"
+        },
+        {
+          "company": "KB라이프",
+          "round": "9-3차",
+          "acceptanceDeadline": "9/9(화)",
+          "gpUploadDate": "9/18(목)",
+          "recruitmentMethod": "문자(SMS) 발송/고정URL (http://id.kblife.co.kr/gafp/73100 )",
+          "manager": "김보미 사원 (02-6410-7233)"
+        },
+        {
+          "company": "KDB생명",
+          "round": "9-3차",
+          "acceptanceDeadline": "9/9(화)",
+          "gpUploadDate": "9/19(금)",
+          "recruitmentMethod": "알림톡(카카오톡) 발송",
+          "manager": "김보미 사원 (02-6410-7233)"
+        },
+        {
+          "company": "농협생명",
+          "round": "9-3차",
+          "acceptanceDeadline": "9/9(화)",
+          "gpUploadDate": "9/18(목)",
+          "recruitmentMethod": "알림톡(카카오톡) 발송",
+          "manager": "김보미 사원 (02-6410-7233)"
+        },
+        {
+          "company": "카디프생명",
+          "round": "9-3차",
+          "acceptanceDeadline": "9/11(목)",
+          "gpUploadDate": "9/19(금)",
+          "recruitmentMethod": "문자(SMS) 발송(02-3788-0664)BNP파리바카디프생명",
+          "manager": "이성연 사원 (02-6410-7410)"
+        },
+        {
+          "company": "삼성생명",
+          "round": "9-3차",
+          "acceptanceDeadline": "9/11(목)",
+          "gpUploadDate": "9/23(화)",
+          "recruitmentMethod": "알림톡(카카오톡) 발송",
+          "manager": "이성연 사원 (02-6410-7410)"
+        },
+        {
+          "company": "한화생명",
+          "round": "9-3차",
+          "acceptanceDeadline": "9/12(금)",
+          "gpUploadDate": "9/24(수)",
+          "recruitmentMethod": "알림톡(카카오톡) 발송",
+          "manager": "방수현 대리 (02-6410-7411)"
+        },
+        {
+          "company": "흥국생명",
+          "round": "9-3차",
+          "acceptanceDeadline": "9/12(금)",
+          "gpUploadDate": "9/26(금)",
+          "recruitmentMethod": "문자(SMS) 발송",
+          "manager": "이성연 사원 (02-6410-7410)"
+        },
+        {
+          "company": "동양생명",
+          "round": "9-3차",
+          "acceptanceDeadline": "9/12(금)",
+          "gpUploadDate": "9/22(월)",
+          "recruitmentMethod": "서류(원전산출력)",
+          "manager": "신지원 대리 (02-6410-7321)"
+        },
+        {
+          "company": "DB생명",
+          "round": "9-3차",
+          "acceptanceDeadline": "9/12(금)",
+          "gpUploadDate": "9/25(목)",
+          "recruitmentMethod": "서류(위촉시작성)",
+          "manager": "이성연 사원 (02-6410-7410)"
+        },
+        {
+          "company": "하나생명",
+          "round": "9-3차",
+          "acceptanceDeadline": "9/15(월)",
+          "gpUploadDate": "9/19(금)",
+          "recruitmentMethod": "고정URL(https://bit.ly/3xpO15u)",
+          "manager": "김보미 사원 (02-6410-7233)"
+        },
+        {
+          "company": "신한라이프",
+          "round": "9-3차",
+          "acceptanceDeadline": "9/15(월)",
+          "gpUploadDate": "9/26(금)",
+          "recruitmentMethod": "문자(SMS) 발송",
+          "manager": "신지원 대리 (02-6410-7321)"
+        },
+        {
+          "company": "처브라이프",
+          "round": "9-3차",
+          "acceptanceDeadline": "9/16(화)",
+          "gpUploadDate": "9/26(금)",
+          "recruitmentMethod": "서류(위촉시작성)",
+          "manager": "김보미 사원 (02-6410-7233)"
+        },
+        {
+          "company": "라이나생명",
+          "round": "9-3차",
+          "acceptanceDeadline": "9/16(화)",
+          "gpUploadDate": "9/23(화)",
+          "recruitmentMethod": "서류(원전산출력)",
+          "manager": "이성연 사원 (02-6410-7410)"
+        },
+        {
+          "company": "ABL생명",
+          "round": "9-3차",
+          "acceptanceDeadline": "9/17(수)",
+          "gpUploadDate": "9/26(금)",
+          "recruitmentMethod": "문자(SMS) 발송_031-523-3002",
+          "manager": "방수현 대리 (02-6410-7411)"
+        },
+        {
+          "company": "교보생명",
+          "round": "9-3차",
+          "acceptanceDeadline": "9/17(수)",
+          "gpUploadDate": "9/26(금)",
+          "recruitmentMethod": "알림톡(카카오톡) 발송",
+          "manager": "방수현 대리 (02-6410-7411)"
+        },
+        {
+          "company": "IBK연금",
+          "round": "9-3차",
+          "acceptanceDeadline": "9/19(금)",
+          "gpUploadDate": "9/29(월)",
+          "recruitmentMethod": "알림톡(카카오톡) 발송",
+          "manager": "이성연 사원 (02-6410-7410)"
+        },
+        {
+          "company": "푸본현대",
+          "round": "9-3차",
+          "acceptanceDeadline": "9/19(금)",
+          "gpUploadDate": "9/29(월)",
+          "recruitmentMethod": "알림톡(카카오톡) 발송",
+          "manager": "이성연 사원 (02-6410-7410)"
+        },
+        {
+          "company": "IM라이프",
+          "round": "9-3차",
+          "acceptanceDeadline": "9/23(화)",
+          "gpUploadDate": "10/2(목)",
+          "recruitmentMethod": "문자(SMS) 발송",
+          "manager": "신지원 대리 (02-6410-7321)"
+        }
+      ]
+    },
+    {
+      "round": "9-4차",
+      "deadline": "",
+      "gpOpenDate": "9/22(월)",
+      "gpOpenTime": "PM16:00",
+      "companies": [
+        {
+          "company": "KB라이프",
+          "round": "9-4차",
+          "acceptanceDeadline": "9/16(화)",
+          "gpUploadDate": "9/25(목)",
+          "recruitmentMethod": "문자(SMS) 발송/고정URL (http://id.kblife.co.kr/gafp/73100 )",
+          "manager": "김보미 사원 (02-6410-7233)"
+        },
+        {
+          "company": "KDB생명",
+          "round": "9-4차",
+          "acceptanceDeadline": "9/16(화)",
+          "gpUploadDate": "9/26(금)",
+          "recruitmentMethod": "알림톡(카카오톡) 발송",
+          "manager": "김보미 사원 (02-6410-7233)"
+        },
+        {
+          "company": "농협생명",
+          "round": "9-4차",
+          "acceptanceDeadline": "9/16(화)",
+          "gpUploadDate": "9/25(목)",
+          "recruitmentMethod": "알림톡(카카오톡) 발송",
+          "manager": "김보미 사원 (02-6410-7233)"
+        },
+        {
+          "company": "메트라이프",
+          "round": "9-4차",
+          "acceptanceDeadline": "9/17(수)",
+          "gpUploadDate": "9/26(금)",
+          "recruitmentMethod": "문자(SMS) 발송_1688-7427/고정URL로 직접 제출 가능(https://brand.metlife.co.kr/ga/appt/selectMoblieCert.do)",
+          "manager": "방수현 대리 (02-6410-7411)"
+        },
+        {
+          "company": "미래에셋",
+          "round": "9-4차",
+          "acceptanceDeadline": "9/17(수)",
+          "gpUploadDate": "9/26(금)",
+          "recruitmentMethod": "알림톡(카카오톡) 발송",
+          "manager": "방수현 대리 (02-6410-7411)"
+        },
+        {
+          "company": "카디프생명",
+          "round": "9-4차",
+          "acceptanceDeadline": "9/18(목)",
+          "gpUploadDate": "9/26(금)",
+          "recruitmentMethod": "문자(SMS) 발송(02-3788-0664)BNP파리바카디프생명",
+          "manager": "이성연 사원 (02-6410-7410)"
+        },
+        {
+          "company": "라이나생명",
+          "round": "9-4차",
+          "acceptanceDeadline": "9/23(화)",
+          "gpUploadDate": "9/30(화)",
+          "recruitmentMethod": "서류(원전산출력)",
+          "manager": "이성연 사원 (02-6410-7410)"
+        },
+        {
+          "company": "한화생명",
+          "round": "9-4차",
+          "acceptanceDeadline": "9/25(목)",
+          "gpUploadDate": "10/13(월)",
+          "recruitmentMethod": "알림톡(카카오톡) 발송",
+          "manager": "방수현 대리 (02-6410-7411)"
+        },
+        {
+          "company": "ABL생명",
+          "round": "9-4차",
+          "acceptanceDeadline": "9/30(화)",
+          "gpUploadDate": "10/16(목)",
+          "recruitmentMethod": "문자(SMS) 발송_031-523-3002",
+          "manager": "방수현 대리 (02-6410-7411)"
+        },
+        {
+          "company": "하나생명",
+          "round": "9-4차",
+          "acceptanceDeadline": "9/29(월)",
+          "gpUploadDate": "10/2(목)",
+          "recruitmentMethod": "고정URL(https://bit.ly/3xpO15u)",
+          "manager": "김보미 사원 (02-6410-7233)"
+        },
+        {
+          "company": "삼성생명",
+          "round": "9-4차",
+          "acceptanceDeadline": "9/24(수)",
+          "gpUploadDate": "10/15(수)",
+          "recruitmentMethod": "알림톡(카카오톡) 발송",
+          "manager": "이성연 사원 (02-6410-7410)"
+        },
+        {
+          "company": "흥국생명",
+          "round": "9-4차",
+          "acceptanceDeadline": "9/24(수)",
+          "gpUploadDate": "10/14(화)",
+          "recruitmentMethod": "문자(SMS) 발송",
+          "manager": "이성연 사원 (02-6410-7410)"
+        },
+        {
+          "company": "동양생명",
+          "round": "9-4차",
+          "acceptanceDeadline": "9/29(월)",
+          "gpUploadDate": "10/15(수)",
+          "recruitmentMethod": "서류(원전산출력)",
+          "manager": "신지원 대리 (02-6410-7321)"
+        },
+        {
+          "company": "DB생명",
+          "round": "9-4차",
+          "acceptanceDeadline": "9/26(금)",
+          "gpUploadDate": "10/16(목)",
+          "recruitmentMethod": "서류(위촉시작성)",
+          "manager": "이성연 사원 (02-6410-7410)"
+        }
+      ]
+    },
+    {
+      "round": "9-5차",
+      "deadline": "",
+      "gpOpenDate": "9/29(월)",
+      "gpOpenTime": "PM16:00",
+      "companies": [
+        {
+          "company": "KB라이프",
+          "round": "9-5차",
+          "acceptanceDeadline": "9/23(화)",
+          "gpUploadDate": "10/2(목)",
+          "recruitmentMethod": "문자(SMS) 발송/고정URL (http://id.kblife.co.kr/gafp/73100 )",
+          "manager": "김보미 사원 (02-6410-7233)"
+        },
+        {
+          "company": "교보생명",
+          "round": "9-5차",
+          "acceptanceDeadline": "9/23(화)",
+          "gpUploadDate": "10/14(화)",
+          "recruitmentMethod": "알림톡(카카오톡) 발송",
+          "manager": "방수현 대리 (02-6410-7411)"
+        },
+        {
+          "company": "메트라이프",
+          "round": "9-5차",
+          "acceptanceDeadline": "9/25(목)",
+          "gpUploadDate": "10/13(월)",
+          "recruitmentMethod": "문자(SMS) 발송_1688-7427/고정URL로 직접 제출 가능(https://brand.metlife.co.kr/ga/appt/selectMoblieCert.do)",
+          "manager": "방수현 대리 (02-6410-7411)"
+        },
+        {
+          "company": "미래에셋",
+          "round": "9-5차",
+          "acceptanceDeadline": "9/29(월)",
+          "gpUploadDate": "10/16(목)",
+          "recruitmentMethod": "알림톡(카카오톡) 발송",
+          "manager": "방수현 대리 (02-6410-7411)"
+        },
+        {
+          "company": "IM라이프",
+          "round": "9-5차",
+          "acceptanceDeadline": "9/26(금)",
+          "gpUploadDate": "10/17(금)",
+          "recruitmentMethod": "문자(SMS) 발송",
+          "manager": "신지원 대리 (02-6410-7321)"
+        },
+        {
+          "company": "신한라이프",
+          "round": "9-5차",
+          "acceptanceDeadline": "9/23(화)",
+          "gpUploadDate": "10/2(목)",
+          "recruitmentMethod": "문자(SMS) 발송",
+          "manager": "신지원 대리 (02-6410-7321)"
+        },
+        {
+          "company": "KDB생명",
+          "round": "9-5차",
+          "acceptanceDeadline": "9/24(수)",
+          "gpUploadDate": "10/13(월)",
+          "recruitmentMethod": "알림톡(카카오톡) 발송",
+          "manager": "김보미 사원 (02-6410-7233)"
+        },
+        {
+          "company": "KB라이프",
+          "round": "9-5차",
+          "acceptanceDeadline": "9/22(월)",
+          "gpUploadDate": "10/2(목)",
+          "recruitmentMethod": "문자(SMS) 발송/고정URL (http://id.kblife.co.kr/gafp/73100 )",
+          "manager": "김보미 사원 (02-6410-7233)"
+        },
+        {
+          "company": "농협생명",
+          "round": "9-5차",
+          "acceptanceDeadline": "9/23(화)",
+          "gpUploadDate": "10/2(목)",
+          "recruitmentMethod": "알림톡(카카오톡) 발송",
+          "manager": "김보미 사원 (02-6410-7233)"
+        },
+        {
+          "company": "처브라이프",
+          "round": "9-5차",
+          "acceptanceDeadline": "9/23(화)",
+          "gpUploadDate": "10/13(월)",
+          "recruitmentMethod": "서류(위촉시작성)",
+          "manager": "김보미 사원 (02-6410-7233)"
+        },
+        {
+          "company": "라이나생명",
+          "round": "9-5차",
+          "acceptanceDeadline": "10/14(화)",
+          "gpUploadDate": "10/21(화)",
+          "recruitmentMethod": "서류(원전산출력)",
+          "manager": "이성연 사원 (02-6410-7410)"
+        },
+        {
+          "company": "카디프생명",
+          "round": "9-5차",
+          "acceptanceDeadline": "10/1(수)",
+          "gpUploadDate": "10/17(금)",
+          "recruitmentMethod": "문자(SMS) 발송(02-3788-0664)BNP파리바카디프생명",
+          "manager": "이성연 사원 (02-6410-7410)"
+        },
+        {
+          "company": "IBK연금",
+          "round": "9-5차",
+          "acceptanceDeadline": "9/30(화)",
+          "gpUploadDate": "10/13(월)",
+          "recruitmentMethod": "알림톡(카카오톡) 발송",
+          "manager": "이성연 사원 (02-6410-7410)"
+        },
+        {
+          "company": "삼성생명",
+          "round": "9-5차",
+          "acceptanceDeadline": "10/1(수)",
+          "gpUploadDate": "10/22(수)",
+          "recruitmentMethod": "알림톡(카카오톡) 발송",
+          "manager": "이성연 사원 (02-6410-7410)"
+        },
+        {
+          "company": "흥국생명",
+          "round": "9-5차",
+          "acceptanceDeadline": "9/29(월)",
+          "gpUploadDate": "10/21(화)",
+          "recruitmentMethod": "문자(SMS) 발송",
+          "manager": "이성연 사원 (02-6410-7410)"
+        },
+        {
+          "company": "푸본현대",
+          "round": "9-5차",
+          "acceptanceDeadline": "10/2(목)",
+          "gpUploadDate": "10/17(금)",
+          "recruitmentMethod": "알림톡(카카오톡) 발송",
+          "manager": "이성연 사원 (02-6410-7410)"
+        }
+      ]
+    },
+    {
+      "round": "10-1차",
+      "deadline": "",
+      "gpOpenDate": "10/13(월)",
+      "gpOpenTime": "PM16:00",
+      "companies": [
+        {
+          "company": "메트라이프",
+          "round": "10-1차",
+          "acceptanceDeadline": "9/30(화)",
+          "gpUploadDate": "10/16(목)",
+          "recruitmentMethod": "문자(SMS) 발송_1688-7427/고정URL로 직접 제출 가능(https://brand.metlife.co.kr/ga/appt/selectMoblieCert.do)",
+          "manager": "방수현 대리 (02-6410-7411)"
+        },
+        {
+          "company": "한화생명",
+          "round": "10-1차",
+          "acceptanceDeadline": "10/10(금)",
+          "gpUploadDate": "10/27(월)",
+          "recruitmentMethod": "알림톡(카카오톡) 발송",
+          "manager": "방수현 대리 (02-6410-7411)"
+        },
+        {
+          "company": "교보생명",
+          "round": "10-1차",
+          "acceptanceDeadline": "10/15(수)",
+          "gpUploadDate": "10/28(화)",
+          "recruitmentMethod": "알림톡(카카오톡) 발송",
+          "manager": "방수현 대리 (02-6410-7411)"
+        },
+        {
+          "company": "ABL생명",
+          "round": "10-1차",
+          "acceptanceDeadline": "10/20(월)",
+          "gpUploadDate": "10/28(화)",
+          "recruitmentMethod": "문자(SMS) 발송_031-523-3002",
+          "manager": "방수현 대리 (02-6410-7411)"
+        },
+        {
+          "company": "미래에셋",
+          "round": "10-1차",
+          "acceptanceDeadline": "10/20(월)",
+          "gpUploadDate": "10/28(화)",
+          "recruitmentMethod": "알림톡(카카오톡) 발송",
+          "manager": "방수현 대리 (02-6410-7411)"
+        },
+        {
+          "company": "IM라이프",
+          "round": "10-1차",
+          "acceptanceDeadline": "10/13(월)",
+          "gpUploadDate": "10/24(금)",
+          "recruitmentMethod": "문자(SMS) 발송",
+          "manager": "신지원 대리 (02-6410-7321)"
+        },
+        {
+          "company": "신한라이프",
+          "round": "10-1차",
+          "acceptanceDeadline": "9/26(금)",
+          "gpUploadDate": "10/16(목)",
+          "recruitmentMethod": "문자(SMS) 발송",
+          "manager": "신지원 대리 (02-6410-7321)"
+        },
+        {
+          "company": "KDB생명",
+          "round": "10-1차",
+          "acceptanceDeadline": "9/30(화)",
+          "gpUploadDate": "10/20(월)",
+          "recruitmentMethod": "알림톡(카카오톡) 발송",
+          "manager": "김보미 사원 (02-6410-7233)"
+        },
+        {
+          "company": "KB라이프",
+          "round": "10-1차",
+          "acceptanceDeadline": "9/29(월)",
+          "gpUploadDate": "10/16(목)",
+          "recruitmentMethod": "문자(SMS) 발송/고정URL (http://id.kblife.co.kr/gafp/73100 )",
+          "manager": "김보미 사원 (02-6410-7233)"
+        },
+        {
+          "company": "농협생명",
+          "round": "10-1차",
+          "acceptanceDeadline": "9/30(화)",
+          "gpUploadDate": "10/16(목)",
+          "recruitmentMethod": "알림톡(카카오톡) 발송",
+          "manager": "김보미 사원 (02-6410-7233)"
+        },
+        {
+          "company": "처브라이프",
+          "round": "10-1차",
+          "acceptanceDeadline": "9/29(월)",
+          "gpUploadDate": "10/16(목)",
+          "recruitmentMethod": "서류(위촉시작성)",
+          "manager": "김보미 사원 (02-6410-7233)"
+        },
+        {
+          "company": "하나생명",
+          "round": "10-1차",
+          "acceptanceDeadline": "10/13(월)",
+          "gpUploadDate": "10/17(금)",
+          "recruitmentMethod": "고정URL(https://bit.ly/3xpO15u)",
+          "manager": "김보미 사원 (02-6410-7233)"
+        },
+        {
+          "company": "동양생명",
+          "round": "10-1차",
+          "acceptanceDeadline": "10/14(화)",
+          "gpUploadDate": "10/22(수)",
+          "recruitmentMethod": "서류(원전산출력)",
+          "manager": "신지원 대리 (02-6410-7321)"
+        },
+        {
+          "company": "DB생명",
+          "round": "10-1차",
+          "acceptanceDeadline": "10/2(목)",
+          "gpUploadDate": "10/23(목)",
+          "recruitmentMethod": "서류(위촉시작성)",
+          "manager": "이성연 사원 (02-6410-7410)"
+        }
+      ]
+    },
+    {
+      "round": "10-2차",
+      "deadline": "",
+      "gpOpenDate": "10/20(월)",
+      "gpOpenTime": "PM16:00",
+      "companies": [
+        {
+          "company": "한화생명",
+          "round": "10-2차",
+          "acceptanceDeadline": "10/17(금)",
+          "gpUploadDate": "10/27(월)",
+          "recruitmentMethod": "알림톡(카카오톡) 발송",
+          "manager": "방수현 대리 (02-6410-7411)"
+        },
+        {
+          "company": "메트라이프",
+          "round": "10-2차",
+          "acceptanceDeadline": "10/20(월)",
+          "gpUploadDate": "10/28(화)",
+          "recruitmentMethod": "문자(SMS) 발송_1688-7427/고정URL로 직접 제출 가능(https://brand.metlife.co.kr/ga/appt/selectMoblieCert.do)",
+          "manager": "방수현 대리 (02-6410-7411)"
+        },
+        {
+          "company": "신한라이프",
+          "round": "10-2차",
+          "acceptanceDeadline": "10/17(금)",
+          "gpUploadDate": "10/28(화)",
+          "recruitmentMethod": "문자(SMS) 발송",
+          "manager": "신지원 대리 (02-6410-7321)"
+        },
+        {
+          "company": "KDB생명",
+          "round": "10-2차",
+          "acceptanceDeadline": "10/14(화)",
+          "gpUploadDate": "10/27(월)",
+          "recruitmentMethod": "알림톡(카카오톡) 발송",
+          "manager": "김보미 사원 (02-6410-7233)"
+        },
+        {
+          "company": "KB라이프",
+          "round": "10-2차",
+          "acceptanceDeadline": "10/13(월)",
+          "gpUploadDate": "10/23(목)",
+          "recruitmentMethod": "문자(SMS) 발송/고정URL (http://id.kblife.co.kr/gafp/73100 )",
+          "manager": "김보미 사원 (02-6410-7233)"
+        },
+        {
+          "company": "농협생명",
+          "round": "10-2차",
+          "acceptanceDeadline": "10/20(월)",
+          "gpUploadDate": "10/30(목)",
+          "recruitmentMethod": "알림톡(카카오톡) 발송",
+          "manager": "김보미 사원 (02-6410-7233)"
+        },
+        {
+          "company": "처브라이프",
+          "round": "10-2차",
+          "acceptanceDeadline": "10/16(목)",
+          "gpUploadDate": "10/28(화)",
+          "recruitmentMethod": "서류(위촉시작성)",
+          "manager": "김보미 사원 (02-6410-7233)"
+        },
+        {
+          "company": "하나생명",
+          "round": "10-2차",
+          "acceptanceDeadline": "10/20(월)",
+          "gpUploadDate": "10/24(금)",
+          "recruitmentMethod": "고정URL(https://bit.ly/3xpO15u)",
+          "manager": "김보미 사원 (02-6410-7233)"
+        },
+        {
+          "company": "라이나생명",
+          "round": "10-2차",
+          "acceptanceDeadline": "10/21(화)",
+          "gpUploadDate": "10/28(화)",
+          "recruitmentMethod": "서류(원전산출력)",
+          "manager": "이성연 사원 (02-6410-7410)"
+        },
+        {
+          "company": "카디프생명",
+          "round": "10-2차",
+          "acceptanceDeadline": "10/16(목)",
+          "gpUploadDate": "10/24(금)",
+          "recruitmentMethod": "문자(SMS) 발송(02-3788-0664)BNP파리바카디프생명",
+          "manager": "이성연 사원 (02-6410-7410)"
+        },
+        {
+          "company": "IBK연금",
+          "round": "10-2차",
+          "acceptanceDeadline": "10/21(화)",
+          "gpUploadDate": "10/29(수)",
+          "recruitmentMethod": "알림톡(카카오톡) 발송",
+          "manager": "이성연 사원 (02-6410-7410)"
+        },
+        {
+          "company": "삼성생명",
+          "round": "10-2차",
+          "acceptanceDeadline": "10/16(목)",
+          "gpUploadDate": "10/29(수)",
+          "recruitmentMethod": "알림톡(카카오톡) 발송",
+          "manager": "이성연 사원 (02-6410-7410)"
+        },
+        {
+          "company": "흥국생명",
+          "round": "10-2차",
+          "acceptanceDeadline": "10/14(화)",
+          "gpUploadDate": "10/28(화)",
+          "recruitmentMethod": "문자(SMS) 발송",
+          "manager": "이성연 사원 (02-6410-7410)"
+        },
+        {
+          "company": "DB생명",
+          "round": "10-2차",
+          "acceptanceDeadline": "10/17(금)",
+          "gpUploadDate": "10/30(목)",
+          "recruitmentMethod": "서류(위촉시작성)",
+          "manager": "이성연 사원 (02-6410-7410)"
+        },
+        {
+          "company": "푸본현대",
+          "round": "10-2차",
+          "acceptanceDeadline": "10/21(화)",
+          "gpUploadDate": "10/29(수)",
+          "recruitmentMethod": "알림톡(카카오톡) 발송",
+          "manager": "이성연 사원 (02-6410-7410)"
+        }
+      ]
+    },
+    {
+      "round": "10-3차",
+      "deadline": "",
+      "gpOpenDate": "10/27(월)",
+      "gpOpenTime": "PM16:00",
+      "companies": [
+        {
+          "company": "KB라이프",
+          "round": "10-3차",
+          "acceptanceDeadline": "10/20(월)",
+          "gpUploadDate": "10/30(목)",
+          "recruitmentMethod": "문자(SMS) 발송/고정URL (http://id.kblife.co.kr/gafp/73100 )",
+          "manager": "김보미 사원 (02-6410-7233)"
+        },
+        {
+          "company": "라이나생명",
+          "round": "10-3차",
+          "acceptanceDeadline": "10/28(화)",
+          "gpUploadDate": "11/4(화)",
+          "recruitmentMethod": "서류(원전산출력)",
+          "manager": "이성연 사원 (02-6410-7410)"
+        },
+        {
+          "company": "카디프생명",
+          "round": "10-3차",
+          "acceptanceDeadline": "10/23(목)",
+          "gpUploadDate": "10/31(금)",
+          "recruitmentMethod": "문자(SMS) 발송(02-3788-0664)BNP파리바카디프생명",
+          "manager": "이성연 사원 (02-6410-7410)"
+        }
+      ]
+    },
+    {
+      "round": "11-1차",
+      "deadline": "",
+      "gpOpenDate": "11/3(월)",
+      "gpOpenTime": "PM16:00",
+      "companies": []
+    },
+    {
+      "round": "11-2차",
+      "deadline": "",
+      "gpOpenDate": "11/10(월)",
+      "gpOpenTime": "PM16:00",
+      "companies": []
+    }
+  ],
+  "calendarEvents": [
+    {
+      "id": "1",
+      "date": "2025-04-25",
+      "title": "[굿리치] - 자격추가/전산승인마감(PM2:00)",
+      "type": "goodrich"
+    },
+    {
+      "id": "2",
+      "date": "2025-04-28",
+      "title": "[굿리치] - 위촉 / 당사계정오픈(PM3:00)",
+      "type": "goodrich"
+    },
+    {
+      "id": "3",
+      "date": "2025-04-28",
+      "title": "[위촉] 라이나생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "4",
+      "date": "2025-04-28",
+      "title": "[위촉] 흥국생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "5",
+      "date": "2025-04-28",
+      "title": "[위촉] DB생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "6",
+      "date": "2025-04-28",
+      "title": "[협회] - 사용인 등록_생보(KB)",
+      "type": "session"
+    },
+    {
+      "id": "7",
+      "date": "2025-04-28",
+      "title": "[해촉] - 처브(5/2반영),동양(4/30반영)",
+      "type": "company"
+    },
+    {
+      "id": "8",
+      "date": "2025-04-29",
+      "title": "[위촉] IBK생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "9",
+      "date": "2025-04-30",
+      "title": "[위촉] 농협생명 - 기위촉 추가 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "10",
+      "date": "2025-04-30",
+      "title": "[위촉] 푸본현대 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "11",
+      "date": "2025-05-01",
+      "title": "[휴일] - 근로자의날",
+      "type": "company"
+    },
+    {
+      "id": "12",
+      "date": "2025-05-02",
+      "title": "[굿리치] - 생명보험 자격추가 마감(PM2:00)\n▶생명보험협회 등록일 5/12(5-1차일정으로 등록)",
+      "type": "goodrich"
+    },
+    {
+      "id": "13",
+      "date": "2025-05-02",
+      "title": "[협회] - 사용인 등록_손보(메리츠,롯데)",
+      "type": "session"
+    },
+    {
+      "id": "14",
+      "date": "2025-05-02",
+      "title": "[해촉] - 흥국(5/15반영)",
+      "type": "company"
+    },
+    {
+      "id": "15",
+      "date": "2025-05-03",
+      "title": "[위촉] 동양생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "16",
+      "date": "2025-05-03",
+      "title": "[위촉] DB생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "17",
+      "date": "2025-05-05",
+      "title": "[휴일] - 어린이날",
+      "type": "company"
+    },
+    {
+      "id": "18",
+      "date": "2025-05-06",
+      "title": "[휴일] - 대체공휴일",
+      "type": "company"
+    },
+    {
+      "id": "19",
+      "date": "2025-05-07",
+      "title": "[위촉] ABL생명 - 기위촉 추가 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "20",
+      "date": "2025-05-07",
+      "title": "[위촉] KDB생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "21",
+      "date": "2025-05-07",
+      "title": "[위촉] 한화생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "22",
+      "date": "2025-05-07",
+      "title": "[해촉] - ABL(5/12반영) , 농협(5/12반영)",
+      "type": "company"
+    },
+    {
+      "id": "23",
+      "date": "2025-05-07",
+      "title": "[위촉] KB라이프 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "24",
+      "date": "2025-05-07",
+      "title": "[위촉] 메트라이프 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "25",
+      "date": "2025-05-07",
+      "title": "[위촉] 처브생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "26",
+      "date": "2025-05-07",
+      "title": "[위촉] 신한라이프 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "27",
+      "date": "2025-05-07",
+      "title": "[위촉] 삼성생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "28",
+      "date": "2025-05-08",
+      "title": "[위촉] 교보생명 - 12",
+      "type": "company"
+    },
+    {
+      "id": "29",
+      "date": "2025-05-08",
+      "title": "[위촉] 미래에셋 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "30",
+      "date": "2025-05-08",
+      "title": "[위촉] IM라이프 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "31",
+      "date": "2025-05-08",
+      "title": "[위촉] 카디프 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "32",
+      "date": "2025-05-09",
+      "title": "[굿리치] - 자격추가/전산승인마감(PM2:00)",
+      "type": "goodrich"
+    },
+    {
+      "id": "33",
+      "date": "2025-05-09",
+      "title": "[위촉] DB생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "34",
+      "date": "2025-05-09",
+      "title": "[해촉] - 미래(5/16반영),IM라이프(5/22반영)",
+      "type": "company"
+    },
+    {
+      "id": "35",
+      "date": "2025-05-12",
+      "title": "[굿리치] - 위촉 / 당사계정오픈(PM3:00)",
+      "type": "goodrich"
+    },
+    {
+      "id": "36",
+      "date": "2025-05-12",
+      "title": "[위촉] IBK생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "37",
+      "date": "2025-05-12",
+      "title": "[위촉] 푸본현대 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "38",
+      "date": "2025-05-12",
+      "title": "[협회] - 사용인 등록_생보(KB)",
+      "type": "session"
+    },
+    {
+      "id": "39",
+      "date": "2025-05-13",
+      "title": "[위촉] 하나생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "40",
+      "date": "2025-05-13",
+      "title": "[위촉] KB라이프 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "41",
+      "date": "2025-05-13",
+      "title": "[위촉] 라이나 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "42",
+      "date": "2025-05-13",
+      "title": "[위촉] 흥국생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "43",
+      "date": "2025-05-13",
+      "title": "[위촉] 라이나생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "44",
+      "date": "2025-05-14",
+      "title": "[굿리치] - 패밀리데이(PM4:00업무종료)",
+      "type": "goodrich"
+    },
+    {
+      "id": "45",
+      "date": "2025-05-14",
+      "title": "[위촉] KDB생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "46",
+      "date": "2025-05-14",
+      "title": "[위촉] 삼성생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "47",
+      "date": "2025-05-15",
+      "title": "[위촉] 교보생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "48",
+      "date": "2025-05-15",
+      "title": "[위촉] 농협생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "49",
+      "date": "2025-05-15",
+      "title": "[위촉] 미래에셋 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "50",
+      "date": "2025-05-15",
+      "title": "[위촉] 한화생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "51",
+      "date": "2025-05-15",
+      "title": "[위촉] 카디프생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "52",
+      "date": "2025-05-15",
+      "title": "[해촉] - 신한(5/26반영),KB(5/26반영)",
+      "type": "company"
+    },
+    {
+      "id": "53",
+      "date": "2025-05-16",
+      "title": "[굿리치] - 자격추가/전산승인마감(PM2:00)",
+      "type": "goodrich"
+    },
+    {
+      "id": "54",
+      "date": "2025-05-16",
+      "title": "[위촉] ABL생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "55",
+      "date": "2025-05-16",
+      "title": "[위촉] DB생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "56",
+      "date": "2025-05-16",
+      "title": "[해촉] - ABL(5/21반영) , 처브(5/23반영) 삼성(6/2반영)카디프(5/30반영)흥국(5/28반영)",
+      "type": "company"
+    },
+    {
+      "id": "57",
+      "date": "2025-05-16",
+      "title": "[협회] - 사용인 등록_손보(메리츠,롯데)",
+      "type": "session"
+    },
+    {
+      "id": "58",
+      "date": "2025-05-19",
+      "title": "[굿리치] - 위촉 / 당사계정오픈(PM3:00)",
+      "type": "goodrich"
+    },
+    {
+      "id": "59",
+      "date": "2025-05-19",
+      "title": "[위촉] 메트라이프 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "60",
+      "date": "2025-05-19",
+      "title": "[위촉] 처브라이프 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "61",
+      "date": "2025-05-19",
+      "title": "[위촉] 신한라이프 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "62",
+      "date": "2025-05-19",
+      "title": "[위촉] IBK연금 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "63",
+      "date": "2025-05-19",
+      "title": "[해촉] - KDB(5/21반영),농협(5/23반영),미래(5/26반영)",
+      "type": "company"
+    },
+    {
+      "id": "64",
+      "date": "2025-05-19",
+      "title": "[협회] - 사용인 등록_생보(KB)",
+      "type": "session"
+    },
+    {
+      "id": "65",
+      "date": "2025-05-20",
+      "title": "[위촉] 하나생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "66",
+      "date": "2025-05-20",
+      "title": "[위촉] KB라이프 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "67",
+      "date": "2025-05-20",
+      "title": "[위촉] 라이나생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "68",
+      "date": "2025-05-20",
+      "title": "[위촉] 푸본현대 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "69",
+      "date": "2025-05-20",
+      "title": "[해촉] - 교보(6/2반영),한화(6/2반영),IBK(5/23반영)",
+      "type": "company"
+    },
+    {
+      "id": "70",
+      "date": "2025-05-21",
+      "title": "[해촉] - DB(5/29반영)",
+      "type": "company"
+    },
+    {
+      "id": "71",
+      "date": "2025-05-22",
+      "title": "[굿리치] - 수수료계좌변경신청마감",
+      "type": "goodrich"
+    },
+    {
+      "id": "72",
+      "date": "2025-05-22",
+      "title": "[위촉] 카디프생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "73",
+      "date": "2025-05-22",
+      "title": "[해촉] - 푸본(5/30반영)",
+      "type": "company"
+    },
+    {
+      "id": "74",
+      "date": "2025-05-23",
+      "title": "[굿리치] - 자격추가 마감(PM2:00)\n▶6월1차 위촉: 6/2(월)예정",
+      "type": "goodrich"
+    },
+    {
+      "id": "75",
+      "date": "2025-05-23",
+      "title": "5월당사해촉마감",
+      "type": "company"
+    },
+    {
+      "id": "76",
+      "date": "2025-05-23",
+      "title": "[해촉] - 하나생명(5/30반영),메트(6/2반영),라이나(5/27반영)",
+      "type": "company"
+    },
+    {
+      "id": "77",
+      "date": "2025-05-23",
+      "title": "[협회] - 사용인 등록_생보(메트)/손보(메리츠,롯데)",
+      "type": "session"
+    },
+    {
+      "id": "78",
+      "date": "2025-05-26",
+      "title": "[굿리치] - 위촉 / 당사계정오픈(PM3:00)",
+      "type": "goodrich"
+    },
+    {
+      "id": "79",
+      "date": "2025-05-26",
+      "title": "[위촉] 농협생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "80",
+      "date": "2025-05-26",
+      "title": "[위촉] 흥국생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "81",
+      "date": "2025-05-26",
+      "title": "[위촉] 메트라이프 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "82",
+      "date": "2025-05-26",
+      "title": "[위촉] 신한라이프 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "83",
+      "date": "2025-05-27",
+      "title": "[위촉] 교보생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "84",
+      "date": "2025-05-27",
+      "title": "[위촉] 라이나생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "85",
+      "date": "2025-05-27",
+      "title": "[위촉] 삼성생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "86",
+      "date": "2025-05-27",
+      "title": "[위촉] IM라이프 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "87",
+      "date": "2025-05-27",
+      "title": "[위촉] KB라이프 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "88",
+      "date": "2025-05-27",
+      "title": "[위촉] 처브라이프 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "89",
+      "date": "2025-05-28",
+      "title": "[위촉] ABL생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "90",
+      "date": "2025-05-28",
+      "title": "[위촉] 미래에셋 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "91",
+      "date": "2025-05-29",
+      "title": "[위촉] DB생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "92",
+      "date": "2025-05-29",
+      "title": "[위촉] IBK연금 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "93",
+      "date": "2025-05-29",
+      "title": "[위촉] 동양생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "94",
+      "date": "2025-05-30",
+      "title": "[굿리치] - 자격추가/전산승인마감(PM2:00)\n▶6월2차[위촉]: 6/9(월)예정",
+      "type": "goodrich"
+    },
+    {
+      "id": "95",
+      "date": "2025-05-30",
+      "title": "[위촉] 푸본현대 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "96",
+      "date": "2025-05-30",
+      "title": "[협회] - 사용인 등록_손보(메리츠,롯데)",
+      "type": "session"
+    },
+    {
+      "id": "97",
+      "date": "2025-06-02",
+      "title": "[협회] - 사용인 등록_생보(KB)",
+      "type": "session"
+    },
+    {
+      "id": "98",
+      "date": "2025-06-02",
+      "title": "[굿리치] - 위촉/ 당사계정오픈(PM3:00)",
+      "type": "goodrich"
+    },
+    {
+      "id": "99",
+      "date": "2025-06-02",
+      "title": "[위촉] IM라이프 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "100",
+      "date": "2025-06-02",
+      "title": "[위촉] 흥국생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "101",
+      "date": "2025-06-02",
+      "title": "[해촉] - 농협(6/5반영),미래(6/9반영)",
+      "type": "company"
+    },
+    {
+      "id": "102",
+      "date": "2025-06-03",
+      "title": "[휴일] - 21대 대통령선거일",
+      "type": "company"
+    },
+    {
+      "id": "103",
+      "date": "2025-06-04",
+      "title": "[위촉] KDB생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "104",
+      "date": "2025-06-04",
+      "title": "[위촉] 교보생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "105",
+      "date": "2025-06-04",
+      "title": "[위촉] 한화생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "106",
+      "date": "2025-06-04",
+      "title": "[위촉] 삼성생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "107",
+      "date": "2025-06-04",
+      "title": "[위촉] 카디프생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "108",
+      "date": "2025-06-05",
+      "title": "[굿리치] - 자격추가/전산승인마감(PM2:00)\n▶6월3차[위촉]: 6/16(월)예정",
+      "type": "goodrich"
+    },
+    {
+      "id": "109",
+      "date": "2025-06-05",
+      "title": "[협회] - 사용인 등록_손보(메리츠,롯데)",
+      "type": "session"
+    },
+    {
+      "id": "110",
+      "date": "2025-06-05",
+      "title": "[위촉] ABL생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "111",
+      "date": "2025-06-05",
+      "title": "[위촉] 농협생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "112",
+      "date": "2025-06-05",
+      "title": "[위촉] DB생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "113",
+      "date": "2025-06-05",
+      "title": "[해촉] - KDB(6/11반영)",
+      "type": "company"
+    },
+    {
+      "id": "114",
+      "date": "2025-06-06",
+      "title": "[휴일] - 현충일",
+      "type": "company"
+    },
+    {
+      "id": "115",
+      "date": "2025-06-09",
+      "title": "[협회] - 사용인 등록_생보(KB)",
+      "type": "session"
+    },
+    {
+      "id": "116",
+      "date": "2025-06-09",
+      "title": "[굿리치] - 위촉/ 당사계정오픈(PM3:00)",
+      "type": "goodrich"
+    },
+    {
+      "id": "117",
+      "date": "2025-06-09",
+      "title": "[위촉] 미래에셋 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "118",
+      "date": "2025-06-09",
+      "title": "[위촉] 하나생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "119",
+      "date": "2025-06-09",
+      "title": "[위촉] 처브라이프 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "120",
+      "date": "2025-06-09",
+      "title": "[위촉] 메트라이프 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "121",
+      "date": "2025-06-09",
+      "title": "[위촉] 신한라이프 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "122",
+      "date": "2025-06-09",
+      "title": "[위촉] IBK연금 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "123",
+      "date": "2025-06-09",
+      "title": "[위촉] 동양생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "124",
+      "date": "2025-06-09",
+      "title": "[해촉] - 흥국(6/18반영)",
+      "type": "company"
+    },
+    {
+      "id": "125",
+      "date": "2025-06-10",
+      "title": "[위촉] IM라이프 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "126",
+      "date": "2025-06-10",
+      "title": "[위촉] KB라이프 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "127",
+      "date": "2025-06-10",
+      "title": "[위촉] 라이나생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "128",
+      "date": "2025-06-10",
+      "title": "[위촉] 푸본현대 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "129",
+      "date": "2025-06-11",
+      "title": "[굿리치] - 패밀리데이(PM 4:00 업무종료)",
+      "type": "goodrich"
+    },
+    {
+      "id": "130",
+      "date": "2025-06-11",
+      "title": "[위촉] KDB생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "131",
+      "date": "2025-06-11",
+      "title": "[해촉] - IM라이프(6/19반영)",
+      "type": "company"
+    },
+    {
+      "id": "132",
+      "date": "2025-06-12",
+      "title": "[위촉] 흥국생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "133",
+      "date": "2025-06-12",
+      "title": "[위촉] 삼성생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "134",
+      "date": "2025-06-12",
+      "title": "[위촉] 카디프생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "135",
+      "date": "2025-06-12",
+      "title": "[위촉] DB생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "136",
+      "date": "2025-06-12",
+      "title": "[해촉] - 하나(6/30반영),DB생명(6/27반영)",
+      "type": "company"
+    },
+    {
+      "id": "137",
+      "date": "2025-06-13",
+      "title": "[굿리치] - 자격추가/전산승인마감(PM2:00)\n▶6월4차[위촉]: 6/23(월)예정",
+      "type": "goodrich"
+    },
+    {
+      "id": "138",
+      "date": "2025-06-13",
+      "title": "[협회] - 사용인 등록_생보(메트) / 손보(메리츠, 롯데)",
+      "type": "session"
+    },
+    {
+      "id": "139",
+      "date": "2025-06-13",
+      "title": "[위촉] 한화생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "140",
+      "date": "2025-06-16",
+      "title": "[굿리치] - 위촉/ 당사계정오픈(PM3:00)",
+      "type": "goodrich"
+    },
+    {
+      "id": "141",
+      "date": "2025-06-16",
+      "title": "[위촉] 교보생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "142",
+      "date": "2025-06-16",
+      "title": "[위촉] 농협생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "143",
+      "date": "2025-06-16",
+      "title": "[위촉] 하나생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "144",
+      "date": "2025-06-16",
+      "title": "[위촉] 메트라이프 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "145",
+      "date": "2025-06-16",
+      "title": "[위촉] 신한라이프 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "146",
+      "date": "2025-06-16",
+      "title": "[위촉] 동양생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "147",
+      "date": "2025-06-16",
+      "title": "[해촉] - ABL(6/19반영),농협(6/24반영),신한(6/25반영)",
+      "type": "company"
+    },
+    {
+      "id": "148",
+      "date": "2025-06-17",
+      "title": "[위촉] ABL생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "149",
+      "date": "2025-06-17",
+      "title": "[위촉] 미래에셋 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "150",
+      "date": "2025-06-17",
+      "title": "[위촉] KB라이프 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "151",
+      "date": "2025-06-17",
+      "title": "[위촉] 라이나생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "152",
+      "date": "2025-06-17",
+      "title": "[해촉] - 한화(7/1반영)",
+      "type": "company"
+    },
+    {
+      "id": "153",
+      "date": "2025-06-18",
+      "title": "[위촉] KDB생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "154",
+      "date": "2025-06-18",
+      "title": "[위촉] 처브라이프 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "155",
+      "date": "2025-06-18",
+      "title": "[해촉] - 교보(7/1반영),KB라이프(6/23반영)",
+      "type": "company"
+    },
+    {
+      "id": "156",
+      "date": "2025-06-19",
+      "title": "[위촉] 카디프생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "157",
+      "date": "2025-06-19",
+      "title": "[위촉] IBK연금 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "158",
+      "date": "2025-06-19",
+      "title": "[위촉] 푸본현대 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "159",
+      "date": "2025-06-19",
+      "title": "[해촉] - KDB(6/25반영),미래(6/25반영),카디프(6/30반영),IBK(6/24반영)",
+      "type": "company"
+    },
+    {
+      "id": "160",
+      "date": "2025-06-20",
+      "title": "[굿리치] - 손해보험 자격추가 마감(PM 2:00)",
+      "type": "goodrich"
+    },
+    {
+      "id": "161",
+      "date": "2025-06-20",
+      "title": "[협회] - 사용인 등록_손보(메리츠,롯데)",
+      "type": "session"
+    },
+    {
+      "id": "162",
+      "date": "2025-06-20",
+      "title": "[해촉] - 삼성(7/2반영),라이나(6/27반영),처브(6/24반영),푸본(6/30반영)",
+      "type": "company"
+    },
+    {
+      "id": "163",
+      "date": "2025-06-23",
+      "title": "[협회] - 사용인 등록_생보(KB)",
+      "type": "session"
+    },
+    {
+      "id": "164",
+      "date": "2025-06-23",
+      "title": "[굿리치] - 위촉/ 당사계정오픈(PM3:00)",
+      "type": "goodrich"
+    },
+    {
+      "id": "165",
+      "date": "2025-06-23",
+      "title": "[해촉] - 메트(7/1반영)",
+      "type": "company"
+    },
+    {
+      "id": "166",
+      "date": "2025-06-23",
+      "title": "[위촉] IM라이프 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "167",
+      "date": "2025-06-24",
+      "title": "[위촉] 한화생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "168",
+      "date": "2025-06-24",
+      "title": "[위촉] 라이나생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "169",
+      "date": "2025-06-25",
+      "title": "[위촉] 흥국생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "170",
+      "date": "2025-06-25",
+      "title": "[위촉] 삼성생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "171",
+      "date": "2025-06-26",
+      "title": "[위촉] 교보생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "172",
+      "date": "2025-06-26",
+      "title": "[해촉] - 동양(6/27반영)",
+      "type": "company"
+    },
+    {
+      "id": "173",
+      "date": "2025-06-26",
+      "title": "[위촉] 농협생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "174",
+      "date": "2025-06-26",
+      "title": "[위촉] DB생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "175",
+      "date": "2025-06-27",
+      "title": "[협회] - 손보자격추가 사용인등록_손보(메리츠, 롯데)",
+      "type": "session"
+    },
+    {
+      "id": "176",
+      "date": "2025-06-27",
+      "title": "[굿리치] - 자격추가/전산승인마감(PM2:00)\n▶7월1차[위촉]: 7/7(월)예정",
+      "type": "goodrich"
+    },
+    {
+      "id": "177",
+      "date": "2025-06-27",
+      "title": "[위촉] ABL생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "178",
+      "date": "2025-06-30",
+      "title": "[위촉] 미래에셋 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "179",
+      "date": "2025-06-30",
+      "title": "[위촉] 처브라이프 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "180",
+      "date": "2025-06-30",
+      "title": "[위촉] 메트라이프 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "181",
+      "date": "2025-06-30",
+      "title": "[위촉] 신한라이프 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "182",
+      "date": "2025-06-30",
+      "title": "[위촉] IBK연금 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "183",
+      "date": "2025-07-01",
+      "title": "[해촉] - 농협(7/4반영)",
+      "type": "company"
+    },
+    {
+      "id": "184",
+      "date": "2025-07-01",
+      "title": "[위촉] 푸본현대 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "185",
+      "date": "2025-07-01",
+      "title": "[위촉] 동양생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "186",
+      "date": "2025-07-02",
+      "title": "[위촉] KDB생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "187",
+      "date": "2025-07-02",
+      "title": "[해촉] - ABL(7/7반영), KB(7/7반영), 미래(7/8반영), 처브(7/4반영)",
+      "type": "company"
+    },
+    {
+      "id": "188",
+      "date": "2025-07-02",
+      "title": "[굿리치] - 자격추가/전산승인마감(PM2:00)\n▶7월2차[위촉]: 7/14(월)예정",
+      "type": "goodrich"
+    },
+    {
+      "id": "189",
+      "date": "2025-07-02",
+      "title": "[위촉] 흥국생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "190",
+      "date": "2025-07-03",
+      "title": "[위촉] 한화생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "191",
+      "date": "2025-07-03",
+      "title": "[위촉] KB라이프 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "192",
+      "date": "2025-07-03",
+      "title": "[해촉] - KDB(7/9반영), 흥국(7/10반영)",
+      "type": "company"
+    },
+    {
+      "id": "193",
+      "date": "2025-07-03",
+      "title": "[위촉] 카디프생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "194",
+      "date": "2025-07-03",
+      "title": "[위촉] DB생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "195",
+      "date": "2025-07-04",
+      "title": "[협회] - 사용인 등록_손보(메리츠,롯데) / 생보(메트)",
+      "type": "session"
+    },
+    {
+      "id": "196",
+      "date": "2025-07-04",
+      "title": "[위촉] ABL생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "197",
+      "date": "2025-07-04",
+      "title": "[위촉] 교보생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "198",
+      "date": "2025-07-04",
+      "title": "[위촉] 삼성생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "199",
+      "date": "2025-07-07",
+      "title": "[위촉] 농협생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "200",
+      "date": "2025-07-07",
+      "title": "[위촉] 미래에셋 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "201",
+      "date": "2025-07-07",
+      "title": "[위촉] 하나생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "202",
+      "date": "2025-07-07",
+      "title": "[위촉] 메트라이프 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "203",
+      "date": "2025-07-07",
+      "title": "[위촉] 신한라이프 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "204",
+      "date": "2025-07-07",
+      "title": "[위촉] IM라이프 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "205",
+      "date": "2025-07-07",
+      "title": "[굿리치] - 위촉/ 당사계정오픈(PM4:00)",
+      "type": "goodrich"
+    },
+    {
+      "id": "206",
+      "date": "2025-07-08",
+      "title": "[위촉] 처브라이프 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "207",
+      "date": "2025-07-08",
+      "title": "[해촉] - AIA(7월말반영)",
+      "type": "company"
+    },
+    {
+      "id": "208",
+      "date": "2025-07-08",
+      "title": "[위촉] 라이나생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "209",
+      "date": "2025-07-08",
+      "title": "[위촉] 동양생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "210",
+      "date": "2025-07-09",
+      "title": "[위촉] KDB생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "211",
+      "date": "2025-07-09",
+      "title": "[굿리치] - 패밀리데이(PM4:00 업무종료)",
+      "type": "goodrich"
+    },
+    {
+      "id": "212",
+      "date": "2025-07-09",
+      "title": "[위촉] IBK연금 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "213",
+      "date": "2025-07-09",
+      "title": "[해촉] - DB생명(7/24반영)",
+      "type": "company"
+    },
+    {
+      "id": "214",
+      "date": "2025-07-10",
+      "title": "[위촉] KB라이프 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "215",
+      "date": "2025-07-10",
+      "title": "[굿리치] - 자격추가/전산승인마감(PM2:00)\n▶7월3차[위촉]: 7/21(월)예정",
+      "type": "goodrich"
+    },
+    {
+      "id": "216",
+      "date": "2025-07-10",
+      "title": "[위촉] 푸본현대 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "217",
+      "date": "2025-07-10",
+      "title": "[위촉] 카디프생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "218",
+      "date": "2025-07-10",
+      "title": "[위촉] DB생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "219",
+      "date": "2025-07-11",
+      "title": "[위촉] 삼성생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "220",
+      "date": "2025-07-11",
+      "title": "[협회] - 사용인 등록_손보(메리츠,롯데)",
+      "type": "session"
+    },
+    {
+      "id": "221",
+      "date": "2025-07-14",
+      "title": "[협회] - 7-2차 사용인 등록_생보(메트)",
+      "type": "session"
+    },
+    {
+      "id": "222",
+      "date": "2025-07-14",
+      "title": "[위촉] 하나생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "223",
+      "date": "2025-07-14",
+      "title": "[위촉] IM라이프 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "224",
+      "date": "2025-07-14",
+      "title": "[위촉] 흥국생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "225",
+      "date": "2025-07-14",
+      "title": "[굿리치] - 위촉/ 당사계정오픈(PM4:00)",
+      "type": "goodrich"
+    },
+    {
+      "id": "226",
+      "date": "2025-07-15",
+      "title": "[위촉] 미래에셋 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "227",
+      "date": "2025-07-15",
+      "title": "[위촉] 한화생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "228",
+      "date": "2025-07-15",
+      "title": "[위촉] 신한라이프 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "229",
+      "date": "2025-07-15",
+      "title": "[해촉] - 신한(7/25반영), IM라이프(7/25반영)",
+      "type": "company"
+    },
+    {
+      "id": "230",
+      "date": "2025-07-15",
+      "title": "[위촉] 라이나생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "231",
+      "date": "2025-07-15",
+      "title": "[위촉] 동양생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "232",
+      "date": "2025-07-16",
+      "title": "[위촉] KDB생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "233",
+      "date": "2025-07-16",
+      "title": "[위촉] 교보생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "234",
+      "date": "2025-07-16",
+      "title": "[해촉] - ABL(7/21반영), KB(7/21반영), 교보(8/1반영)",
+      "type": "company"
+    },
+    {
+      "id": "235",
+      "date": "2025-07-16",
+      "title": "[굿리치] - 자격추가/전산승인마감(PM2:00)\n▶7월3차[위촉]: 7/28(월)예정",
+      "type": "goodrich"
+    },
+    {
+      "id": "236",
+      "date": "2025-07-17",
+      "title": "[위촉] KB라이프 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "237",
+      "date": "2025-07-17",
+      "title": "[위촉] 농협생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "238",
+      "date": "2025-07-17",
+      "title": "[위촉] 메트라이프 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "239",
+      "date": "2025-07-17",
+      "title": "[해촉] - 농협(7/25반영), 미래(7/24반영)",
+      "type": "company"
+    },
+    {
+      "id": "240",
+      "date": "2025-07-17",
+      "title": "[위촉] 카디프생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "241",
+      "date": "2025-07-18",
+      "title": "[위촉] ABL생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "242",
+      "date": "2025-07-18",
+      "title": "[위촉] 처브라이프 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "243",
+      "date": "2025-07-18",
+      "title": "[해촉] - KDB(7/23반영), 한화(8/1반영), 삼성(8/4반영), IBK(7/24반영)",
+      "type": "company"
+    },
+    {
+      "id": "244",
+      "date": "2025-07-18",
+      "title": "[협회] - 사용인 등록_손보(메리츠,롯데)",
+      "type": "session"
+    },
+    {
+      "id": "245",
+      "date": "2025-07-21",
+      "title": "[협회] - 7-3차 사용인 등록_생보(KB)",
+      "type": "session"
+    },
+    {
+      "id": "246",
+      "date": "2025-07-21",
+      "title": "[위촉] 하나생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "247",
+      "date": "2025-07-21",
+      "title": "[위촉] IBK연금 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "248",
+      "date": "2025-07-21",
+      "title": "[해촉] - 카디프(7/31반영)",
+      "type": "company"
+    },
+    {
+      "id": "249",
+      "date": "2025-07-21",
+      "title": "[굿리치] - 위촉/ 당사계정오픈(PM4:00)",
+      "type": "goodrich"
+    },
+    {
+      "id": "250",
+      "date": "2025-07-22",
+      "title": "[해촉] - 처브(7/24반영), 흥국(7/30반영), 동양(7/30반영)",
+      "type": "company"
+    },
+    {
+      "id": "251",
+      "date": "2025-07-22",
+      "title": "[위촉] 신한라이프 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "252",
+      "date": "2025-07-22",
+      "title": "[위촉] 라이나생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "253",
+      "date": "2025-07-22",
+      "title": "[위촉] 푸본현대 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "254",
+      "date": "2025-07-23",
+      "title": "[굿리치] - 7월 당사 해촉 마감",
+      "type": "goodrich"
+    },
+    {
+      "id": "255",
+      "date": "2025-07-23",
+      "title": "[굿리치] - 자격추가/전산승인마감(PM2:00)\n▶8월1차[위촉]: 8/4(월)예정",
+      "type": "goodrich"
+    },
+    {
+      "id": "256",
+      "date": "2025-07-23",
+      "title": "[위촉] 처브라이프 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "257",
+      "date": "2025-07-24",
+      "title": "[위촉] KB라이프 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "258",
+      "date": "2025-07-24",
+      "title": "[해촉] - 메트(8/1반영), 하나(7/31반영)",
+      "type": "company"
+    },
+    {
+      "id": "259",
+      "date": "2025-07-24",
+      "title": "[위촉] 카디프생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "260",
+      "date": "2025-07-24",
+      "title": "[위촉] 흥국생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "261",
+      "date": "2025-07-25",
+      "title": "[위촉] 한화생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "262",
+      "date": "2025-07-25",
+      "title": "[해촉] - 라이나(7/28반영), 푸본(7/31반영)",
+      "type": "company"
+    },
+    {
+      "id": "263",
+      "date": "2025-07-25",
+      "title": "[협회] - 사용인 등록_손보(메리츠,롯데)",
+      "type": "session"
+    },
+    {
+      "id": "264",
+      "date": "2025-07-28",
+      "title": "[협회] - 7-4차 사용인 등록_생보(KB)",
+      "type": "session"
+    },
+    {
+      "id": "265",
+      "date": "2025-07-28",
+      "title": "[위촉] ABL생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "266",
+      "date": "2025-07-28",
+      "title": "[굿리치] - 위촉/ 당사계정오픈(PM4:00)",
+      "type": "goodrich"
+    },
+    {
+      "id": "267",
+      "date": "2025-07-28",
+      "title": "[위촉] 삼성생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "268",
+      "date": "2025-07-29",
+      "title": "[위촉] 교보생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "269",
+      "date": "2025-07-29",
+      "title": "[위촉] 메트라이프 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "270",
+      "date": "2025-07-29",
+      "title": "[위촉] 라이나생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "271",
+      "date": "2025-07-29",
+      "title": "[위촉] IBK연금 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "272",
+      "date": "2025-07-29",
+      "title": "[위촉] 동양생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "273",
+      "date": "2025-07-30",
+      "title": "[굿리치] - 자격추가/전산승인마감(PM2:00)\n▶8월2차[위촉]: 8/11(월)예정",
+      "type": "goodrich"
+    },
+    {
+      "id": "274",
+      "date": "2025-07-30",
+      "title": "[위촉] 미래에셋 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "275",
+      "date": "2025-07-30",
+      "title": "[위촉] 신한라이프 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "276",
+      "date": "2025-07-30",
+      "title": "[위촉] 농협생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "277",
+      "date": "2025-07-30",
+      "title": "[위촉] KDB생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "278",
+      "date": "2025-07-30",
+      "title": "[위촉] IM라이프 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "279",
+      "date": "2025-07-30",
+      "title": "[위촉] 푸본현대 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "280",
+      "date": "2025-08-01",
+      "title": "[협회] - 사용인 등록_손보(메리츠,롯데)",
+      "type": "session"
+    },
+    {
+      "id": "281",
+      "date": "2025-08-01",
+      "title": "[위촉] KB라이프 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "282",
+      "date": "2025-08-01",
+      "title": "[해촉] 농협생명 - 농협(8/7반영) 처브(8/4반영)",
+      "type": "company"
+    },
+    {
+      "id": "283",
+      "date": "2025-08-01",
+      "title": "[위촉] DB생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "284",
+      "date": "2025-08-04",
+      "title": "[협회] - 8-1차 사용인 등록_생보(메트)",
+      "type": "session"
+    },
+    {
+      "id": "285",
+      "date": "2025-08-04",
+      "title": "[위촉] 한화생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "286",
+      "date": "2025-08-04",
+      "title": "[해촉] - ABL(8/7반영), 미래(8/7반영)",
+      "type": "company"
+    },
+    {
+      "id": "287",
+      "date": "2025-08-04",
+      "title": "[위촉] 하나생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "288",
+      "date": "2025-08-04",
+      "title": "[위촉] 삼성생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "289",
+      "date": "2025-08-05",
+      "title": "[위촉] 미래에셋 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "290",
+      "date": "2025-08-05",
+      "title": "[위촉] IM라이프 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "291",
+      "date": "2025-08-05",
+      "title": "[위촉] 흥국생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "292",
+      "date": "2025-08-05",
+      "title": "[해촉] - 흥국(8/13반영)",
+      "type": "company"
+    },
+    {
+      "id": "293",
+      "date": "2025-08-05",
+      "title": "[위촉] 라이나생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "294",
+      "date": "2025-08-05",
+      "title": "[위촉] 동양생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "295",
+      "date": "2025-08-06",
+      "title": "[위촉] 교보생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "296",
+      "date": "2025-08-06",
+      "title": "[해촉] - AIA(8월말반영), KB(8/11반영)",
+      "type": "company"
+    },
+    {
+      "id": "297",
+      "date": "2025-08-06",
+      "title": "[위촉] 농협생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "298",
+      "date": "2025-08-06",
+      "title": "[위촉] KDB생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "299",
+      "date": "2025-08-06",
+      "title": "[굿리치] - 자격추가/전산승인마감(PM2:00)\n▶8월3차[위촉]: 8/18(월)예정",
+      "type": "goodrich"
+    },
+    {
+      "id": "300",
+      "date": "2025-08-07",
+      "title": "[위촉] 메트라이프 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "301",
+      "date": "2025-08-07",
+      "title": "[해촉] - 메트(8/18반영), 신한(8/18반영)",
+      "type": "company"
+    },
+    {
+      "id": "302",
+      "date": "2025-08-07",
+      "title": "[위촉] 처브라이프 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "303",
+      "date": "2025-08-07",
+      "title": "[위촉] 카디프생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "304",
+      "date": "2025-08-08",
+      "title": "[위촉] ABL생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "305",
+      "date": "2025-08-08",
+      "title": "[위촉] KB라이프 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "306",
+      "date": "2025-08-08",
+      "title": "[위촉] 삼성생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "307",
+      "date": "2025-08-08",
+      "title": "[협회] - 사용인 등록_손보(메리츠,롯데)",
+      "type": "session"
+    },
+    {
+      "id": "308",
+      "date": "2025-08-08",
+      "title": "[위촉] DB생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "309",
+      "date": "2025-08-11",
+      "title": "[협회] - 8-2차 사용인 등록_생보(KB)",
+      "type": "session"
+    },
+    {
+      "id": "310",
+      "date": "2025-08-11",
+      "title": "[위촉] 신한라이프 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "311",
+      "date": "2025-08-11",
+      "title": "[위촉] IM라이프 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "312",
+      "date": "2025-08-11",
+      "title": "[해촉] IM라이프 - IM라이프(8/14반영)",
+      "type": "company"
+    },
+    {
+      "id": "313",
+      "date": "2025-08-11",
+      "title": "[위촉] IBK연금 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "314",
+      "date": "2025-08-12",
+      "title": "[위촉] 미래에셋 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "315",
+      "date": "2025-08-12",
+      "title": "[위촉] 농협생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "316",
+      "date": "2025-08-12",
+      "title": "[위촉] 흥국생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "317",
+      "date": "2025-08-12",
+      "title": "[위촉] 라이나생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "318",
+      "date": "2025-08-12",
+      "title": "[위촉] 푸본현대 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "319",
+      "date": "2025-08-12",
+      "title": "[위촉] 동양생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "320",
+      "date": "2025-08-13",
+      "title": "[위촉] 한화생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "321",
+      "date": "2025-08-13",
+      "title": "[위촉] KDB생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "322",
+      "date": "2025-08-13",
+      "title": "[굿리치] - 자격추가/전산승인마감(PM2:00)\n▶8월4차[위촉]: 8/25(월)예정",
+      "type": "goodrich"
+    },
+    {
+      "id": "323",
+      "date": "2025-08-13",
+      "title": "[굿리치] - 패밀리데이(PM4:00업무종료)",
+      "type": "goodrich"
+    },
+    {
+      "id": "324",
+      "date": "2025-08-14",
+      "title": "[위촉] KB라이프 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "325",
+      "date": "2025-08-14",
+      "title": "[위촉] 처브라이프 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "326",
+      "date": "2025-08-14",
+      "title": "[해촉] 하나생명 - 하나(8/28반영)",
+      "type": "company"
+    },
+    {
+      "id": "327",
+      "date": "2025-08-14",
+      "title": "[위촉] 카디프생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "328",
+      "date": "2025-08-15",
+      "title": "[위촉] ABL생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "329",
+      "date": "2025-08-15",
+      "title": "[위촉] 교보생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "330",
+      "date": "2025-08-15",
+      "title": "[협회] - 사용인 등록_손보(메리츠,롯데)",
+      "type": "session"
+    },
+    {
+      "id": "331",
+      "date": "2025-08-15",
+      "title": "[위촉] DB생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "332",
+      "date": "2025-08-18",
+      "title": "[협회] - 8-3차 사용인 등록_생보(KB)",
+      "type": "session"
+    },
+    {
+      "id": "333",
+      "date": "2025-08-18",
+      "title": "[위촉] 메트라이프 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "334",
+      "date": "2025-08-18",
+      "title": "[해촉] - 농협(8/21반영), 메트(8/25반영), 미래(8/21반영), 삼성(9/2반영), 신한(8/25반영), 카디프(8/29반영)",
+      "type": "company"
+    },
+    {
+      "id": "335",
+      "date": "2025-08-18",
+      "title": "[해촉] 농협생명 - 농협(8/21반영) 카디프(8/29반영) 삼성(9/2반영)",
+      "type": "company"
+    },
+    {
+      "id": "336",
+      "date": "2025-08-18",
+      "title": "[해촉] KDB생명 - KDB(8/20반영)",
+      "type": "company"
+    },
+    {
+      "id": "337",
+      "date": "2025-08-18",
+      "title": "[위촉] 하나생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "338",
+      "date": "2025-08-19",
+      "title": "[위촉] 신한라이프 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "339",
+      "date": "2025-08-19",
+      "title": "[위촉] IBK연금 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "340",
+      "date": "2025-08-19",
+      "title": "[해촉] - DB(8/28반영), IBK(8/21반영), 한화(9/1반영)",
+      "type": "company"
+    },
+    {
+      "id": "341",
+      "date": "2025-08-19",
+      "title": "[위촉] 라이나생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "342",
+      "date": "2025-08-19",
+      "title": "[위촉] 라이나생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "343",
+      "date": "2025-08-19",
+      "title": "[위촉] 푸본현대 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "344",
+      "date": "2025-08-20",
+      "title": "[해촉] - ABL(8/25반영), KB(8/25반영), 교보(9/1반영), 처브(8/22반영)",
+      "type": "company"
+    },
+    {
+      "id": "345",
+      "date": "2025-08-20",
+      "title": "[굿리치] - 자격추가/전산승인마감(PM2:00)\n▶9월1차[위촉]: 9/1(월)예정",
+      "type": "goodrich"
+    },
+    {
+      "id": "346",
+      "date": "2025-08-21",
+      "title": "[위촉] 카디프생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "347",
+      "date": "2025-08-22",
+      "title": "[협회] - 8-4차 사용인 등록_생보(메트)",
+      "type": "session"
+    },
+    {
+      "id": "348",
+      "date": "2025-08-22",
+      "title": "[위촉] KB라이프 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "349",
+      "date": "2025-08-22",
+      "title": "[해촉] - 라이나(8/25반영) 푸본(8/29반영) 동양(8/29반영)",
+      "type": "company"
+    },
+    {
+      "id": "350",
+      "date": "2025-08-22",
+      "title": "[굿리치] - 수수료계좌변경신청마감",
+      "type": "goodrich"
+    },
+    {
+      "id": "351",
+      "date": "2025-08-22",
+      "title": "[위촉] 한화생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "352",
+      "date": "2025-08-25",
+      "title": "[위촉] IM라이프 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "353",
+      "date": "2025-08-26",
+      "title": "[위촉] 신한라이프 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "354",
+      "date": "2025-08-26",
+      "title": "[위촉] KB라이프 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "355",
+      "date": "2025-08-26",
+      "title": "[위촉] 흥국생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "356",
+      "date": "2025-08-27",
+      "title": "[위촉] 교보생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "357",
+      "date": "2025-08-27",
+      "title": "[굿리치] - 자격추가/전산승인마감(PM2:00)\n▶9월2차[위촉]: 9/8(월)예정",
+      "type": "goodrich"
+    },
+    {
+      "id": "358",
+      "date": "2025-08-27",
+      "title": "[위촉] 교보생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "359",
+      "date": "2025-08-27",
+      "title": "[위촉] 처브라이프 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "360",
+      "date": "2025-08-27",
+      "title": "[위촉] 삼성생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "361",
+      "date": "2025-08-28",
+      "title": "[위촉] 메트라이프 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "362",
+      "date": "2025-08-29",
+      "title": "[위촉] ABL생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "363",
+      "date": "2025-08-29",
+      "title": "[협회] - 사용인 등록_손보(메리츠,롯데)",
+      "type": "session"
+    },
+    {
+      "id": "364",
+      "date": "2025-08-29",
+      "title": "[위촉] ABL생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "365",
+      "date": "2025-08-29",
+      "title": "[위촉] 동양생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "366",
+      "date": "2025-08-29",
+      "title": "[위촉] DB생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "367",
+      "date": "2025-09-01",
+      "title": "[위촉] 미래에셋 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "368",
+      "date": "2025-09-01",
+      "title": "[위촉] 하나생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "369",
+      "date": "2025-09-01",
+      "title": "[위촉] IM라이프 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "370",
+      "date": "2025-09-01",
+      "title": "[협회] - 사용인 등록_생보(KB)",
+      "type": "session"
+    },
+    {
+      "id": "371",
+      "date": "2025-09-01",
+      "title": "[위촉] IBK연금 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "372",
+      "date": "2025-09-02",
+      "title": "[위촉] 한화생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "373",
+      "date": "2025-09-02",
+      "title": "[해촉] - ABL(9/5반영), 미래(9/10반영), 흥국(9/11반영), KDB(9/10반영), IM라이프(9/11반영), 처브(9/4반영)",
+      "type": "company"
+    },
+    {
+      "id": "374",
+      "date": "2025-09-02",
+      "title": "[위촉] KB라이프 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "375",
+      "date": "2025-09-02",
+      "title": "[위촉] KDB생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "376",
+      "date": "2025-09-02",
+      "title": "[위촉] 농협생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "377",
+      "date": "2025-09-02",
+      "title": "[위촉] 흥국생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "378",
+      "date": "2025-09-02",
+      "title": "[위촉] 푸본현대 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "379",
+      "date": "2025-09-03",
+      "title": "[해촉] - KB(9/8반영), 메트(9/15반영)",
+      "type": "company"
+    },
+    {
+      "id": "380",
+      "date": "2025-09-03",
+      "title": "[해촉] 농협생명 - 농협(9/11반영)",
+      "type": "company"
+    },
+    {
+      "id": "381",
+      "date": "2025-09-03",
+      "title": "[위촉] 신한라이프 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "382",
+      "date": "2025-09-03",
+      "title": "[굿리치] - 전산승인마감(PM2:00) \n▶9월3차[위촉]: 9/15(월) GP 오픈 예정 (PM16:00)",
+      "type": "goodrich"
+    },
+    {
+      "id": "383",
+      "date": "2025-09-04",
+      "title": "[위촉] 교보생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "384",
+      "date": "2025-09-04",
+      "title": "[위촉] 처브라이프 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "385",
+      "date": "2025-09-04",
+      "title": "[해촉] 신한라이프 - 신한(9/15반영)",
+      "type": "company"
+    },
+    {
+      "id": "386",
+      "date": "2025-09-04",
+      "title": "[위촉] 카디프생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "387",
+      "date": "2025-09-04",
+      "title": "[위촉] 삼성생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "388",
+      "date": "2025-09-04",
+      "title": "[굿리치] - 마감(PM18:00)",
+      "type": "goodrich"
+    },
+    {
+      "id": "389",
+      "date": "2025-09-05",
+      "title": "[협회] - 사용인 등록_손보(메리츠,롯데)",
+      "type": "session"
+    },
+    {
+      "id": "390",
+      "date": "2025-09-05",
+      "title": "[위촉] 동양생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "391",
+      "date": "2025-09-05",
+      "title": "[위촉] DB생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "392",
+      "date": "2025-09-08",
+      "title": "[위촉] ABL생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "393",
+      "date": "2025-09-08",
+      "title": "[위촉] 메트라이프 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "394",
+      "date": "2025-09-08",
+      "title": "[위촉] IM라이프 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "395",
+      "date": "2025-09-08",
+      "title": "[협회] - 사용인 등록_생보(KB)",
+      "type": "session"
+    },
+    {
+      "id": "396",
+      "date": "2025-09-08",
+      "title": "[위촉] IBK연금 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "397",
+      "date": "2025-09-09",
+      "title": "[위촉] 미래에셋 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "398",
+      "date": "2025-09-09",
+      "title": "[위촉] KB라이프 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "399",
+      "date": "2025-09-09",
+      "title": "[위촉] KDB생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "400",
+      "date": "2025-09-09",
+      "title": "[위촉] 농협생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "401",
+      "date": "2025-09-09",
+      "title": "[위촉] 푸본현대 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "402",
+      "date": "2025-09-09",
+      "title": "[위촉] 라이나생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "403",
+      "date": "2025-09-10",
+      "title": "[해촉] - AIA(9월말반영)",
+      "type": "company"
+    },
+    {
+      "id": "404",
+      "date": "2025-09-10",
+      "title": "[굿리치] - 패밀리데이(PM4:00업무종료)",
+      "type": "goodrich"
+    },
+    {
+      "id": "405",
+      "date": "2025-09-10",
+      "title": "[굿리치] - 전산승인마감(PM2:00)\n▶9월4차[위촉]: 9/22(월) GP 오픈 예정 (PM16:00)",
+      "type": "goodrich"
+    },
+    {
+      "id": "406",
+      "date": "2025-09-11",
+      "title": "[위촉] 카디프생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "407",
+      "date": "2025-09-11",
+      "title": "[위촉] 삼성생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "408",
+      "date": "2025-09-11",
+      "title": "[굿리치] - 마감(PM18:00)",
+      "type": "goodrich"
+    },
+    {
+      "id": "409",
+      "date": "2025-09-12",
+      "title": "[위촉] 한화생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "410",
+      "date": "2025-09-12",
+      "title": "[협회] - 사용인 등록_손보(메리츠,롯데) /생보(메트)",
+      "type": "session"
+    },
+    {
+      "id": "411",
+      "date": "2025-09-12",
+      "title": "[위촉] 흥국생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "412",
+      "date": "2025-09-12",
+      "title": "[위촉] 동양생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "413",
+      "date": "2025-09-12",
+      "title": "[위촉] DB생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "414",
+      "date": "2025-09-15",
+      "title": "[위촉] 하나생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "415",
+      "date": "2025-09-15",
+      "title": "[위촉] 신한라이프 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "416",
+      "date": "2025-09-16",
+      "title": "[해촉] - ABL(9/19반영), 미래(9/26반영), 하나(10/2반영)",
+      "type": "company"
+    },
+    {
+      "id": "417",
+      "date": "2025-09-16",
+      "title": "[위촉] KB라이프 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "418",
+      "date": "2025-09-16",
+      "title": "[위촉] KDB생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "419",
+      "date": "2025-09-16",
+      "title": "[해촉] KDB생명 - KDB(9/24반영)",
+      "type": "company"
+    },
+    {
+      "id": "420",
+      "date": "2025-09-16",
+      "title": "[위촉] 처브라이프 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "421",
+      "date": "2025-09-16",
+      "title": "[위촉] 농협생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "422",
+      "date": "2025-09-16",
+      "title": "[해촉] 농협생명 - 농협(9/25반영)",
+      "type": "company"
+    },
+    {
+      "id": "423",
+      "date": "2025-09-16",
+      "title": "[해촉] 신한라이프 - 신한(9/25반영)",
+      "type": "company"
+    },
+    {
+      "id": "424",
+      "date": "2025-09-16",
+      "title": "[위촉] 라이나생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "425",
+      "date": "2025-09-17",
+      "title": "[위촉] ABL생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "426",
+      "date": "2025-09-17",
+      "title": "[위촉] 교보생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "427",
+      "date": "2025-09-17",
+      "title": "[위촉] 메트라이프 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "428",
+      "date": "2025-09-17",
+      "title": "[위촉] 미래에셋 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "429",
+      "date": "2025-09-17",
+      "title": "[해촉] - KB(9/22반영), 교보(10/1반영), 메트(9/25반영), 한화(10/1반영), 처브(9/24반영), IBK(9/25반영)",
+      "type": "company"
+    },
+    {
+      "id": "430",
+      "date": "2025-09-17",
+      "title": "[굿리치] - 전산승인마감(PM2:00)\n▶9월5차[위촉]: 9/29(월) GP 오픈 예정 (PM16:00)",
+      "type": "goodrich"
+    },
+    {
+      "id": "431",
+      "date": "2025-09-18",
+      "title": "[위촉] 카디프생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "432",
+      "date": "2025-09-18",
+      "title": "[해촉] 카디프생명 - 카디프(9/30반영)",
+      "type": "company"
+    },
+    {
+      "id": "433",
+      "date": "2025-09-18",
+      "title": "[굿리치] - 마감(PM18:00)",
+      "type": "goodrich"
+    },
+    {
+      "id": "434",
+      "date": "2025-09-19",
+      "title": "[협회] - 사용인 등록_손보(메리츠,롯데)",
+      "type": "session"
+    },
+    {
+      "id": "435",
+      "date": "2025-09-19",
+      "title": "[위촉] IBK연금 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "436",
+      "date": "2025-09-19",
+      "title": "[해촉] - IBK(9/24반영)",
+      "type": "company"
+    },
+    {
+      "id": "437",
+      "date": "2025-09-19",
+      "title": "[위촉] 푸본현대 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "438",
+      "date": "2025-09-22",
+      "title": "[협회] - 사용인 등록_생보(KB)",
+      "type": "session"
+    },
+    {
+      "id": "439",
+      "date": "2025-09-22",
+      "title": "[해촉] - 삼성(10/2반영)",
+      "type": "company"
+    },
+    {
+      "id": "440",
+      "date": "2025-09-23",
+      "title": "[위촉] KB라이프 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "441",
+      "date": "2025-09-23",
+      "title": "[위촉] 교보생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "442",
+      "date": "2025-09-23",
+      "title": "[위촉] 라이나생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "443",
+      "date": "2025-09-24",
+      "title": "[굿리치] - 수수료계좌변경신청마감",
+      "type": "goodrich"
+    },
+    {
+      "id": "444",
+      "date": "2025-09-24",
+      "title": "[굿리치] - 전산승인마감(PM2:00)\n▶10월1차[위촉]: 10/13(월) GP 오픈 예정 (PM16:00)",
+      "type": "goodrich"
+    },
+    {
+      "id": "445",
+      "date": "2025-09-25",
+      "title": "[위촉] 메트라이프 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "446",
+      "date": "2025-09-25",
+      "title": "[굿리치] - 마감(PM18:00)",
+      "type": "goodrich"
+    },
+    {
+      "id": "447",
+      "date": "2025-09-26",
+      "title": "[협회] - 사용인 등록_손보(메리츠,롯데)",
+      "type": "session"
+    },
+    {
+      "id": "448",
+      "date": "2025-09-26",
+      "title": "[해촉] - 라이나(9/29반영), 동양(9/29반영)",
+      "type": "company"
+    },
+    {
+      "id": "449",
+      "date": "2025-09-29",
+      "title": "[위촉] 미래에셋 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "450",
+      "date": "2025-09-29",
+      "title": "[협회] - 사용인 등록_생보(KB)",
+      "type": "session"
+    },
+    {
+      "id": "451",
+      "date": "2025-09-29",
+      "title": "[굿리치] - 전산승인마감(PM2:00)\n▶10월2차[위촉]: 10/20(월) GP 오픈 예정 (PM16:00)",
+      "type": "goodrich"
+    },
+    {
+      "id": "452",
+      "date": "2025-09-30",
+      "title": "[위촉] ABL생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "453",
+      "date": "2025-09-30",
+      "title": "[위촉] 메트라이프 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "454",
+      "date": "2025-09-30",
+      "title": "[굿리치] - 마감(PM18:00)",
+      "type": "goodrich"
+    },
+    {
+      "id": "455",
+      "date": "2025-10-03",
+      "title": "[휴일] - 개천절",
+      "type": "company"
+    },
+    {
+      "id": "456",
+      "date": "2025-10-01",
+      "title": "[해촉] - ABL(10/10반영), 메트(10/15반영), 미래(10/15반영)",
+      "type": "company"
+    },
+    {
+      "id": "457",
+      "date": "2025-10-02",
+      "title": "[해촉] - AIA(10월말반영)",
+      "type": "company"
+    },
+    {
+      "id": "458",
+      "date": "2025-10-16",
+      "title": "[해촉] - ABL(10/20반영), 미래(10/27반영)",
+      "type": "company"
+    },
+    {
+      "id": "459",
+      "date": "2025-10-17",
+      "title": "[해촉] - 교보(11/3반영), 메트(10/27반영)",
+      "type": "company"
+    },
+    {
+      "id": "460",
+      "date": "2025-10-22",
+      "title": "[해촉] - 한화(11/3반영), DB생명(10/30반영)",
+      "type": "company"
+    },
+    {
+      "id": "461",
+      "date": "2025-09-23",
+      "title": "[위촉] IM라이프 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "462",
+      "date": "2025-09-26",
+      "title": "[위촉] IM라이프 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "463",
+      "date": "2025-10-13",
+      "title": "[위촉] IM라이프 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "464",
+      "date": "2025-09-23",
+      "title": "[해촉] IM라이프 - IM(10/02반영)",
+      "type": "company"
+    },
+    {
+      "id": "465",
+      "date": "2025-10-16",
+      "title": "[해촉] IM라이프 - IM(10/23반영)",
+      "type": "company"
+    },
+    {
+      "id": "466",
+      "date": "2025-09-23",
+      "title": "[위촉] 신한라이프 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "467",
+      "date": "2025-09-26",
+      "title": "[위촉] 신한라이프 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "468",
+      "date": "2025-10-17",
+      "title": "[위촉] 신한라이프 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "469",
+      "date": "2025-10-01",
+      "title": "[해촉] 신한라이프 - 신한(10/15반영)",
+      "type": "company"
+    },
+    {
+      "id": "470",
+      "date": "2025-10-16",
+      "title": "[해촉] 신한라이프 - 신한(10/27반영)",
+      "type": "company"
+    },
+    {
+      "id": "471",
+      "date": "2025-09-24",
+      "title": "[위촉] KDB생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "472",
+      "date": "2025-09-30",
+      "title": "[위촉] KDB생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "473",
+      "date": "2025-10-14",
+      "title": "[위촉] KDB생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "474",
+      "date": "2025-10-01",
+      "title": "[해촉] KDB생명 - KDB(10/16반영)",
+      "type": "company"
+    },
+    {
+      "id": "475",
+      "date": "2025-10-15",
+      "title": "[해촉] KDB생명 - KDB(10/23반영)",
+      "type": "company"
+    },
+    {
+      "id": "476",
+      "date": "2025-09-22",
+      "title": "[위촉] KB라이프 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "477",
+      "date": "2025-09-29",
+      "title": "[위촉] KB라이프 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "478",
+      "date": "2025-10-13",
+      "title": "[위촉] KB라이프 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "479",
+      "date": "2025-10-20",
+      "title": "[위촉] KB라이프 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "480",
+      "date": "2025-10-01",
+      "title": "[해촉] KB라이프 - KB(10/13반영)",
+      "type": "company"
+    },
+    {
+      "id": "481",
+      "date": "2025-10-16",
+      "title": "[해촉] KB라이프 - KB(10/27반영)",
+      "type": "company"
+    },
+    {
+      "id": "482",
+      "date": "2025-09-23",
+      "title": "[위촉] 농협생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "483",
+      "date": "2025-09-30",
+      "title": "[위촉] 농협생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "484",
+      "date": "2025-10-20",
+      "title": "[위촉] 농협생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "485",
+      "date": "2025-10-01",
+      "title": "[해촉] 농협생명 - 농협(10/16반영)",
+      "type": "company"
+    },
+    {
+      "id": "486",
+      "date": "2025-10-21",
+      "title": "[해촉] 농협생명 - 농협(10/29반영), IBK(10/23반영)",
+      "type": "company"
+    },
+    {
+      "id": "487",
+      "date": "2025-09-23",
+      "title": "[위촉] 처브라이프 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "488",
+      "date": "2025-09-29",
+      "title": "[위촉] 처브라이프 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "489",
+      "date": "2025-10-16",
+      "title": "[위촉] 처브라이프 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "490",
+      "date": "2025-10-01",
+      "title": "[해촉] 처브라이프 - 처브(10/02반영)",
+      "type": "company"
+    },
+    {
+      "id": "491",
+      "date": "2025-10-17",
+      "title": "[해촉] 처브라이프 - 처브(10/24반영)",
+      "type": "company"
+    },
+    {
+      "id": "492",
+      "date": "2025-09-29",
+      "title": "[위촉] 하나생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "493",
+      "date": "2025-10-13",
+      "title": "[위촉] 하나생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "494",
+      "date": "2025-10-20",
+      "title": "[위촉] 하나생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "495",
+      "date": "2025-10-20",
+      "title": "[해촉] 하나생명 - 하나(10/31반영), 카디프(10/31반영), 삼성(11/4반영)",
+      "type": "company"
+    },
+    {
+      "id": "496",
+      "date": "2025-10-13",
+      "title": "[협회] - 사용인 등록_생보(KB)",
+      "type": "session"
+    },
+    {
+      "id": "497",
+      "date": "2025-10-20",
+      "title": "[협회] - 사용인 등록_생보(KB)",
+      "type": "session"
+    },
+    {
+      "id": "498",
+      "date": "2025-10-24",
+      "title": "[협회] - 사용인 등록_손보(메리츠,롯데) / 생보(메트)",
+      "type": "session"
+    },
+    {
+      "id": "499",
+      "date": "2025-10-10",
+      "title": "[굿리치] - 패밀리데이(PM4:00업무종료)",
+      "type": "goodrich"
+    },
+    {
+      "id": "500",
+      "date": "2025-10-06",
+      "title": "[휴일] - 추석",
+      "type": "company"
+    },
+    {
+      "id": "501",
+      "date": "2025-10-07",
+      "title": "[휴일] - 추석연휴",
+      "type": "company"
+    },
+    {
+      "id": "502",
+      "date": "2025-10-08",
+      "title": "[휴일] - 대체휴일",
+      "type": "company"
+    },
+    {
+      "id": "503",
+      "date": "2025-10-09",
+      "title": "[휴일] - 한글날",
+      "type": "company"
+    },
+    {
+      "id": "504",
+      "date": "2025-10-21",
+      "title": "[굿리치] - 수수료계좌변경신청마감",
+      "type": "goodrich"
+    },
+    {
+      "id": "505",
+      "date": "2025-10-22",
+      "title": "[굿리치] - 10월 당사 해촉 마감",
+      "type": "goodrich"
+    },
+    {
+      "id": "506",
+      "date": "2025-10-14",
+      "title": "[위촉] 라이나생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "507",
+      "date": "2025-10-21",
+      "title": "[위촉] 라이나생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "508",
+      "date": "2025-10-28",
+      "title": "[위촉] 라이나생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "509",
+      "date": "2025-10-01",
+      "title": "[위촉] 카디프생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "510",
+      "date": "2025-10-16",
+      "title": "[위촉] 카디프생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "511",
+      "date": "2025-10-23",
+      "title": "[위촉] 카디프생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "512",
+      "date": "2025-09-30",
+      "title": "[위촉] IBK연금 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "513",
+      "date": "2025-10-21",
+      "title": "[위촉] IBK연금 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "514",
+      "date": "2025-09-24",
+      "title": "[위촉] 삼성생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "515",
+      "date": "2025-10-01",
+      "title": "[위촉] 삼성생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "516",
+      "date": "2025-10-16",
+      "title": "[위촉] 삼성생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "517",
+      "date": "2025-10-02",
+      "title": "[협회] - 사용인 등록_손보(메리츠,롯데)",
+      "type": "session"
+    },
+    {
+      "id": "518",
+      "date": "2025-10-17",
+      "title": "[협회] - 사용인 등록_손보(메리츠,롯데)",
+      "type": "session"
+    },
+    {
+      "id": "519",
+      "date": "2025-10-31",
+      "title": "[협회] - 사용인 등록_손보(메리츠,롯데)",
+      "type": "session"
+    },
+    {
+      "id": "520",
+      "date": "2025-09-24",
+      "title": "[위촉] 흥국생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "521",
+      "date": "2025-09-29",
+      "title": "[위촉] 흥국생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "522",
+      "date": "2025-10-14",
+      "title": "[위촉] 흥국생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "523",
+      "date": "2025-10-23",
+      "title": "[해촉] - 흥국(10/30반영), 동양(10/30반영)",
+      "type": "company"
+    },
+    {
+      "id": "524",
+      "date": "2025-09-29",
+      "title": "[위촉] 동양생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "525",
+      "date": "2025-10-14",
+      "title": "[위촉] 동양생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "526",
+      "date": "2025-09-26",
+      "title": "[위촉] DB생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "527",
+      "date": "2025-10-02",
+      "title": "[위촉] DB생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "528",
+      "date": "2025-10-17",
+      "title": "[위촉] DB생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "529",
+      "date": "2025-10-24",
+      "title": "[해촉] - 푸본(10/31반영), 라이나(10/27반영)",
+      "type": "company"
+    },
+    {
+      "id": "530",
+      "date": "2025-10-02",
+      "title": "[위촉] 푸본현대 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "531",
+      "date": "2025-10-21",
+      "title": "[위촉] 푸본현대 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "532",
+      "date": "2025-10-15",
+      "title": "[굿리치] - 전산승인마감(PM2:00)\n▶10월3차[위촉]: 10/27(월) GP 오픈 예정 (PM16:00)",
+      "type": "goodrich"
+    },
+    {
+      "id": "533",
+      "date": "2025-10-22",
+      "title": "[굿리치] - 전산승인마감(PM2:00)\n▶11월1차[위촉]: 11/3(월) GP 오픈 예정 (PM16:00)",
+      "type": "goodrich"
+    },
+    {
+      "id": "534",
+      "date": "2025-10-29",
+      "title": "[굿리치] - 전산승인마감(PM2:00)\n▶11월2차[위촉]: 11/10(월) GP 오픈 예정 (PM16:00)",
+      "type": "goodrich"
+    },
+    {
+      "id": "535",
+      "date": "2025-10-13",
+      "title": "[굿리치] - GP 오픈 예정 (PM16:00)",
+      "type": "goodrich"
+    },
+    {
+      "id": "536",
+      "date": "2025-10-20",
+      "title": "[굿리치] - GP 오픈 예정 (PM16:00)",
+      "type": "goodrich"
+    },
+    {
+      "id": "537",
+      "date": "2025-10-27",
+      "title": "[굿리치] - GP 오픈 예정 (PM16:00)",
+      "type": "goodrich"
+    }
+  ]
+}
