@@ -28,7 +28,7 @@ export default function MainPage() {
   const [showTutorial, setShowTutorial] = useState(false);
 
   useEffect(() => {
-    fetch('/data.json')
+    fetch('./data.json')
       .then(res => res.json())
       .then(data => {
         setData(data);
