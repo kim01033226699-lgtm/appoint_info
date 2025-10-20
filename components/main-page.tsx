@@ -15,6 +15,7 @@ import { cn } from "@/lib/utils";
 import type { SheetData } from "@/lib/types";
 import CalendarModal from "@/components/calendar-modal";
 import TutorialOverlay from "@/components/tutorial-overlay";
+import data from "@/public/data.json";
 
 export default function MainPage() {
   const router = useRouter();
@@ -28,16 +29,9 @@ export default function MainPage() {
   const [showTutorial, setShowTutorial] = useState(false);
 
   useEffect(() => {
-    fetch('./data.json')
-      .then(res => res.json())
-      .then(data => {
-        setData(data);
-        setLoading(false);
-      })
-      .catch(err => {
-        console.error('데이터 로드 실패:', err);
-        setLoading(false);
-      });
+    // Import된 데이터를 직접 사용
+    setData(data);
+    setLoading(false);
 
     // 최초 방문 체크
     const hasSeenTutorial = localStorage.getItem('hasSeenTutorial');
