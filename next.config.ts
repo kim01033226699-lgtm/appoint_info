@@ -7,6 +7,12 @@ const nextConfig: NextConfig = {
     unoptimized: true,
   },
   basePath: '',
+  trailingSlash: true,
+  assetPrefix: '',
+  distDir: 'out',
+  generateBuildId: async () => {
+    return 'build-' + Date.now()
+  }
 };
 
 export default nextConfig;
