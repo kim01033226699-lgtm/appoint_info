@@ -22,28 +22,58 @@ interface CalendarModalProps {
   events: CalendarEvent[];
 }
 
-const EVENT_TYPE_COLORS = {
-  goodrich: 'bg-green-500',
-  company: 'bg-cyan-500',
-  session: 'bg-purple-500',
+// 이벤트 배경색 결정 함수
+const getEventColor = (event: CalendarEvent): string => {
+  // 협회: 회색
+  if (event.type === 'session') {
+    return 'bg-gray-500';
+  }
+  // 굿리치: 주황색
+  if (event.type === 'goodrich') {
+    return 'bg-orange-500';
+  }
+  // 위촉: 파란색
+  if (event.title.includes('[위촉]')) {
+    return 'bg-blue-600';
+  }
+  // 해촉: 연한 파란색
+  if (event.title.includes('[해촉]')) {
+    return 'bg-blue-300';
+  }
+  // 기본값
+  return 'bg-cyan-500';
+};
+
+// 이벤트 텍스트 색상 결정 함수 (연한 배경의 경우 어두운 텍스트 사용)
+const getEventTextColor = (event: CalendarEvent): string => {
+  // 해촉: 연한 파란색 배경이므로 어두운 텍스트 사용
+  if (event.title.includes('[해촉]')) {
+    return 'text-blue-900';
+  }
+  // 나머지는 흰색 텍스트
+  return 'text-white';
 };
 
 // 이벤트 정렬 우선순위 함수
 const getEventPriority = (event: CalendarEvent): number => {
-  // 1. 굿리치/협회
-  if (event.type === 'goodrich' || event.type === 'session') {
+  // 1. 협회
+  if (event.type === 'session') {
     return 1;
   }
-  // 2. 위촉
-  if (event.title.includes('[위촉]')) {
+  // 2. 굿리치
+  if (event.type === 'goodrich') {
     return 2;
   }
-  // 3. 해촉
-  if (event.title.includes('[해촉]')) {
+  // 3. 위촉
+  if (event.title.includes('[위촉]')) {
     return 3;
   }
-  // 4. 나머지
-  return 4;
+  // 4. 해촉
+  if (event.title.includes('[해촉]')) {
+    return 4;
+  }
+  // 5. 나머지
+  return 5;
 };
 
 // 이벤트 배열 정렬 함수
@@ -180,8 +210,9 @@ export default function CalendarModal({ open, onOpenChange, events }: CalendarMo
                       <div
                         key={idx}
                         className={cn(
-                          "text-xs px-1 py-0.5 rounded text-white truncate",
-                          EVENT_TYPE_COLORS[event.type]
+                          "text-xs px-1 py-0.5 rounded truncate",
+                          getEventColor(event),
+                          getEventTextColor(event)
                         )}
                         title={event.title}
                       >
@@ -217,8 +248,9 @@ export default function CalendarModal({ open, onOpenChange, events }: CalendarMo
                     <div
                       key={eventIdx}
                       className={cn(
-                        "p-3 rounded-lg text-white",
-                        EVENT_TYPE_COLORS[event.type]
+                        "p-3 rounded-lg",
+                        getEventColor(event),
+                        getEventTextColor(event)
                       )}
                     >
                       <div className="font-medium text-sm">{event.title}</div>
@@ -251,8 +283,9 @@ export default function CalendarModal({ open, onOpenChange, events }: CalendarMo
               <div
                 key={idx}
                 className={cn(
-                  "p-3 rounded-lg text-white",
-                  EVENT_TYPE_COLORS[event.type]
+                  "p-3 rounded-lg",
+                  getEventColor(event),
+                  getEventTextColor(event)
                 )}
               >
                 <div className="font-medium">{event.title}</div>
