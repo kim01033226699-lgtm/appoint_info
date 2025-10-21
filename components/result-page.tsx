@@ -17,7 +17,8 @@ export default function ResultPage({ selectedDate }: ResultPageProps) {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch('/data.json')
+    const basePath = process.env.__NEXT_ROUTER_BASEPATH || '';
+    fetch(`${basePath}/data.json`)
       .then(res => res.json())
       .then((data: SheetData) => {
         if (!data.schedules || data.schedules.length === 0) {

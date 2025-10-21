@@ -30,12 +30,13 @@ export default function MainPage() {
 
   useEffect(() => {
     console.log('MainPage useEffect 실행');
-    
+
     // fetch를 사용하여 데이터 로드
     const loadData = async () => {
       try {
         console.log('데이터 fetch 시작');
-        const response = await fetch('/data.json');
+        const basePath = process.env.__NEXT_ROUTER_BASEPATH || '';
+        const response = await fetch(`${basePath}/data.json`);
         console.log('fetch 응답:', response);
         
         if (!response.ok) {
