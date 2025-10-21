@@ -29,9 +29,18 @@ export default function MainPage() {
   const [showTutorial, setShowTutorial] = useState(false);
 
   useEffect(() => {
+    console.log('MainPage useEffect 실행');
+    console.log('sheetDataJson:', sheetDataJson);
+    
     // Import된 JSON 데이터를 상태에 주입
-    setData(sheetDataJson as SheetData);
-    setLoading(false);
+    if (sheetDataJson) {
+      console.log('데이터 로딩 성공:', sheetDataJson);
+      setData(sheetDataJson as SheetData);
+      setLoading(false);
+    } else {
+      console.error('데이터 로딩 실패: sheetDataJson이 없습니다');
+      setLoading(false);
+    }
 
     // 최초 방문 체크
     const hasSeenTutorial = localStorage.getItem('hasSeenTutorial');
@@ -86,7 +95,18 @@ export default function MainPage() {
   if (!data) {
     return (
       <div className="min-h-screen bg-gray-50 p-4 md:p-8 flex items-center justify-center">
-        <div className="text-red-600">데이터를 불러올 수 없습니다.</div>
+        <div className="text-center">
+          <div className="text-red-500 text-6xl mb-4">⚠️</div>
+          <h2 className="text-xl font-semibold text-gray-800 mb-2">데이터 로딩 실패</h2>
+          <p className="text-gray-600 mb-4">데이터를 불러올 수 없습니다.</p>
+          <p className="text-sm text-gray-500 mb-4">브라우저 개발자 도구 콘솔을 확인해주세요.</p>
+          <button 
+            onClick={() => window.location.reload()} 
+            className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700"
+          >
+            페이지 새로고침
+          </button>
+        </div>
       </div>
     );
   }
