@@ -12,9 +12,6 @@ const nextConfig: NextConfig = {
   distDir: 'out',
   generateBuildId: async () => {
     return 'static'
-  },
-  experimental: {
-    esmExternals: false
   }
 };
 

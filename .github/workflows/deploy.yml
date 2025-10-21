@@ -41,6 +41,13 @@ jobs:
         path: ./out
         retention-days: 1
         
+    - name: Debug - List files in out directory
+      run: |
+        echo "Files in out directory:"
+        ls -la ./out/
+        echo "Files in out/_next directory:"
+        ls -la ./out/_next/ || echo "_next directory not found"
+        
     - name: Deploy to GitHub Pages
       id: deployment
       uses: actions/deploy-pages@v4
