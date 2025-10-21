@@ -11,7 +11,10 @@ const nextConfig: NextConfig = {
   assetPrefix: '',
   distDir: 'out',
   generateBuildId: async () => {
-    return 'build-' + Date.now()
+    return 'static'
+  },
+  experimental: {
+    esmExternals: false
   }
 };
 

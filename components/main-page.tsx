@@ -15,7 +15,7 @@ import { cn } from "@/lib/utils";
 import type { SheetData } from "@/lib/types";
 import CalendarModal from "@/components/calendar-modal";
 import TutorialOverlay from "@/components/tutorial-overlay";
-import sheetDataJson from "@/public/data.json";
+// import sheetDataJson from "@/public/data.json";
 
 export default function MainPage() {
   const router = useRouter();
@@ -30,17 +30,29 @@ export default function MainPage() {
 
   useEffect(() => {
     console.log('MainPage useEffect 실행');
-    console.log('sheetDataJson:', sheetDataJson);
     
-    // Import된 JSON 데이터를 상태에 주입
-    if (sheetDataJson) {
-      console.log('데이터 로딩 성공:', sheetDataJson);
-      setData(sheetDataJson as SheetData);
-      setLoading(false);
-    } else {
-      console.error('데이터 로딩 실패: sheetDataJson이 없습니다');
-      setLoading(false);
-    }
+    // fetch를 사용하여 데이터 로드
+    const loadData = async () => {
+      try {
+        console.log('데이터 fetch 시작');
+        const response = await fetch('/data.json');
+        console.log('fetch 응답:', response);
+        
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        
+        const jsonData = await response.json();
+        console.log('데이터 로딩 성공:', jsonData);
+        setData(jsonData as SheetData);
+        setLoading(false);
+      } catch (error) {
+        console.error('데이터 로딩 실패:', error);
+        setLoading(false);
+      }
+    };
+
+    loadData();
 
     // 최초 방문 체크
     const hasSeenTutorial = localStorage.getItem('hasSeenTutorial');
