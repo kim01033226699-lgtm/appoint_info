@@ -28,7 +28,13 @@ jobs:
         
     - name: Install dependencies
       run: npm ci
-        
+
+    - name: Fetch Google Sheets data
+      env:
+        GOOGLE_SHEETS_API_KEY: ${{ secrets.GOOGLE_SHEETS_API_KEY }}
+        GOOGLE_SHEETS_SPREADSHEET_ID: ${{ secrets.GOOGLE_SHEETS_SPREADSHEET_ID }}
+      run: npm run fetch-data
+
     - name: Build
       run: npm run build
         
