@@ -6,9 +6,9 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: '',
+  basePath: '/appoint_info',
   trailingSlash: true,
-  assetPrefix: '',
+  assetPrefix: '/appoint_info',
   distDir: 'out',
   generateBuildId: async () => {
     return 'static'
