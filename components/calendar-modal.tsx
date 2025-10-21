@@ -28,6 +28,31 @@ const EVENT_TYPE_COLORS = {
   session: 'bg-purple-500',
 };
 
+// 이벤트 정렬 우선순위 함수
+const getEventPriority = (event: CalendarEvent): number => {
+  // 1. 굿리치/협회
+  if (event.type === 'goodrich' || event.type === 'session') {
+    return 1;
+  }
+  // 2. 위촉
+  if (event.title.includes('[위촉]')) {
+    return 2;
+  }
+  // 3. 해촉
+  if (event.title.includes('[해촉]')) {
+    return 3;
+  }
+  // 4. 나머지
+  return 4;
+};
+
+// 이벤트 배열 정렬 함수
+const sortEventsByPriority = (events: CalendarEvent[]): CalendarEvent[] => {
+  return events.slice().sort((a, b) => {
+    return getEventPriority(a) - getEventPriority(b);
+  });
+};
+
 export default function CalendarModal({ open, onOpenChange, events }: CalendarModalProps) {
   const [currentDate, setCurrentDate] = useState(new Date());
   const [selectedDate, setSelectedDate] = useState<Date | null>(null);
@@ -71,12 +96,17 @@ export default function CalendarModal({ open, onOpenChange, events }: CalendarMo
       }
       map.get(key)!.push(event);
     });
-    return Array.from(map.entries());
+    // 각 날짜별로 이벤트를 우선순위에 따라 정렬
+    const entries = Array.from(map.entries()).map(([date, events]) => {
+      return [date, sortEventsByPriority(events)] as [string, CalendarEvent[]];
+    });
+    return entries;
   }, [sortedEvents]);
 
   const getEventsForDate = (date: Date): CalendarEvent[] => {
     const dateStr = format(date, 'yyyy-MM-dd');
-    return eventsByDate.get(dateStr) || [];
+    const events = eventsByDate.get(dateStr) || [];
+    return sortEventsByPriority(events);
   };
 
   const handlePrevMonth = () => {
