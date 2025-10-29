@@ -151,7 +151,7 @@ export default function ResultPage({ selectedDate }: ResultPageProps) {
         <div id="result-content">
           {/* 헤더 */}
           <h1 className="text-2xl md:text-3xl font-bold text-center mb-8">
-            위촉일정:{schedule.round}({schedule.gpOpenDate})
+            위촉일정:{schedule.round}차({schedule.gpOpenDate})
           </h1>
 
           {/* 굿리치/손보코드 */}
@@ -205,7 +205,7 @@ export default function ResultPage({ selectedDate }: ResultPageProps) {
                     {schedule.companies.map((company, index) => (
                       <tr key={index} className="hover:bg-gray-50">
                         <td className="border border-gray-300 p-2">{company.company}</td>
-                        <td className="border border-gray-300 p-2">{company.round}</td>
+                        <td className="border border-gray-300 p-2">{company.round}차</td>
                         <td className="border border-gray-300 p-2">{company.acceptanceDeadline}</td>
                         <td className="border border-gray-300 p-2">{company.gpUploadDate}</td>
                         <td className="border border-gray-300 p-2">{company.recruitmentMethod}</td>
