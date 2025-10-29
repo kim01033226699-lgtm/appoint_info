@@ -344,7 +344,7 @@ function parseSchedules(inputRows, memoMap) {
           recruitmentMethod: info.memo,
           manager: info.manager,
         });
-        break;
+        // break 제거: 모든 매칭되는 차수에 추가
       }
     }
   }
