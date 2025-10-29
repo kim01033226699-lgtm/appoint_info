@@ -9,7 +9,7 @@ const INPUT_SHEET_NAME_AND_RANGE = '입력!A2:F';
 const MEMO_SHEET_NAME_AND_RANGE = '위촉문자!A2:D';
 const ADMIN_SHEET_NAME_AND_RANGE = '설정!A2:B';
 
-async function fetchData(filterDateString = null) {
+async function fetchData() {
   try {
     console.log('🔄 구글 시트에서 데이터를 가져오는 중...');
 
@@ -61,25 +61,11 @@ async function fetchData(filterDateString = null) {
     const inputRows = inputRes?.data?.values;
     const memoRows = memoRes?.data?.values;
 
-    // 필터링 날짜 파싱 (yyyy-mm-dd 또는 mm/dd 등의 형식)
-    let filterDate = null;
-    if (filterDateString) {
-      filterDate = parseSheetDate(filterDateString);
-      if (filterDate) {
-        console.log(`🔍 특정 날짜 '${formatDateISO(filterDate)}' 기준으로 데이터 필터링...`);
-      } else {
-        console.warn(`⚠️ 경고: 유효하지 않은 필터 날짜 '${filterDateString}'입니다. 모든 데이터를 가져옵니다.`);
-      }
-    } else {
-        console.log('🔍 필터 날짜가 지정되지 않았습니다. 모든 데이터를 가져옵니다.');
-    }
-
-
     // 데이터 파싱
     const adminSettings = parseAdminSettings(adminRows);
     const memoMap = buildMemoMap(memoRows);
-    const schedules = parseSchedules(inputRows, memoMap, filterDate); // filterDate 전달
-    const calendarEvents = parseCalendarEvents(inputRows, filterDate); // filterDate 전달
+    const schedules = parseSchedules(inputRows, memoMap);
+    const calendarEvents = parseCalendarEvents(inputRows);
 
     const data = {
       requiredDocuments: adminSettings.guidance,
@@ -110,15 +96,6 @@ async function fetchData(filterDateString = null) {
     process.exit(1);
   }
 }
-
-// 두 Date 객체가 같은 날짜인지 (UTC 기준) 확인하는 헬퍼 함수
-function isSameDay(date1, date2) {
-  if (!date1 || !date2) return false;
-  return date1.getUTCFullYear() === date2.getUTCFullYear() &&
-         date1.getUTCMonth() === date2.getUTCMonth() &&
-         date1.getUTCDate() === date2.getUTCDate();
-}
-
 
 // 날짜 파싱 함수 (제공된 코드 기반)
 function parseSheetDate(value) {
@@ -194,31 +171,13 @@ function formatDateISO(date) {
   return `${year}-${month}-${day}`;
 }
 
-// ✨ 수정된 부분: 차수 문자열을 비교를 위해 표준화하는 헬퍼 함수
-function normalizeRoundForComparison(roundStr) {
-    if (typeof roundStr !== 'string') return '';
-    return roundStr
-        .trim()
-        .replace(/\s+/g, '') // 모든 공백 제거
-        .replace(/[차치챠]$/, ''); // '차', '치', '챠'를 문자열 끝에서만 제거
-}
-
-// ✨ 수정된 부분: 차수를 더 유연하게 매칭하는 함수
-// 콤마(,), 슬래시(/), 점(.)으로 구분된 여러 차수 중 하나라도 일치하면 매칭 성공
 function matchRound(targetRound, roundField) {
   if (!targetRound || !roundField) return false;
-
-  const normalizedTarget = normalizeRoundForComparison(targetRound);
-  if (!normalizedTarget) return false; // 타겟 차수가 표준화 후 비어있으면 매칭 불가
-
-  // roundField를 쉼표(,), 슬래시(/), 점(.) 기준으로 분리합니다.
-  const potentialRoundSegments = String(roundField)
-    .split(/[,/.]/) // <-- 점(.) 추가
-    .map(segment => normalizeRoundForComparison(segment)); // 각 분리된 항목도 표준화
-
-  // 어떤 분리된 항목이라도 표준화된 타겟 차수와 정확히 일치하는지 확인합니다.
-  return potentialRoundSegments.some(segment => {
-    return segment !== '' && segment === normalizedTarget;
+  const normalizedTargetRound = targetRound.trim().replace(/차$/, '');
+  const roundList = String(roundField).replace(/\s/g, '').replace(/[/|,]/g, ',').split(',');
+  return roundList.some(r => {
+    const normalizedRoundItem = r.trim().replace(/차$/, '');
+    return normalizedRoundItem !== '' && normalizedRoundItem === normalizedTargetRound;
   });
 }
 
@@ -277,141 +236,102 @@ function parseAdminSettings(rows) {
   };
 }
 
-
-function parseSchedules(inputRows, memoMap, filterDate = null) {
+function parseSchedules(inputRows, memoMap) {
   if (!inputRows || inputRows.length === 0) return [];
 
   const scheduleMap = new Map();
-  const roundKeyDates = new Map(); // 각 차수별 GP 오픈일과 마감일을 Date 객체로 저장
 
-  // --- 1차 순회: 모든 차수의 GP 오픈일과 마감일(Date 객체)을 수집 ---
-  // 이 단계에서 `filterDate`로 필터링하지 않고 모든 차수의 주요 날짜를 파악합니다.
+  // 굿리치 일정에서 차수와 GP 오픈 일정 추출
   for (const row of inputRows) {
     const rawDate = row?.[0];
     const category = String(row?.[1] || '');
     const round = String(row?.[3] || '');
     const content = String(row?.[4] || '');
 
+    if (!category.includes('굿리치')) continue;
+    if (!content.includes('GP 오픈 예정')) continue;
+
     const rowDate = parseSheetDate(rawDate);
     if (!rowDate) continue;
 
-    // ✨ 수정: 차수 값 정규화 시, split 로직에도 점(.) 추가
-    // D열의 값이 "1-1,1-2차" 라면 "1-1"만으로 차수 맵을 구성.
-    // "1-1.1-2차" 라면 "1-1"만으로 차수 맵을 구성.
-    // 'GP 오픈 예정'의 `round` 필드는 보통 단일 차수이거나, 여러 차수 중 첫 번째 차수를 대표하는 경우가 많으므로
-    // `split(/[,/.]/)[0]`를 사용하여 첫 번째 차수만 키로 사용합니다.
-    const primaryRoundForMap = normalizeRoundForComparison(round.trim().split(/[,/.]/)[0]);
-    if (!primaryRoundForMap) continue;
+    const targetRound = round.trim().split(/[/|,]/)[0];
 
-    if (!roundKeyDates.has(primaryRoundForMap)) {
-      roundKeyDates.set(primaryRoundForMap, { gpOpenDate: null, deadlineDate: null, gpOpenContent: '' });
-    }
+    if (!scheduleMap.has(targetRound)) {
+      // GP 오픈 일정 추출
+      const lines = content.split('\n');
+      const gpLine = lines.find(line => line.includes('GP 오픈 예정'));
+      let gpOpenDate = '';
+      let gpOpenTime = '';
 
-    // GP 오픈 예정일 추출
-    if (category.includes('굿리치') && content.includes('GP 오픈 예정')) {
-      roundKeyDates.get(primaryRoundForMap).gpOpenDate = rowDate;
-      roundKeyDates.get(primaryRoundForMap).gpOpenContent = content; // 나중에 GP 오픈 시간 추출을 위해 원본 content 저장
-    }
-    // 자격추가/전산승인마감일 추출
-    if (category.includes('굿리치') && content.includes('자격추가/전산승인마감')) {
-      roundKeyDates.get(primaryRoundForMap).deadlineDate = rowDate;
-    }
-  }
-
-  // --- 차수 필터링: filterDate에 해당하는 차수만 선별 ---
-  let relevantRounds = new Set(); // 여기에 저장되는 것은 맵의 키 (예: '1-1', '1-2')
-  if (filterDate) {
-    for (const [roundName, dates] of roundKeyDates.entries()) {
-      if (isSameDay(dates.gpOpenDate, filterDate) || isSameDay(dates.deadlineDate, filterDate)) {
-        relevantRounds.add(roundName);
+      if (gpLine) {
+        const match = gpLine.match(/(\d{1,2}\/\d{1,2}\([일월화수목금토]\))\s*GP\s*오픈\s*예정\s*\(([^)]+)\)/);
+        if (match) {
+          gpOpenDate = match[1];
+          gpOpenTime = match[2];
+        }
       }
+
+      // 마감일 추출
+      let deadline = '';
+      const deadlineContent = inputRows.find(r => {
+        const c = String(r?.[1] || '');
+        const rnd = String(r?.[3] || '');
+        const cnt = String(r?.[4] || '');
+        return c.includes('굿리치') && matchRound(targetRound, rnd) && cnt.includes('자격추가/전산승인마감');
+      });
+
+      if (deadlineContent) {
+        const deadlineDate = parseSheetDate(deadlineContent[0]);
+        if (deadlineDate) {
+          deadline = formatDateWithDay(deadlineDate);
+        }
+      }
+
+      scheduleMap.set(targetRound, {
+        round: targetRound,
+        deadline: deadline,
+        gpOpenDate: gpOpenDate,
+        gpOpenTime: gpOpenTime,
+        companies: [],
+      });
     }
-    if (relevantRounds.size === 0) {
-        console.log(`   - 특정 날짜 '${formatDateISO(filterDate)}'에 해당하는 위촉일정 차수가 없습니다.`);
-        return []; // 필터링된 차수가 없으면 빈 배열 반환
-    }
-  } else {
-    // filterDate가 없으면 모든 차수가 관련 차수가 됨
-    relevantRounds = new Set(roundKeyDates.keys());
   }
 
-  // --- 2차 순회: 필터링된 차수를 기반으로 최종 schedules 객체 생성 및 보험사 정보 추가 ---
-  // scheduleMap에는 relevantRounds의 항목들만 채워질 것입니다.
-  for (const roundName of relevantRounds) {
-    const dates = roundKeyDates.get(roundName);
-    const gpOpenDateFormatted = formatDateWithDay(dates.gpOpenDate);
-    const deadlineFormatted = formatDateWithDay(dates.deadlineDate);
-
-    let gpOpenTime = '';
-    const gpMatch = dates.gpOpenContent.match(/GP\s*오픈\s*예정\s*\(([^)]+)\)/);
-    if (gpMatch && gpMatch[1]) {
-        gpOpenTime = gpMatch[1];
-    }
-
-    scheduleMap.set(roundName, {
-      round: roundName, // 맵의 키 (예: '1-1')가 최종 round 필드가 됩니다.
-      deadline: deadlineFormatted,
-      gpOpenDate: gpOpenDateFormatted,
-      gpOpenTime: gpOpenTime,
-      companies: [],
-    });
-  }
-
-  // 이제 각 차수에 해당하는 보험사 정보를 채웁니다.
-  // 이 루프에서는 inputRows의 모든 행을 다시 검사하여, 필터링된 차수에 맞는 보험사 정보를 찾습니다.
+  // 생명보험사 위촉 일정 추가
   for (const row of inputRows) {
-    const rawDate = row?.[0]; // 위촉 접수마감일 (Acceptance Deadline)
+    const rawDate = row?.[0];
     const category = String(row?.[1] || '');
     const company = String(row?.[2] || '');
-    const sheetRoundValue = String(row?.[3] || ''); // D열의 원본 차수 값 (예: "1-1,1-2차" 또는 "1-1.1-2차")
-    const gpUpload = row?.[5]; // GP 업로드일
+    const round = String(row?.[3] || '');
+    const gpUpload = row?.[5];
 
-    if (!category.includes('위촉') || !company) continue;
+    if (!category.includes('위촉')) continue;
+    if (!company) continue;
 
-    // 필터링된 차수(relevantRounds)에 속하는지 확인
-    // relevantRounds의 각 roundName (예: '1-1')이 sheetRoundValue (예: '1-1,1-2차')와 매칭되는지 확인
-    for (const targetRoundNameFromRelevant of relevantRounds) {
-      if (matchRound(targetRoundNameFromRelevant, sheetRoundValue) && scheduleMap.has(targetRoundNameFromRelevant)) {
+    const targetRounds = Array.from(scheduleMap.keys());
+    for (const targetRound of targetRounds) {
+      if (matchRound(targetRound, round)) {
         const sDate = parseSheetDate(rawDate);
-        const gpUploadDate = parseSheetDate(gpUpload);
         const companyKey = company.trim().toLowerCase();
         const info = memoMap[companyKey] || { memo: '', manager: '' };
 
-        scheduleMap.get(targetRoundNameFromRelevant).companies.push({
+        scheduleMap.get(targetRound).companies.push({
           company: company,
-          round: targetRoundNameFromRelevant, // 이 보험사가 속한 차수는 필터링된 차수 이름 (예: '1-1')
+          round: targetRound,
           acceptanceDeadline: formatDateWithDay(sDate),
-          gpUploadDate: formatDateWithDay(gpUploadDate),
+          gpUploadDate: formatDateWithDay(parseSheetDate(gpUpload)),
           recruitmentMethod: info.memo,
           manager: info.manager,
         });
-        break; // 해당 보험사는 하나의 차수에만 속한다고 가정하고 다음 행으로 넘어감
+        break;
       }
     }
   }
 
-  // 최종 결과를 날짜 순으로 정렬 (GP 오픈일 > 마감일)
-  const sortedSchedules = Array.from(scheduleMap.values()).sort((a, b) => {
-    // roundKeyDates는 모든 차수의 날짜 정보를 가지고 있으므로 여기서 가져옵니다.
-    const datesA = roundKeyDates.get(a.round);
-    const datesB = roundKeyDates.get(b.round);
-
-    const dateA = datesA?.gpOpenDate || datesA?.deadlineDate;
-    const dateB = datesB?.gpOpenDate || datesB?.deadlineDate;
-
-    if (dateA && dateB) {
-      return dateA.getTime() - dateB.getTime();
-    }
-    if (dateA) return -1; // dateA만 있으면 먼저
-    if (dateB) return 1;  // dateB만 있으면 나중에
-    return 0;
-  });
-
-  return sortedSchedules;
+  return Array.from(scheduleMap.values());
 }
 
-
-function parseCalendarEvents(inputRows, filterDate = null) {
+function parseCalendarEvents(inputRows) {
   if (!inputRows || inputRows.length === 0) return [];
 
   const events = [];
@@ -421,11 +341,6 @@ function parseCalendarEvents(inputRows, filterDate = null) {
     const rawDate = row?.[0];
     const date = parseSheetDate(rawDate);
     if (!date) continue;
-
-    // filterDate가 있을 경우, 해당 날짜와 일치하는 이벤트만 포함
-    if (filterDate && !isSameDay(date, filterDate)) {
-        continue;
-    }
 
     const category = String(row?.[1] || '').trim();
     const company = String(row?.[2] || '').trim();
@@ -456,11 +371,7 @@ function parseCalendarEvents(inputRows, filterDate = null) {
   return events;
 }
 
-// 스크립트 실행 부분
-// 환경 변수 FILTER_DATE를 읽어 fetchData에 전달합니다.
-// 예시: FILTER_DATE=2023-10-26 node your_script_name.js
-const filterDateFromEnv = process.env.FILTER_DATE;
-fetchData(filterDateFromEnv).catch((error) => {
+fetchData().catch((error) => {
   console.error('예상치 못한 오류:', error);
   process.exit(1);
 });
