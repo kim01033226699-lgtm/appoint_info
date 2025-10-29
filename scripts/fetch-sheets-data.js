@@ -173,10 +173,23 @@ function formatDateISO(date) {
 
 function matchRound(targetRound, roundField) {
   if (!targetRound || !roundField) return false;
-  const normalizedTargetRound = targetRound.trim().replace(/차$/, '');
-  const roundList = String(roundField).replace(/\s/g, '').replace(/[/|,]/g, ',').split(',');
+
+  // 타겟 차수 정규화: "9-4차" -> "9-4"
+  const normalizedTargetRound = targetRound.trim()
+    .replace(/\s/g, '') // 공백 제거
+    .replace(/[차치]/g, ''); // "차", "치" 제거 (끝뿐만 아니라 모든 위치)
+
+  // 입력 필드 정규화
+  const normalizedField = String(roundField)
+    .replace(/\s/g, '') // 공백 제거
+    .replace(/[차치]/g, '') // "차", "치" 모두 제거 (split 전에!)
+    .replace(/[/|]/g, ','); // "/" 또는 "|"를 ","로 변환
+
+  // 쉼표로 분리
+  const roundList = normalizedField.split(',').filter(r => r.trim() !== '');
+
   return roundList.some(r => {
-    const normalizedRoundItem = r.trim().replace(/차$/, '');
+    const normalizedRoundItem = r.trim();
     return normalizedRoundItem !== '' && normalizedRoundItem === normalizedTargetRound;
   });
 }
