@@ -27,52 +27,53 @@ export default function ResultPage({ selectedDate }: ResultPageProps) {
         }
 
         const selectedDateObj = new Date(selectedDate);
+        const normalizedSelectedDate = new Date(Date.UTC(selectedDateObj.getFullYear(), selectedDateObj.getMonth(), selectedDateObj.getDate()));
 
-        // GP 오픈 예정이 있는 굿리치 이벤트만 필터링
-        const gpOpenEvents = data.calendarEvents.filter(event =>
-          event.type === 'goodrich' &&
-          event.title.includes('GP 오픈') &&
-          event.title.match(/(\d+)월(\d+)차/) // 차수 정보가 있는 것만
-        );
-
-        // 선택한 날짜와 가장 가까운 이벤트 찾기 (거리 제한 없음)
-        let closestEvent = null;
-        let minDaysDiff = Infinity;
-
-        for (const event of gpOpenEvents) {
+        // 선택한 날짜 이후의 자격추가/전산승인마감 이벤트 찾기
+        const candidates = data.calendarEvents.filter(event => {
           const eventDate = new Date(event.date);
-          const daysDiff = Math.floor((eventDate.getTime() - selectedDateObj.getTime()) / (1000 * 60 * 60 * 24));
+          const normalizedEventDate = new Date(Date.UTC(eventDate.getFullYear(), eventDate.getMonth(), eventDate.getDate()));
 
-          // 절대 거리가 가장 가까운 이벤트 찾기
-          if (Math.abs(daysDiff) < Math.abs(minDaysDiff)) {
-            minDaysDiff = daysDiff;
-            closestEvent = event;
-          }
+          const isCandidateContent = event.title.includes('자격추가/전산승인마감') ||
+                                     event.title.includes('자격추가') ||
+                                     event.title.includes('전산승인마감');
+
+          return normalizedEventDate.getTime() >= normalizedSelectedDate.getTime() &&
+                 event.type === 'goodrich' &&
+                 isCandidateContent &&
+                 event.title.match(/(\d+)월(\d+)차/);
+        });
+
+        if (candidates.length === 0) {
+          console.warn(`선택한 날짜 ${selectedDate} 이후의 일정을 찾을 수 없습니다.`);
+          setSchedule(data.schedules[0] || null);
+          setLoading(false);
+          return;
         }
+
+        // 날짜순 정렬 후 가장 빠른 것 선택
+        candidates.sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime());
+        const closestEvent = candidates[0];
 
         let foundSchedule = data.schedules[0]; // 기본값
 
-        if (closestEvent) {
-          // title에서 차수 추출: "▶9월4차[위촉]: 9/22(월) GP 오픈..." 형식
-          const roundMatch = closestEvent.title.match(/(\d+)월(\d+)차/);
+        // title에서 차수 추출: "▶9월4차[위촉]: ..." 형식
+        const roundMatch = closestEvent.title.match(/(\d+)월(\d+)차/);
 
-          if (roundMatch) {
-            const month = roundMatch[1];
-            const round = roundMatch[2];
-            // "9월4차" → "9-4차" 형식으로 변환
-            const targetRound = `${month}-${round}차`;
+        if (roundMatch) {
+          const month = roundMatch[1];
+          const round = roundMatch[2];
+          // "9월4차" → "9-4" 형식으로 변환 (schedules의 round와 매칭)
+          const targetRound = `${month}-${round}`;
 
-            console.log(`선택한 날짜: ${selectedDate}, 가장 가까운 이벤트 날짜: ${closestEvent.date}, 찾은 차수: ${targetRound}`);
+          console.log(`선택한 날짜: ${selectedDate}, 찾은 이벤트: ${closestEvent.date}, 차수: ${targetRound}`);
 
-            const matchedSchedule = data.schedules.find(s => s.round === targetRound);
-            if (matchedSchedule) {
-              foundSchedule = matchedSchedule;
-            } else {
-              console.warn(`차수 ${targetRound}에 해당하는 스케줄을 찾을 수 없습니다.`);
-            }
+          const matchedSchedule = data.schedules.find(s => s.round === targetRound || s.round === `${targetRound}차`);
+          if (matchedSchedule) {
+            foundSchedule = matchedSchedule;
+          } else {
+            console.warn(`차수 ${targetRound}에 해당하는 스케줄을 찾을 수 없습니다.`);
           }
-        } else {
-          console.warn(`선택한 날짜 ${selectedDate} 주변에 GP 오픈 일정을 찾을 수 없습니다.`);
         }
 
         setSchedule(foundSchedule);
