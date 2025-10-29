@@ -267,46 +267,54 @@ function parseSchedules(inputRows, memoMap) {
     const rowDate = parseSheetDate(rawDate);
     if (!rowDate) continue;
 
-    const targetRound = round.trim().split(/[/|,]/)[0];
+    // 차수를 분리: "11-1,11-2차" → ["11-1", "11-2"]
+    const normalizedRound = round.trim()
+      .replace(/\s/g, '')
+      .replace(/[차치]/g, '')
+      .replace(/[/|]/g, ',');
+    const targetRounds = normalizedRound.split(',').filter(r => r.trim() !== '');
 
-    if (!scheduleMap.has(targetRound)) {
-      // GP 오픈 일정 추출
-      const lines = content.split('\n');
-      const gpLine = lines.find(line => line.includes('GP 오픈 예정'));
-      let gpOpenDate = '';
-      let gpOpenTime = '';
+    // 각 차수마다 schedule 등록
+    for (const targetRound of targetRounds) {
+      if (!scheduleMap.has(targetRound)) {
+        // GP 오픈 일정 추출
+        const lines = content.split('\n');
+        const gpLine = lines.find(line => line.includes('GP 오픈 예정'));
+        let gpOpenDate = '';
+        let gpOpenTime = '';
 
-      if (gpLine) {
-        const match = gpLine.match(/(\d{1,2}\/\d{1,2}\([일월화수목금토]\))\s*GP\s*오픈\s*예정\s*\(([^)]+)\)/);
-        if (match) {
-          gpOpenDate = match[1];
-          gpOpenTime = match[2];
+        if (gpLine) {
+          const match = gpLine.match(/(\d{1,2}\/\d{1,2}\([일월화수목금토]\))\s*GP\s*오픈\s*예정\s*\(([^)]+)\)/);
+          if (match) {
+            gpOpenDate = match[1];
+            gpOpenTime = match[2];
+          }
         }
-      }
 
-      // 마감일 추출
-      let deadline = '';
-      const deadlineContent = inputRows.find(r => {
-        const c = String(r?.[1] || '');
-        const rnd = String(r?.[3] || '');
-        const cnt = String(r?.[4] || '');
-        return c.includes('굿리치') && matchRound(targetRound, rnd) && cnt.includes('자격추가/전산승인마감');
-      });
+        // 마감일 추출
+        let deadline = '';
+        const deadlineContent = inputRows.find(r => {
+          const c = String(r?.[1] || '');
+          const rnd = String(r?.[3] || '');
+          const cnt = String(r?.[4] || '');
+          return c.includes('굿리치') && matchRound(targetRound, rnd) && cnt.includes('자격추가/전산승인마감');
+        });
 
-      if (deadlineContent) {
-        const deadlineDate = parseSheetDate(deadlineContent[0]);
-        if (deadlineDate) {
-          deadline = formatDateWithDay(deadlineDate);
+        if (deadlineContent) {
+          const deadlineDate = parseSheetDate(deadlineContent[0]);
+          if (deadlineDate) {
+            deadline = formatDateWithDay(deadlineDate);
+          }
         }
-      }
 
-      scheduleMap.set(targetRound, {
-        round: targetRound,
-        deadline: deadline,
-        gpOpenDate: gpOpenDate,
-        gpOpenTime: gpOpenTime,
-        companies: [],
-      });
+        scheduleMap.set(targetRound, {
+          round: targetRound,
+          deadline: deadline,
+          gpOpenDate: gpOpenDate,
+          gpOpenTime: gpOpenTime,
+          companies: [],
+        });
+      }
     }
   }
 
