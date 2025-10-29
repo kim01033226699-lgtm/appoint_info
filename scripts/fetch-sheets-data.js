@@ -9,7 +9,7 @@ const INPUT_SHEET_NAME_AND_RANGE = '입력!A2:F';
 const MEMO_SHEET_NAME_AND_RANGE = '위촉문자!A2:D';
 const ADMIN_SHEET_NAME_AND_RANGE = '설정!A2:B';
 
-async function fetchData(filterDateString = null) { // filterDateString 파라미터 추가
+async function fetchData(filterDateString = null) {
   try {
     console.log('🔄 구글 시트에서 데이터를 가져오는 중...');
 
@@ -194,13 +194,32 @@ function formatDateISO(date) {
   return `${year}-${month}-${day}`;
 }
 
+// ✨ 수정된 부분: 차수 문자열을 비교를 위해 표준화하는 헬퍼 함수
+function normalizeRoundForComparison(roundStr) {
+    if (typeof roundStr !== 'string') return '';
+    return roundStr
+        .trim()
+        .replace(/\s+/g, '') // 모든 공백 제거
+        .replace(/[차치챠]$/, ''); // '차', '치', '챠'를 문자열 끝에서만 제거
+}
+
+// ✨ 수정된 부분: 차수를 더 유연하게 매칭하는 함수
 function matchRound(targetRound, roundField) {
   if (!targetRound || !roundField) return false;
-  const normalizedTargetRound = targetRound.trim().replace(/차$/, '');
-  const roundList = String(roundField).replace(/\s/g, '').replace(/[/|,]/g, ',').split(',');
-  return roundList.some(r => {
-    const normalizedRoundItem = r.trim().replace(/차$/, '');
-    return normalizedRoundItem !== '' && normalizedRoundItem === normalizedTargetRound;
+
+  const normalizedTarget = normalizeRoundForComparison(targetRound);
+  if (!normalizedTarget) return false; // 타겟 차수가 표준화 후 비어있으면 매칭 불가
+
+  // roundField를 쉼표(,)나 슬래시(/) 기준으로 분리합니다.
+  // 점(.)은 "1-1.1-2차"처럼 차수 이름의 일부일 수 있으므로 분리하지 않습니다.
+  const potentialRoundSegments = String(roundField)
+    .split(/[,/]/)
+    .map(segment => normalizeRoundForComparison(segment)); // 각 분리된 항목도 표준화
+
+  // 어떤 분리된 항목이라도 표준화된 타겟 차수와 정확히 일치하거나 (===)
+  // 타겟 차수를 포함하는지 (.includes()) 확인합니다.
+  return potentialRoundSegments.some(segment => {
+    return segment !== '' && (segment === normalizedTarget || segment.includes(normalizedTarget));
   });
 }
 
@@ -260,7 +279,7 @@ function parseAdminSettings(rows) {
 }
 
 
-function parseSchedules(inputRows, memoMap, filterDate = null) { // filterDate 파라미터 추가
+function parseSchedules(inputRows, memoMap, filterDate = null) {
   if (!inputRows || inputRows.length === 0) return [];
 
   const scheduleMap = new Map();
@@ -277,7 +296,8 @@ function parseSchedules(inputRows, memoMap, filterDate = null) { // filterDate �
     const rowDate = parseSheetDate(rawDate);
     if (!rowDate) continue;
 
-    const targetRound = round.trim().split(/[/|,]/)[0];
+    // ✨ 수정: 차수 값 정규화
+    const targetRound = normalizeRoundForComparison(round.split(/[,/]/)[0]); // 첫 번째 차수만 일단 가져와 표준화
     if (!targetRound) continue;
 
     if (!roundKeyDates.has(targetRound)) {
@@ -385,7 +405,7 @@ function parseSchedules(inputRows, memoMap, filterDate = null) { // filterDate �
 }
 
 
-function parseCalendarEvents(inputRows, filterDate = null) { // filterDate 파라미터 추가
+function parseCalendarEvents(inputRows, filterDate = null) {
   if (!inputRows || inputRows.length === 0) return [];
 
   const events = [];
