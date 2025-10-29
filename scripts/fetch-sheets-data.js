@@ -204,22 +204,21 @@ function normalizeRoundForComparison(roundStr) {
 }
 
 // ✨ 수정된 부분: 차수를 더 유연하게 매칭하는 함수
+// 콤마(,), 슬래시(/), 점(.)으로 구분된 여러 차수 중 하나라도 일치하면 매칭 성공
 function matchRound(targetRound, roundField) {
   if (!targetRound || !roundField) return false;
 
   const normalizedTarget = normalizeRoundForComparison(targetRound);
   if (!normalizedTarget) return false; // 타겟 차수가 표준화 후 비어있으면 매칭 불가
 
-  // roundField를 쉼표(,)나 슬래시(/) 기준으로 분리합니다.
-  // 점(.)은 "1-1.1-2차"처럼 차수 이름의 일부일 수 있으므로 분리하지 않습니다.
+  // roundField를 쉼표(,), 슬래시(/), 점(.) 기준으로 분리합니다.
   const potentialRoundSegments = String(roundField)
-    .split(/[,/]/)
+    .split(/[,/.]/) // <-- 점(.) 추가
     .map(segment => normalizeRoundForComparison(segment)); // 각 분리된 항목도 표준화
 
-  // 어떤 분리된 항목이라도 표준화된 타겟 차수와 정확히 일치하거나 (===)
-  // 타겟 차수를 포함하는지 (.includes()) 확인합니다.
+  // 어떤 분리된 항목이라도 표준화된 타겟 차수와 정확히 일치하는지 확인합니다.
   return potentialRoundSegments.some(segment => {
-    return segment !== '' && (segment === normalizedTarget || segment.includes(normalizedTarget));
+    return segment !== '' && segment === normalizedTarget;
   });
 }
 
@@ -296,27 +295,31 @@ function parseSchedules(inputRows, memoMap, filterDate = null) {
     const rowDate = parseSheetDate(rawDate);
     if (!rowDate) continue;
 
-    // ✨ 수정: 차수 값 정규화
-    const targetRound = normalizeRoundForComparison(round.split(/[,/]/)[0]); // 첫 번째 차수만 일단 가져와 표준화
-    if (!targetRound) continue;
+    // ✨ 수정: 차수 값 정규화 시, split 로직에도 점(.) 추가
+    // D열의 값이 "1-1,1-2차" 라면 "1-1"만으로 차수 맵을 구성.
+    // "1-1.1-2차" 라면 "1-1"만으로 차수 맵을 구성.
+    // 'GP 오픈 예정'의 `round` 필드는 보통 단일 차수이거나, 여러 차수 중 첫 번째 차수를 대표하는 경우가 많으므로
+    // `split(/[,/.]/)[0]`를 사용하여 첫 번째 차수만 키로 사용합니다.
+    const primaryRoundForMap = normalizeRoundForComparison(round.trim().split(/[,/.]/)[0]);
+    if (!primaryRoundForMap) continue;
 
-    if (!roundKeyDates.has(targetRound)) {
-      roundKeyDates.set(targetRound, { gpOpenDate: null, deadlineDate: null, gpOpenContent: '' });
+    if (!roundKeyDates.has(primaryRoundForMap)) {
+      roundKeyDates.set(primaryRoundForMap, { gpOpenDate: null, deadlineDate: null, gpOpenContent: '' });
     }
 
     // GP 오픈 예정일 추출
     if (category.includes('굿리치') && content.includes('GP 오픈 예정')) {
-      roundKeyDates.get(targetRound).gpOpenDate = rowDate;
-      roundKeyDates.get(targetRound).gpOpenContent = content; // 나중에 GP 오픈 시간 추출을 위해 원본 content 저장
+      roundKeyDates.get(primaryRoundForMap).gpOpenDate = rowDate;
+      roundKeyDates.get(primaryRoundForMap).gpOpenContent = content; // 나중에 GP 오픈 시간 추출을 위해 원본 content 저장
     }
     // 자격추가/전산승인마감일 추출
     if (category.includes('굿리치') && content.includes('자격추가/전산승인마감')) {
-      roundKeyDates.get(targetRound).deadlineDate = rowDate;
+      roundKeyDates.get(primaryRoundForMap).deadlineDate = rowDate;
     }
   }
 
   // --- 차수 필터링: filterDate에 해당하는 차수만 선별 ---
-  let relevantRounds = new Set();
+  let relevantRounds = new Set(); // 여기에 저장되는 것은 맵의 키 (예: '1-1', '1-2')
   if (filterDate) {
     for (const [roundName, dates] of roundKeyDates.entries()) {
       if (isSameDay(dates.gpOpenDate, filterDate) || isSameDay(dates.deadlineDate, filterDate)) {
@@ -333,6 +336,7 @@ function parseSchedules(inputRows, memoMap, filterDate = null) {
   }
 
   // --- 2차 순회: 필터링된 차수를 기반으로 최종 schedules 객체 생성 및 보험사 정보 추가 ---
+  // scheduleMap에는 relevantRounds의 항목들만 채워질 것입니다.
   for (const roundName of relevantRounds) {
     const dates = roundKeyDates.get(roundName);
     const gpOpenDateFormatted = formatDateWithDay(dates.gpOpenDate);
@@ -344,9 +348,8 @@ function parseSchedules(inputRows, memoMap, filterDate = null) {
         gpOpenTime = gpMatch[1];
     }
 
-
     scheduleMap.set(roundName, {
-      round: roundName,
+      round: roundName, // 맵의 키 (예: '1-1')가 최종 round 필드가 됩니다.
       deadline: deadlineFormatted,
       gpOpenDate: gpOpenDateFormatted,
       gpOpenTime: gpOpenTime,
@@ -355,38 +358,41 @@ function parseSchedules(inputRows, memoMap, filterDate = null) {
   }
 
   // 이제 각 차수에 해당하는 보험사 정보를 채웁니다.
+  // 이 루프에서는 inputRows의 모든 행을 다시 검사하여, 필터링된 차수에 맞는 보험사 정보를 찾습니다.
   for (const row of inputRows) {
     const rawDate = row?.[0]; // 위촉 접수마감일 (Acceptance Deadline)
     const category = String(row?.[1] || '');
     const company = String(row?.[2] || '');
-    const round = String(row?.[3] || '');
+    const sheetRoundValue = String(row?.[3] || ''); // D열의 원본 차수 값 (예: "1-1,1-2차" 또는 "1-1.1-2차")
     const gpUpload = row?.[5]; // GP 업로드일
 
     if (!category.includes('위촉') || !company) continue;
 
     // 필터링된 차수(relevantRounds)에 속하는지 확인
-    for (const targetRound of relevantRounds) {
-      if (matchRound(targetRound, round) && scheduleMap.has(targetRound)) {
+    // relevantRounds의 각 roundName (예: '1-1')이 sheetRoundValue (예: '1-1,1-2차')와 매칭되는지 확인
+    for (const targetRoundNameFromRelevant of relevantRounds) {
+      if (matchRound(targetRoundNameFromRelevant, sheetRoundValue) && scheduleMap.has(targetRoundNameFromRelevant)) {
         const sDate = parseSheetDate(rawDate);
         const gpUploadDate = parseSheetDate(gpUpload);
         const companyKey = company.trim().toLowerCase();
         const info = memoMap[companyKey] || { memo: '', manager: '' };
 
-        scheduleMap.get(targetRound).companies.push({
+        scheduleMap.get(targetRoundNameFromRelevant).companies.push({
           company: company,
-          round: targetRound,
+          round: targetRoundNameFromRelevant, // 이 보험사가 속한 차수는 필터링된 차수 이름 (예: '1-1')
           acceptanceDeadline: formatDateWithDay(sDate),
           gpUploadDate: formatDateWithDay(gpUploadDate),
           recruitmentMethod: info.memo,
           manager: info.manager,
         });
-        break;
+        break; // 해당 보험사는 하나의 차수에만 속한다고 가정하고 다음 행으로 넘어감
       }
     }
   }
 
   // 최종 결과를 날짜 순으로 정렬 (GP 오픈일 > 마감일)
   const sortedSchedules = Array.from(scheduleMap.values()).sort((a, b) => {
+    // roundKeyDates는 모든 차수의 날짜 정보를 가지고 있으므로 여기서 가져옵니다.
     const datesA = roundKeyDates.get(a.round);
     const datesB = roundKeyDates.get(b.round);
 
