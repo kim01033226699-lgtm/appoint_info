@@ -146,16 +146,16 @@ export default function MainPage() {
           <div className="flex gap-2">
             <Button
               variant="outline"
-              className="gap-2"
+              className="gap-2 transition-all duration-150 active:scale-95"
               onClick={() => setIsAllCalendarOpen(true)}
               data-tutorial="calendar-button"
             >
               <CalendarIcon className="h-4 w-4" />
-              전체위촉일정보기
+              <span className="hidden md:inline">전체위촉일정보기</span>
             </Button>
             <Button
               variant="default"
-              className="gap-2 bg-green-600 hover:bg-green-700"
+              className="gap-2 bg-green-600 hover:bg-green-700 transition-all duration-150 active:scale-95"
               onClick={() => router.push('/application-flow')}
             >
               협회말소하셨나요?
@@ -252,7 +252,7 @@ export default function MainPage() {
               </Popover>
 
               <Button
-                className="gap-2 bg-blue-500 hover:bg-blue-600"
+                className="gap-2 bg-blue-500 hover:bg-blue-600 transition-all duration-150 active:scale-95"
                 disabled={!allChecked || !selectedDate}
                 onClick={handleSearch}
                 data-tutorial="search-button"
