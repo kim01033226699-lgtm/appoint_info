@@ -27,37 +27,37 @@ interface QuestionFlowProps {
 const questions: Record<string, Question> = {
   q1: {
     id: 'q1',
-    text: '현재 소속회사에서 해촉증명서를 받으셨나요?',
+    text: '전 소속회사에서 해촉증명서를 받으셨나요?',
     yesResult: ['dismissal_certificate'], // 특수 결과
     noNext: 'q2',
   },
   q2: {
     id: 'q2',
-    text: '직접 말소를 위해 내용증명을 발송하셨나요?',
+    text: '직접 말소를 위해 전 소속회사에 내용증명을 발송하셨나요?',
     yesResult: ['certified_mail'], // 특수 결과 (날짜 입력 필요)
     noNext: 'q3',
   },
   q3: {
     id: 'q3',
-    text: '전속설계사인가요?',
+    text: '전속 설계사로 일하셨나요?',
     yesNext: 'q4',
     noNext: 'q5',
   },
   q4: {
     id: 'q4',
-    text: '교차판매중인가요?',
+    text: '교차판매를 하셨나요?',
     yesResult: ['생명보험협회', '손해보험협회', '현재 재직회사'],
     noResult: ['생명보험협회 or 손해보험협회', '현재 재직회사'],
   },
   q5: {
     id: 'q5',
-    text: '대리점 설계사인가요?',
+    text: '대리점 소속으로 일하셨나요?',
     yesNext: 'q6',
     noResult: ['현재 재직회사'],
   },
   q6: {
     id: 'q6',
-    text: '현재 소속된 회사에 생명&손해 자격이 모두 등록돼 있나요?',
+    text: '전 소속 회사에는 생명보험&손해보험 자격이 모두 등록돼 있었나요?',
     yesResult: ['생명보험협회', '손해보험협회', '현재 재직회사'],
     noResult: ['생명보험협회 or 손해보험협회', '현재 재직회사'],
   },
@@ -183,7 +183,7 @@ export default function QuestionFlow({ onComplete }: QuestionFlowProps) {
                         href="https://fp.insure.or.kr/direct/privacy"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="block px-4 py-3 bg-green-50 hover:bg-green-100 border border-green-200 rounded-lg text-green-900 font-medium transition-colors"
+                        className="block px-4 py-3 bg-green-50 hover:bg-green-100 border border-green-200 rounded-lg text-green-900 font-medium transition-all duration-150 active:scale-95"
                       >
                         🔗 생명보험협회 인터넷말소신청 바로가기
                       </a>
@@ -191,7 +191,7 @@ export default function QuestionFlow({ onComplete }: QuestionFlowProps) {
                         href="https://isi.knia.or.kr/confirm/login.do"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="block px-4 py-3 bg-green-50 hover:bg-green-100 border border-green-200 rounded-lg text-green-900 font-medium transition-colors"
+                        className="block px-4 py-3 bg-green-50 hover:bg-green-100 border border-green-200 rounded-lg text-green-900 font-medium transition-all duration-150 active:scale-95"
                       >
                         🔗 손해보험협회 인터넷말소신청 바로가기
                       </a>
@@ -207,7 +207,7 @@ export default function QuestionFlow({ onComplete }: QuestionFlowProps) {
                         href="https://fp.insure.or.kr/process/process01"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="block px-4 py-3 bg-blue-50 hover:bg-blue-100 border border-blue-200 rounded-lg text-blue-900 font-medium transition-colors"
+                        className="block px-4 py-3 bg-blue-50 hover:bg-blue-100 border border-blue-200 rounded-lg text-blue-900 font-medium transition-all duration-150 active:scale-95"
                       >
                         📍 생명보험협회 지부 조회
                       </a>
@@ -215,7 +215,7 @@ export default function QuestionFlow({ onComplete }: QuestionFlowProps) {
                         href="https://isi.knia.or.kr/information/directions.do"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="block px-4 py-3 bg-blue-50 hover:bg-blue-100 border border-blue-200 rounded-lg text-blue-900 font-medium transition-colors"
+                        className="block px-4 py-3 bg-blue-50 hover:bg-blue-100 border border-blue-200 rounded-lg text-blue-900 font-medium transition-all duration-150 active:scale-95"
                       >
                         📍 손해보험협회 지부 조회
                       </a>
@@ -226,7 +226,7 @@ export default function QuestionFlow({ onComplete }: QuestionFlowProps) {
                 <Button
                   variant="outline"
                   onClick={handleReset}
-                  className="w-full"
+                  className="w-full transition-all duration-150 active:scale-95"
                 >
                   처음으로
                 </Button>
@@ -319,7 +319,7 @@ export default function QuestionFlow({ onComplete }: QuestionFlowProps) {
                             href="https://fp.insure.or.kr/direct/privacy"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="block px-4 py-3 bg-green-50 hover:bg-green-100 border border-green-200 rounded-lg text-green-900 font-medium transition-colors"
+                            className="block px-4 py-3 bg-green-50 hover:bg-green-100 border border-green-200 rounded-lg text-green-900 font-medium transition-all duration-150 active:scale-95"
                           >
                             🔗 생명보험협회 인터넷말소신청 바로가기
                           </a>
@@ -327,7 +327,7 @@ export default function QuestionFlow({ onComplete }: QuestionFlowProps) {
                             href="https://isi.knia.or.kr/confirm/login.do"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="block px-4 py-3 bg-green-50 hover:bg-green-100 border border-green-200 rounded-lg text-green-900 font-medium transition-colors"
+                            className="block px-4 py-3 bg-green-50 hover:bg-green-100 border border-green-200 rounded-lg text-green-900 font-medium transition-all duration-150 active:scale-95"
                           >
                             🔗 손해보험협회 인터넷말소신청 바로가기
                           </a>
@@ -343,7 +343,7 @@ export default function QuestionFlow({ onComplete }: QuestionFlowProps) {
                             href="https://fp.insure.or.kr/process/process01"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="block px-4 py-3 bg-blue-50 hover:bg-blue-100 border border-blue-200 rounded-lg text-blue-900 font-medium transition-colors"
+                            className="block px-4 py-3 bg-blue-50 hover:bg-blue-100 border border-blue-200 rounded-lg text-blue-900 font-medium transition-all duration-150 active:scale-95"
                           >
                             📍 생명보험협회 지부 조회
                           </a>
@@ -351,7 +351,7 @@ export default function QuestionFlow({ onComplete }: QuestionFlowProps) {
                             href="https://isi.knia.or.kr/information/directions.do"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="block px-4 py-3 bg-blue-50 hover:bg-blue-100 border border-blue-200 rounded-lg text-blue-900 font-medium transition-colors"
+                            className="block px-4 py-3 bg-blue-50 hover:bg-blue-100 border border-blue-200 rounded-lg text-blue-900 font-medium transition-all duration-150 active:scale-95"
                           >
                             📍 손해보험협회 지부 조회
                           </a>
@@ -365,14 +365,14 @@ export default function QuestionFlow({ onComplete }: QuestionFlowProps) {
                   <Button
                     variant="outline"
                     onClick={handleGoBack}
-                    className="flex-1"
+                    className="flex-1 transition-all duration-150 active:scale-95"
                   >
                     이전으로
                   </Button>
                   <Button
                     variant="outline"
                     onClick={handleReset}
-                    className="flex-1"
+                    className="flex-1 transition-all duration-150 active:scale-95"
                   >
                     처음으로
                   </Button>
@@ -425,7 +425,7 @@ export default function QuestionFlow({ onComplete }: QuestionFlowProps) {
         {/* 안내 문구 */}
         <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 mb-4">
           <p className="text-sm text-blue-900">
-            내용증명을 발송하여 직접말소를 하시려면 아래 기관/회사에 내용증명을 발송하셔야 합니다.
+            직접 말소를 진행하시려면, 아래의 기관(또는 회사)에 내용증명을 발송하셔야 합니다.
           </p>
         </div>
 
@@ -452,7 +452,7 @@ export default function QuestionFlow({ onComplete }: QuestionFlowProps) {
         {/* 버튼 영역 */}
         <div className="grid grid-cols-2 gap-4">
           <Card
-            className="cursor-pointer hover:shadow-lg transition-shadow border-2 border-gray-300 hover:border-gray-400"
+            className="cursor-pointer hover:shadow-lg transition-all duration-150 border-2 border-gray-300 hover:border-gray-400 active:scale-95"
             onClick={handleGoBack}
           >
             <CardContent className="pt-6 pb-6">
@@ -465,7 +465,7 @@ export default function QuestionFlow({ onComplete }: QuestionFlowProps) {
           </Card>
 
           <Card
-            className="cursor-pointer hover:shadow-lg transition-shadow border-2 border-green-500 bg-green-50 hover:bg-green-100"
+            className="cursor-pointer hover:shadow-lg transition-all duration-150 border-2 border-green-500 bg-green-50 hover:bg-green-100 active:scale-95"
             onClick={handleContinue}
           >
             <CardContent className="pt-6 pb-6">
@@ -544,14 +544,14 @@ export default function QuestionFlow({ onComplete }: QuestionFlowProps) {
           <div className="flex flex-col sm:flex-row gap-3">
             <Button
               onClick={() => handleAnswer('yes')}
-              className="flex-1 bg-blue-600 hover:bg-blue-700 py-6 text-lg font-semibold"
+              className="flex-1 bg-blue-600 hover:bg-blue-700 py-6 text-lg font-semibold transition-all duration-150 active:scale-95"
             >
               네
             </Button>
             <Button
               onClick={() => handleAnswer('no')}
               variant="outline"
-              className="flex-1 py-6 text-lg font-semibold border-2 hover:bg-gray-100"
+              className="flex-1 py-6 text-lg font-semibold border-2 hover:bg-gray-100 transition-all duration-150 active:scale-95"
             >
               아니오
             </Button>
@@ -561,7 +561,7 @@ export default function QuestionFlow({ onComplete }: QuestionFlowProps) {
             <Button
               variant="ghost"
               onClick={handleGoBack}
-              className="w-full mt-4"
+              className="w-full mt-4 transition-all duration-150 active:scale-95"
             >
               이전 질문으로
             </Button>

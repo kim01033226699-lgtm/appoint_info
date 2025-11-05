@@ -49,6 +49,7 @@ export default function PersonalInfoForm({ onComplete, onBack, selectedResults }
   const [loading, setLoading] = useState(true);
   const [selectedDate, setSelectedDate] = useState<Date>();
   const [isCalendarOpen, setIsCalendarOpen] = useState(false);
+  const [isDirectInput, setIsDirectInput] = useState(false); // 직접입력 모드
 
   useEffect(() => {
     // 구글시트에서 가져온 수신처 데이터 로드
@@ -81,7 +82,9 @@ export default function PersonalInfoForm({ onComplete, onBack, selectedResults }
   const validateForm = (): boolean => {
     const newErrors: Partial<Record<keyof PersonalInfo, string>> = {};
 
-    // 소속회사는 선택사항이므로 필수 체크 제거
+    if (!formData.company.trim()) {
+      newErrors.company = '소속회사를 입력해주세요.';
+    }
 
     if (!formData.residentNumber.trim()) {
       newErrors.residentNumber = '주민번호를 입력해주세요.';
@@ -157,96 +160,77 @@ export default function PersonalInfoForm({ onComplete, onBack, selectedResults }
       <CardHeader>
         <CardTitle>내용증명 작성하기</CardTitle>
         <CardDescription>
-          아래 사항을 입력해 주세요
+          인적 사항을 입력해 주세요
         </CardDescription>
       </CardHeader>
       <CardContent>
         <form onSubmit={handleSubmit} className="space-y-4">
-          {/* 수신처 */}
+          {/* 소속회사 */}
           <div>
-            <label className="block text-sm font-medium text-gray-700 mb-3">
-              내용증명 발송할 기관/회사
+            <label htmlFor="company" className="block text-sm font-medium text-gray-700 mb-1">
+              소속회사 <span className="text-red-500">*</span>
             </label>
             {loading ? (
               <div className="w-full px-3 py-2 border border-gray-300 rounded-md bg-gray-50 text-gray-500">
                 로딩 중...
               </div>
             ) : (
-              <div className="space-y-4">
-                {/* 질문 결과에 따른 수신처 표시 */}
-                <div className="bg-blue-50 border border-blue-200 rounded-md p-4">
-                  <p className="text-sm font-semibold text-gray-700 mb-3">제출 필요 기관:</p>
+              <>
+                {!isDirectInput ? (
+                  <select
+                    id="company"
+                    value={formData.company}
+                    onChange={(e) => {
+                      const value = e.target.value;
+                      if (value === 'direct') {
+                        setIsDirectInput(true);
+                        handleChange('company', '');
+                      } else {
+                        handleChange('company', value);
+                      }
+                    }}
+                    className={`w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 ${
+                      errors.company ? 'border-red-500' : 'border-gray-300'
+                    }`}
+                  >
+                    <option value="">선택해주세요</option>
+                    {recipients
+                      .filter(r => !r.company.includes('협회')) // 협회 제외
+                      .map((recipient, index) => (
+                        <option key={index} value={recipient.company}>
+                          {recipient.company}
+                        </option>
+                      ))}
+                    <option value="direct">직접입력</option>
+                  </select>
+                ) : (
                   <div className="space-y-2">
-                    {selectedResults.map((result, index) => {
-                      // "현재 재직회사"는 선택한 소속회사로 대체
-                      if (result === '현재 재직회사') {
-                        if (formData.company) {
-                          // 사용자가 직접 입력한 회사 주소가 있으면 사용, 없으면 구글시트 데이터 사용
-                          let recipientString = formData.company;
-                          if (formData.companyAddress) {
-                            recipientString = `${formData.company} - ${formData.companyAddress}`;
-                          } else {
-                            const matchedRecipient = recipients.find(r => r.company === formData.company);
-                            if (matchedRecipient) {
-                              recipientString = `${matchedRecipient.company} - ${matchedRecipient.address}`;
-                            }
-                          }
-                          return (
-                            <div key={index} className="flex items-center gap-2 text-sm">
-                              <span className="w-2 h-2 bg-blue-600 rounded-full"></span>
-                              <span className="text-gray-800">{recipientString}</span>
-                            </div>
-                          );
-                        }
-                        return (
-                          <div key={index} className="flex items-center gap-2 text-sm">
-                            <span className="w-2 h-2 bg-blue-600 rounded-full"></span>
-                            <span className="text-gray-800">전 소속회사 (아래에서 소속회사 정보를 입력하세요)</span>
-                          </div>
-                        );
-                      }
-
-                      // 협회는 구글시트 데이터와 매칭
-                      const matchedRecipient = recipients.find(r =>
-                        r.company.includes(result) || result.includes(r.company)
-                      );
-                      if (matchedRecipient) {
-                        const recipientString = `${matchedRecipient.company} - ${matchedRecipient.address}`;
-                        return (
-                          <div key={index} className="flex items-center gap-2 text-sm">
-                            <span className="w-2 h-2 bg-blue-600 rounded-full"></span>
-                            <span className="text-gray-800">{recipientString}</span>
-                          </div>
-                        );
-                      }
-                      return (
-                        <div key={index} className="flex items-center gap-2 text-sm">
-                          <span className="w-2 h-2 bg-blue-600 rounded-full"></span>
-                          <span className="text-gray-800">{result}</span>
-                        </div>
-                      );
-                    })}
+                    <input
+                      type="text"
+                      value={formData.company}
+                      onChange={(e) => {
+                        const newCompany = e.target.value;
+                        handleChange('company', newCompany);
+                      }}
+                      className={`w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 ${
+                        errors.company ? 'border-red-500' : 'border-gray-300'
+                      }`}
+                      placeholder="회사명을 입력하세요"
+                    />
+                    <button
+                      type="button"
+                      onClick={() => {
+                        setIsDirectInput(false);
+                        handleChange('company', '');
+                      }}
+                      className="text-sm text-blue-600 hover:text-blue-800"
+                    >
+                      ← 목록에서 선택하기
+                    </button>
                   </div>
-                </div>
-              </div>
+                )}
+              </>
             )}
-          </div>
-
-          {/* 소속회사 */}
-          <div>
-            <label htmlFor="company" className="block text-sm font-medium text-gray-700 mb-1">
-              전 소속회사 입력
-            </label>
-            <input
-              id="company"
-              type="text"
-              value={formData.company}
-              onChange={(e) => handleChange('company', e.target.value)}
-              className={`w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 ${
-                errors.company ? 'border-red-500' : 'border-gray-300'
-              }`}
-              placeholder="전 소속회사 입력(미입력시 공란으로 표기됩니다)"
-            />
             {errors.company && (
               <p className="text-red-500 text-sm mt-1">{errors.company}</p>
             )}
@@ -255,7 +239,7 @@ export default function PersonalInfoForm({ onComplete, onBack, selectedResults }
           {/* 회사 주소 */}
           <div>
             <label htmlFor="companyAddress" className="block text-sm font-medium text-gray-700 mb-1">
-              전 소속회사 주소 입력
+              회사 주소 <span className="text-gray-500">(선택사항)</span>
             </label>
             <input
               id="companyAddress"
@@ -263,8 +247,11 @@ export default function PersonalInfoForm({ onComplete, onBack, selectedResults }
               value={formData.companyAddress}
               onChange={(e) => handleChange('companyAddress', e.target.value)}
               className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-              placeholder="전 소속회사 주소 입력(미입력시 공란으로 표기됩니다)"
+              placeholder="회사 주소를 입력하세요 (선택사항)"
             />
+            <p className="text-xs text-gray-500 mt-1">
+              회사 주소를 입력하지 않으면 등록된 주소가 자동으로 사용됩니다.
+            </p>
           </div>
 
           {/* 성명 */}
@@ -401,20 +388,90 @@ export default function PersonalInfoForm({ onComplete, onBack, selectedResults }
             )}
           </div>
 
+          {/* 수신처 */}
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-3">
+              수신처
+            </label>
+            {loading ? (
+              <div className="w-full px-3 py-2 border border-gray-300 rounded-md bg-gray-50 text-gray-500">
+                로딩 중...
+              </div>
+            ) : (
+              <div className="space-y-4">
+                {/* 질문 결과에 따른 수신처 표시 */}
+                <div className="bg-blue-50 border border-blue-200 rounded-md p-4">
+                  <p className="text-sm font-semibold text-gray-700 mb-3">제출 필요 기관:</p>
+                  <div className="space-y-2">
+                    {selectedResults.map((result, index) => {
+                      // "현재 재직회사"는 선택한 소속회사로 대체
+                      if (result === '현재 재직회사') {
+                        if (formData.company) {
+                          // 사용자가 직접 입력한 회사 주소가 있으면 사용, 없으면 구글시트 데이터 사용
+                          let recipientString = formData.company;
+                          if (formData.companyAddress) {
+                            recipientString = `${formData.company} - ${formData.companyAddress}`;
+                          } else {
+                            const matchedRecipient = recipients.find(r => r.company === formData.company);
+                            if (matchedRecipient) {
+                              recipientString = `${matchedRecipient.company} - ${matchedRecipient.address}`;
+                            }
+                          }
+                          return (
+                            <div key={index} className="flex items-center gap-2 text-sm">
+                              <span className="w-2 h-2 bg-blue-600 rounded-full"></span>
+                              <span className="text-gray-800">{recipientString}</span>
+                            </div>
+                          );
+                        }
+                        return (
+                          <div key={index} className="flex items-center gap-2 text-sm">
+                            <span className="w-2 h-2 bg-blue-600 rounded-full"></span>
+                            <span className="text-gray-800">현재 재직회사 (위에서 소속회사를 선택하세요)</span>
+                          </div>
+                        );
+                      }
+
+                      // 협회는 구글시트 데이터와 매칭
+                      const matchedRecipient = recipients.find(r =>
+                        r.company.includes(result) || result.includes(r.company)
+                      );
+                      if (matchedRecipient) {
+                        const recipientString = `${matchedRecipient.company} - ${matchedRecipient.address}`;
+                        return (
+                          <div key={index} className="flex items-center gap-2 text-sm">
+                            <span className="w-2 h-2 bg-blue-600 rounded-full"></span>
+                            <span className="text-gray-800">{recipientString}</span>
+                          </div>
+                        );
+                      }
+                      return (
+                        <div key={index} className="flex items-center gap-2 text-sm">
+                          <span className="w-2 h-2 bg-blue-600 rounded-full"></span>
+                          <span className="text-gray-800">{result}</span>
+                        </div>
+                      );
+                    })}
+                  </div>
+                </div>
+              </div>
+            )}
+          </div>
+
           {/* 버튼 */}
           <div className="flex gap-3 pt-4">
             <Button
               type="button"
               variant="outline"
               onClick={onBack}
-              className="flex-1 transition-all duration-150 active:scale-95"
+              className="flex-1"
             >
               <ArrowLeft className="h-4 w-4 mr-2" />
               이전으로
             </Button>
             <Button
               type="submit"
-              className="flex-1 bg-blue-600 hover:bg-blue-700 transition-all duration-150 active:scale-95"
+              className="flex-1 bg-blue-600 hover:bg-blue-700"
             >
               다음 단계로
             </Button>

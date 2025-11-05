@@ -36,13 +36,19 @@ export default function ApplicationPreview({
   isSample = false
 }: ApplicationPreviewProps) {
   const [isGenerating, setIsGenerating] = useState(false);
+  const [showConfirmModal, setShowConfirmModal] = useState(false);
   const previewRef = useRef<HTMLDivElement>(null);
 
   // 등기발송일 기준 10일 경과일 계산
   const submissionDate = new Date(personalInfo.submissionDate);
   const tenDaysLater = addDays(submissionDate, 10);
 
-  const handleDownloadPdf = async () => {
+  const handleDownloadPdfClick = () => {
+    setShowConfirmModal(true);
+  };
+
+  const handleConfirmDownload = async () => {
+    setShowConfirmModal(false);
     if (!previewRef.current) return;
 
     setIsGenerating(true);
@@ -80,8 +86,47 @@ export default function ApplicationPreview({
     }
   };
 
+  const handleCancelDownload = () => {
+    setShowConfirmModal(false);
+  };
+
   return (
     <div className="space-y-4">
+      {/* 확인 모달 */}
+      {showConfirmModal && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+          <div className="bg-white rounded-lg shadow-xl max-w-md w-full mx-4 p-6">
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">⚠️ 잠깐!</h2>
+            <div className="space-y-3 mb-6">
+              <p className="text-gray-700 leading-relaxed">
+                본 문서는 <strong>참고용으로 제공되는 자료</strong>이며, 실제 발송 시에는 내용을 꼭 확인하신 후 이용해 주세요.
+              </p>
+              <p className="text-gray-700 leading-relaxed">
+                내용상의 오류나 누락에 대한 <strong className="text-red-600">책임은 사용자 본인에게 있습니다.</strong>
+              </p>
+              <p className="text-gray-900 font-semibold mt-4">
+                PDF를 다운로드 할까요?
+              </p>
+            </div>
+            <div className="flex gap-3">
+              <Button
+                variant="outline"
+                onClick={handleCancelDownload}
+                className="flex-1 transition-all duration-150 active:scale-95"
+              >
+                취소
+              </Button>
+              <Button
+                onClick={handleConfirmDownload}
+                className="flex-1 bg-blue-600 hover:bg-blue-700 transition-all duration-150 active:scale-95"
+              >
+                다운로드
+              </Button>
+            </div>
+          </div>
+        </div>
+      )}
+
       <Card>
         {!isSample && (
           <CardHeader>
@@ -101,9 +146,10 @@ export default function ApplicationPreview({
                     직접말소 일정 안내
                   </p>
                   <p className="text-sm text-blue-800">
-                    등기발송일 {format(submissionDate, 'M월 d일', { locale: ko })} 이후 10일 경과일은{' '}
-                    <span className="font-semibold">{format(tenDaysLater, 'yyyy년 M월 d일', { locale: ko })}</span>입니다.{' '}
-                    이후 협회 방문 또는 인터넷으로 말소신청 웹페이지에서 신청하셔야 합니다.
+                    등기발송일 11월 19일 이후 10일 경과일은{' '}
+                    <span className="font-semibold">2025년 11월 29일</span>입니다.{' '}
+                    이후 협회 방문 또는 인터넷으로 말소신청 웹페이지에서 신청하셔야 합니다.{' '}
+                    공휴일에는 인터넷 접수는 가능하지만 이후 영업일에 처리됩니다.
                   </p>
                 </div>
               </div>
@@ -205,15 +251,15 @@ export default function ApplicationPreview({
               <Button
                 variant="outline"
                 onClick={onBack}
-                className="flex-1"
+                className="flex-1 transition-all duration-150 active:scale-95"
                 disabled={isGenerating}
               >
                 <ArrowLeft className="h-4 w-4 mr-2" />
                 이전으로
               </Button>
               <Button
-                onClick={handleDownloadPdf}
-                className="flex-1 bg-blue-600 hover:bg-blue-700"
+                onClick={handleDownloadPdfClick}
+                className="flex-1 bg-blue-600 hover:bg-blue-700 transition-all duration-150 active:scale-95"
                 disabled={isGenerating}
               >
                 <Download className="h-4 w-4 mr-2" />

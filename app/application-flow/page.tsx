@@ -72,9 +72,11 @@ export default function ApplicationFlowPage() {
           <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2">
             협회 말소처리 안내
           </h1>
-          <p className="text-gray-600">
-            본인의 상황을 알려주세요
-          </p>
+          {currentStep === 'questions' && (
+            <p className="text-gray-600">
+              본인의 상황을 알려주세요
+            </p>
+          )}
         </div>
 
         {currentStep === 'questions' && (
@@ -107,7 +109,7 @@ export default function ApplicationFlowPage() {
             {/* 샘플 하단 버튼 */}
             <div className="grid grid-cols-2 gap-4">
               <Card
-                className="cursor-pointer hover:shadow-lg transition-shadow border-2 border-gray-300 hover:border-gray-400"
+                className="cursor-pointer hover:shadow-lg transition-all duration-150 border-2 border-gray-300 hover:border-gray-400 active:scale-95"
                 onClick={handleGoBack}
               >
                 <CardContent className="pt-6 pb-6">
@@ -120,7 +122,7 @@ export default function ApplicationFlowPage() {
               </Card>
 
               <Card
-                className="cursor-pointer hover:shadow-lg transition-shadow border-2 border-green-500 bg-green-50 hover:bg-green-100"
+                className="cursor-pointer hover:shadow-lg transition-all duration-150 border-2 border-green-500 bg-green-50 hover:bg-green-100 active:scale-95"
                 onClick={handleStartWriting}
               >
                 <CardContent className="pt-6 pb-6">
@@ -160,7 +162,7 @@ export default function ApplicationFlowPage() {
             </h2>
             <Button
               onClick={handleReset}
-              className="bg-blue-600 hover:bg-blue-700"
+              className="bg-blue-600 hover:bg-blue-700 transition-all duration-150 active:scale-95"
               size="lg"
             >
               처음으로
