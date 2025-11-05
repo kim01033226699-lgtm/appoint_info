@@ -143,15 +143,24 @@ export default function MainPage() {
           <h1 className="text-3xl md:text-4xl font-bold text-gray-900">
             굿리치 위촉일정
           </h1>
-          <Button
-            variant="outline"
-            className="gap-2"
-            onClick={() => setIsAllCalendarOpen(true)}
-            data-tutorial="calendar-button"
-          >
-            <CalendarIcon className="h-4 w-4" />
-            전체위촉일정보기
-          </Button>
+          <div className="flex gap-2">
+            <Button
+              variant="outline"
+              className="gap-2"
+              onClick={() => setIsAllCalendarOpen(true)}
+              data-tutorial="calendar-button"
+            >
+              <CalendarIcon className="h-4 w-4" />
+              전체위촉일정보기
+            </Button>
+            <Button
+              variant="default"
+              className="gap-2 bg-green-600 hover:bg-green-700"
+              onClick={() => router.push('/application-flow')}
+            >
+              협회말소하셨나요?
+            </Button>
+          </div>
         </div>
 
         {/* 위촉필요서류 */}

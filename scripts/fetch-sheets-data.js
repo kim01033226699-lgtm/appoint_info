@@ -70,6 +70,7 @@ async function fetchData() {
     const data = {
       requiredDocuments: adminSettings.guidance,
       checklist: adminSettings.checklist,
+      recipients: adminSettings.recipients,
       schedules: schedules,
       calendarEvents: calendarEvents,
     };
@@ -219,6 +220,7 @@ function parseAdminSettings(rows) {
       { id: '2', text: '굿리치 앱 설치 및 프로필 설정' },
     ],
     guidance: '환영합니다! 굿리치 전문가로의 첫 걸음을 응원합니다.',
+    recipients: [],
   };
 
   if (!rows) return defaults;
@@ -226,12 +228,41 @@ function parseAdminSettings(rows) {
   const settings = {
     checklist: [],
     guidance: '',
+    recipients: [],
   };
+
+  let isInRecipientSection = false;
 
   rows.forEach((row, index) => {
     const key = (row?.[0] || '').toString().trim().replace(/`/g, '');
     const value = (row?.[1] || '').toString().trim();
-    if (!key || !value) return;
+
+    if (!key) return;
+
+    // A열에 "수신"이 나오면 수신처 섹션 시작
+    if (key === '수신') {
+      isInRecipientSection = true;
+      return;
+    }
+
+    // 수신처 섹션 내에서 데이터 수집
+    if (isInRecipientSection) {
+      // A열에 다른 키워드가 나오면 수신처 섹션 종료
+      if (key === '위촉필요서류' || key === '체크리스트') {
+        isInRecipientSection = false;
+      } else {
+        // A열: 회사명, B열: 주소
+        if (value) {
+          settings.recipients.push({
+            company: key,
+            address: value
+          });
+        }
+        return;
+      }
+    }
+
+    if (!value) return;
 
     switch (key) {
       case '위촉필요서류':
@@ -246,6 +277,7 @@ function parseAdminSettings(rows) {
   return {
     checklist: settings.checklist.length > 0 ? settings.checklist : defaults.checklist,
     guidance: settings.guidance || defaults.guidance,
+    recipients: settings.recipients,
   };
 }
 
