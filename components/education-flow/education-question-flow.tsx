@@ -18,25 +18,25 @@ interface Question {
 const questions: Record<string, Question> = {
   q1: {
     id: 'q1',
-    text: '신규 입사자 이신가요?',
+    text: '보험영업이 처음인 신규입사자 이신가요?',
     yesNext: 'q2',
     noNext: 'q3',
   },
   q2: {
     id: 'q2',
-    text: '이번에 시험에 응시해 합격하셨나요?',
+    text: '보험자격 시험에 응시해 합격하셨나요?',
     yesResult: 'new_registration', // 합격시 바로 신규등록교육
     noResult: 'exam_required', // 시험 응시 안내
   },
   q3: {
     id: 'q3',
-    text: '경력자이신가요?',
+    text: '경력 입사자이신가요?',
     yesNext: 'q4',
-    noResult: 'new_registration',
+    noResult: 'career_check_guide', // 경력 확인 안내
   },
   q4: {
     id: 'q4',
-    text: '경력조회를 하셨나요?\n(경력은 3년 이내 1년이상이어야 함)',
+    text: '경력 조회를 하셨나요?\n(경력일수는 3년 이내 1년(365일) 이상이어야 합니다.)',
     yesResult: 'career_registration', // 경력등록교육
     noResult: 'career_check_required', // 경력조회 안내
   },
@@ -112,7 +112,7 @@ export default function EducationQuestionFlow() {
                   <ul className="space-y-2 text-sm text-blue-900">
                     <li className="flex gap-2">
                       <span>•</span>
-                      <span>최초로 모집 종사자가 되려는 자가 이수하여야 하는 교육이며 경력 요건을 충족하지 못하신 분이 이직, 퇴사 등의 사유로 재등록하고자 할 때에도 이수하여야 하는 교육입니다.</span>
+                      <span>최초로 모집 종사자가 되려는 자가 이수하여야 하는 교육이며 경력 요건을 충족하지 못하신 분이 이직, 퇴사 등의 사유로 재등록하고자 할 때에도 신규등록교육을 이수하셔야 합니다.</span>
                     </li>
                     <li className="flex gap-2">
                       <span>•</span>
@@ -245,6 +245,137 @@ export default function EducationQuestionFlow() {
                       >
                         <div className="flex items-center justify-between">
                           <span>🔗 손해보험모집종사자관리센터</span>
+                          <ExternalLink className="h-4 w-4" />
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="flex gap-3 pt-4">
+                  <Button
+                    variant="outline"
+                    onClick={handleGoBack}
+                    className="flex-1 transition-all duration-150 active:scale-95"
+                  >
+                    이전으로
+                  </Button>
+                  <Button
+                    variant="outline"
+                    onClick={handleReset}
+                    className="flex-1 transition-all duration-150 active:scale-95"
+                  >
+                    처음으로
+                  </Button>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+      );
+    }
+
+    // 경력 확인 안내 (q3 아니오)
+    if (result === 'career_check_guide') {
+      return (
+        <div className="space-y-4">
+          <Card className="border-2 border-indigo-500">
+            <CardHeader className="bg-indigo-50">
+              <CardTitle className="flex items-center gap-2">
+                <CheckCircle2 className="h-6 w-6 text-indigo-600" />
+                경력 확인 안내
+              </CardTitle>
+              <CardDescription>
+                경력일수를 확인하고 적합한 등록교육을 선택하세요
+              </CardDescription>
+            </CardHeader>
+            <CardContent className="pt-6">
+              <div className="space-y-6">
+                {/* 안내 */}
+                <div className="bg-indigo-50 border border-indigo-200 rounded-lg p-4">
+                  <h3 className="font-semibold text-indigo-900 mb-3">📋 안내</h3>
+                  <ul className="space-y-2 text-sm text-indigo-900">
+                    <li className="flex gap-2">
+                      <span>•</span>
+                      <span>이전에 생손보 시험에 합격하고 등록하여 영업을 하신적이 있다면 최근 3년이내 경력일수를 확인하고 경력에 맞는 등록교육을 수료하셔야 합니다.</span>
+                    </li>
+                    <li className="flex gap-2">
+                      <span>•</span>
+                      <span>순수신인 또는 1년 미만의 경력자는 신규 입사자로 등록 교육을 이수하셔야 합니다.</span>
+                    </li>
+                  </ul>
+                </div>
+
+                {/* 교육 구분 */}
+                <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
+                  <h3 className="font-semibold text-blue-900 mb-3">📚 교육 구분</h3>
+                  <ul className="space-y-2 text-sm text-blue-900">
+                    <li className="flex gap-2">
+                      <span>•</span>
+                      <span><strong>3년내 1년이상</strong> → 경력등록교육</span>
+                    </li>
+                    <li className="flex gap-2">
+                      <span>•</span>
+                      <span><strong>3년내 1년미만</strong> → 신규등록교육</span>
+                    </li>
+                  </ul>
+                </div>
+
+                {/* 경력조회 안내 */}
+                <div className="bg-amber-50 border border-amber-200 rounded-lg p-4">
+                  <h3 className="font-semibold text-amber-900 mb-3">💡 안내</h3>
+                  <p className="text-sm text-amber-900">자격조회는 협회에서 하실 수 있습니다</p>
+                </div>
+
+                {/* 경력 확인 링크 */}
+                <div className="space-y-4">
+                  <div className="border-t pt-4">
+                    <h3 className="font-semibold text-gray-900 mb-3">
+                      경력 확인 바로 가기
+                    </h3>
+                    <p className="text-sm text-gray-600 mb-3">클릭 시 각 협회로 이동합니다</p>
+                    <div className="space-y-2">
+                      <a
+                        href="http://www.klia.or.kr/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="block px-4 py-3 bg-green-50 hover:bg-green-100 border border-green-200 rounded-lg text-green-900 font-medium transition-all duration-150 active:scale-95"
+                      >
+                        <div className="flex items-center justify-between">
+                          <span>🔗 생명보험협회</span>
+                          <ExternalLink className="h-4 w-4" />
+                        </div>
+                      </a>
+                      <a
+                        href="http://www.knia.or.kr/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="block px-4 py-3 bg-green-50 hover:bg-green-100 border border-green-200 rounded-lg text-green-900 font-medium transition-all duration-150 active:scale-95"
+                      >
+                        <div className="flex items-center justify-between">
+                          <span>🔗 손해보험협회</span>
+                          <ExternalLink className="h-4 w-4" />
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                {/* 등록교육 이수 링크 */}
+                <div className="space-y-4">
+                  <div className="border-t pt-4">
+                    <h3 className="font-semibold text-gray-900 mb-3">
+                      등록교육 이수 바로 가기
+                    </h3>
+                    <div className="space-y-2">
+                      <a
+                        href="https://is.in.or.kr/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="block px-4 py-3 bg-green-50 hover:bg-green-100 border border-green-200 rounded-lg text-green-900 font-medium transition-all duration-150 active:scale-95"
+                      >
+                        <div className="flex items-center justify-between">
+                          <span>🔗 보험연수원 사이버교육</span>
                           <ExternalLink className="h-4 w-4" />
                         </div>
                       </a>
