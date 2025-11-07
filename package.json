@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "fetch-data": "node scripts/fetch-sheets-data.js"
+    "fetch-data": "node scripts/fetch-sheets-data-public.js"
   },
   "dependencies": {
     "@radix-ui/react-checkbox": "^1.0.4",

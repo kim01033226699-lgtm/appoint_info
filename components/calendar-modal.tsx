@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect, useRef } from "react";
 import { ChevronLeft, ChevronRight, X } from "lucide-react";
 import { format, startOfMonth, endOfMonth, eachDayOfInterval, isSameMonth, isSameDay, addMonths, subMonths, getDay, startOfWeek, endOfWeek } from "date-fns";
 import { ko } from "date-fns/locale";
@@ -87,6 +87,7 @@ export default function CalendarModal({ open, onOpenChange, events }: CalendarMo
   const [currentDate, setCurrentDate] = useState(new Date());
   const [selectedDate, setSelectedDate] = useState<Date | null>(null);
   const [isDetailOpen, setIsDetailOpen] = useState(false);
+  const currentMonthRef = useRef<HTMLDivElement>(null);
 
   // 현재 달의 날짜들 가져오기
   const monthStart = startOfMonth(currentDate);
@@ -147,14 +148,54 @@ export default function CalendarModal({ open, onOpenChange, events }: CalendarMo
     setCurrentDate(addMonths(currentDate, 1));
   };
 
+  // 현재 월의 첫 번째 이벤트 인덱스 찾기 (모바일 스크롤용)
+  const currentMonthFirstIndex = useMemo(() => {
+    const today = new Date();
+    const index = eventsByDateForAgenda.findIndex(([date]) => {
+      const eventDate = new Date(date);
+      return eventDate.getMonth() === today.getMonth() &&
+             eventDate.getFullYear() === today.getFullYear();
+    });
+    return index >= 0 ? index : 0;
+  }, [eventsByDateForAgenda]);
+
+  // 모달이 열릴 때 현재 월로 스크롤 (모바일)
+  useEffect(() => {
+    if (open && currentMonthRef.current) {
+      setTimeout(() => {
+        if (currentMonthRef.current) {
+          // 스크롤 가능한 부모 컨테이너 찾기 (DialogContent)
+          let scrollContainer = currentMonthRef.current.parentElement;
+          while (scrollContainer) {
+            const hasOverflow = scrollContainer.scrollHeight > scrollContainer.clientHeight;
+            const overflowY = window.getComputedStyle(scrollContainer).overflowY;
+            if (hasOverflow && (overflowY === 'auto' || overflowY === 'scroll')) {
+              break;
+            }
+            scrollContainer = scrollContainer.parentElement;
+          }
+
+          if (scrollContainer) {
+            const target = currentMonthRef.current;
+            const containerRect = scrollContainer.getBoundingClientRect();
+            const targetRect = target.getBoundingClientRect();
+            const offsetTop = targetRect.top - containerRect.top + scrollContainer.scrollTop;
+
+            scrollContainer.scrollTo({
+              top: offsetTop - 100, // 상단 여백 (제목 + 설명 고려)
+              behavior: 'smooth'
+            });
+          }
+        }
+      }, 300);
+    }
+  }, [open]);
+
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="max-w-full md:max-w-6xl max-h-[90vh] overflow-y-auto">
+      <DialogContent className="max-w-full md:max-w-6xl max-h-[90vh] overflow-y-auto pt-12">
         <DialogHeader>
           <DialogTitle>전체 일정 캘린더</DialogTitle>
-          <DialogDescription>
-            날짜를 클릭하여 상세 일정을 확인하세요.
-          </DialogDescription>
         </DialogHeader>
 
         {/* PC 버전: 캘린더 뷰 */}
@@ -239,7 +280,11 @@ export default function CalendarModal({ open, onOpenChange, events }: CalendarMo
 
           <div className="space-y-4">
             {eventsByDateForAgenda.map(([date, dateEvents], idx) => (
-              <div key={idx} className="bg-gray-100 p-4 rounded-lg">
+              <div
+                key={idx}
+                className="bg-gray-100 p-4 rounded-lg"
+                ref={idx === currentMonthFirstIndex ? currentMonthRef : null}
+              >
                 <h3 className="font-semibold mb-2">
                   {format(new Date(date), 'M월 d일 (E)', { locale: ko })}
                 </h3>

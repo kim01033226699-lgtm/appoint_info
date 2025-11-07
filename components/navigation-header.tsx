@@ -33,8 +33,11 @@ export default function NavigationHeader() {
       <header className="w-full bg-white border-b border-gray-200 sticky top-0 z-30 shadow-sm">
         <div className="max-w-7xl mx-auto px-4 py-4 relative">
           <div className="flex flex-row items-center justify-center gap-6 md:gap-12 lg:gap-16">
-            {/* 메인 제목 - Good과 Rich만 굿리치 옐로우 */}
-            <h1 className="text-lg sm:text-xl md:text-2xl font-bold whitespace-nowrap">
+            {/* 메인 제목 - Good과 Rich만 굿리치 옐로우, 클릭시 위촉차수조회로 이동 */}
+            <h1
+              className="text-lg sm:text-xl md:text-2xl font-bold whitespace-nowrap cursor-pointer hover:opacity-80 transition-opacity"
+              onClick={() => handleNavigate('/')}
+            >
               <span className="text-gray-900">Start </span>
               <span className="text-goodrich-yellow">Good</span>
               <span className="text-gray-900">, Grow </span>

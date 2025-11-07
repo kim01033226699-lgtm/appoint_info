@@ -14,16 +14,17 @@
       "text": "위촉계약서 전자서명 완료"
     }
   ],
+  "recipients": [],
   "schedules": [
     {
-      "round": "9-3차",
+      "round": "9-3",
       "deadline": "",
       "gpOpenDate": "9/15(월)",
       "gpOpenTime": "PM16:00",
       "companies": [
         {
           "company": "메트라이프",
-          "round": "9-3차",
+          "round": "9-3",
           "acceptanceDeadline": "9/8(월)",
           "gpUploadDate": "9/16(화)",
           "recruitmentMethod": "문자(SMS) 발송_1688-7427/고정URL로 직접 제출 가능(https://brand.metlife.co.kr/ga/appt/selectMoblieCert.do)",
@@ -31,7 +32,7 @@
         },
         {
           "company": "미래에셋",
-          "round": "9-3차",
+          "round": "9-3",
           "acceptanceDeadline": "9/9(화)",
           "gpUploadDate": "9/18(목)",
           "recruitmentMethod": "알림톡(카카오톡) 발송",
@@ -39,7 +40,7 @@
         },
         {
           "company": "KB라이프",
-          "round": "9-3차",
+          "round": "9-3",
           "acceptanceDeadline": "9/9(화)",
           "gpUploadDate": "9/18(목)",
           "recruitmentMethod": "문자(SMS) 발송/고정URL (http://id.kblife.co.kr/gafp/73100 )",
@@ -47,7 +48,7 @@
         },
         {
           "company": "KDB생명",
-          "round": "9-3차",
+          "round": "9-3",
           "acceptanceDeadline": "9/9(화)",
           "gpUploadDate": "9/19(금)",
           "recruitmentMethod": "알림톡(카카오톡) 발송",
@@ -55,7 +56,7 @@
         },
         {
           "company": "농협생명",
-          "round": "9-3차",
+          "round": "9-3",
           "acceptanceDeadline": "9/9(화)",
           "gpUploadDate": "9/18(목)",
           "recruitmentMethod": "알림톡(카카오톡) 발송",
@@ -63,7 +64,7 @@
         },
         {
           "company": "카디프생명",
-          "round": "9-3차",
+          "round": "9-3",
           "acceptanceDeadline": "9/11(목)",
           "gpUploadDate": "9/19(금)",
           "recruitmentMethod": "문자(SMS) 발송(02-3788-0664)BNP파리바카디프생명",
@@ -71,7 +72,7 @@
         },
         {
           "company": "삼성생명",
-          "round": "9-3차",
+          "round": "9-3",
           "acceptanceDeadline": "9/11(목)",
           "gpUploadDate": "9/23(화)",
           "recruitmentMethod": "알림톡(카카오톡) 발송",
@@ -79,7 +80,7 @@
         },
         {
           "company": "한화생명",
-          "round": "9-3차",
+          "round": "9-3",
           "acceptanceDeadline": "9/12(금)",
           "gpUploadDate": "9/24(수)",
           "recruitmentMethod": "알림톡(카카오톡) 발송",
@@ -87,7 +88,7 @@
         },
         {
           "company": "흥국생명",
-          "round": "9-3차",
+          "round": "9-3",
           "acceptanceDeadline": "9/12(금)",
           "gpUploadDate": "9/26(금)",
           "recruitmentMethod": "문자(SMS) 발송",
@@ -95,15 +96,15 @@
         },
         {
           "company": "동양생명",
-          "round": "9-3차",
+          "round": "9-3",
           "acceptanceDeadline": "9/12(금)",
           "gpUploadDate": "9/22(월)",
           "recruitmentMethod": "서류(원전산출력)",
-          "manager": "신지원 대리 (02-6410-7321)"
+          "manager": "이성연 사원 (02-6410-7410)"
         },
         {
           "company": "DB생명",
-          "round": "9-3차",
+          "round": "9-3",
           "acceptanceDeadline": "9/12(금)",
           "gpUploadDate": "9/25(목)",
           "recruitmentMethod": "서류(위촉시작성)",
@@ -111,7 +112,7 @@
         },
         {
           "company": "하나생명",
-          "round": "9-3차",
+          "round": "9-3",
           "acceptanceDeadline": "9/15(월)",
           "gpUploadDate": "9/19(금)",
           "recruitmentMethod": "고정URL(https://bit.ly/3xpO15u)",
@@ -119,15 +120,15 @@
         },
         {
           "company": "신한라이프",
-          "round": "9-3차",
+          "round": "9-3",
           "acceptanceDeadline": "9/15(월)",
           "gpUploadDate": "9/26(금)",
           "recruitmentMethod": "문자(SMS) 발송",
-          "manager": "신지원 대리 (02-6410-7321)"
+          "manager": "김보미 사원 (02-6410-7233)"
         },
         {
           "company": "처브라이프",
-          "round": "9-3차",
+          "round": "9-3",
           "acceptanceDeadline": "9/16(화)",
           "gpUploadDate": "9/26(금)",
           "recruitmentMethod": "서류(위촉시작성)",
@@ -135,7 +136,7 @@
         },
         {
           "company": "라이나생명",
-          "round": "9-3차",
+          "round": "9-3",
           "acceptanceDeadline": "9/16(화)",
           "gpUploadDate": "9/23(화)",
           "recruitmentMethod": "서류(원전산출력)",
@@ -143,7 +144,7 @@
         },
         {
           "company": "ABL생명",
-          "round": "9-3차",
+          "round": "9-3",
           "acceptanceDeadline": "9/17(수)",
           "gpUploadDate": "9/26(금)",
           "recruitmentMethod": "문자(SMS) 발송_031-523-3002",
@@ -151,7 +152,7 @@
         },
         {
           "company": "교보생명",
-          "round": "9-3차",
+          "round": "9-3",
           "acceptanceDeadline": "9/17(수)",
           "gpUploadDate": "9/26(금)",
           "recruitmentMethod": "알림톡(카카오톡) 발송",
@@ -159,7 +160,7 @@
         },
         {
           "company": "IBK연금",
-          "round": "9-3차",
+          "round": "9-3",
           "acceptanceDeadline": "9/19(금)",
           "gpUploadDate": "9/29(월)",
           "recruitmentMethod": "알림톡(카카오톡) 발송",
@@ -167,7 +168,7 @@
         },
         {
           "company": "푸본현대",
-          "round": "9-3차",
+          "round": "9-3",
           "acceptanceDeadline": "9/19(금)",
           "gpUploadDate": "9/29(월)",
           "recruitmentMethod": "알림톡(카카오톡) 발송",
@@ -175,23 +176,31 @@
         },
         {
           "company": "IM라이프",
-          "round": "9-3차",
+          "round": "9-3",
           "acceptanceDeadline": "9/23(화)",
           "gpUploadDate": "10/2(목)",
           "recruitmentMethod": "문자(SMS) 발송",
-          "manager": "신지원 대리 (02-6410-7321)"
+          "manager": "김보미 사원 (02-6410-7233)"
         }
       ]
     },
     {
-      "round": "9-4차",
+      "round": "9-4",
       "deadline": "",
       "gpOpenDate": "9/22(월)",
       "gpOpenTime": "PM16:00",
       "companies": [
         {
+          "company": "신한라이프",
+          "round": "9-4",
+          "acceptanceDeadline": "9/15(월)",
+          "gpUploadDate": "9/26(금)",
+          "recruitmentMethod": "문자(SMS) 발송",
+          "manager": "김보미 사원 (02-6410-7233)"
+        },
+        {
           "company": "KB라이프",
-          "round": "9-4차",
+          "round": "9-4",
           "acceptanceDeadline": "9/16(화)",
           "gpUploadDate": "9/25(목)",
           "recruitmentMethod": "문자(SMS) 발송/고정URL (http://id.kblife.co.kr/gafp/73100 )",
@@ -199,23 +208,39 @@
         },
         {
           "company": "KDB생명",
-          "round": "9-4차",
+          "round": "9-4",
           "acceptanceDeadline": "9/16(화)",
           "gpUploadDate": "9/26(금)",
           "recruitmentMethod": "알림톡(카카오톡) 발송",
           "manager": "김보미 사원 (02-6410-7233)"
         },
         {
+          "company": "처브라이프",
+          "round": "9-4",
+          "acceptanceDeadline": "9/16(화)",
+          "gpUploadDate": "9/26(금)",
+          "recruitmentMethod": "서류(위촉시작성)",
+          "manager": "김보미 사원 (02-6410-7233)"
+        },
+        {
           "company": "농협생명",
-          "round": "9-4차",
+          "round": "9-4",
           "acceptanceDeadline": "9/16(화)",
           "gpUploadDate": "9/25(목)",
           "recruitmentMethod": "알림톡(카카오톡) 발송",
           "manager": "김보미 사원 (02-6410-7233)"
         },
         {
+          "company": "교보생명",
+          "round": "9-4",
+          "acceptanceDeadline": "9/17(수)",
+          "gpUploadDate": "9/26(금)",
+          "recruitmentMethod": "알림톡(카카오톡) 발송",
+          "manager": "방수현 대리 (02-6410-7411)"
+        },
+        {
           "company": "메트라이프",
-          "round": "9-4차",
+          "round": "9-4",
           "acceptanceDeadline": "9/17(수)",
           "gpUploadDate": "9/26(금)",
           "recruitmentMethod": "문자(SMS) 발송_1688-7427/고정URL로 직접 제출 가능(https://brand.metlife.co.kr/ga/appt/selectMoblieCert.do)",
@@ -223,7 +248,7 @@
         },
         {
           "company": "미래에셋",
-          "round": "9-4차",
+          "round": "9-4",
           "acceptanceDeadline": "9/17(수)",
           "gpUploadDate": "9/26(금)",
           "recruitmentMethod": "알림톡(카카오톡) 발송",
@@ -231,7 +256,7 @@
         },
         {
           "company": "카디프생명",
-          "round": "9-4차",
+          "round": "9-4",
           "acceptanceDeadline": "9/18(목)",
           "gpUploadDate": "9/26(금)",
           "recruitmentMethod": "문자(SMS) 발송(02-3788-0664)BNP파리바카디프생명",
@@ -239,39 +264,23 @@
         },
         {
           "company": "라이나생명",
-          "round": "9-4차",
+          "round": "9-4",
           "acceptanceDeadline": "9/23(화)",
           "gpUploadDate": "9/30(화)",
           "recruitmentMethod": "서류(원전산출력)",
           "manager": "이성연 사원 (02-6410-7410)"
         },
         {
-          "company": "한화생명",
-          "round": "9-4차",
-          "acceptanceDeadline": "9/25(목)",
-          "gpUploadDate": "10/13(월)",
-          "recruitmentMethod": "알림톡(카카오톡) 발송",
-          "manager": "방수현 대리 (02-6410-7411)"
-        },
-        {
-          "company": "ABL생명",
-          "round": "9-4차",
-          "acceptanceDeadline": "9/30(화)",
-          "gpUploadDate": "10/16(목)",
-          "recruitmentMethod": "문자(SMS) 발송_031-523-3002",
-          "manager": "방수현 대리 (02-6410-7411)"
-        },
-        {
-          "company": "하나생명",
-          "round": "9-4차",
-          "acceptanceDeadline": "9/29(월)",
+          "company": "IM라이프",
+          "round": "9-4",
+          "acceptanceDeadline": "9/23(화)",
           "gpUploadDate": "10/2(목)",
-          "recruitmentMethod": "고정URL(https://bit.ly/3xpO15u)",
+          "recruitmentMethod": "문자(SMS) 발송",
           "manager": "김보미 사원 (02-6410-7233)"
         },
         {
           "company": "삼성생명",
-          "round": "9-4차",
+          "round": "9-4",
           "acceptanceDeadline": "9/24(수)",
           "gpUploadDate": "10/15(수)",
           "recruitmentMethod": "알림톡(카카오톡) 발송",
@@ -279,39 +288,71 @@
         },
         {
           "company": "흥국생명",
-          "round": "9-4차",
+          "round": "9-4",
           "acceptanceDeadline": "9/24(수)",
           "gpUploadDate": "10/14(화)",
           "recruitmentMethod": "문자(SMS) 발송",
           "manager": "이성연 사원 (02-6410-7410)"
         },
         {
-          "company": "동양생명",
-          "round": "9-4차",
-          "acceptanceDeadline": "9/29(월)",
-          "gpUploadDate": "10/15(수)",
-          "recruitmentMethod": "서류(원전산출력)",
-          "manager": "신지원 대리 (02-6410-7321)"
+          "company": "한화생명",
+          "round": "9-4",
+          "acceptanceDeadline": "9/25(목)",
+          "gpUploadDate": "10/13(월)",
+          "recruitmentMethod": "알림톡(카카오톡) 발송",
+          "manager": "방수현 대리 (02-6410-7411)"
         },
         {
           "company": "DB생명",
-          "round": "9-4차",
+          "round": "9-4",
           "acceptanceDeadline": "9/26(금)",
           "gpUploadDate": "10/16(목)",
           "recruitmentMethod": "서류(위촉시작성)",
           "manager": "이성연 사원 (02-6410-7410)"
+        },
+        {
+          "company": "하나생명",
+          "round": "9-4",
+          "acceptanceDeadline": "9/29(월)",
+          "gpUploadDate": "10/2(목)",
+          "recruitmentMethod": "고정URL(https://bit.ly/3xpO15u)",
+          "manager": "김보미 사원 (02-6410-7233)"
+        },
+        {
+          "company": "동양생명",
+          "round": "9-4",
+          "acceptanceDeadline": "9/29(월)",
+          "gpUploadDate": "10/15(수)",
+          "recruitmentMethod": "서류(원전산출력)",
+          "manager": "이성연 사원 (02-6410-7410)"
+        },
+        {
+          "company": "ABL생명",
+          "round": "9-4",
+          "acceptanceDeadline": "9/30(화)",
+          "gpUploadDate": "10/16(목)",
+          "recruitmentMethod": "문자(SMS) 발송_031-523-3002",
+          "manager": "방수현 대리 (02-6410-7411)"
         }
       ]
     },
     {
-      "round": "9-5차",
+      "round": "9-5",
       "deadline": "",
       "gpOpenDate": "9/29(월)",
       "gpOpenTime": "PM16:00",
       "companies": [
         {
           "company": "KB라이프",
-          "round": "9-5차",
+          "round": "9-5",
+          "acceptanceDeadline": "9/22(월)",
+          "gpUploadDate": "10/2(목)",
+          "recruitmentMethod": "문자(SMS) 발송/고정URL (http://id.kblife.co.kr/gafp/73100 )",
+          "manager": "김보미 사원 (02-6410-7233)"
+        },
+        {
+          "company": "KB라이프",
+          "round": "9-5",
           "acceptanceDeadline": "9/23(화)",
           "gpUploadDate": "10/2(목)",
           "recruitmentMethod": "문자(SMS) 발송/고정URL (http://id.kblife.co.kr/gafp/73100 )",
@@ -319,63 +360,23 @@
         },
         {
           "company": "교보생명",
-          "round": "9-5차",
+          "round": "9-5",
           "acceptanceDeadline": "9/23(화)",
           "gpUploadDate": "10/14(화)",
           "recruitmentMethod": "알림톡(카카오톡) 발송",
           "manager": "방수현 대리 (02-6410-7411)"
         },
         {
-          "company": "메트라이프",
-          "round": "9-5차",
-          "acceptanceDeadline": "9/25(목)",
-          "gpUploadDate": "10/13(월)",
-          "recruitmentMethod": "문자(SMS) 발송_1688-7427/고정URL로 직접 제출 가능(https://brand.metlife.co.kr/ga/appt/selectMoblieCert.do)",
-          "manager": "방수현 대리 (02-6410-7411)"
-        },
-        {
-          "company": "미래에셋",
-          "round": "9-5차",
-          "acceptanceDeadline": "9/29(월)",
-          "gpUploadDate": "10/16(목)",
-          "recruitmentMethod": "알림톡(카카오톡) 발송",
-          "manager": "방수현 대리 (02-6410-7411)"
-        },
-        {
-          "company": "IM라이프",
-          "round": "9-5차",
-          "acceptanceDeadline": "9/26(금)",
-          "gpUploadDate": "10/17(금)",
-          "recruitmentMethod": "문자(SMS) 발송",
-          "manager": "신지원 대리 (02-6410-7321)"
-        },
-        {
           "company": "신한라이프",
-          "round": "9-5차",
+          "round": "9-5",
           "acceptanceDeadline": "9/23(화)",
           "gpUploadDate": "10/2(목)",
           "recruitmentMethod": "문자(SMS) 발송",
-          "manager": "신지원 대리 (02-6410-7321)"
-        },
-        {
-          "company": "KDB생명",
-          "round": "9-5차",
-          "acceptanceDeadline": "9/24(수)",
-          "gpUploadDate": "10/13(월)",
-          "recruitmentMethod": "알림톡(카카오톡) 발송",
-          "manager": "김보미 사원 (02-6410-7233)"
-        },
-        {
-          "company": "KB라이프",
-          "round": "9-5차",
-          "acceptanceDeadline": "9/22(월)",
-          "gpUploadDate": "10/2(목)",
-          "recruitmentMethod": "문자(SMS) 발송/고정URL (http://id.kblife.co.kr/gafp/73100 )",
           "manager": "김보미 사원 (02-6410-7233)"
         },
         {
           "company": "농협생명",
-          "round": "9-5차",
+          "round": "9-5",
           "acceptanceDeadline": "9/23(화)",
           "gpUploadDate": "10/2(목)",
           "recruitmentMethod": "알림톡(카카오톡) 발송",
@@ -383,87 +384,271 @@
         },
         {
           "company": "처브라이프",
-          "round": "9-5차",
+          "round": "9-5",
           "acceptanceDeadline": "9/23(화)",
           "gpUploadDate": "10/13(월)",
           "recruitmentMethod": "서류(위촉시작성)",
           "manager": "김보미 사원 (02-6410-7233)"
         },
         {
-          "company": "라이나생명",
-          "round": "9-5차",
-          "acceptanceDeadline": "10/14(화)",
-          "gpUploadDate": "10/21(화)",
-          "recruitmentMethod": "서류(원전산출력)",
-          "manager": "이성연 사원 (02-6410-7410)"
-        },
-        {
-          "company": "카디프생명",
-          "round": "9-5차",
-          "acceptanceDeadline": "10/1(수)",
-          "gpUploadDate": "10/17(금)",
-          "recruitmentMethod": "문자(SMS) 발송(02-3788-0664)BNP파리바카디프생명",
-          "manager": "이성연 사원 (02-6410-7410)"
-        },
-        {
-          "company": "IBK연금",
-          "round": "9-5차",
-          "acceptanceDeadline": "9/30(화)",
+          "company": "KDB생명",
+          "round": "9-5",
+          "acceptanceDeadline": "9/24(수)",
           "gpUploadDate": "10/13(월)",
           "recruitmentMethod": "알림톡(카카오톡) 발송",
+          "manager": "김보미 사원 (02-6410-7233)"
+        },
+        {
+          "company": "메트라이프",
+          "round": "9-5",
+          "acceptanceDeadline": "9/25(목)",
+          "gpUploadDate": "10/13(월)",
+          "recruitmentMethod": "문자(SMS) 발송_1688-7427/고정URL로 직접 제출 가능(https://brand.metlife.co.kr/ga/appt/selectMoblieCert.do)",
+          "manager": "방수현 대리 (02-6410-7411)"
+        },
+        {
+          "company": "한화생명",
+          "round": "9-5",
+          "acceptanceDeadline": "9/25(목)",
+          "gpUploadDate": "10/13(월)",
+          "recruitmentMethod": "알림톡(카카오톡) 발송",
+          "manager": "방수현 대리 (02-6410-7411)"
+        },
+        {
+          "company": "IM라이프",
+          "round": "9-5",
+          "acceptanceDeadline": "9/26(금)",
+          "gpUploadDate": "10/17(금)",
+          "recruitmentMethod": "문자(SMS) 발송",
+          "manager": "김보미 사원 (02-6410-7233)"
+        },
+        {
+          "company": "DB생명",
+          "round": "9-5",
+          "acceptanceDeadline": "9/26(금)",
+          "gpUploadDate": "10/16(목)",
+          "recruitmentMethod": "서류(위촉시작성)",
           "manager": "이성연 사원 (02-6410-7410)"
         },
         {
-          "company": "삼성생명",
-          "round": "9-5차",
-          "acceptanceDeadline": "10/1(수)",
-          "gpUploadDate": "10/22(수)",
+          "company": "미래에셋",
+          "round": "9-5",
+          "acceptanceDeadline": "9/29(월)",
+          "gpUploadDate": "10/16(목)",
           "recruitmentMethod": "알림톡(카카오톡) 발송",
-          "manager": "이성연 사원 (02-6410-7410)"
+          "manager": "방수현 대리 (02-6410-7411)"
         },
         {
           "company": "흥국생명",
-          "round": "9-5차",
+          "round": "9-5",
           "acceptanceDeadline": "9/29(월)",
           "gpUploadDate": "10/21(화)",
           "recruitmentMethod": "문자(SMS) 발송",
           "manager": "이성연 사원 (02-6410-7410)"
         },
         {
+          "company": "동양생명",
+          "round": "9-5",
+          "acceptanceDeadline": "9/29(월)",
+          "gpUploadDate": "10/15(수)",
+          "recruitmentMethod": "서류(원전산출력)",
+          "manager": "이성연 사원 (02-6410-7410)"
+        },
+        {
+          "company": "ABL생명",
+          "round": "9-5",
+          "acceptanceDeadline": "9/30(화)",
+          "gpUploadDate": "10/16(목)",
+          "recruitmentMethod": "문자(SMS) 발송_031-523-3002",
+          "manager": "방수현 대리 (02-6410-7411)"
+        },
+        {
+          "company": "IBK연금",
+          "round": "9-5",
+          "acceptanceDeadline": "9/30(화)",
+          "gpUploadDate": "10/13(월)",
+          "recruitmentMethod": "알림톡(카카오톡) 발송",
+          "manager": "이성연 사원 (02-6410-7410)"
+        },
+        {
+          "company": "카디프생명",
+          "round": "9-5",
+          "acceptanceDeadline": "10/1(수)",
+          "gpUploadDate": "10/17(금)",
+          "recruitmentMethod": "문자(SMS) 발송(02-3788-0664)BNP파리바카디프생명",
+          "manager": "이성연 사원 (02-6410-7410)"
+        },
+        {
+          "company": "삼성생명",
+          "round": "9-5",
+          "acceptanceDeadline": "10/1(수)",
+          "gpUploadDate": "10/22(수)",
+          "recruitmentMethod": "알림톡(카카오톡) 발송",
+          "manager": "이성연 사원 (02-6410-7410)"
+        },
+        {
           "company": "푸본현대",
-          "round": "9-5차",
+          "round": "9-5",
           "acceptanceDeadline": "10/2(목)",
           "gpUploadDate": "10/17(금)",
           "recruitmentMethod": "알림톡(카카오톡) 발송",
+          "manager": "이성연 사원 (02-6410-7410)"
+        },
+        {
+          "company": "라이나생명",
+          "round": "9-5",
+          "acceptanceDeadline": "10/14(화)",
+          "gpUploadDate": "10/21(화)",
+          "recruitmentMethod": "서류(원전산출력)",
           "manager": "이성연 사원 (02-6410-7410)"
         }
       ]
     },
     {
-      "round": "10-1차",
+      "round": "10-1",
       "deadline": "",
       "gpOpenDate": "10/13(월)",
       "gpOpenTime": "PM16:00",
       "companies": [
         {
+          "company": "신한라이프",
+          "round": "10-1",
+          "acceptanceDeadline": "9/26(금)",
+          "gpUploadDate": "10/16(목)",
+          "recruitmentMethod": "문자(SMS) 발송",
+          "manager": "김보미 사원 (02-6410-7233)"
+        },
+        {
+          "company": "KB라이프",
+          "round": "10-1",
+          "acceptanceDeadline": "9/29(월)",
+          "gpUploadDate": "10/16(목)",
+          "recruitmentMethod": "문자(SMS) 발송/고정URL (http://id.kblife.co.kr/gafp/73100 )",
+          "manager": "김보미 사원 (02-6410-7233)"
+        },
+        {
+          "company": "처브라이프",
+          "round": "10-1",
+          "acceptanceDeadline": "9/29(월)",
+          "gpUploadDate": "10/16(목)",
+          "recruitmentMethod": "서류(위촉시작성)",
+          "manager": "김보미 사원 (02-6410-7233)"
+        },
+        {
+          "company": "흥국생명",
+          "round": "10-1",
+          "acceptanceDeadline": "9/29(월)",
+          "gpUploadDate": "10/21(화)",
+          "recruitmentMethod": "문자(SMS) 발송",
+          "manager": "이성연 사원 (02-6410-7410)"
+        },
+        {
           "company": "메트라이프",
-          "round": "10-1차",
+          "round": "10-1",
           "acceptanceDeadline": "9/30(화)",
           "gpUploadDate": "10/16(목)",
           "recruitmentMethod": "문자(SMS) 발송_1688-7427/고정URL로 직접 제출 가능(https://brand.metlife.co.kr/ga/appt/selectMoblieCert.do)",
           "manager": "방수현 대리 (02-6410-7411)"
         },
         {
+          "company": "KDB생명",
+          "round": "10-1",
+          "acceptanceDeadline": "9/30(화)",
+          "gpUploadDate": "10/20(월)",
+          "recruitmentMethod": "알림톡(카카오톡) 발송",
+          "manager": "김보미 사원 (02-6410-7233)"
+        },
+        {
+          "company": "농협생명",
+          "round": "10-1",
+          "acceptanceDeadline": "9/30(화)",
+          "gpUploadDate": "10/16(목)",
+          "recruitmentMethod": "알림톡(카카오톡) 발송",
+          "manager": "김보미 사원 (02-6410-7233)"
+        },
+        {
+          "company": "IBK연금",
+          "round": "10-1",
+          "acceptanceDeadline": "9/30(화)",
+          "gpUploadDate": "10/13(월)",
+          "recruitmentMethod": "알림톡(카카오톡) 발송",
+          "manager": "이성연 사원 (02-6410-7410)"
+        },
+        {
+          "company": "카디프생명",
+          "round": "10-1",
+          "acceptanceDeadline": "10/1(수)",
+          "gpUploadDate": "10/17(금)",
+          "recruitmentMethod": "문자(SMS) 발송(02-3788-0664)BNP파리바카디프생명",
+          "manager": "이성연 사원 (02-6410-7410)"
+        },
+        {
+          "company": "삼성생명",
+          "round": "10-1",
+          "acceptanceDeadline": "10/1(수)",
+          "gpUploadDate": "10/22(수)",
+          "recruitmentMethod": "알림톡(카카오톡) 발송",
+          "manager": "이성연 사원 (02-6410-7410)"
+        },
+        {
+          "company": "DB생명",
+          "round": "10-1",
+          "acceptanceDeadline": "10/2(목)",
+          "gpUploadDate": "10/23(목)",
+          "recruitmentMethod": "서류(위촉시작성)",
+          "manager": "이성연 사원 (02-6410-7410)"
+        },
+        {
+          "company": "푸본현대",
+          "round": "10-1",
+          "acceptanceDeadline": "10/2(목)",
+          "gpUploadDate": "10/17(금)",
+          "recruitmentMethod": "알림톡(카카오톡) 발송",
+          "manager": "이성연 사원 (02-6410-7410)"
+        },
+        {
           "company": "한화생명",
-          "round": "10-1차",
+          "round": "10-1",
           "acceptanceDeadline": "10/10(금)",
           "gpUploadDate": "10/27(월)",
           "recruitmentMethod": "알림톡(카카오톡) 발송",
           "manager": "방수현 대리 (02-6410-7411)"
         },
         {
+          "company": "IM라이프",
+          "round": "10-1",
+          "acceptanceDeadline": "10/13(월)",
+          "gpUploadDate": "10/24(금)",
+          "recruitmentMethod": "문자(SMS) 발송",
+          "manager": "김보미 사원 (02-6410-7233)"
+        },
+        {
+          "company": "하나생명",
+          "round": "10-1",
+          "acceptanceDeadline": "10/13(월)",
+          "gpUploadDate": "10/17(금)",
+          "recruitmentMethod": "고정URL(https://bit.ly/3xpO15u)",
+          "manager": "김보미 사원 (02-6410-7233)"
+        },
+        {
+          "company": "라이나생명",
+          "round": "10-1",
+          "acceptanceDeadline": "10/14(화)",
+          "gpUploadDate": "10/21(화)",
+          "recruitmentMethod": "서류(원전산출력)",
+          "manager": "이성연 사원 (02-6410-7410)"
+        },
+        {
+          "company": "동양생명",
+          "round": "10-1",
+          "acceptanceDeadline": "10/14(화)",
+          "gpUploadDate": "10/22(수)",
+          "recruitmentMethod": "서류(원전산출력)",
+          "manager": "이성연 사원 (02-6410-7410)"
+        },
+        {
           "company": "교보생명",
-          "round": "10-1차",
+          "round": "10-1",
           "acceptanceDeadline": "10/15(수)",
           "gpUploadDate": "10/28(화)",
           "recruitmentMethod": "알림톡(카카오톡) 발송",
@@ -471,7 +656,7 @@
         },
         {
           "company": "ABL생명",
-          "round": "10-1차",
+          "round": "10-1",
           "acceptanceDeadline": "10/20(월)",
           "gpUploadDate": "10/28(화)",
           "recruitmentMethod": "문자(SMS) 발송_031-523-3002",
@@ -479,151 +664,127 @@
         },
         {
           "company": "미래에셋",
-          "round": "10-1차",
+          "round": "10-1",
           "acceptanceDeadline": "10/20(월)",
           "gpUploadDate": "10/28(화)",
           "recruitmentMethod": "알림톡(카카오톡) 발송",
           "manager": "방수현 대리 (02-6410-7411)"
-        },
-        {
-          "company": "IM라이프",
-          "round": "10-1차",
-          "acceptanceDeadline": "10/13(월)",
-          "gpUploadDate": "10/24(금)",
-          "recruitmentMethod": "문자(SMS) 발송",
-          "manager": "신지원 대리 (02-6410-7321)"
-        },
-        {
-          "company": "신한라이프",
-          "round": "10-1차",
-          "acceptanceDeadline": "9/26(금)",
-          "gpUploadDate": "10/16(목)",
-          "recruitmentMethod": "문자(SMS) 발송",
-          "manager": "신지원 대리 (02-6410-7321)"
-        },
-        {
-          "company": "KDB생명",
-          "round": "10-1차",
-          "acceptanceDeadline": "9/30(화)",
-          "gpUploadDate": "10/20(월)",
-          "recruitmentMethod": "알림톡(카카오톡) 발송",
-          "manager": "김보미 사원 (02-6410-7233)"
-        },
-        {
-          "company": "KB라이프",
-          "round": "10-1차",
-          "acceptanceDeadline": "9/29(월)",
-          "gpUploadDate": "10/16(목)",
-          "recruitmentMethod": "문자(SMS) 발송/고정URL (http://id.kblife.co.kr/gafp/73100 )",
-          "manager": "김보미 사원 (02-6410-7233)"
-        },
-        {
-          "company": "농협생명",
-          "round": "10-1차",
-          "acceptanceDeadline": "9/30(화)",
-          "gpUploadDate": "10/16(목)",
-          "recruitmentMethod": "알림톡(카카오톡) 발송",
-          "manager": "김보미 사원 (02-6410-7233)"
-        },
-        {
-          "company": "처브라이프",
-          "round": "10-1차",
-          "acceptanceDeadline": "9/29(월)",
-          "gpUploadDate": "10/16(목)",
-          "recruitmentMethod": "서류(위촉시작성)",
-          "manager": "김보미 사원 (02-6410-7233)"
-        },
-        {
-          "company": "하나생명",
-          "round": "10-1차",
-          "acceptanceDeadline": "10/13(월)",
-          "gpUploadDate": "10/17(금)",
-          "recruitmentMethod": "고정URL(https://bit.ly/3xpO15u)",
-          "manager": "김보미 사원 (02-6410-7233)"
-        },
-        {
-          "company": "동양생명",
-          "round": "10-1차",
-          "acceptanceDeadline": "10/14(화)",
-          "gpUploadDate": "10/22(수)",
-          "recruitmentMethod": "서류(원전산출력)",
-          "manager": "신지원 대리 (02-6410-7321)"
-        },
-        {
-          "company": "DB생명",
-          "round": "10-1차",
-          "acceptanceDeadline": "10/2(목)",
-          "gpUploadDate": "10/23(목)",
-          "recruitmentMethod": "서류(위촉시작성)",
-          "manager": "이성연 사원 (02-6410-7410)"
         }
       ]
     },
     {
-      "round": "10-2차",
+      "round": "10-2",
       "deadline": "",
       "gpOpenDate": "10/20(월)",
       "gpOpenTime": "PM16:00",
       "companies": [
         {
+          "company": "KB라이프",
+          "round": "10-2",
+          "acceptanceDeadline": "10/13(월)",
+          "gpUploadDate": "10/23(목)",
+          "recruitmentMethod": "문자(SMS) 발송/고정URL (http://id.kblife.co.kr/gafp/73100 )",
+          "manager": "김보미 사원 (02-6410-7233)"
+        },
+        {
+          "company": "KDB생명",
+          "round": "10-2",
+          "acceptanceDeadline": "10/14(화)",
+          "gpUploadDate": "10/27(월)",
+          "recruitmentMethod": "알림톡(카카오톡) 발송",
+          "manager": "김보미 사원 (02-6410-7233)"
+        },
+        {
+          "company": "흥국생명",
+          "round": "10-2",
+          "acceptanceDeadline": "10/14(화)",
+          "gpUploadDate": "10/28(화)",
+          "recruitmentMethod": "문자(SMS) 발송",
+          "manager": "이성연 사원 (02-6410-7410)"
+        },
+        {
+          "company": "동양생명",
+          "round": "10-2",
+          "acceptanceDeadline": "10/14(화)",
+          "gpUploadDate": "10/22(수)",
+          "recruitmentMethod": "서류(원전산출력)",
+          "manager": "이성연 사원 (02-6410-7410)"
+        },
+        {
+          "company": "처브라이프",
+          "round": "10-2",
+          "acceptanceDeadline": "10/16(목)",
+          "gpUploadDate": "10/28(화)",
+          "recruitmentMethod": "서류(위촉시작성)",
+          "manager": "김보미 사원 (02-6410-7233)"
+        },
+        {
+          "company": "카디프생명",
+          "round": "10-2",
+          "acceptanceDeadline": "10/16(목)",
+          "gpUploadDate": "10/24(금)",
+          "recruitmentMethod": "문자(SMS) 발송(02-3788-0664)BNP파리바카디프생명",
+          "manager": "이성연 사원 (02-6410-7410)"
+        },
+        {
           "company": "한화생명",
-          "round": "10-2차",
+          "round": "10-2",
           "acceptanceDeadline": "10/17(금)",
           "gpUploadDate": "10/27(월)",
           "recruitmentMethod": "알림톡(카카오톡) 발송",
           "manager": "방수현 대리 (02-6410-7411)"
         },
         {
+          "company": "신한라이프",
+          "round": "10-2",
+          "acceptanceDeadline": "10/17(금)",
+          "gpUploadDate": "10/28(화)",
+          "recruitmentMethod": "문자(SMS) 발송",
+          "manager": "김보미 사원 (02-6410-7233)"
+        },
+        {
+          "company": "DB생명",
+          "round": "10-2",
+          "acceptanceDeadline": "10/17(금)",
+          "gpUploadDate": "10/30(목)",
+          "recruitmentMethod": "서류(위촉시작성)",
+          "manager": "이성연 사원 (02-6410-7410)"
+        },
+        {
+          "company": "ABL생명",
+          "round": "10-2",
+          "acceptanceDeadline": "10/20(월)",
+          "gpUploadDate": "10/28(화)",
+          "recruitmentMethod": "문자(SMS) 발송_031-523-3002",
+          "manager": "방수현 대리 (02-6410-7411)"
+        },
+        {
           "company": "메트라이프",
-          "round": "10-2차",
+          "round": "10-2",
           "acceptanceDeadline": "10/20(월)",
           "gpUploadDate": "10/28(화)",
           "recruitmentMethod": "문자(SMS) 발송_1688-7427/고정URL로 직접 제출 가능(https://brand.metlife.co.kr/ga/appt/selectMoblieCert.do)",
           "manager": "방수현 대리 (02-6410-7411)"
         },
         {
-          "company": "신한라이프",
-          "round": "10-2차",
-          "acceptanceDeadline": "10/17(금)",
+          "company": "미래에셋",
+          "round": "10-2",
+          "acceptanceDeadline": "10/20(월)",
           "gpUploadDate": "10/28(화)",
-          "recruitmentMethod": "문자(SMS) 발송",
-          "manager": "신지원 대리 (02-6410-7321)"
-        },
-        {
-          "company": "KDB생명",
-          "round": "10-2차",
-          "acceptanceDeadline": "10/14(화)",
-          "gpUploadDate": "10/27(월)",
           "recruitmentMethod": "알림톡(카카오톡) 발송",
-          "manager": "김보미 사원 (02-6410-7233)"
-        },
-        {
-          "company": "KB라이프",
-          "round": "10-2차",
-          "acceptanceDeadline": "10/13(월)",
-          "gpUploadDate": "10/23(목)",
-          "recruitmentMethod": "문자(SMS) 발송/고정URL (http://id.kblife.co.kr/gafp/73100 )",
-          "manager": "김보미 사원 (02-6410-7233)"
+          "manager": "방수현 대리 (02-6410-7411)"
         },
         {
           "company": "농협생명",
-          "round": "10-2차",
+          "round": "10-2",
           "acceptanceDeadline": "10/20(월)",
           "gpUploadDate": "10/30(목)",
           "recruitmentMethod": "알림톡(카카오톡) 발송",
           "manager": "김보미 사원 (02-6410-7233)"
         },
         {
-          "company": "처브라이프",
-          "round": "10-2차",
-          "acceptanceDeadline": "10/16(목)",
-          "gpUploadDate": "10/28(화)",
-          "recruitmentMethod": "서류(위촉시작성)",
-          "manager": "김보미 사원 (02-6410-7233)"
-        },
-        {
           "company": "하나생명",
-          "round": "10-2차",
+          "round": "10-2",
           "acceptanceDeadline": "10/20(월)",
           "gpUploadDate": "10/24(금)",
           "recruitmentMethod": "고정URL(https://bit.ly/3xpO15u)",
@@ -631,103 +792,167 @@
         },
         {
           "company": "라이나생명",
-          "round": "10-2차",
+          "round": "10-2",
           "acceptanceDeadline": "10/21(화)",
           "gpUploadDate": "10/28(화)",
           "recruitmentMethod": "서류(원전산출력)",
           "manager": "이성연 사원 (02-6410-7410)"
         },
         {
-          "company": "카디프생명",
-          "round": "10-2차",
-          "acceptanceDeadline": "10/16(목)",
-          "gpUploadDate": "10/24(금)",
-          "recruitmentMethod": "문자(SMS) 발송(02-3788-0664)BNP파리바카디프생명",
-          "manager": "이성연 사원 (02-6410-7410)"
-        },
-        {
           "company": "IBK연금",
-          "round": "10-2차",
+          "round": "10-2",
           "acceptanceDeadline": "10/21(화)",
           "gpUploadDate": "10/29(수)",
           "recruitmentMethod": "알림톡(카카오톡) 발송",
-          "manager": "이성연 사원 (02-6410-7410)"
-        },
-        {
-          "company": "삼성생명",
-          "round": "10-2차",
-          "acceptanceDeadline": "10/16(목)",
-          "gpUploadDate": "10/29(수)",
-          "recruitmentMethod": "알림톡(카카오톡) 발송",
-          "manager": "이성연 사원 (02-6410-7410)"
-        },
-        {
-          "company": "흥국생명",
-          "round": "10-2차",
-          "acceptanceDeadline": "10/14(화)",
-          "gpUploadDate": "10/28(화)",
-          "recruitmentMethod": "문자(SMS) 발송",
-          "manager": "이성연 사원 (02-6410-7410)"
-        },
-        {
-          "company": "DB생명",
-          "round": "10-2차",
-          "acceptanceDeadline": "10/17(금)",
-          "gpUploadDate": "10/30(목)",
-          "recruitmentMethod": "서류(위촉시작성)",
           "manager": "이성연 사원 (02-6410-7410)"
         },
         {
           "company": "푸본현대",
-          "round": "10-2차",
+          "round": "10-2",
           "acceptanceDeadline": "10/21(화)",
           "gpUploadDate": "10/29(수)",
           "recruitmentMethod": "알림톡(카카오톡) 발송",
           "manager": "이성연 사원 (02-6410-7410)"
+        },
+        {
+          "company": "IM라이프",
+          "round": "10-2",
+          "acceptanceDeadline": "10/27(월)",
+          "gpUploadDate": "11/7(금)",
+          "recruitmentMethod": "문자(SMS) 발송",
+          "manager": "김보미 사원 (02-6410-7233)"
         }
       ]
     },
     {
-      "round": "10-3차",
+      "round": "10-3",
       "deadline": "",
       "gpOpenDate": "10/27(월)",
       "gpOpenTime": "PM16:00",
       "companies": [
         {
+          "company": "메트라이프",
+          "round": "10-3",
+          "acceptanceDeadline": "10/20(월)",
+          "gpUploadDate": "10/28(화)",
+          "recruitmentMethod": "문자(SMS) 발송_1688-7427/고정URL로 직접 제출 가능(https://brand.metlife.co.kr/ga/appt/selectMoblieCert.do)",
+          "manager": "방수현 대리 (02-6410-7411)"
+        },
+        {
           "company": "KB라이프",
-          "round": "10-3차",
+          "round": "10-3",
           "acceptanceDeadline": "10/20(월)",
           "gpUploadDate": "10/30(목)",
           "recruitmentMethod": "문자(SMS) 발송/고정URL (http://id.kblife.co.kr/gafp/73100 )",
           "manager": "김보미 사원 (02-6410-7233)"
         },
         {
-          "company": "라이나생명",
-          "round": "10-3차",
-          "acceptanceDeadline": "10/28(화)",
-          "gpUploadDate": "11/4(화)",
-          "recruitmentMethod": "서류(원전산출력)",
+          "company": "IBK연금",
+          "round": "10-3",
+          "acceptanceDeadline": "10/21(화)",
+          "gpUploadDate": "10/29(수)",
+          "recruitmentMethod": "알림톡(카카오톡) 발송",
+          "manager": "이성연 사원 (02-6410-7410)"
+        },
+        {
+          "company": "푸본현대",
+          "round": "10-3",
+          "acceptanceDeadline": "10/21(화)",
+          "gpUploadDate": "10/29(수)",
+          "recruitmentMethod": "알림톡(카카오톡) 발송",
           "manager": "이성연 사원 (02-6410-7410)"
         },
         {
           "company": "카디프생명",
-          "round": "10-3차",
+          "round": "10-3",
           "acceptanceDeadline": "10/23(목)",
           "gpUploadDate": "10/31(금)",
           "recruitmentMethod": "문자(SMS) 발송(02-3788-0664)BNP파리바카디프생명",
           "manager": "이성연 사원 (02-6410-7410)"
         },
         {
+          "company": "한화생명",
+          "round": "10-3",
+          "acceptanceDeadline": "10/24(금)",
+          "gpUploadDate": "11/5(수)",
+          "recruitmentMethod": "알림톡(카카오톡) 발송",
+          "manager": "방수현 대리 (02-6410-7411)"
+        },
+        {
           "company": "KDB생명",
-          "round": "10-3차",
+          "round": "10-3",
           "acceptanceDeadline": "10/27(월)",
           "gpUploadDate": "11/7(금)",
           "recruitmentMethod": "알림톡(카카오톡) 발송",
           "manager": "김보미 사원 (02-6410-7233)"
         },
         {
+          "company": "IM라이프",
+          "round": "10-3",
+          "acceptanceDeadline": "10/27(월)",
+          "gpUploadDate": "11/7(금)",
+          "recruitmentMethod": "문자(SMS) 발송",
+          "manager": "김보미 사원 (02-6410-7233)"
+        },
+        {
+          "company": "삼성생명",
+          "round": "10-3",
+          "acceptanceDeadline": "10/27(월)",
+          "gpUploadDate": "11/10(월)",
+          "recruitmentMethod": "알림톡(카카오톡) 발송",
+          "manager": "이성연 사원 (02-6410-7410)"
+        },
+        {
+          "company": "흥국생명",
+          "round": "10-3",
+          "acceptanceDeadline": "10/27(월)",
+          "gpUploadDate": "11/6(목)",
+          "recruitmentMethod": "문자(SMS) 발송",
+          "manager": "이성연 사원 (02-6410-7410)"
+        },
+        {
+          "company": "라이나생명",
+          "round": "10-3",
+          "acceptanceDeadline": "10/28(화)",
+          "gpUploadDate": "11/4(화)",
+          "recruitmentMethod": "서류(원전산출력)",
+          "manager": "이성연 사원 (02-6410-7410)"
+        },
+        {
+          "company": "ABL생명",
+          "round": "10-3",
+          "acceptanceDeadline": "10/29(수)",
+          "gpUploadDate": "11/6(목)",
+          "recruitmentMethod": "문자(SMS) 발송_031-523-3002",
+          "manager": "방수현 대리 (02-6410-7411)"
+        },
+        {
+          "company": "미래에셋",
+          "round": "10-3",
+          "acceptanceDeadline": "10/29(수)",
+          "gpUploadDate": "11/7(금)",
+          "recruitmentMethod": "알림톡(카카오톡) 발송",
+          "manager": "방수현 대리 (02-6410-7411)"
+        },
+        {
+          "company": "동양생명",
+          "round": "10-3",
+          "acceptanceDeadline": "10/29(수)",
+          "gpUploadDate": "11/7(금)",
+          "recruitmentMethod": "서류(원전산출력)",
+          "manager": "이성연 사원 (02-6410-7410)"
+        },
+        {
+          "company": "DB생명",
+          "round": "10-3",
+          "acceptanceDeadline": "10/31(금)",
+          "gpUploadDate": "11/13(목)",
+          "recruitmentMethod": "서류(위촉시작성)",
+          "manager": "이성연 사원 (02-6410-7410)"
+        },
+        {
           "company": "하나생명",
-          "round": "10-3차",
+          "round": "10-3",
           "acceptanceDeadline": "11/3(월)",
           "gpUploadDate": "11/7(금)",
           "recruitmentMethod": "고정URL(https://bit.ly/3xpO15u)",
@@ -736,14 +961,22 @@
       ]
     },
     {
-      "round": "11-1차",
+      "round": "11-1",
       "deadline": "",
       "gpOpenDate": "11/3(월)",
       "gpOpenTime": "PM16:00",
       "companies": [
         {
+          "company": "신한라이프",
+          "round": "11-1",
+          "acceptanceDeadline": "10/24(금)",
+          "gpUploadDate": "11/6(목)",
+          "recruitmentMethod": "문자(SMS) 발송",
+          "manager": "김보미 사원 (02-6410-7233)"
+        },
+        {
           "company": "농협생명",
-          "round": "11-1차",
+          "round": "11-1",
           "acceptanceDeadline": "10/27(월)",
           "gpUploadDate": "11/6(목)",
           "recruitmentMethod": "알림톡(카카오톡) 발송",
@@ -751,39 +984,159 @@
         },
         {
           "company": "KB라이프",
-          "round": "11-1차",
+          "round": "11-1",
           "acceptanceDeadline": "10/27(월)",
           "gpUploadDate": "11/6(목)",
           "recruitmentMethod": "문자(SMS) 발송/고정URL (http://id.kblife.co.kr/gafp/73100 )",
           "manager": "김보미 사원 (02-6410-7233)"
         },
         {
-          "company": "신한라이프",
-          "round": "11-1차",
-          "acceptanceDeadline": "10/24(금)",
-          "gpUploadDate": "11/6(목)",
-          "recruitmentMethod": "문자(SMS) 발송",
-          "manager": "신지원 대리 (02-6410-7321)"
+          "company": "KDB생명",
+          "round": "11-1",
+          "acceptanceDeadline": "10/27(월)",
+          "gpUploadDate": "11/7(금)",
+          "recruitmentMethod": "알림톡(카카오톡) 발송",
+          "manager": "김보미 사원 (02-6410-7233)"
         },
         {
           "company": "처브라이프",
-          "round": "11-1차",
+          "round": "11-1",
           "acceptanceDeadline": "10/27(월)",
           "gpUploadDate": "11/6(목)",
           "recruitmentMethod": "서류(위촉시작성)",
           "manager": "김보미 사원 (02-6410-7233)"
+        },
+        {
+          "company": "삼성생명",
+          "round": "11-1",
+          "acceptanceDeadline": "10/27(월)",
+          "gpUploadDate": "11/10(월)",
+          "recruitmentMethod": "알림톡(카카오톡) 발송",
+          "manager": "이성연 사원 (02-6410-7410)"
+        },
+        {
+          "company": "메트라이프",
+          "round": "11-1",
+          "acceptanceDeadline": "10/28(화)",
+          "gpUploadDate": "11/6(목)",
+          "recruitmentMethod": "문자(SMS) 발송_1688-7427/고정URL로 직접 제출 가능(https://brand.metlife.co.kr/ga/appt/selectMoblieCert.do)",
+          "manager": "방수현 대리 (02-6410-7411)"
+        },
+        {
+          "company": "미래에셋",
+          "round": "11-1",
+          "acceptanceDeadline": "10/29(수)",
+          "gpUploadDate": "11/7(금)",
+          "recruitmentMethod": "알림톡(카카오톡) 발송",
+          "manager": "방수현 대리 (02-6410-7411)"
+        },
+        {
+          "company": "동양생명",
+          "round": "11-1",
+          "acceptanceDeadline": "10/29(수)",
+          "gpUploadDate": "11/7(금)",
+          "recruitmentMethod": "서류(원전산출력)",
+          "manager": "이성연 사원 (02-6410-7410)"
+        },
+        {
+          "company": "IBK연금",
+          "round": "11-1",
+          "acceptanceDeadline": "10/30(목)",
+          "gpUploadDate": "11/7(금)",
+          "recruitmentMethod": "알림톡(카카오톡) 발송",
+          "manager": "이성연 사원 (02-6410-7410)"
+        },
+        {
+          "company": "푸본현대",
+          "round": "11-1",
+          "acceptanceDeadline": "10/31(금)",
+          "gpUploadDate": "11/7(금)",
+          "recruitmentMethod": "알림톡(카카오톡) 발송",
+          "manager": "이성연 사원 (02-6410-7410)"
+        },
+        {
+          "company": "DB생명",
+          "round": "11-1",
+          "acceptanceDeadline": "10/31(금)",
+          "gpUploadDate": "11/13(목)",
+          "recruitmentMethod": "서류(위촉시작성)",
+          "manager": "이성연 사원 (02-6410-7410)"
+        },
+        {
+          "company": "하나생명",
+          "round": "11-1",
+          "acceptanceDeadline": "11/3(월)",
+          "gpUploadDate": "11/7(금)",
+          "recruitmentMethod": "고정URL(https://bit.ly/3xpO15u)",
+          "manager": "김보미 사원 (02-6410-7233)"
+        },
+        {
+          "company": "IM라이프",
+          "round": "11-1",
+          "acceptanceDeadline": "11/3(월)",
+          "gpUploadDate": "11/14(금)",
+          "recruitmentMethod": "문자(SMS) 발송",
+          "manager": "김보미 사원 (02-6410-7233)"
+        },
+        {
+          "company": "한화생명",
+          "round": "11-1",
+          "acceptanceDeadline": "11/4(화)",
+          "gpUploadDate": "11/14(금)",
+          "recruitmentMethod": "알림톡(카카오톡) 발송",
+          "manager": "방수현 대리 (02-6410-7411)"
+        },
+        {
+          "company": "흥국생명",
+          "round": "11-1",
+          "acceptanceDeadline": "11/4(화)",
+          "gpUploadDate": "11/18(화)",
+          "recruitmentMethod": "문자(SMS) 발송",
+          "manager": "이성연 사원 (02-6410-7410)"
+        },
+        {
+          "company": "교보생명",
+          "round": "11-1",
+          "acceptanceDeadline": "11/6(목)",
+          "gpUploadDate": "11/18(화)",
+          "recruitmentMethod": "알림톡(카카오톡) 발송",
+          "manager": "방수현 대리 (02-6410-7411)"
+        },
+        {
+          "company": "카디프생명",
+          "round": "11-1",
+          "acceptanceDeadline": "11/6(목)",
+          "gpUploadDate": "11/14(금)",
+          "recruitmentMethod": "문자(SMS) 발송(02-3788-0664)BNP파리바카디프생명",
+          "manager": "이성연 사원 (02-6410-7410)"
+        },
+        {
+          "company": "ABL생명",
+          "round": "11-1",
+          "acceptanceDeadline": "11/10(월)",
+          "gpUploadDate": "11/18(화)",
+          "recruitmentMethod": "문자(SMS) 발송_031-523-3002",
+          "manager": "방수현 대리 (02-6410-7411)"
+        },
+        {
+          "company": "라이나생명",
+          "round": "11-1",
+          "acceptanceDeadline": "11/11(화)",
+          "gpUploadDate": "11/18(화)",
+          "recruitmentMethod": "서류(원전산출력)",
+          "manager": "이성연 사원 (02-6410-7410)"
         }
       ]
     },
     {
-      "round": "11-2차",
+      "round": "11-2",
       "deadline": "",
       "gpOpenDate": "11/10(월)",
       "gpOpenTime": "PM16:00",
       "companies": [
         {
           "company": "농협생명",
-          "round": "11-2차",
+          "round": "11-2",
           "acceptanceDeadline": "11/3(월)",
           "gpUploadDate": "11/13(목)",
           "recruitmentMethod": "알림톡(카카오톡) 발송",
@@ -791,23 +1144,15 @@
         },
         {
           "company": "KB라이프",
-          "round": "11-2차",
+          "round": "11-2",
           "acceptanceDeadline": "11/3(월)",
           "gpUploadDate": "11/13(목)",
           "recruitmentMethod": "문자(SMS) 발송/고정URL (http://id.kblife.co.kr/gafp/73100 )",
           "manager": "김보미 사원 (02-6410-7233)"
         },
         {
-          "company": "신한라이프",
-          "round": "11-2차",
-          "acceptanceDeadline": "11/7(금)",
-          "gpUploadDate": "11/18(화)",
-          "recruitmentMethod": "문자(SMS) 발송",
-          "manager": "신지원 대리 (02-6410-7321)"
-        },
-        {
           "company": "KDB생명",
-          "round": "11-2차",
+          "round": "11-2",
           "acceptanceDeadline": "11/3(월)",
           "gpUploadDate": "11/14(금)",
           "recruitmentMethod": "알림톡(카카오톡) 발송",
@@ -815,21 +1160,394 @@
         },
         {
           "company": "처브라이프",
-          "round": "11-2차",
+          "round": "11-2",
           "acceptanceDeadline": "11/4(화)",
           "gpUploadDate": "11/18(화)",
           "recruitmentMethod": "서류(위촉시작성)",
           "manager": "김보미 사원 (02-6410-7233)"
         },
         {
+          "company": "흥국생명",
+          "round": "11-2",
+          "acceptanceDeadline": "11/4(화)",
+          "gpUploadDate": "11/18(화)",
+          "recruitmentMethod": "문자(SMS) 발송",
+          "manager": "이성연 사원 (02-6410-7410)"
+        },
+        {
+          "company": "미래에셋",
+          "round": "11-2",
+          "acceptanceDeadline": "11/5(수)",
+          "gpUploadDate": "11/14(금)",
+          "recruitmentMethod": "알림톡(카카오톡) 발송",
+          "manager": "방수현 대리 (02-6410-7411)"
+        },
+        {
+          "company": "동양생명",
+          "round": "11-2",
+          "acceptanceDeadline": "11/5(수)",
+          "gpUploadDate": "11/14(금)",
+          "recruitmentMethod": "서류(원전산출력)",
+          "manager": "이성연 사원 (02-6410-7410)"
+        },
+        {
+          "company": "교보생명",
+          "round": "11-2",
+          "acceptanceDeadline": "11/6(목)",
+          "gpUploadDate": "11/18(화)",
+          "recruitmentMethod": "알림톡(카카오톡) 발송",
+          "manager": "방수현 대리 (02-6410-7411)"
+        },
+        {
+          "company": "삼성생명",
+          "round": "11-2",
+          "acceptanceDeadline": "11/6(목)",
+          "gpUploadDate": "11/19(수)",
+          "recruitmentMethod": "알림톡(카카오톡) 발송",
+          "manager": "이성연 사원 (02-6410-7410)"
+        },
+        {
+          "company": "카디프생명",
+          "round": "11-2",
+          "acceptanceDeadline": "11/6(목)",
+          "gpUploadDate": "11/14(금)",
+          "recruitmentMethod": "문자(SMS) 발송(02-3788-0664)BNP파리바카디프생명",
+          "manager": "이성연 사원 (02-6410-7410)"
+        },
+        {
+          "company": "신한라이프",
+          "round": "11-2",
+          "acceptanceDeadline": "11/7(금)",
+          "gpUploadDate": "11/18(화)",
+          "recruitmentMethod": "문자(SMS) 발송",
+          "manager": "김보미 사원 (02-6410-7233)"
+        },
+        {
+          "company": "DB생명",
+          "round": "11-2",
+          "acceptanceDeadline": "11/7(금)",
+          "gpUploadDate": "11/20(목)",
+          "recruitmentMethod": "서류(위촉시작성)",
+          "manager": "이성연 사원 (02-6410-7410)"
+        },
+        {
+          "company": "ABL생명",
+          "round": "11-2",
+          "acceptanceDeadline": "11/10(월)",
+          "gpUploadDate": "11/18(화)",
+          "recruitmentMethod": "문자(SMS) 발송_031-523-3002",
+          "manager": "방수현 대리 (02-6410-7411)"
+        },
+        {
+          "company": "메트라이프",
+          "round": "11-2",
+          "acceptanceDeadline": "11/10(월)",
+          "gpUploadDate": "11/18(화)",
+          "recruitmentMethod": "문자(SMS) 발송_1688-7427/고정URL로 직접 제출 가능(https://brand.metlife.co.kr/ga/appt/selectMoblieCert.do)",
+          "manager": "방수현 대리 (02-6410-7411)"
+        },
+        {
+          "company": "IM라이프",
+          "round": "11-2",
+          "acceptanceDeadline": "11/10(월)",
+          "gpUploadDate": "11/24(월)",
+          "recruitmentMethod": "문자(SMS) 발송",
+          "manager": "김보미 사원 (02-6410-7233)"
+        },
+        {
+          "company": "라이나생명",
+          "round": "11-2",
+          "acceptanceDeadline": "11/11(화)",
+          "gpUploadDate": "11/18(화)",
+          "recruitmentMethod": "서류(원전산출력)",
+          "manager": "이성연 사원 (02-6410-7410)"
+        },
+        {
+          "company": "IBK연금",
+          "round": "11-2",
+          "acceptanceDeadline": "11/11(화)",
+          "gpUploadDate": "11/19(수)",
+          "recruitmentMethod": "알림톡(카카오톡) 발송",
+          "manager": "이성연 사원 (02-6410-7410)"
+        },
+        {
+          "company": "푸본현대",
+          "round": "11-2",
+          "acceptanceDeadline": "11/12(수)",
+          "gpUploadDate": "11/19(수)",
+          "recruitmentMethod": "알림톡(카카오톡) 발송",
+          "manager": "이성연 사원 (02-6410-7410)"
+        },
+        {
+          "company": "한���생명",
+          "round": "11-2",
+          "acceptanceDeadline": "11/13(목)",
+          "gpUploadDate": "11/24(월)",
+          "recruitmentMethod": "",
+          "manager": ""
+        },
+        {
           "company": "하나생명",
-          "round": "11-2차",
+          "round": "11-2",
           "acceptanceDeadline": "11/17(월)",
           "gpUploadDate": "11/24(월)",
           "recruitmentMethod": "고정URL(https://bit.ly/3xpO15u)",
           "manager": "김보미 사원 (02-6410-7233)"
         }
       ]
+    },
+    {
+      "round": "11-3",
+      "deadline": "",
+      "gpOpenDate": "11/17(월)",
+      "gpOpenTime": "PM16:00",
+      "companies": [
+        {
+          "company": "신한라이프",
+          "round": "11-3",
+          "acceptanceDeadline": "11/7(금)",
+          "gpUploadDate": "11/18(화)",
+          "recruitmentMethod": "문자(SMS) 발송",
+          "manager": "김보미 사원 (02-6410-7233)"
+        },
+        {
+          "company": "메트라이프",
+          "round": "11-3",
+          "acceptanceDeadline": "11/10(월)",
+          "gpUploadDate": "11/18(화)",
+          "recruitmentMethod": "문자(SMS) 발송_1688-7427/고정URL로 직접 제출 가능(https://brand.metlife.co.kr/ga/appt/selectMoblieCert.do)",
+          "manager": "방수현 대리 (02-6410-7411)"
+        },
+        {
+          "company": "KB라이프",
+          "round": "11-3",
+          "acceptanceDeadline": "11/10(월)",
+          "gpUploadDate": "11/20(목)",
+          "recruitmentMethod": "문자(SMS) 발송/고정URL (http://id.kblife.co.kr/gafp/73100 )",
+          "manager": "김보미 사원 (02-6410-7233)"
+        },
+        {
+          "company": "KDB생명",
+          "round": "11-3",
+          "acceptanceDeadline": "11/10(월)",
+          "gpUploadDate": "11/24(월)",
+          "recruitmentMethod": "알림톡(카카오톡) 발송",
+          "manager": "김보미 사원 (02-6410-7233)"
+        },
+        {
+          "company": "미래에셋",
+          "round": "11-3",
+          "acceptanceDeadline": "11/12(수)",
+          "gpUploadDate": "11/21(금)",
+          "recruitmentMethod": "알림톡(카카오톡) 발송",
+          "manager": "방수현 대리 (02-6410-7411)"
+        },
+        {
+          "company": "흥국생명",
+          "round": "11-3",
+          "acceptanceDeadline": "11/12(수)",
+          "gpUploadDate": "11/26(수)",
+          "recruitmentMethod": "문자(SMS) 발송",
+          "manager": "이성연 사원 (02-6410-7410)"
+        },
+        {
+          "company": "동양생명",
+          "round": "11-3",
+          "acceptanceDeadline": "11/12(수)",
+          "gpUploadDate": "11/21(금)",
+          "recruitmentMethod": "서류(원전산출력)",
+          "manager": "이성연 사원 (02-6410-7410)"
+        },
+        {
+          "company": "한���생명",
+          "round": "11-3",
+          "acceptanceDeadline": "11/13(목)",
+          "gpUploadDate": "11/24(월)",
+          "recruitmentMethod": "",
+          "manager": ""
+        },
+        {
+          "company": "삼성생명",
+          "round": "11-3",
+          "acceptanceDeadline": "11/13(목)",
+          "gpUploadDate": "11/26(수)",
+          "recruitmentMethod": "알림톡(카카오톡) 발송",
+          "manager": "이성연 사원 (02-6410-7410)"
+        },
+        {
+          "company": "카디프생명",
+          "round": "11-3",
+          "acceptanceDeadline": "11/13(목)",
+          "gpUploadDate": "11/21(금)",
+          "recruitmentMethod": "문자(SMS) 발송(02-3788-0664)BNP파리바카디프생명",
+          "manager": "이성연 사원 (02-6410-7410)"
+        },
+        {
+          "company": "교보생명",
+          "round": "11-3",
+          "acceptanceDeadline": "11/14(금)",
+          "gpUploadDate": "11/26(수)",
+          "recruitmentMethod": "알림톡(카카오톡) 발송",
+          "manager": "방수현 대리 (02-6410-7411)"
+        },
+        {
+          "company": "처브라이프",
+          "round": "11-3",
+          "acceptanceDeadline": "11/14(금)",
+          "gpUploadDate": "11/26(수)",
+          "recruitmentMethod": "서류(위촉시작성)",
+          "manager": "김보미 사원 (02-6410-7233)"
+        },
+        {
+          "company": "DB생명",
+          "round": "11-3",
+          "acceptanceDeadline": "11/14(금)",
+          "gpUploadDate": "11/27(목)",
+          "recruitmentMethod": "서류(위촉시작성)",
+          "manager": "이성연 사원 (02-6410-7410)"
+        },
+        {
+          "company": "농협생명",
+          "round": "11-3",
+          "acceptanceDeadline": "11/17(월)",
+          "gpUploadDate": "11/27(목)",
+          "recruitmentMethod": "알림톡(카카오톡) 발송",
+          "manager": "김보미 사원 (02-6410-7233)"
+        },
+        {
+          "company": "하나생명",
+          "round": "11-3",
+          "acceptanceDeadline": "11/17(월)",
+          "gpUploadDate": "11/24(월)",
+          "recruitmentMethod": "고정URL(https://bit.ly/3xpO15u)",
+          "manager": "김보미 사원 (02-6410-7233)"
+        },
+        {
+          "company": "ABL생명",
+          "round": "11-3",
+          "acceptanceDeadline": "11/18(화)",
+          "gpUploadDate": "11/26(수)",
+          "recruitmentMethod": "문자(SMS) 발송_031-523-3002",
+          "manager": "방수현 대리 (02-6410-7411)"
+        },
+        {
+          "company": "라이나생명",
+          "round": "11-3",
+          "acceptanceDeadline": "11/18(화)",
+          "gpUploadDate": "11/25(화)",
+          "recruitmentMethod": "서류(원전산출력)",
+          "manager": "이성연 사원 (02-6410-7410)"
+        },
+        {
+          "company": "IBK연금",
+          "round": "11-3",
+          "acceptanceDeadline": "11/19(수)",
+          "gpUploadDate": "11/27(목)",
+          "recruitmentMethod": "알림톡(카카오톡) 발송",
+          "manager": "이성연 사원 (02-6410-7410)"
+        },
+        {
+          "company": "푸본현대",
+          "round": "11-3",
+          "acceptanceDeadline": "11/20(목)",
+          "gpUploadDate": "11/27(목)",
+          "recruitmentMethod": "알림톡(카카오톡) 발송",
+          "manager": "이성연 사원 (02-6410-7410)"
+        }
+      ]
+    },
+    {
+      "round": "11-4",
+      "deadline": "",
+      "gpOpenDate": "11/24(월)",
+      "gpOpenTime": "PM16:00",
+      "companies": [
+        {
+          "company": "신한라이프",
+          "round": "11-4",
+          "acceptanceDeadline": "11/14(금)",
+          "gpUploadDate": "11/26(수)",
+          "recruitmentMethod": "문자(SMS) 발송",
+          "manager": "김보미 사원 (02-6410-7233)"
+        },
+        {
+          "company": "처브라이프",
+          "round": "11-4",
+          "acceptanceDeadline": "11/14(금)",
+          "gpUploadDate": "11/26(수)",
+          "recruitmentMethod": "서류(위촉시작성)",
+          "manager": "김보미 사원 (02-6410-7233)"
+        },
+        {
+          "company": "메트라이프",
+          "round": "11-4",
+          "acceptanceDeadline": "11/17(월)",
+          "gpUploadDate": "11/26(수)",
+          "recruitmentMethod": "문자(SMS) 발송_1688-7427/고정URL로 직접 제출 가능(https://brand.metlife.co.kr/ga/appt/selectMoblieCert.do)",
+          "manager": "방수현 대리 (02-6410-7411)"
+        },
+        {
+          "company": "농협생명",
+          "round": "11-4",
+          "acceptanceDeadline": "11/17(월)",
+          "gpUploadDate": "11/27(목)",
+          "recruitmentMethod": "알림톡(카카오톡) 발송",
+          "manager": "김보미 사원 (02-6410-7233)"
+        },
+        {
+          "company": "KB라이프",
+          "round": "11-4",
+          "acceptanceDeadline": "11/17(월)",
+          "gpUploadDate": "11/27(목)",
+          "recruitmentMethod": "문자(SMS) 발송/고정URL (http://id.kblife.co.kr/gafp/73100 )",
+          "manager": "김보미 사원 (02-6410-7233)"
+        },
+        {
+          "company": "카디프생명",
+          "round": "11-4",
+          "acceptanceDeadline": "11/20(목)",
+          "gpUploadDate": "11/28(금)",
+          "recruitmentMethod": "문자(SMS) 발송(02-3788-0664)BNP파리바카디프생명",
+          "manager": "이성연 사원 (02-6410-7410)"
+        },
+        {
+          "company": "라이나생명",
+          "round": "11-4",
+          "acceptanceDeadline": "11/25(화)",
+          "gpUploadDate": "12/2(화)",
+          "recruitmentMethod": "서류(원전산출력)",
+          "manager": "이성연 사원 (02-6410-7410)"
+        },
+        {
+          "company": "교보생명",
+          "round": "11-4",
+          "acceptanceDeadline": "11/26(수)",
+          "gpUploadDate": "12/8(월)",
+          "recruitmentMethod": "알림톡(카카오톡) 발송",
+          "manager": "방수현 대리 (02-6410-7411)"
+        }
+      ]
+    },
+    {
+      "round": "12-1",
+      "deadline": "",
+      "gpOpenDate": "12/1(월)",
+      "gpOpenTime": "PM16:00",
+      "companies": []
+    },
+    {
+      "round": "12-2",
+      "deadline": "",
+      "gpOpenDate": "12/8(월)",
+      "gpOpenTime": "PM16:00",
+      "companies": []
+    },
+    {
+      "round": "12-3",
+      "deadline": "",
+      "gpOpenDate": "12/15(월)",
+      "gpOpenTime": "PM16:00",
+      "companies": []
     }
   ],
   "calendarEvents": [
@@ -2552,7 +3270,7 @@
     {
       "id": "287",
       "date": "2025-08-04",
-      "title": "[위촉] 하나생명 - 접수마감",
+      "title": "[위촉] 하나생�� - 접수마감",
       "type": "company"
     },
     {
@@ -2918,7 +3636,7 @@
     {
       "id": "348",
       "date": "2025-08-22",
-      "title": "[위촉] KB라이프 - 접수마감",
+      "title": "[위��] KB라이프 - 접수마감",
       "type": "company"
     },
     {
@@ -3469,195 +4187,195 @@
     },
     {
       "id": "440",
-      "date": "2025-09-23",
+      "date": "2025-09-22",
       "title": "[위촉] KB라이프 - 접수마감",
       "type": "company"
     },
     {
       "id": "441",
       "date": "2025-09-23",
-      "title": "[위촉] 교보생명 - 접수마감",
+      "title": "[위촉] KB라이프 - 접수마감",
       "type": "company"
     },
     {
       "id": "442",
       "date": "2025-09-23",
-      "title": "[위촉] 라이나생명 - 접수마감",
+      "title": "[위촉] 교보생명 - 접수마감",
       "type": "company"
     },
     {
       "id": "443",
-      "date": "2025-09-24",
-      "title": "[굿리치] - 수수료계좌변경신청마감",
-      "type": "goodrich"
+      "date": "2025-09-23",
+      "title": "[위촉] 라이나생명 - 접수마감",
+      "type": "company"
     },
     {
       "id": "444",
-      "date": "2025-09-24",
-      "title": "[굿리치] - 전산승인마감(PM2:00)\n▶10월1차[위촉]: 10/13(월) GP 오픈 예정 (PM16:00)",
-      "type": "goodrich"
-    },
-    {
-      "id": "445",
-      "date": "2025-09-25",
-      "title": "[위촉] 메트라이프 - 접수마감",
-      "type": "company"
-    },
-    {
-      "id": "446",
-      "date": "2025-09-25",
-      "title": "[굿리치] - 마감(PM18:00)",
-      "type": "goodrich"
-    },
-    {
-      "id": "447",
-      "date": "2025-09-26",
-      "title": "[협회] - 사용인 등록_손보(메리츠,롯데)",
-      "type": "session"
-    },
-    {
-      "id": "448",
-      "date": "2025-09-26",
-      "title": "[해촉] - 라이나(9/29반영), 동양(9/29반영)",
-      "type": "company"
-    },
-    {
-      "id": "449",
-      "date": "2025-09-29",
-      "title": "[위촉] 미래에셋 - 접수마감",
-      "type": "company"
-    },
-    {
-      "id": "450",
-      "date": "2025-09-29",
-      "title": "[협회] - 사용인 등록_생보(KB)",
-      "type": "session"
-    },
-    {
-      "id": "451",
-      "date": "2025-09-29",
-      "title": "[굿리치] - 전산승인마감(PM2:00)\n▶10월2차[위촉]: 10/20(월) GP 오픈 예정 (PM16:00)",
-      "type": "goodrich"
-    },
-    {
-      "id": "452",
-      "date": "2025-09-30",
-      "title": "[위촉] ABL생명 - 접수마감",
-      "type": "company"
-    },
-    {
-      "id": "453",
-      "date": "2025-09-30",
-      "title": "[위촉] 메트라이프 - 접수마감",
-      "type": "company"
-    },
-    {
-      "id": "454",
-      "date": "2025-09-30",
-      "title": "[굿리치] - 마감(PM18:00)",
-      "type": "goodrich"
-    },
-    {
-      "id": "455",
-      "date": "2025-10-03",
-      "title": "[휴일] - 개천절",
-      "type": "company"
-    },
-    {
-      "id": "456",
-      "date": "2025-10-01",
-      "title": "[해촉] - ABL(10/10반영), 메트(10/15반영), 미래(10/15반영)",
-      "type": "company"
-    },
-    {
-      "id": "457",
-      "date": "2025-10-02",
-      "title": "[해촉] - AIA(10월말반영)",
-      "type": "company"
-    },
-    {
-      "id": "458",
-      "date": "2025-10-16",
-      "title": "[해촉] - ABL(10/20반영), 미래(10/27반영)",
-      "type": "company"
-    },
-    {
-      "id": "459",
-      "date": "2025-10-17",
-      "title": "[해촉] - 교보(11/3반영), 메트(10/27반영)",
-      "type": "company"
-    },
-    {
-      "id": "460",
-      "date": "2025-10-22",
-      "title": "[해촉] - 한화(11/3반영), DB생명(10/30반영)",
-      "type": "company"
-    },
-    {
-      "id": "461",
       "date": "2025-09-23",
       "title": "[위촉] IM라이프 - 접수마감",
       "type": "company"
     },
     {
-      "id": "462",
-      "date": "2025-09-26",
-      "title": "[위촉] IM라이프 - 접수마감",
-      "type": "company"
-    },
-    {
-      "id": "463",
-      "date": "2025-10-13",
-      "title": "[위촉] IM라이프 - 접수마감",
-      "type": "company"
-    },
-    {
-      "id": "464",
+      "id": "445",
       "date": "2025-09-23",
       "title": "[해촉] IM라이프 - IM(10/02반영)",
       "type": "company"
     },
     {
-      "id": "465",
-      "date": "2025-10-16",
-      "title": "[해촉] IM라이프 - IM(10/23반영)",
-      "type": "company"
-    },
-    {
-      "id": "466",
+      "id": "446",
       "date": "2025-09-23",
       "title": "[위촉] 신한라이프 - 접수마감",
       "type": "company"
     },
     {
-      "id": "467",
+      "id": "447",
+      "date": "2025-09-23",
+      "title": "[위촉] 농협생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "448",
+      "date": "2025-09-23",
+      "title": "[위촉] 처브라이프 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "449",
+      "date": "2025-09-24",
+      "title": "[굿리치] - 수수료계좌변경신청마감",
+      "type": "goodrich"
+    },
+    {
+      "id": "450",
+      "date": "2025-09-24",
+      "title": "[굿리치] - 전산승인마감(PM2:00)\n▶10월1차[위촉]: 10/13(월) GP 오픈 예정 (PM16:00)",
+      "type": "goodrich"
+    },
+    {
+      "id": "451",
+      "date": "2025-09-24",
+      "title": "[위촉] KDB생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "452",
+      "date": "2025-09-24",
+      "title": "[위촉] 삼성생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "453",
+      "date": "2025-09-24",
+      "title": "[위촉] 흥국생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "454",
+      "date": "2025-09-25",
+      "title": "[위촉] 메트라이프 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "455",
+      "date": "2025-09-25",
+      "title": "[굿리치] - 마감(PM18:00)",
+      "type": "goodrich"
+    },
+    {
+      "id": "456",
+      "date": "2025-09-26",
+      "title": "[협회] - 사용인 등록_손보(메리츠,롯데)",
+      "type": "session"
+    },
+    {
+      "id": "457",
+      "date": "2025-09-26",
+      "title": "[해촉] - 라이나(9/29반영), 동양(9/29반영)",
+      "type": "company"
+    },
+    {
+      "id": "458",
+      "date": "2025-09-26",
+      "title": "[위촉] IM라이프 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "459",
       "date": "2025-09-26",
       "title": "[위촉] 신한라이프 - 접수마감",
       "type": "company"
     },
     {
+      "id": "460",
+      "date": "2025-09-26",
+      "title": "[위촉] DB생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "461",
+      "date": "2025-09-29",
+      "title": "[위촉] 미래에셋 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "462",
+      "date": "2025-09-29",
+      "title": "[협회] - 사용인 등록_생보(KB)",
+      "type": "session"
+    },
+    {
+      "id": "463",
+      "date": "2025-09-29",
+      "title": "[굿리치] - 전산승인마감(PM2:00)\n▶10월2차[위촉]: 10/20(월) GP 오픈 예정 (PM16:00)",
+      "type": "goodrich"
+    },
+    {
+      "id": "464",
+      "date": "2025-09-29",
+      "title": "[위촉] KB라이프 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "465",
+      "date": "2025-09-29",
+      "title": "[위촉] 처브라이프 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "466",
+      "date": "2025-09-29",
+      "title": "[위촉] 하나생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "467",
+      "date": "2025-09-29",
+      "title": "[위촉] 흥국생명 - 접수마감",
+      "type": "company"
+    },
+    {
       "id": "468",
-      "date": "2025-10-17",
-      "title": "[위촉] 신한라이프 - 접수마감",
+      "date": "2025-09-29",
+      "title": "[위촉] 동양생명 - 접수마감",
       "type": "company"
     },
     {
       "id": "469",
-      "date": "2025-10-01",
-      "title": "[해촉] 신한라이프 - 신한(10/15반영)",
+      "date": "2025-09-30",
+      "title": "[위촉] ABL생명 - 접수마감",
       "type": "company"
     },
     {
       "id": "470",
-      "date": "2025-10-16",
-      "title": "[해촉] 신한라이프 - 신한(10/27반영)",
+      "date": "2025-09-30",
+      "title": "[위촉] 메트라이프 - 접수마감",
       "type": "company"
     },
     {
       "id": "471",
-      "date": "2025-09-24",
-      "title": "[위촉] KDB생명 - 접수마감",
-      "type": "company"
+      "date": "2025-09-30",
+      "title": "[굿리치] - 마감(PM18:00)",
+      "type": "goodrich"
     },
     {
       "id": "472",
@@ -3667,140 +4385,140 @@
     },
     {
       "id": "473",
-      "date": "2025-10-14",
-      "title": "[위촉] KDB생명 - 접수마감",
-      "type": "company"
-    },
-    {
-      "id": "474",
-      "date": "2025-10-01",
-      "title": "[해촉] KDB생명 - KDB(10/16반영)",
-      "type": "company"
-    },
-    {
-      "id": "475",
-      "date": "2025-10-15",
-      "title": "[해촉] KDB생명 - KDB(10/23반영)",
-      "type": "company"
-    },
-    {
-      "id": "476",
-      "date": "2025-09-22",
-      "title": "[위촉] KB라이프 - 접수마감",
-      "type": "company"
-    },
-    {
-      "id": "477",
-      "date": "2025-09-29",
-      "title": "[위촉] KB라이프 - 접수마감",
-      "type": "company"
-    },
-    {
-      "id": "478",
-      "date": "2025-10-13",
-      "title": "[위촉] KB라이프 - 접수마감",
-      "type": "company"
-    },
-    {
-      "id": "479",
-      "date": "2025-10-20",
-      "title": "[위촉] KB라이프 - 접수마감",
-      "type": "company"
-    },
-    {
-      "id": "480",
-      "date": "2025-10-01",
-      "title": "[해촉] KB라이프 - KB(10/13반영)",
-      "type": "company"
-    },
-    {
-      "id": "481",
-      "date": "2025-10-16",
-      "title": "[해촉] KB라이프 - KB(10/27반영)",
-      "type": "company"
-    },
-    {
-      "id": "482",
-      "date": "2025-09-23",
-      "title": "[위촉] 농협생명 - 접수마감",
-      "type": "company"
-    },
-    {
-      "id": "483",
       "date": "2025-09-30",
       "title": "[위촉] 농협생명 - 접수마감",
       "type": "company"
     },
     {
-      "id": "484",
-      "date": "2025-10-20",
-      "title": "[위촉] 농협생명 - 접수마감",
+      "id": "474",
+      "date": "2025-09-30",
+      "title": "[위촉] IBK연금 - 접수마감",
       "type": "company"
     },
     {
-      "id": "485",
+      "id": "475",
+      "date": "2025-10-01",
+      "title": "[해촉] - ABL(10/10반영), 메트(10/15반영), 미래(10/15반영)",
+      "type": "company"
+    },
+    {
+      "id": "476",
+      "date": "2025-10-01",
+      "title": "[해촉] 신한라이프 - 신한(10/15반영)",
+      "type": "company"
+    },
+    {
+      "id": "477",
+      "date": "2025-10-01",
+      "title": "[해촉] KDB생명 - KDB(10/16반영)",
+      "type": "company"
+    },
+    {
+      "id": "478",
+      "date": "2025-10-01",
+      "title": "[해촉] KB라이프 - KB(10/13반영)",
+      "type": "company"
+    },
+    {
+      "id": "479",
       "date": "2025-10-01",
       "title": "[해촉] 농협생명 - 농협(10/16반영)",
       "type": "company"
     },
     {
-      "id": "486",
-      "date": "2025-10-21",
-      "title": "[해촉] 농협생명 - 농협(10/29반영), IBK(10/23반영)",
-      "type": "company"
-    },
-    {
-      "id": "487",
-      "date": "2025-09-23",
-      "title": "[위촉] 처브라이프 - 접수마감",
-      "type": "company"
-    },
-    {
-      "id": "488",
-      "date": "2025-09-29",
-      "title": "[위촉] 처브라이프 - 접수마감",
-      "type": "company"
-    },
-    {
-      "id": "489",
-      "date": "2025-10-16",
-      "title": "[위촉] 처브라이프 - 접수마감",
-      "type": "company"
-    },
-    {
-      "id": "490",
+      "id": "480",
       "date": "2025-10-01",
       "title": "[해촉] 처브라이프 - 처브(10/02반영)",
       "type": "company"
     },
     {
+      "id": "481",
+      "date": "2025-10-01",
+      "title": "[위촉] 카디프생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "482",
+      "date": "2025-10-01",
+      "title": "[위촉] 삼성생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "483",
+      "date": "2025-10-02",
+      "title": "[해촉] - AIA(10월말반영)",
+      "type": "company"
+    },
+    {
+      "id": "484",
+      "date": "2025-10-02",
+      "title": "[협회] - 사용인 등록_손보(메리츠,롯데)",
+      "type": "session"
+    },
+    {
+      "id": "485",
+      "date": "2025-10-02",
+      "title": "[위촉] DB생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "486",
+      "date": "2025-10-02",
+      "title": "[위촉] 푸본현대 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "487",
+      "date": "2025-10-03",
+      "title": "[휴일] - 개천절",
+      "type": "company"
+    },
+    {
+      "id": "488",
+      "date": "2025-10-06",
+      "title": "[휴일] - 추석",
+      "type": "company"
+    },
+    {
+      "id": "489",
+      "date": "2025-10-07",
+      "title": "[휴일] - 추석연휴",
+      "type": "company"
+    },
+    {
+      "id": "490",
+      "date": "2025-10-08",
+      "title": "[휴일] - 대체휴일",
+      "type": "company"
+    },
+    {
       "id": "491",
-      "date": "2025-10-17",
-      "title": "[해촉] 처브라이프 - 처브(10/24반영)",
+      "date": "2025-10-09",
+      "title": "[휴일] - 한글날",
       "type": "company"
     },
     {
       "id": "492",
-      "date": "2025-09-29",
-      "title": "[위촉] 하나생명 - 접수마감",
-      "type": "company"
+      "date": "2025-10-10",
+      "title": "[굿리치] - 패밀리데이(PM4:00업무종료)",
+      "type": "goodrich"
     },
     {
       "id": "493",
       "date": "2025-10-13",
-      "title": "[위촉] 하나생명 - 접수마감",
+      "title": "[위촉] IM라이프 - 접수마감",
       "type": "company"
     },
     {
       "id": "494",
-      "date": "2025-10-20",
-      "title": "[위촉] 하나생명 - 접수마감",
+      "date": "2025-10-13",
+      "title": "[위촉] KB라이프 - 접수마감",
       "type": "company"
     },
     {
       "id": "495",
-      "date": "2025-10-20",
-      "title": "[해촉] 하나생명 - 하나(10/31반영), 카디프(10/31반영), 삼성(11/4반영)",
+      "date": "2025-10-13",
+      "title": "[위촉] 하나생명 - 접수마감",
       "type": "company"
     },
     {
@@ -3811,549 +4529,777 @@
     },
     {
       "id": "497",
-      "date": "2025-10-20",
-      "title": "[협회] - 사용인 등록_생보(KB)",
-      "type": "session"
+      "date": "2025-10-13",
+      "title": "[굿리치] - GP 오픈 예정 (PM16:00)",
+      "type": "goodrich"
     },
     {
       "id": "498",
-      "date": "2025-10-24",
-      "title": "[협회] - 사용인 등록_손보(메리츠,롯데) / 생보(메트)",
-      "type": "session"
+      "date": "2025-10-14",
+      "title": "[위촉] KDB생명 - 접수마감",
+      "type": "company"
     },
     {
       "id": "499",
-      "date": "2025-10-10",
-      "title": "[굿리치] - 패밀리데이(PM4:00업무종료)",
-      "type": "goodrich"
-    },
-    {
-      "id": "500",
-      "date": "2025-10-06",
-      "title": "[휴일] - 추석",
-      "type": "company"
-    },
-    {
-      "id": "501",
-      "date": "2025-10-07",
-      "title": "[휴일] - 추석연휴",
-      "type": "company"
-    },
-    {
-      "id": "502",
-      "date": "2025-10-08",
-      "title": "[휴일] - 대체휴일",
-      "type": "company"
-    },
-    {
-      "id": "503",
-      "date": "2025-10-09",
-      "title": "[휴일] - 한글날",
-      "type": "company"
-    },
-    {
-      "id": "504",
-      "date": "2025-10-21",
-      "title": "[굿리치] - 수수료계좌변경신청마감",
-      "type": "goodrich"
-    },
-    {
-      "id": "505",
-      "date": "2025-10-22",
-      "title": "[굿리치] - 10월 당사 해촉 마감",
-      "type": "goodrich"
-    },
-    {
-      "id": "506",
       "date": "2025-10-14",
       "title": "[위촉] 라이나생명 - 접수마감",
       "type": "company"
     },
     {
+      "id": "500",
+      "date": "2025-10-14",
+      "title": "[위촉] 흥국생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "501",
+      "date": "2025-10-14",
+      "title": "[위촉] 동양생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "502",
+      "date": "2025-10-15",
+      "title": "[해촉] KDB생명 - KDB(10/23반영)",
+      "type": "company"
+    },
+    {
+      "id": "503",
+      "date": "2025-10-15",
+      "title": "[굿리치] - 전산승인마감(PM2:00)\n▶10월3차[위촉]: 10/27(월) GP 오픈 예정 (PM16:00)",
+      "type": "goodrich"
+    },
+    {
+      "id": "504",
+      "date": "2025-10-16",
+      "title": "[해촉] - ABL(10/20반영), 미래(10/27반영)",
+      "type": "company"
+    },
+    {
+      "id": "505",
+      "date": "2025-10-16",
+      "title": "[해촉] IM라이프 - IM(10/23반영)",
+      "type": "company"
+    },
+    {
+      "id": "506",
+      "date": "2025-10-16",
+      "title": "[해촉] 신한라이프 - 신한(10/27반영)",
+      "type": "company"
+    },
+    {
       "id": "507",
-      "date": "2025-10-21",
-      "title": "[위촉] 라이나생명 - 접수마감",
+      "date": "2025-10-16",
+      "title": "[해촉] KB라이프 - KB(10/27반영)",
       "type": "company"
     },
     {
       "id": "508",
-      "date": "2025-10-28",
-      "title": "[위촉] 라이나생명 - 접수마감",
+      "date": "2025-10-16",
+      "title": "[위촉] 처브라이프 - 접수마감",
       "type": "company"
     },
     {
       "id": "509",
-      "date": "2025-10-01",
+      "date": "2025-10-16",
       "title": "[위촉] 카디프생명 - 접수마감",
       "type": "company"
     },
     {
       "id": "510",
       "date": "2025-10-16",
-      "title": "[위촉] 카디프생명 - 접수마감",
+      "title": "[��촉] 삼성생명 - 접수마감",
       "type": "company"
     },
     {
       "id": "511",
-      "date": "2025-10-23",
-      "title": "[위촉] 카디프생명 - 접수마감",
+      "date": "2025-10-17",
+      "title": "[해촉] - 교보(11/3반영), 메트(10/27반영)",
       "type": "company"
     },
     {
       "id": "512",
-      "date": "2025-09-30",
-      "title": "[위촉] IBK연금 - 접수마감",
+      "date": "2025-10-17",
+      "title": "[위촉] 신한라이프 - 접수마감",
       "type": "company"
     },
     {
       "id": "513",
-      "date": "2025-10-21",
-      "title": "[위촉] IBK연금 - 접수마감",
+      "date": "2025-10-17",
+      "title": "[해촉] 처브라이프 - 처브(10/24반영)",
       "type": "company"
     },
     {
       "id": "514",
-      "date": "2025-09-24",
-      "title": "[위촉] 삼성생명 - 접수마감",
-      "type": "company"
+      "date": "2025-10-17",
+      "title": "[협회] - 사용인 등록_손보(메리츠,롯데)",
+      "type": "session"
     },
     {
       "id": "515",
-      "date": "2025-10-01",
-      "title": "[위촉] 삼성생명 - 접수마감",
+      "date": "2025-10-17",
+      "title": "[위촉] DB생명 - 접수마감",
       "type": "company"
     },
     {
       "id": "516",
-      "date": "2025-10-16",
-      "title": "[위촉] 삼성생명 - 접수마감",
+      "date": "2025-10-20",
+      "title": "[위촉] KB라이프 - 접수마감",
       "type": "company"
     },
     {
       "id": "517",
-      "date": "2025-10-02",
-      "title": "[협회] - 사용인 등록_손보(메리츠,롯데)",
-      "type": "session"
+      "date": "2025-10-20",
+      "title": "[위촉] 농협생명 - 접수마감",
+      "type": "company"
     },
     {
       "id": "518",
-      "date": "2025-10-17",
-      "title": "[협회] - 사용인 등록_손보(메리츠,롯데)",
-      "type": "session"
+      "date": "2025-10-20",
+      "title": "[위촉] 하나생명 - 접수마감",
+      "type": "company"
     },
     {
       "id": "519",
-      "date": "2025-10-31",
-      "title": "[협회] - 사용인 등록_손보(메리츠,롯데)",
-      "type": "session"
+      "date": "2025-10-20",
+      "title": "[해촉] 하나생명 - 하나(10/31반영), 카디프(10/31반영), 삼성(11/4반영)",
+      "type": "company"
     },
     {
       "id": "520",
-      "date": "2025-09-24",
-      "title": "[위촉] 흥국생명 - 접수마감",
-      "type": "company"
+      "date": "2025-10-20",
+      "title": "[협회] - 사용인 등록_생보(KB)",
+      "type": "session"
     },
     {
       "id": "521",
-      "date": "2025-09-29",
-      "title": "[위촉] 흥국생명 - 접수마감",
-      "type": "company"
-    },
-    {
-      "id": "522",
-      "date": "2025-10-14",
-      "title": "[위촉] 흥국생명 - 접수마감",
-      "type": "company"
-    },
-    {
-      "id": "523",
-      "date": "2025-10-23",
-      "title": "[해촉] - 흥국(10/30반영), 동양(10/30반영)",
-      "type": "company"
-    },
-    {
-      "id": "524",
-      "date": "2025-09-29",
-      "title": "[위촉] 동양생명 - 접수마감",
-      "type": "company"
-    },
-    {
-      "id": "525",
-      "date": "2025-10-14",
-      "title": "[위촉] 동양생명 - 접수마감",
-      "type": "company"
-    },
-    {
-      "id": "526",
-      "date": "2025-09-26",
-      "title": "[위촉] DB생명 - 접수마감",
-      "type": "company"
-    },
-    {
-      "id": "527",
-      "date": "2025-10-02",
-      "title": "[위촉] DB생명 - 접수마감",
-      "type": "company"
-    },
-    {
-      "id": "528",
-      "date": "2025-10-17",
-      "title": "[위촉] DB생명 - 접수마감",
-      "type": "company"
-    },
-    {
-      "id": "529",
-      "date": "2025-10-24",
-      "title": "[해촉] - 푸본(10/31반영), 라이나(10/27반영)",
-      "type": "company"
-    },
-    {
-      "id": "530",
-      "date": "2025-10-02",
-      "title": "[위촉] 푸본현대 - 접수마감",
-      "type": "company"
-    },
-    {
-      "id": "531",
-      "date": "2025-10-21",
-      "title": "[위촉] 푸본현대 - 접수마감",
-      "type": "company"
-    },
-    {
-      "id": "532",
-      "date": "2025-10-15",
-      "title": "[굿리치] - 전산승인마감(PM2:00)\n▶10월3차[위촉]: 10/27(월) GP 오픈 예정 (PM16:00)",
-      "type": "goodrich"
-    },
-    {
-      "id": "533",
-      "date": "2025-10-22",
-      "title": "[굿리치] - 전산승인마감(PM2:00)\n▶11월1차[위촉]: 11/3(월) GP 오픈 예정 (PM16:00)",
-      "type": "goodrich"
-    },
-    {
-      "id": "534",
-      "date": "2025-10-29",
-      "title": "[굿리치] - 전산승인마감(PM2:00)\n▶11월2차[위촉]: 11/10(월) GP 오픈 예정 (PM16:00)",
-      "type": "goodrich"
-    },
-    {
-      "id": "535",
-      "date": "2025-10-13",
-      "title": "[굿리치] - GP 오픈 예정 (PM16:00)",
-      "type": "goodrich"
-    },
-    {
-      "id": "536",
       "date": "2025-10-20",
       "title": "[굿리치] - GP 오픈 예정 (PM16:00)",
       "type": "goodrich"
     },
     {
-      "id": "537",
-      "date": "2025-10-27",
-      "title": "[굿리치] - GP 오픈 예정 (PM16:00)",
+      "id": "522",
+      "date": "2025-10-21",
+      "title": "[해촉] 농협생명 - 농협(10/29반영), IBK(10/23반영)",
+      "type": "company"
+    },
+    {
+      "id": "523",
+      "date": "2025-10-21",
+      "title": "[굿리치] - 수수료계좌변경신청마감",
       "type": "goodrich"
     },
     {
-      "id": "538",
-      "date": "2025-10-27",
-      "title": "[위촉] 농협생명 - 접수마감",
+      "id": "524",
+      "date": "2025-10-21",
+      "title": "[위촉] 라이나생명 - 접수마감",
       "type": "company"
     },
     {
-      "id": "539",
-      "date": "2025-11-03",
-      "title": "[위촉] 농협생명 - 접수마감",
+      "id": "525",
+      "date": "2025-10-21",
+      "title": "[위촉] IBK연금 - 접수마감",
       "type": "company"
     },
     {
-      "id": "540",
-      "date": "2025-11-17",
-      "title": "[위촉] 농협생명 - 접수마감",
+      "id": "526",
+      "date": "2025-10-21",
+      "title": "[위촉] 푸본현대 - 접수마감",
       "type": "company"
     },
     {
-      "id": "541",
-      "date": "2025-11-03",
-      "title": "[해촉] 농협생명 - 농협(11/6반영)",
+      "id": "527",
+      "date": "2025-10-22",
+      "title": "[해촉] - 한화(11/3반영), DB생명(10/30반영)",
       "type": "company"
     },
     {
-      "id": "542",
-      "date": "2025-11-18",
-      "title": "[해촉] 농협생명 - 농협(11/26반영)",
+      "id": "528",
+      "date": "2025-10-22",
+      "title": "[굿리치] - 10월 당사 해촉 마감",
+      "type": "goodrich"
+    },
+    {
+      "id": "529",
+      "date": "2025-10-22",
+      "title": "[굿리치] - 전산승인마감(PM2:00)\n▶11월1차[위촉]: 11/3(월) GP 오픈 예정 (PM16:00)",
+      "type": "goodrich"
+    },
+    {
+      "id": "530",
+      "date": "2025-10-23",
+      "title": "[위촉] 카디프생명 - 접수마감",
       "type": "company"
     },
     {
-      "id": "543",
-      "date": "2025-10-27",
-      "title": "[위촉] KB라이프 - 접수마감",
+      "id": "531",
+      "date": "2025-10-23",
+      "title": "[해촉] - 흥국(10/30반영), 동양(10/30반영)",
       "type": "company"
     },
     {
-      "id": "544",
-      "date": "2025-11-03",
-      "title": "[위촉] KB라이프 - 접수마감",
+      "id": "532",
+      "date": "2025-10-24",
+      "title": "[협회] - 사용인 등록_손보(메리츠,롯데) / 생보(메트)",
+      "type": "session"
+    },
+    {
+      "id": "533",
+      "date": "2025-10-24",
+      "title": "[해촉] - 푸본(10/31반영), 라이나(10/27반영)",
       "type": "company"
     },
     {
-      "id": "545",
-      "date": "2025-11-10",
-      "title": "[위촉] KB라이프 - 접수마감",
-      "type": "company"
-    },
-    {
-      "id": "546",
-      "date": "2025-11-17",
-      "title": "[위촉] KB라이프 - 접수마감",
-      "type": "company"
-    },
-    {
-      "id": "547",
-      "date": "2025-11-04",
-      "title": "[해촉] KB라이프 - KB(11/10반영)",
-      "type": "company"
-    },
-    {
-      "id": "548",
-      "date": "2025-11-17",
-      "title": "[해촉] KB라이프 - KB(11/24반영)",
-      "type": "company"
-    },
-    {
-      "id": "549",
+      "id": "534",
       "date": "2025-10-24",
       "title": "[위촉] 신한라이프 - 접수마감",
       "type": "company"
     },
     {
-      "id": "550",
-      "date": "2025-11-07",
-      "title": "[위촉] 신한라이프 - 접수마감",
+      "id": "535",
+      "date": "2025-10-27",
+      "title": "[굿리치] - GP 오픈 예정 (PM16:00)",
+      "type": "goodrich"
+    },
+    {
+      "id": "536",
+      "date": "2025-10-27",
+      "title": "[위촉] 농협생명 - 접수마감",
       "type": "company"
     },
     {
-      "id": "551",
-      "date": "2025-11-14",
-      "title": "[위촉] 신한라이프 - 접수마감",
+      "id": "537",
+      "date": "2025-10-27",
+      "title": "[위촉] KB라이프 - 접수마감",
       "type": "company"
     },
     {
-      "id": "552",
-      "date": "2025-11-07",
-      "title": "[해촉] 신한라이프 - 신한(11/17반영)",
-      "type": "company"
-    },
-    {
-      "id": "553",
-      "date": "2025-11-17",
-      "title": "[해촉] 신한라이프 - 신한(11/25반영)",
-      "type": "company"
-    },
-    {
-      "id": "554",
+      "id": "538",
       "date": "2025-10-27",
       "title": "[위촉] KDB생명 - 접수마감",
       "type": "company"
     },
     {
-      "id": "555",
+      "id": "539",
+      "date": "2025-10-27",
+      "title": "[위촉] 처브라이프 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "540",
+      "date": "2025-10-27",
+      "title": "[위촉] IM라이프 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "541",
+      "date": "2025-10-27",
+      "title": "[위촉] 삼성생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "542",
+      "date": "2025-10-27",
+      "title": "[위촉] 흥국생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "543",
+      "date": "2025-10-28",
+      "title": "[위촉] 라이나생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "544",
+      "date": "2025-10-29",
+      "title": "[굿리치] - 전산승인마감(PM2:00)\n▶11월2차[위촉]: 11/10(월) GP 오픈 예정 (PM16:00)",
+      "type": "goodrich"
+    },
+    {
+      "id": "545",
+      "date": "2025-10-29",
+      "title": "[위촉] 동양생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "546",
+      "date": "2025-10-30",
+      "title": "[위촉] IBK연금 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "547",
+      "date": "2025-10-31",
+      "title": "[협회] - 사용인 등록_손보(메리츠,롯데)",
+      "type": "session"
+    },
+    {
+      "id": "548",
+      "date": "2025-10-31",
+      "title": "[위촉] 푸본현대 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "549",
+      "date": "2025-10-31",
+      "title": "[위촉] DB생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "550",
+      "date": "2025-11-03",
+      "title": "[위촉] 농협생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "551",
+      "date": "2025-11-03",
+      "title": "[해촉] 농협생명 - 농협(11/6반영)",
+      "type": "company"
+    },
+    {
+      "id": "552",
+      "date": "2025-11-03",
+      "title": "[위촉] KB라이프 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "553",
       "date": "2025-11-03",
       "title": "[위촉] KDB생명 - 접수마감",
       "type": "company"
     },
     {
-      "id": "556",
-      "date": "2025-11-10",
-      "title": "[위촉] KDB생명 - 접수마감",
-      "type": "company"
-    },
-    {
-      "id": "557",
+      "id": "554",
       "date": "2025-11-03",
       "title": "[해촉] KDB생명 - KDB(11/5반영)",
       "type": "company"
     },
     {
-      "id": "558",
-      "date": "2025-11-17",
-      "title": "[해촉] KDB생명 - KDB(11/09반영)",
-      "type": "company"
-    },
-    {
-      "id": "559",
-      "date": "2025-10-27",
-      "title": "[위촉] 처브라이프 - 접수마감",
-      "type": "company"
-    },
-    {
-      "id": "560",
-      "date": "2025-11-04",
-      "title": "[위촉] 처브라이프 - 접수마감",
-      "type": "company"
-    },
-    {
-      "id": "561",
-      "date": "2025-11-14",
-      "title": "[위촉] 처브라이프 - 접수마감",
-      "type": "company"
-    },
-    {
-      "id": "562",
+      "id": "555",
       "date": "2025-11-03",
       "title": "[해촉] 처브라이프 - 처브(11/4반영)",
       "type": "company"
     },
     {
-      "id": "563",
-      "date": "2025-11-17",
-      "title": "[해촉] 처브라이프 - 처브(11/24반영)",
-      "type": "company"
-    },
-    {
-      "id": "564",
+      "id": "556",
       "date": "2025-11-03",
       "title": "[위촉] 하나생명 - 접수마감",
       "type": "company"
     },
     {
+      "id": "557",
+      "date": "2025-11-03",
+      "title": "[위촉] IM라이프 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "558",
+      "date": "2025-11-03",
+      "title": "[협회] - 사용인 등록_생보(KB)",
+      "type": "session"
+    },
+    {
+      "id": "559",
+      "date": "2025-11-03",
+      "title": "[해촉] - 흥국(11/14반영), DB생명(11/13반영)",
+      "type": "company"
+    },
+    {
+      "id": "560",
+      "date": "2025-11-03",
+      "title": "[굿리치] - GP 오픈 예정 (PM16:00)",
+      "type": "goodrich"
+    },
+    {
+      "id": "561",
+      "date": "2025-11-04",
+      "title": "[해촉] - ABL(11/7반영), 미래(11/6반영)",
+      "type": "company"
+    },
+    {
+      "id": "562",
+      "date": "2025-11-04",
+      "title": "[해촉] KB라이프 - KB(11/10반영)",
+      "type": "company"
+    },
+    {
+      "id": "563",
+      "date": "2025-11-04",
+      "title": "[위촉] 처브라이프 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "564",
+      "date": "2025-11-04",
+      "title": "[해촉] IM라이프 - IM(11/13반영)",
+      "type": "company"
+    },
+    {
       "id": "565",
+      "date": "2025-11-04",
+      "title": "[위촉] 흥국생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "566",
+      "date": "2025-11-05",
+      "title": "[해촉] - AIA(11월말반영), 메트(11/15반영)",
+      "type": "company"
+    },
+    {
+      "id": "567",
+      "date": "2025-11-05",
+      "title": "[위촉] 동양생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "568",
+      "date": "2025-11-05",
+      "title": "[굿리치] - 전산승인마감(PM2:00)\n▶11월3차[위촉]: 11/17(월) GP 오픈 예정 (PM16:00)",
+      "type": "goodrich"
+    },
+    {
+      "id": "569",
+      "date": "2025-11-06",
+      "title": "[위촉] 교보생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "570",
+      "date": "2025-11-06",
+      "title": "[위촉] 삼성생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "571",
+      "date": "2025-11-06",
+      "title": "[위촉] 카디프생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "572",
+      "date": "2025-11-07",
+      "title": "[위촉] 신한라이프 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "573",
+      "date": "2025-11-07",
+      "title": "[해촉] 신한라이프 - 신한(11/17반영)",
+      "type": "company"
+    },
+    {
+      "id": "574",
+      "date": "2025-11-07",
+      "title": "[위촉] DB생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "575",
+      "date": "2025-11-07",
+      "title": "[협회] - 사용인 등록_손보(메리츠,롯데)",
+      "type": "session"
+    },
+    {
+      "id": "576",
+      "date": "2025-11-10",
+      "title": "[위촉] KB라이프 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "577",
+      "date": "2025-11-10",
+      "title": "[위촉] KDB생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "578",
+      "date": "2025-11-10",
+      "title": "[위촉] IM라이프 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "579",
+      "date": "2025-11-10",
+      "title": "[협회] - 사용인 등록_생보(KB)",
+      "type": "session"
+    },
+    {
+      "id": "580",
+      "date": "2025-11-10",
+      "title": "[굿리치] - GP 오픈 예정 (PM16:00)",
+      "type": "goodrich"
+    },
+    {
+      "id": "581",
+      "date": "2025-11-11",
+      "title": "[위촉] 라이나생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "582",
+      "date": "2025-11-11",
+      "title": "[위촉] IBK연금 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "583",
+      "date": "2025-11-12",
+      "title": "[굿리치] - 패밀리데이(PM4:00업무종료)",
+      "type": "goodrich"
+    },
+    {
+      "id": "584",
+      "date": "2025-11-12",
+      "title": "[위촉] 흥국생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "585",
+      "date": "2025-11-12",
+      "title": "[위촉] 동양생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "586",
+      "date": "2025-11-12",
+      "title": "[위촉] 푸본현대 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "587",
+      "date": "2025-11-12",
+      "title": "[굿리치] - 전산승인마감(PM2:00)\n▶11월4차[위촉]: 11/24(월) GP 오픈 예정 (PM16:00)",
+      "type": "goodrich"
+    },
+    {
+      "id": "588",
+      "date": "2025-11-13",
+      "title": "[위촉] 삼성생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "589",
+      "date": "2025-11-13",
+      "title": "[위촉] 카디프생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "590",
+      "date": "2025-11-14",
+      "title": "[위촉] 신한라이프 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "591",
+      "date": "2025-11-14",
+      "title": "[위촉] 처브라이프 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "592",
+      "date": "2025-11-14",
+      "title": "[협회] - 사용인 등록_손보(메리츠,롯데) / 생보(메트)",
+      "type": "session"
+    },
+    {
+      "id": "593",
+      "date": "2025-11-14",
+      "title": "[위촉] DB생명 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "594",
+      "date": "2025-11-17",
+      "title": "[해촉] - 교보(12/1반영), 미래(10/20반영)",
+      "type": "company"
+    },
+    {
+      "id": "595",
+      "date": "2025-11-17",
+      "title": "[위촉] 농협생명 - 접수마���",
+      "type": "company"
+    },
+    {
+      "id": "596",
+      "date": "2025-11-17",
+      "title": "[위촉] KB라이프 - 접수마감",
+      "type": "company"
+    },
+    {
+      "id": "597",
+      "date": "2025-11-17",
+      "title": "[해촉] KB라이프 - KB(11/24반영), 카디프(11/28반영)",
+      "type": "company"
+    },
+    {
+      "id": "598",
+      "date": "2025-11-17",
+      "title": "[해촉] 신한라이프 - 신한(11/25반영)",
+      "type": "company"
+    },
+    {
+      "id": "599",
+      "date": "2025-11-17",
+      "title": "[해촉] KDB생명 - KDB(11/09반영)",
+      "type": "company"
+    },
+    {
+      "id": "600",
+      "date": "2025-11-17",
+      "title": "[해촉] 처브라이프 - 처브(11/24반영)",
+      "type": "company"
+    },
+    {
+      "id": "601",
       "date": "2025-11-17",
       "title": "[위촉] 하나생명 - 접수마감",
       "type": "company"
     },
     {
-      "id": "566",
+      "id": "602",
       "date": "2025-11-17",
       "title": "[해촉] 하나생명 - 하나(11/28반영)",
       "type": "company"
-    }
-  ],
-  "recipients": [
-    {
-      "company": "생명보험협회",
-      "address": "서울특별시 중구 퇴계로 173, 16층(충무로3가)"
     },
     {
-      "company": "손해보험협회",
-      "address": "서울특별시 종로구 종로1길 50 15층 B동(케이트윈타워) 손해보험협회 자격관리팀"
+      "id": "603",
+      "date": "2025-11-17",
+      "title": "[굿리치] - GP 오픈 예정 (PM16:00)",
+      "type": "goodrich"
     },
     {
-      "company": "글로벌금융판매",
-      "address": "서울특별시 영등포구 경인로 775 1-511 (문래동3가, 에이스하이테크시티"
+      "id": "604",
+      "date": "2025-11-18",
+      "title": "[해촉] - ABL(11/21반영), 메트(11/25반영)",
+      "type": "company"
     },
     {
-      "company": "디비금융서비스",
-      "address": "서울특별시 강남구 테헤란로 8길 37, 4층(역삼동, 한동빌딩)"
+      "id": "605",
+      "date": "2025-11-18",
+      "title": "[해촉] 농협생명 - 농협(11/26반영)",
+      "type": "company"
     },
     {
-      "company": "메트라이프금융서비스",
-      "address": "서울특별시 강남구 영동대로 96길 8, 석광빌딩 3층"
+      "id": "606",
+      "date": "2025-11-18",
+      "title": "[해촉] - 삼성(12/4반영), DB생명(11/27반영)",
+      "type": "company"
     },
     {
-      "company": "삼성생명금융서비스",
-      "address": "서울특별시 강남구 테헤란로4길 14, 10층(미림타워)"
+      "id": "607",
+      "date": "2025-11-18",
+      "title": "[위촉] 라이나생명 - 접수마감",
+      "type": "company"
     },
     {
-      "company": "신한금융플러스",
-      "address": "서울특별시 영등포구 영등포로 256 우성타워 B동 8층"
+      "id": "608",
+      "date": "2025-11-19",
+      "title": "[해촉] - 한화(12/1반영)",
+      "type": "company"
     },
     {
-      "company": "아이에프에이",
-      "address": "서울특별시 강남구 테헤란로 22길 14 중유빌딩 (역삼동)"
+      "id": "609",
+      "date": "2025-11-19",
+      "title": "[위촉] IBK연금 - 접수마감",
+      "type": "company"
     },
     {
-      "company": "에이아이지어드바이저",
-      "address": "서울특별시 마포구 마포대로 92, 5층(도화동, 효성해링턴스퀘어 A동)"
+      "id": "610",
+      "date": "2025-11-19",
+      "title": "[굿리치] - 전산승인마감(PM2:00)\n▶12월1차[위촉]: 12/1(월) GP 오픈 예정 (PM16:00)",
+      "type": "goodrich"
     },
     {
-      "company": "에이플러스에셋",
-      "address": "서울특별시 서초구 강남대로 369 12층 (서초동, 에이플러스에셋타워)"
+      "id": "611",
+      "date": "2025-11-20",
+      "title": "[해촉] - 동양(12/01반영), IBK연금(11/21반영)",
+      "type": "company"
     },
     {
-      "company": "영진에셋",
-      "address": "부산광역시 연제구 중앙대로 1093 15층 (영진에셋빌딩)"
+      "id": "612",
+      "date": "2025-11-20",
+      "title": "[위촉] 푸본현대 - 접수마감",
+      "type": "company"
     },
     {
-      "company": "키움에셋플래너",
-      "address": "서울특별시 강남구 영동대로 424 사조빌딩 5층 (대치동)"
+      "id": "613",
+      "date": "2025-11-20",
+      "title": "[위촉] 카디프생명 - 접수마감",
+      "type": "company"
     },
     {
-      "company": "한화생명금융서비스",
-      "address": "서울특별시 영등포구 63로 50 (여의도동, 63 한화생명빌딩)"
+      "id": "614",
+      "date": "2025-11-21",
+      "title": "[굿리치] - 수수료계좌변경 신청마감",
+      "type": "goodrich"
     },
     {
-      "company": "HK금융파트너스",
-      "address": "서울특별시 강남구 테헤란로 101, 5층 (역삼동, HK타워)"
+      "id": "615",
+      "date": "2025-11-21",
+      "title": "[해촉] - 라이나(11/24반영), 푸본(11/28반영)",
+      "type": "company"
     },
     {
-      "company": "KB라이프파트너스",
-      "address": "서울특별시 강남구 강남대로 314, 서우빌딩 5층"
+      "id": "616",
+      "date": "2025-11-21",
+      "title": "[협회] - 사용인 등록_손보(메리츠,롯데)",
+      "type": "session"
     },
     {
-      "company": "미래에셋",
-      "address": "주소 미입력 - 구글시트 수신처 탭에서 주소를 입력해주세요"
+      "id": "617",
+      "date": "2025-11-24",
+      "title": "[협회] - 사용인 등록_생보(메트)",
+      "type": "session"
     },
     {
-      "company": "KDB생명",
-      "address": "주소 미입력 - 구글시트 수신처 탭에서 주소를 입력해주세요"
+      "id": "618",
+      "date": "2025-11-24",
+      "title": "[굿리치] - 11월 당사 해촉 마감",
+      "type": "goodrich"
     },
     {
-      "company": "농협생명",
-      "address": "주소 미입력 - 구글시트 수신처 탭에서 주소를 입력해주세요"
+      "id": "619",
+      "date": "2025-11-24",
+      "title": "[굿리치] - GP 오픈 예정 (PM16:00)",
+      "type": "goodrich"
     },
     {
-      "company": "카디프생명",
-      "address": "주소 미입력 - 구글시트 수신처 탭에서 주소를 입력해주세요"
+      "id": "620",
+      "date": "2025-11-25",
+      "title": "[위촉] 라이나생명 - 접수마감",
+      "type": "company"
     },
     {
-      "company": "흥국생명",
-      "address": "주소 미입력 - 구글시트 수신처 탭에서 주소를 입력해주세요"
+      "id": "621",
+      "date": "2025-11-26",
+      "title": "[굿리치] - 전산승인마감(PM2:00)\n▶12월2차[위촉]: 12/8(월) GP 오픈 예정 (PM16:00)",
+      "type": "goodrich"
     },
     {
-      "company": "동양생명",
-      "address": "주소 미입력 - 구글시트 수신처 탭에서 주소를 입력해주세요"
+      "id": "622",
+      "date": "2025-11-28",
+      "title": "[협회] - 사용인 등록_손보(메리츠,롯데)",
+      "type": "session"
     },
     {
-      "company": "DB생명",
-      "address": "주소 미입력 - 구글시트 수신처 탭에서 주소를 입력해주세요"
+      "id": "623",
+      "date": "2025-12-01",
+      "title": "[굿리치] - GP 오픈 예정 (PM16:00)",
+      "type": "goodrich"
     },
     {
-      "company": "하나생명",
-      "address": "주소 미입력 - 구글시트 수신처 탭에서 주소를 입력해주세요"
+      "id": "624",
+      "date": "2025-12-03",
+      "title": "[굿리치] - 전산승인마감(PM2:00)\n▶12월3차[위촉]: 12/15(월) GP 오픈 예정 (PM16:00)",
+      "type": "goodrich"
     },
     {
-      "company": "신한라이프",
-      "address": "주소 미입력 - 구글시트 수신처 탭에서 주소를 입력해주세요"
-    },
-    {
-      "company": "처브라이프",
-      "address": "주소 미입력 - 구글시트 수신처 탭에서 주소를 입력해주세요"
-    },
-    {
-      "company": "라이나생명",
-      "address": "주소 미입력 - 구글시트 수신처 탭에서 주소를 입력해주세요"
-    },
-    {
-      "company": "ABL생명",
-      "address": "주소 미입력 - 구글시트 수신처 탭에서 주소를 입력해주세요"
-    },
-    {
-      "company": "교보생명",
-      "address": "주소 미입력 - 구글시트 수신처 탭에서 주소를 입력해주세요"
-    },
-    {
-      "company": "IBK연금",
-      "address": "주소 미입력 - 구글시트 수신처 탭에서 주소를 입력해주세요"
-    },
-    {
-      "company": "푸본현대",
-      "address": "주소 미입력 - 구글시트 수신처 탭에서 주소를 입력해주세요"
-    },
-    {
-      "company": "IM라이프",
-      "address": "주소 미입력 - 구글시트 수신처 탭에서 주소를 입력해주세요"
+      "id": "625",
+      "date": "2025-12-05",
+      "title": "[협회] - 사용인 등록_손보(메리츠,롯데)",
+      "type": "session"
     }
   ]
 }
