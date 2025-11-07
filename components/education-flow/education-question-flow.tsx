@@ -119,7 +119,7 @@ export default function EducationQuestionFlow() {
                 축하드립니다!
               </CardTitle>
               <CardDescription>
-                이제 신규입사자를 위한 [신규등록교육]을 수료하셔야 합니다
+                시험 합격자 및 신규 입사자는 [신규등록교육]을 수료하셔야 합니다.
               </CardDescription>
             </CardHeader>
             <CardContent className="pt-6">
@@ -139,6 +139,10 @@ export default function EducationQuestionFlow() {
                     <li className="flex gap-2">
                       <span>•</span>
                       <span>교육 수료후에는 수료증을 제출해 주셔야 합니다.</span>
+                    </li>
+                    <li className="flex gap-2">
+                      <span>•</span>
+                      <span>아래 교육 신청 사이트(보험연수원)에서 보험설계사 수강신청-신규등록교육 과정을 수료하시고 수료증을 제출해 주셔야 합니다.</span>
                     </li>
                   </ul>
                 </div>
@@ -454,7 +458,7 @@ export default function EducationQuestionFlow() {
                     </li>
                     <li className="flex gap-2">
                       <span>•</span>
-                      <span>경력일수가 364일이어도 불인정합니다.</span>
+                      <span>경력일수가 364일이어도 불인정하며 직전 1년의 기준은 협회등록 날짜를 기준으로 합니다.</span>
                     </li>
                     <li className="flex gap-2">
                       <span>•</span>

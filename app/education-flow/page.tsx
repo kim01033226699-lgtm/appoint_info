@@ -10,13 +10,13 @@ export default function Page() {
         <div className="max-w-3xl mx-auto">
           {/* 제목 */}
           <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-            보수등록교육 안내
+            등록 교육 안내
           </h1>
 
           {/* 설명 */}
           <div className="text-center mb-8">
             <p className="text-gray-600">
-              몇 가지 질문을 통해 필요한 교육 과정을 안내해드립니다.
+              등록 교육 과정을 안내해 드립니다.
             </p>
           </div>
 
