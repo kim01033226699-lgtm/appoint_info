@@ -119,6 +119,24 @@ export default function QuestionFlow({ onComplete }: QuestionFlowProps) {
     setCertifiedMailDate(undefined);
   };
 
+  const handleGoToStep = (targetIndex: number) => {
+    // targetIndex까지의 히스토리만 남기고 나머지 제거
+    const newHistory = history.slice(0, targetIndex);
+    setHistory(newHistory);
+
+    // 해당 단계의 질문으로 이동
+    if (targetIndex > 0) {
+      setCurrentQuestionId(history[targetIndex - 1].questionId);
+    } else {
+      setCurrentQuestionId('q1');
+    }
+
+    // 결과 화면이었다면 질문 화면으로 돌아감
+    if (results) {
+      setResults(null);
+    }
+  };
+
   if (results) {
     // 해촉증명서 받은 경우
     if (results.includes('dismissal_certificate')) {
@@ -398,7 +416,10 @@ export default function QuestionFlow({ onComplete }: QuestionFlowProps) {
                 {/* 점 */}
                 <div className="absolute left-2.5 top-6 w-3 h-3 bg-blue-500 rounded-full border-2 border-white"></div>
 
-                <Card className="bg-gray-50 border-gray-200 ml-8">
+                <Card
+                  className="bg-gray-50 border-gray-200 ml-8 cursor-pointer hover:bg-gray-100 hover:border-gray-300 transition-all duration-150 active:scale-95"
+                  onClick={() => handleGoToStep(index)}
+                >
                   <CardContent className="py-4">
                     <div className="flex items-center justify-between">
                       <div className="flex-1">
@@ -494,7 +515,10 @@ export default function QuestionFlow({ onComplete }: QuestionFlowProps) {
               {/* 점 */}
               <div className="absolute left-2.5 top-6 w-3 h-3 bg-blue-500 rounded-full border-2 border-white"></div>
 
-              <Card className="bg-gray-50 border-gray-200 ml-8">
+              <Card
+                className="bg-gray-50 border-gray-200 ml-8 cursor-pointer hover:bg-gray-100 hover:border-gray-300 transition-all duration-150 active:scale-95"
+                onClick={() => handleGoToStep(index)}
+              >
                 <CardContent className="py-4">
                   <div className="flex items-center justify-between">
                     <div className="flex-1">

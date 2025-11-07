@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import NavigationHeader from "@/components/navigation-header";
 import QuestionFlow from "@/components/application-flow/question-flow";
 import PersonalInfoForm from "@/components/application-flow/personal-info-form";
 import ApplicationPreview from "@/components/application-flow/application-preview";
@@ -66,18 +67,23 @@ export default function ApplicationFlowPage() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50 py-4 md:py-8 px-[10%]">
-      <div className="mx-auto">
-        <div className="mb-8">
-          <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2">
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-indigo-50">
+      <NavigationHeader />
+
+      <div className="py-8 px-4">
+        <div className="max-w-3xl mx-auto">
+          {/* 제목 */}
+          <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
             협회 말소처리 안내
           </h1>
+
           {currentStep === 'questions' && (
-            <p className="text-gray-600">
-              본인의 상황을 알려주세요
-            </p>
+            <div className="text-center mb-8">
+              <p className="text-gray-600">
+                본인의 상황을 알려주세요
+              </p>
+            </div>
           )}
-        </div>
 
         {currentStep === 'questions' && (
           <QuestionFlow onComplete={handleQuestionsComplete} />
@@ -122,12 +128,12 @@ export default function ApplicationFlowPage() {
               </Card>
 
               <Card
-                className="cursor-pointer hover:shadow-lg transition-all duration-150 border-2 border-green-500 bg-green-50 hover:bg-green-100 active:scale-95"
+                className="cursor-pointer hover:shadow-lg transition-all duration-150 border-2 border-goodrich-yellow-light bg-orange-50 hover:bg-orange-100 active:scale-95"
                 onClick={handleStartWriting}
               >
                 <CardContent className="pt-6 pb-6">
                   <div className="text-center">
-                    <h3 className="text-lg font-semibold text-green-900">
+                    <h3 className="text-lg font-semibold text-goodrich-gray">
                       내용증명 작성을 도와드릴까요?
                     </h3>
                   </div>
@@ -162,13 +168,14 @@ export default function ApplicationFlowPage() {
             </h2>
             <Button
               onClick={handleReset}
-              className="bg-blue-600 hover:bg-blue-700 transition-all duration-150 active:scale-95"
+              className="bg-goodrich-yellow-light hover:opacity-90 transition-all duration-150 active:scale-95"
               size="lg"
             >
               처음으로
             </Button>
           </div>
         )}
+        </div>
       </div>
     </div>
   );

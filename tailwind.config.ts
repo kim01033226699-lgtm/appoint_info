@@ -43,6 +43,12 @@ const config: Config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        goodrich: {
+          yellow: "#FF9B00",
+          "yellow-light": "#FFBB4D",
+          gray: "#0F7373",
+          blue: "#2B68EE",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",

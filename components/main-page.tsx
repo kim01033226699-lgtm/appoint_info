@@ -15,6 +15,7 @@ import { cn } from "@/lib/utils";
 import type { SheetData } from "@/lib/types";
 import CalendarModal from "@/components/calendar-modal";
 import TutorialOverlay from "@/components/tutorial-overlay";
+import NavigationHeader from "@/components/navigation-header";
 // import sheetDataJson from "@/public/data.json";
 
 export default function MainPage() {
@@ -136,14 +137,18 @@ export default function MainPage() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50 p-4 md:p-8">
-      <div className="max-w-4xl mx-auto">
-        {/* 헤더 */}
-        <div className="flex justify-between items-center mb-8">
-          <h1 className="text-3xl md:text-4xl font-bold text-gray-900">
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-indigo-50">
+      <NavigationHeader />
+
+      <div className="py-8 px-4">
+        <div className="max-w-4xl mx-auto">
+          {/* 제목 */}
+          <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8">
             굿리치 위촉일정
           </h1>
-          <div className="flex gap-2">
+
+          {/* 상단 버튼 영역 */}
+          <div className="flex justify-end gap-2 mb-8">
             <Button
               variant="outline"
               className="gap-2 transition-all duration-150 active:scale-95"
@@ -155,13 +160,12 @@ export default function MainPage() {
             </Button>
             <Button
               variant="default"
-              className="gap-2 bg-green-600 hover:bg-green-700 transition-all duration-150 active:scale-95"
+              className="gap-2 bg-goodrich-yellow-light hover:opacity-90 transition-all duration-150 active:scale-95"
               onClick={() => router.push('/application-flow')}
             >
               협회말소하셨나요?
             </Button>
           </div>
-        </div>
 
         {/* 위촉필요서류 */}
         <Card className="mb-6" data-tutorial="required-documents">
@@ -252,7 +256,7 @@ export default function MainPage() {
               </Popover>
 
               <Button
-                className="gap-2 bg-blue-500 hover:bg-blue-600 transition-all duration-150 active:scale-95"
+                className="gap-2 bg-goodrich-yellow-light hover:opacity-90 transition-all duration-150 active:scale-95"
                 disabled={!allChecked || !selectedDate}
                 onClick={handleSearch}
                 data-tutorial="search-button"
@@ -263,6 +267,7 @@ export default function MainPage() {
             </div>
           </CardContent>
         </Card>
+        </div>
       </div>
 
       {/* 전체 캘린더 모달 */}
