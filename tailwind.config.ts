@@ -55,6 +55,21 @@ const config: Config = {
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
+      keyframes: {
+        "click-pointer": {
+          "0%, 100%": { transform: "scale(1) translateY(0)" },
+          "50%": { transform: "scale(0.9) translateY(3px)" },
+        },
+        "click-ripple": {
+          "0%": { transform: "translate(-50%, -50%) scale(0.5)", opacity: "0.8" },
+          "50%": { transform: "translate(-50%, -50%) scale(1)", opacity: "0.5" },
+          "100%": { transform: "translate(-50%, -50%) scale(0.5)", opacity: "0.8" },
+        },
+      },
+      animation: {
+        "click-pointer": "click-pointer 2s ease-in-out infinite",
+        "click-ripple": "click-ripple 2s ease-in-out infinite",
+      },
     },
   },
   plugins: [require("tailwindcss-animate")],
