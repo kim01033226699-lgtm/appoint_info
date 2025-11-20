@@ -451,6 +451,7 @@ function parseCalendarEvents(inputRows) {
 
     const category = String(row?.[1] || '').trim();
     const company = String(row?.[2] || '').trim();
+    const round = String(row?.[3] || '').trim();
     const content = String(row?.[4] || '').trim();
 
     if (!content) continue;
@@ -467,11 +468,27 @@ function parseCalendarEvents(inputRows) {
       type = 'session';
     }
 
+    // 협회등록일 파싱 (생명보험협회 등록일 정보가 content에 포함된 경우)
+    let associationRegistrationDate = null;
+    const assocMatch = content.match(/생명보험협회\s*등록일\s*(\d{1,2})\/(\d{1,2})/);
+    if (assocMatch) {
+      const month = parseInt(assocMatch[1], 10);
+      const day = parseInt(assocMatch[2], 10);
+      const currentYear = new Date().getFullYear();
+      const assocDate = new Date(Date.UTC(currentYear, month - 1, day));
+      associationRegistrationDate = formatDateISO(assocDate);
+    }
+
     events.push({
       id: String(eventId++),
       date: formatDateISO(date),
       title: title,
       type: type,
+      category: category,
+      company: company,
+      round: round,
+      content: content,
+      associationRegistrationDate: associationRegistrationDate,
     });
   }
 

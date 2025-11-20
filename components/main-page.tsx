@@ -16,6 +16,7 @@ import type { SheetData } from "@/lib/types";
 import CalendarModal from "@/components/calendar-modal";
 import TutorialOverlay from "@/components/tutorial-overlay";
 import NavigationHeader from "@/components/navigation-header";
+import BottomNavigation from "@/components/BottomNavigation";
 // import sheetDataJson from "@/public/data.json";
 
 export default function MainPage() {
@@ -281,6 +282,16 @@ export default function MainPage() {
       <TutorialOverlay
         open={showTutorial}
         onClose={handleCloseTutorial}
+      />
+
+      {/* 모바일 하단 네비게이션 */}
+      <BottomNavigation
+        items={[
+          { label: '지원금', icon: '💰', url: 'https://kim01033226699-lgtm.github.io/goodrich-info-a/', path: '/goodrich-info-a' },
+          { label: '금융캠퍼스', icon: '🎓', url: 'https://kim01033226699-lgtm.github.io/gfe', path: '/gfe' },
+          { label: '스마트위촉', icon: '📋', url: 'https://kim01033226699-lgtm.github.io/appoint_info/', path: '/appoint_info' }
+        ]}
+        currentPath="/appoint_info"
       />
     </div>
   );

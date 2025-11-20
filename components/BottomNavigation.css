@@ -1,0 +1,144 @@
+.bottom-navigation {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #f8f9fa;
+  z-index: 1000;
+  display: none;
+  padding-bottom: env(safe-area-inset-bottom);
+  min-width: 375px;
+}
+
+.bottom-nav-wrapper {
+  position: relative;
+  max-width: 768px;
+  margin: 0 auto;
+}
+
+.bottom-nav-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 62px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  padding: 0 4px;
+  gap: 0;
+}
+
+.bottom-nav-container::-webkit-scrollbar {
+  display: none;
+}
+
+.bottom-nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  height: 100%;
+  text-decoration: none;
+  color: #6b7280;
+  transition: all 0.25s ease;
+  position: relative;
+  gap: 0.25rem;
+  padding: 0.5rem 0.5rem;
+  border-radius: 20px;
+  background: transparent;
+  max-width: 120px;
+}
+
+.bottom-nav-item:active {
+  transform: scale(0.95);
+}
+
+.bottom-nav-icon {
+  font-size: 1.35rem;
+  line-height: 1;
+  transition: all 0.25s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bottom-nav-icon svg {
+  width: 24px;
+  height: 24px;
+  transition: all 0.25s ease;
+}
+
+.bottom-nav-label {
+  font-size: 0.7rem;
+  font-weight: 600;
+  line-height: 1;
+  transition: all 0.25s ease;
+  white-space: nowrap;
+}
+
+.bottom-nav-item.active {
+  color: #1f2937;
+  background: #e0e7ff;
+}
+
+.bottom-nav-item.active .bottom-nav-icon svg {
+  transform: scale(1.1);
+}
+
+/* 스크롤 인디케이터 */
+.scroll-indicator {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 32px;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.scroll-indicator-left {
+  left: 0;
+  background: linear-gradient(to right, rgba(248, 249, 250, 1) 0%, rgba(248, 249, 250, 0) 100%);
+}
+
+.scroll-indicator-right {
+  right: 0;
+  background: linear-gradient(to left, rgba(248, 249, 250, 1) 0%, rgba(248, 249, 250, 0) 100%);
+}
+
+/* 모바일에서만 표시 */
+@media (max-width: 768px) {
+  .bottom-navigation {
+    display: block;
+  }
+}
+
+/* 작은 화면 (375px 이하는 최소 크기 유지) */
+@media (max-width: 480px) {
+  .bottom-nav-container {
+    height: 57px;
+  }
+
+  .bottom-nav-item {
+    padding: 0.5rem 0.25rem;
+  }
+
+  .bottom-nav-icon svg {
+    width: 22px;
+    height: 22px;
+  }
+
+  .bottom-nav-label {
+    font-size: 0.65rem;
+  }
+}
+
+/* 375px 이하에서는 더 이상 줄어들지 않음 */
+@media (max-width: 375px) {
+  body {
+    min-width: 375px;
+  }
+}
