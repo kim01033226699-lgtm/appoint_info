@@ -33,8 +33,12 @@ export default function MainPage() {
   useEffect(() => {
     const loadData = async () => {
       try {
-        console.log('🔄 Google Sheets에서 실시간 데이터 로딩 중...');
-        const response = await fetch('/api/sheets');
+        // 개발 환경에서는 API Route 사용, 프로덕션에서는 정적 파일 사용
+        const isDev = process.env.NODE_ENV === 'development';
+        const apiUrl = isDev ? '/api/sheets' : '/data.json';
+        
+        console.log(`🔄 데이터 로딩 중... (${isDev ? 'API Route' : '정적 파일'})`);
+        const response = await fetch(apiUrl);
         if (!response.ok) throw new Error("데이터 로딩 실패");
         const json = (await response.json()) as SheetData;
         console.log('✅ 데이터 로딩 완료:', json.schedules.length, '개 차수');

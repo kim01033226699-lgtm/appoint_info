@@ -54,7 +54,11 @@ export default function PersonalInfoForm({ onComplete, onBack, selectedResults }
     // 구글시트에서 가져온 수신처 데이터 로드
     const loadRecipients = async () => {
       try {
-        const response = await fetch('/api/sheets');
+        // 개발 환경에서는 API Route 사용, 프로덕션에서는 정적 파일 사용
+        const isDev = process.env.NODE_ENV === 'development';
+        const apiUrl = isDev ? '/api/sheets' : '/data.json';
+        
+        const response = await fetch(apiUrl);
         if (!response.ok) throw new Error("데이터 로딩 실패");
         const data = await response.json();
         setRecipients(data.recipients || []);
