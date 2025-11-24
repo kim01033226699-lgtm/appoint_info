@@ -5,8 +5,10 @@ const path = require('path');
 const apiRoutePath = path.join(__dirname, '..', 'app', 'api', 'sheets', 'route.ts');
 const tempApiRoutePath = path.join(__dirname, '..', 'app', 'api', 'sheets', 'route.ts.temp');
 
-if (process.env.NODE_ENV === 'production' && fs.existsSync(tempApiRoutePath)) {
+if (fs.existsSync(tempApiRoutePath)) {
   console.log('✅ 빌드 완료: API Route를 복원합니다...');
   fs.renameSync(tempApiRoutePath, apiRoutePath);
+} else {
+  console.log('ℹ️  임시 API Route 파일이 없습니다. (복원 불필요)');
 }
 

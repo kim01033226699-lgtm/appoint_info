@@ -19,7 +19,8 @@ export default function ResultPage({ selectedDate }: ResultPageProps) {
   useEffect(() => {
     // 개발 환경에서는 API Route 사용, 프로덕션에서는 정적 파일 사용
     const isDev = process.env.NODE_ENV === 'development';
-    const apiUrl = isDev ? '/api/sheets' : '/data.json';
+    const basePath = process.env.NODE_ENV === 'production' ? '/appoint_info' : '';
+    const apiUrl = isDev ? '/api/sheets' : `${basePath}/data.json`;
     
     console.log(`🔄 데이터 로딩 중... (${isDev ? 'API Route' : '정적 파일'})`);
     fetch(apiUrl)

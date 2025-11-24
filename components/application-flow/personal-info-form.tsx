@@ -56,7 +56,8 @@ export default function PersonalInfoForm({ onComplete, onBack, selectedResults }
       try {
         // 개발 환경에서는 API Route 사용, 프로덕션에서는 정적 파일 사용
         const isDev = process.env.NODE_ENV === 'development';
-        const apiUrl = isDev ? '/api/sheets' : '/data.json';
+        const basePath = process.env.NODE_ENV === 'production' ? '/appoint_info' : '';
+        const apiUrl = isDev ? '/api/sheets' : `${basePath}/data.json`;
         
         const response = await fetch(apiUrl);
         if (!response.ok) throw new Error("데이터 로딩 실패");
