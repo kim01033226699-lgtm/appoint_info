@@ -47,12 +47,12 @@
           "manager": "김보미 사원 (02-6410-7233)"
         },
         {
-          "company": "KDB생명",
+          "company": "KDB생��",
           "round": "9-3",
           "acceptanceDeadline": "9/9(화)",
           "gpUploadDate": "9/19(금)",
-          "recruitmentMethod": "알림톡(카카오톡) 발송",
-          "manager": "김보미 사원 (02-6410-7233)"
+          "recruitmentMethod": "",
+          "manager": ""
         },
         {
           "company": "농협생명",
@@ -223,12 +223,12 @@
           "manager": "김보미 사원 (02-6410-7233)"
         },
         {
-          "company": "농협생���",
+          "company": "농협생명",
           "round": "9-4",
           "acceptanceDeadline": "9/16(화)",
           "gpUploadDate": "9/25(목)",
-          "recruitmentMethod": "",
-          "manager": ""
+          "recruitmentMethod": "알림톡(카카오톡) 발송",
+          "manager": "김보미 사원 (02-6410-7233)"
         },
         {
           "company": "교보생명",
@@ -327,12 +327,12 @@
           "manager": "이성연 사원 (02-6410-7410)"
         },
         {
-          "company": "ABL생명",
+          "company": "ABL생��",
           "round": "9-4",
           "acceptanceDeadline": "9/30(화)",
           "gpUploadDate": "10/16(목)",
-          "recruitmentMethod": "문자(SMS) 발송_031-523-3002",
-          "manager": "방수현 대리 (02-6410-7411)"
+          "recruitmentMethod": "",
+          "manager": ""
         }
       ]
     },
@@ -455,12 +455,12 @@
           "manager": "이성연 사원 (02-6410-7410)"
         },
         {
-          "company": "ABL생명",
+          "company": "ABL생��",
           "round": "9-5",
           "acceptanceDeadline": "9/30(화)",
           "gpUploadDate": "10/16(목)",
-          "recruitmentMethod": "문자(SMS) 발송_031-523-3002",
-          "manager": "방수현 대리 (02-6410-7411)"
+          "recruitmentMethod": "",
+          "manager": ""
         },
         {
           "company": "IBK연금",
@@ -511,12 +511,12 @@
       "gpOpenTime": "PM16:00",
       "companies": [
         {
-          "company": "신한라이프",
+          "company": "신한라��프",
           "round": "10-1",
           "acceptanceDeadline": "9/26(금)",
           "gpUploadDate": "10/16(목)",
-          "recruitmentMethod": "문자(SMS) 발송",
-          "manager": "김보미 사원 (02-6410-7233)"
+          "recruitmentMethod": "",
+          "manager": ""
         },
         {
           "company": "KB라이프",
@@ -733,6 +733,14 @@
           "gpUploadDate": "10/29(수)",
           "recruitmentMethod": "알림톡(카카오톡) 발송",
           "manager": "이성연 사원 (02-6410-7410)"
+        },
+        {
+          "company": "한화생명",
+          "round": "10-2",
+          "acceptanceDeadline": "10/17(금)",
+          "gpUploadDate": "10/27(월)",
+          "recruitmentMethod": "알림톡(카카오톡) 발송",
+          "manager": "방수현 대리 (02-6410-7411)"
         },
         {
           "company": "신한라이프",
@@ -1461,6 +1469,14 @@
           "gpUploadDate": "11/27(목)",
           "recruitmentMethod": "알림톡(카카오톡) 발송",
           "manager": "이성연 사원 (02-6410-7410)"
+        },
+        {
+          "company": "IM라이프",
+          "round": "11-3",
+          "acceptanceDeadline": "11/24(월)",
+          "gpUploadDate": "12/5(금)",
+          "recruitmentMethod": "문자(SMS) 발송",
+          "manager": "김보미 사원 (02-6410-7233)"
         }
       ]
     },
@@ -1527,12 +1543,76 @@
           "manager": "이성연 사원 (02-6410-7410)"
         },
         {
+          "company": "한화생명",
+          "round": "11-4",
+          "acceptanceDeadline": "11/25(화)",
+          "gpUploadDate": "12/3(수)",
+          "recruitmentMethod": "알림톡(카카오톡) 발송",
+          "manager": "방수현 대리 (02-6410-7411)"
+        },
+        {
           "company": "교보생명",
           "round": "11-4",
           "acceptanceDeadline": "11/26(수)",
           "gpUploadDate": "12/8(월)",
           "recruitmentMethod": "알림톡(카카오톡) 발송",
           "manager": "방수현 대리 (02-6410-7411)"
+        },
+        {
+          "company": "미래에���",
+          "round": "11-4",
+          "acceptanceDeadline": "11/26(수)",
+          "gpUploadDate": "12/8(월)",
+          "recruitmentMethod": "",
+          "manager": ""
+        },
+        {
+          "company": "ABL생명",
+          "round": "11-4",
+          "acceptanceDeadline": "11/28(금)",
+          "gpUploadDate": "12/8(월)",
+          "recruitmentMethod": "문자(SMS) 발송_031-523-3002",
+          "manager": "방수현 대리 (02-6410-7411)"
+        },
+        {
+          "company": "IM라이프",
+          "round": "11-4",
+          "acceptanceDeadline": "11/24(월)",
+          "gpUploadDate": "12/5(금)",
+          "recruitmentMethod": "문자(SMS) 발송",
+          "manager": "김보미 사원 (02-6410-7233)"
+        },
+        {
+          "company": "KDB생명",
+          "round": "11-4",
+          "acceptanceDeadline": "11/24(월)",
+          "gpUploadDate": "12/5(금)",
+          "recruitmentMethod": "알림톡(카카오톡) 발송",
+          "manager": "김보미 사원 (02-6410-7233)"
+        },
+        {
+          "company": "하나생명",
+          "round": "11-4",
+          "acceptanceDeadline": "12/1(월)",
+          "gpUploadDate": "12/5(금)",
+          "recruitmentMethod": "고정URL(https://bit.ly/3xpO15u)",
+          "manager": "김보미 사원 (02-6410-7233)"
+        },
+        {
+          "company": "삼성생명",
+          "round": "11-4",
+          "acceptanceDeadline": "11/25(화)",
+          "gpUploadDate": "",
+          "recruitmentMethod": "알림톡(카카오톡) 발송",
+          "manager": "이성연 사원 (02-6410-7410)"
+        },
+        {
+          "company": "흥국생명",
+          "round": "11-4",
+          "acceptanceDeadline": "11/24(월)",
+          "gpUploadDate": "",
+          "recruitmentMethod": "문자(SMS) 발송",
+          "manager": "이성연 사원 (02-6410-7410)"
         }
       ]
     },
@@ -1541,19 +1621,435 @@
       "deadline": "",
       "gpOpenDate": "12/1(월)",
       "gpOpenTime": "PM16:00",
-      "companies": []
+      "companies": [
+        {
+          "company": "미래에���",
+          "round": "12-1",
+          "acceptanceDeadline": "11/26(수)",
+          "gpUploadDate": "12/8(월)",
+          "recruitmentMethod": "",
+          "manager": ""
+        },
+        {
+          "company": "메트라이프",
+          "round": "12-1",
+          "acceptanceDeadline": "11/27(목)",
+          "gpUploadDate": "12/8(월)",
+          "recruitmentMethod": "문자(SMS) 발송_1688-7427/고정URL로 직접 제출 가능(https://brand.metlife.co.kr/ga/appt/selectMoblieCert.do)",
+          "manager": "방수현 대리 (02-6410-7411)"
+        },
+        {
+          "company": "ABL생명",
+          "round": "12-1",
+          "acceptanceDeadline": "11/28(금)",
+          "gpUploadDate": "12/8(월)",
+          "recruitmentMethod": "문자(SMS) 발송_031-523-3002",
+          "manager": "방수현 대리 (02-6410-7411)"
+        },
+        {
+          "company": "교보생명",
+          "round": "12-1",
+          "acceptanceDeadline": "12/4(목)",
+          "gpUploadDate": "12/16(화)",
+          "recruitmentMethod": "알림톡(카카오톡) 발송",
+          "manager": "방수현 대리 (02-6410-7411)"
+        },
+        {
+          "company": "한화생명",
+          "round": "12-1",
+          "acceptanceDeadline": "12/5(금)",
+          "gpUploadDate": "12/15(월)",
+          "recruitmentMethod": "알림톡(카카오톡) 발송",
+          "manager": "방수현 대리 (02-6410-7411)"
+        },
+        {
+          "company": "신한라이프",
+          "round": "12-1",
+          "acceptanceDeadline": "11/21(금)",
+          "gpUploadDate": "12/8(월)",
+          "recruitmentMethod": "문자(SMS) 발송",
+          "manager": "김보미 사원 (02-6410-7233)"
+        },
+        {
+          "company": "KB라이프",
+          "round": "12-1",
+          "acceptanceDeadline": "11/27(목)",
+          "gpUploadDate": "12/4(목)",
+          "recruitmentMethod": "문자(SMS) 발송/고정URL (http://id.kblife.co.kr/gafp/73100 )",
+          "manager": "김보미 사원 (02-6410-7233)"
+        },
+        {
+          "company": "IM라이프",
+          "round": "12-1",
+          "acceptanceDeadline": "12/1(월)",
+          "gpUploadDate": "12/12(금)",
+          "recruitmentMethod": "문자(SMS) 발송",
+          "manager": "김보미 사원 (02-6410-7233)"
+        },
+        {
+          "company": "KDB생명",
+          "round": "12-1",
+          "acceptanceDeadline": "11/24(월)",
+          "gpUploadDate": "12/5(금)",
+          "recruitmentMethod": "알림톡(카카오톡) 발송",
+          "manager": "김보미 사원 (02-6410-7233)"
+        },
+        {
+          "company": "처브라이프",
+          "round": "12-1",
+          "acceptanceDeadline": "11/25(화)",
+          "gpUploadDate": "12/8(월)",
+          "recruitmentMethod": "서류(위촉시작성)",
+          "manager": "김보미 사원 (02-6410-7233)"
+        },
+        {
+          "company": "농협생명",
+          "round": "12-1",
+          "acceptanceDeadline": "11/28(금)",
+          "gpUploadDate": "12/11(목)",
+          "recruitmentMethod": "알림톡(카카오톡) 발송",
+          "manager": "김보미 사원 (02-6410-7233)"
+        },
+        {
+          "company": "하나생명",
+          "round": "12-1",
+          "acceptanceDeadline": "12/1(월)",
+          "gpUploadDate": "12/5(금)",
+          "recruitmentMethod": "고정URL(https://bit.ly/3xpO15u)",
+          "manager": "김보미 사원 (02-6410-7233)"
+        },
+        {
+          "company": "삼성생명",
+          "round": "12-1",
+          "acceptanceDeadline": "12/4(목)",
+          "gpUploadDate": "",
+          "recruitmentMethod": "알림톡(카카오톡) 발송",
+          "manager": "이성연 사원 (02-6410-7410)"
+        },
+        {
+          "company": "흥국생명",
+          "round": "12-1",
+          "acceptanceDeadline": "12/3(수)",
+          "gpUploadDate": "12/16(화)",
+          "recruitmentMethod": "문자(SMS) 발송",
+          "manager": "이성연 사원 (02-6410-7410)"
+        }
+      ]
     },
     {
       "round": "12-2",
       "deadline": "",
       "gpOpenDate": "12/8(월)",
       "gpOpenTime": "PM16:00",
-      "companies": []
+      "companies": [
+        {
+          "company": "교보생명",
+          "round": "12-2",
+          "acceptanceDeadline": "12/4(목)",
+          "gpUploadDate": "12/16(화)",
+          "recruitmentMethod": "알림톡(카카오톡) 발송",
+          "manager": "방수현 대리 (02-6410-7411)"
+        },
+        {
+          "company": "한화생명",
+          "round": "12-2",
+          "acceptanceDeadline": "12/5(금)",
+          "gpUploadDate": "12/15(월)",
+          "recruitmentMethod": "알림톡(카카오톡) 발송",
+          "manager": "방수현 대리 (02-6410-7411)"
+        },
+        {
+          "company": "ABL생명",
+          "round": "12-2",
+          "acceptanceDeadline": "12/8(월)",
+          "gpUploadDate": "12/16(화)",
+          "recruitmentMethod": "문자(SMS) 발송_031-523-3002",
+          "manager": "방수현 대리 (02-6410-7411)"
+        },
+        {
+          "company": "메트라이프",
+          "round": "12-2",
+          "acceptanceDeadline": "12/8(월)",
+          "gpUploadDate": "12/16(화)",
+          "recruitmentMethod": "문자(SMS) 발송_1688-7427/고정URL로 직접 제출 가능(https://brand.metlife.co.kr/ga/appt/selectMoblieCert.do)",
+          "manager": "방수현 대리 (02-6410-7411)"
+        },
+        {
+          "company": "미래에셋",
+          "round": "12-2",
+          "acceptanceDeadline": "12/10(수)",
+          "gpUploadDate": "12/19(금)",
+          "recruitmentMethod": "알림톡(카카오톡) 발송",
+          "manager": "방수현 대리 (02-6410-7411)"
+        },
+        {
+          "company": "신한라이프",
+          "round": "12-2",
+          "acceptanceDeadline": "12/4(목)",
+          "gpUploadDate": "12/16(화)",
+          "recruitmentMethod": "문자(SMS) 발송",
+          "manager": "김보미 사원 (02-6410-7233)"
+        },
+        {
+          "company": "KB라이프",
+          "round": "12-2",
+          "acceptanceDeadline": "12/3(수)",
+          "gpUploadDate": "12/11(목)",
+          "recruitmentMethod": "문자(SMS) 발송/고정URL (http://id.kblife.co.kr/gafp/73100 )",
+          "manager": "김보미 사원 (02-6410-7233)"
+        },
+        {
+          "company": "IM라이프",
+          "round": "12-2",
+          "acceptanceDeadline": "12/8(월)",
+          "gpUploadDate": "12/19(금)",
+          "recruitmentMethod": "문자(SMS) 발송",
+          "manager": "김보미 사원 (02-6410-7233)"
+        },
+        {
+          "company": "KDB생명",
+          "round": "12-2",
+          "acceptanceDeadline": "12/1(월)",
+          "gpUploadDate": "12/12(금)",
+          "recruitmentMethod": "알림톡(카카오톡) 발송",
+          "manager": "김보미 사원 (02-6410-7233)"
+        },
+        {
+          "company": "처브라이프",
+          "round": "12-2",
+          "acceptanceDeadline": "12/4(목)",
+          "gpUploadDate": "12/16(화)",
+          "recruitmentMethod": "서류(위촉시작성)",
+          "manager": "김보미 사원 (02-6410-7233)"
+        },
+        {
+          "company": "농협생명",
+          "round": "12-2",
+          "acceptanceDeadline": "11/28(금)",
+          "gpUploadDate": "12/11(목)",
+          "recruitmentMethod": "알림톡(카카오톡) 발송",
+          "manager": "김보미 사원 (02-6410-7233)"
+        },
+        {
+          "company": "하나생명",
+          "round": "12-2",
+          "acceptanceDeadline": "12/15(월)",
+          "gpUploadDate": "12/19(금)",
+          "recruitmentMethod": "고정URL(https://bit.ly/3xpO15u)",
+          "manager": "김보미 사원 (02-6410-7233)"
+        },
+        {
+          "company": "삼성생명",
+          "round": "12-2",
+          "acceptanceDeadline": "12/4(목)",
+          "gpUploadDate": "",
+          "recruitmentMethod": "알림톡(카카오톡) 발송",
+          "manager": "이성연 사원 (02-6410-7410)"
+        },
+        {
+          "company": "흥국생명",
+          "round": "12-2",
+          "acceptanceDeadline": "12/3(수)",
+          "gpUploadDate": "12/16(화)",
+          "recruitmentMethod": "문자(SMS) 발송",
+          "manager": "이성연 사원 (02-6410-7410)"
+        }
+      ]
     },
     {
       "round": "12-3",
       "deadline": "",
       "gpOpenDate": "12/15(월)",
+      "gpOpenTime": "PM16:00",
+      "companies": [
+        {
+          "company": "메트라이프",
+          "round": "12-3",
+          "acceptanceDeadline": "12/8(월)",
+          "gpUploadDate": "12/16(화)",
+          "recruitmentMethod": "문자(SMS) 발송_1688-7427/고정URL로 직접 제출 가능(https://brand.metlife.co.kr/ga/appt/selectMoblieCert.do)",
+          "manager": "방수현 대리 (02-6410-7411)"
+        },
+        {
+          "company": "미래에셋",
+          "round": "12-3",
+          "acceptanceDeadline": "12/10(수)",
+          "gpUploadDate": "12/19(금)",
+          "recruitmentMethod": "알림톡(카카오톡) 발송",
+          "manager": "방수현 대리 (02-6410-7411)"
+        },
+        {
+          "company": "한화생명",
+          "round": "12-3",
+          "acceptanceDeadline": "12/15(월)",
+          "gpUploadDate": "12/24(수)",
+          "recruitmentMethod": "알림톡(카카오톡) 발송",
+          "manager": "방수현 대리 (02-6410-7411)"
+        },
+        {
+          "company": "교보생명",
+          "round": "12-3",
+          "acceptanceDeadline": "12/16(화)",
+          "gpUploadDate": "12/26(금)",
+          "recruitmentMethod": "알림톡(카카오톡) 발송",
+          "manager": "방수현 대리 (02-6410-7411)"
+        },
+        {
+          "company": "ABL생명",
+          "round": "12-3",
+          "acceptanceDeadline": "12/19(금)",
+          "gpUploadDate": "12/26(금)",
+          "recruitmentMethod": "문자(SMS) 발송_031-523-3002",
+          "manager": "방수현 대리 (02-6410-7411)"
+        },
+        {
+          "company": "신한라이프",
+          "round": "12-3",
+          "acceptanceDeadline": "12/4(목)",
+          "gpUploadDate": "12/16(화)",
+          "recruitmentMethod": "문자(SMS) 발송",
+          "manager": "김보미 사원 (02-6410-7233)"
+        },
+        {
+          "company": "KB라이프",
+          "round": "12-3",
+          "acceptanceDeadline": "12/10(수)",
+          "gpUploadDate": "12/18(목)",
+          "recruitmentMethod": "문자(SMS) 발송/고정URL (http://id.kblife.co.kr/gafp/73100 )",
+          "manager": "김보미 사원 (02-6410-7233)"
+        },
+        {
+          "company": "KDB생명",
+          "round": "12-3",
+          "acceptanceDeadline": "12/8(월)",
+          "gpUploadDate": "12/19(금)",
+          "recruitmentMethod": "알림톡(카카오톡) 발송",
+          "manager": "김보미 사원 (02-6410-7233)"
+        },
+        {
+          "company": "처브라이프",
+          "round": "12-3",
+          "acceptanceDeadline": "12/4(목)",
+          "gpUploadDate": "12/16(화)",
+          "recruitmentMethod": "서류(위촉시작성)",
+          "manager": "김보미 사원 (02-6410-7233)"
+        },
+        {
+          "company": "농협생명",
+          "round": "12-3",
+          "acceptanceDeadline": "12/5(금)",
+          "gpUploadDate": "12/18(목)",
+          "recruitmentMethod": "알림톡(카카오톡) 발송",
+          "manager": "김보미 사원 (02-6410-7233)"
+        },
+        {
+          "company": "하나생명",
+          "round": "12-3",
+          "acceptanceDeadline": "12/15(월)",
+          "gpUploadDate": "12/19(금)",
+          "recruitmentMethod": "고정URL(https://bit.ly/3xpO15u)",
+          "manager": "김보미 사원 (02-6410-7233)"
+        },
+        {
+          "company": "삼성생명",
+          "round": "12-3",
+          "acceptanceDeadline": "12/11(목)",
+          "gpUploadDate": "",
+          "recruitmentMethod": "알림톡(카카오톡) 발송",
+          "manager": "이성연 사원 (02-6410-7410)"
+        },
+        {
+          "company": "흥국생명",
+          "round": "12-3",
+          "acceptanceDeadline": "12/11(목)",
+          "gpUploadDate": "12/29(월)",
+          "recruitmentMethod": "문자(SMS) 발송",
+          "manager": "이성연 사원 (02-6410-7410)"
+        }
+      ]
+    },
+    {
+      "round": "12-4",
+      "deadline": "",
+      "gpOpenDate": "",
+      "gpOpenTime": "",
+      "companies": [
+        {
+          "company": "미래에셋",
+          "round": "12-4",
+          "acceptanceDeadline": "12/16(화)",
+          "gpUploadDate": "12/26(금)",
+          "recruitmentMethod": "알림톡(카카오톡) 발송",
+          "manager": "방수현 대리 (02-6410-7411)"
+        },
+        {
+          "company": "메트라이프",
+          "round": "12-4",
+          "acceptanceDeadline": "12/17(수)",
+          "gpUploadDate": "12/29(월)",
+          "recruitmentMethod": "문자(SMS) 발송_1688-7427/고정URL로 직접 제출 가능(https://brand.metlife.co.kr/ga/appt/selectMoblieCert.do)",
+          "manager": "방수현 대리 (02-6410-7411)"
+        },
+        {
+          "company": "ABL생명",
+          "round": "12-4",
+          "acceptanceDeadline": "12/19(금)",
+          "gpUploadDate": "12/26(금)",
+          "recruitmentMethod": "문자(SMS) 발송_031-523-3002",
+          "manager": "방수현 대리 (02-6410-7411)"
+        },
+        {
+          "company": "신한라이프",
+          "round": "12-4",
+          "acceptanceDeadline": "12/15(월)",
+          "gpUploadDate": "12/29(월)",
+          "recruitmentMethod": "문자(SMS) 발송",
+          "manager": "김보미 사원 (02-6410-7233)"
+        },
+        {
+          "company": "KB라이프",
+          "round": "12-4",
+          "acceptanceDeadline": "12/17(수)",
+          "gpUploadDate": "12/26(금)",
+          "recruitmentMethod": "문자(SMS) 발송/고정URL (http://id.kblife.co.kr/gafp/73100 )",
+          "manager": "김보미 사원 (02-6410-7233)"
+        },
+        {
+          "company": "처브라이프",
+          "round": "12-4",
+          "acceptanceDeadline": "12/15(월)",
+          "gpUploadDate": "12/29(월)",
+          "recruitmentMethod": "서류(위촉시작성)",
+          "manager": "김보미 사원 (02-6410-7233)"
+        },
+        {
+          "company": "농협생명",
+          "round": "12-4",
+          "acceptanceDeadline": "12/12(금)",
+          "gpUploadDate": "12/26(금)",
+          "recruitmentMethod": "알림톡(카카오톡) 발송",
+          "manager": "김보미 사원 (02-6410-7233)"
+        }
+      ]
+    },
+    {
+      "round": "12-5",
+      "deadline": "",
+      "gpOpenDate": "",
+      "gpOpenTime": "",
+      "companies": []
+    },
+    {
+      "round": "1-1",
+      "deadline": "",
+      "gpOpenDate": "1/5(월)",
+      "gpOpenTime": "PM16:00",
+      "companies": []
+    },
+    {
+      "round": "1-2",
+      "deadline": "",
+      "gpOpenDate": "1/12(월)",
       "gpOpenTime": "PM16:00",
       "companies": []
     }
@@ -1859,12 +2355,12 @@
     {
       "id": "28",
       "date": "2025-05-08",
-      "title": "[위촉] 교보생명 - 12",
+      "title": "[위촉] 교보생명 - 접수마감",
       "type": "company",
       "category": "[위촉]",
       "company": "교보생명",
       "round": "5-1차",
-      "content": "12",
+      "content": "접수마감",
       "associationRegistrationDate": null
     },
     {
@@ -3212,10 +3708,10 @@
     {
       "id": "151",
       "date": "2025-06-17",
-      "title": "[위촉] 라이나생명 - 접수마감",
+      "title": "[위촉] 라��나생명 - 접수마감",
       "type": "company",
       "category": "[위촉]",
-      "company": "라이나생명",
+      "company": "라��나생명",
       "round": "6-3차",
       "content": "접수마감",
       "associationRegistrationDate": null
@@ -4147,9 +4643,9 @@
     {
       "id": "236",
       "date": "2025-07-17",
-      "title": "[위촉] KB라이프 - 접수마감",
+      "title": "[위���] KB라이프 - 접수마감",
       "type": "company",
-      "category": "[위촉]",
+      "category": "[위���]",
       "company": "KB라이프",
       "round": "7-3차",
       "content": "접수마감",
@@ -4257,10 +4753,10 @@
     {
       "id": "246",
       "date": "2025-07-21",
-      "title": "[위촉] 하나생명 - 접수마감",
+      "title": "[위촉] 하나생�� - 접수마감",
       "type": "company",
       "category": "[위촉]",
-      "company": "하나생명",
+      "company": "하나생��",
       "round": "7-3차",
       "content": "접수마감",
       "associationRegistrationDate": null
@@ -4367,12 +4863,12 @@
     {
       "id": "256",
       "date": "2025-07-23",
-      "title": "[위촉] 처브라이프 - 접수마감",
+      "title": "[위촉] 처브라이프 - ��수마감",
       "type": "company",
       "category": "[위촉]",
       "company": "처브라이프",
       "round": "7-4차",
-      "content": "접수마감",
+      "content": "��수마감",
       "associationRegistrationDate": null
     },
     {
@@ -4609,9 +5105,9 @@
     {
       "id": "278",
       "date": "2025-07-30",
-      "title": "[���촉] IM라이프 - 접수마감",
+      "title": "[위촉] IM라이프 - 접수마감",
       "type": "company",
-      "category": "[���촉]",
+      "category": "[위촉]",
       "company": "IM라이프",
       "round": "7-3차,7-4차",
       "content": "접수마감",
@@ -5269,12 +5765,12 @@
     {
       "id": "338",
       "date": "2025-08-19",
-      "title": "[위촉] 신한라이프 - 접수마감",
+      "title": "[위촉] 신한라��프 - 접수��감",
       "type": "company",
       "category": "[위촉]",
-      "company": "신한라이프",
+      "company": "신한라��프",
       "round": "8-3차",
-      "content": "접수마감",
+      "content": "접수��감",
       "associationRegistrationDate": null
     },
     {
@@ -5599,20 +6095,20 @@
     {
       "id": "368",
       "date": "2025-09-01",
-      "title": "[위촉] 하나생명 - 접수마감",
+      "title": "[위촉] 하나생명 - 접수��감",
       "type": "company",
       "category": "[위촉]",
       "company": "하나생명",
       "round": "8-4,9-1차",
-      "content": "접수마감",
+      "content": "접수��감",
       "associationRegistrationDate": null
     },
     {
       "id": "369",
       "date": "2025-09-01",
-      "title": "[위��] IM라이프 - 접수마감",
+      "title": "[위촉] IM라이프 - 접수마감",
       "type": "company",
-      "category": "[위��]",
+      "category": "[위촉]",
       "company": "IM라이프",
       "round": "9-1차",
       "content": "접수마감",
@@ -5709,12 +6205,12 @@
     {
       "id": "378",
       "date": "2025-09-02",
-      "title": "[위촉] 푸본현대 - 접수마감",
+      "title": "[위촉] 푸본현대 - 접수��감",
       "type": "company",
       "category": "[위촉]",
       "company": "푸본현대",
       "round": "9-1차",
-      "content": "접수마감",
+      "content": "접수��감",
       "associationRegistrationDate": null
     },
     {
@@ -5940,10 +6436,10 @@
     {
       "id": "399",
       "date": "2025-09-09",
-      "title": "[위촉] KDB생명 - 접수마감",
+      "title": "[위촉] KDB생�� - 접수마감",
       "type": "company",
       "category": "[위촉]",
-      "company": "KDB생명",
+      "company": "KDB생��",
       "round": "9-3차",
       "content": "접수마감",
       "associationRegistrationDate": null
@@ -6182,10 +6678,10 @@
     {
       "id": "421",
       "date": "2025-09-16",
-      "title": "[위촉] 농협생��� - 접수마감",
+      "title": "[위촉] 농협생명 - 접수마감",
       "type": "company",
       "category": "[위촉]",
-      "company": "농협생���",
+      "company": "농협생명",
       "round": "9-4차",
       "content": "접수마감",
       "associationRegistrationDate": null
@@ -6556,6 +7052,17 @@
     {
       "id": "455",
       "date": "2025-09-25",
+      "title": "[위촉] 한화생명 - 접수마감",
+      "type": "company",
+      "category": "[위촉]",
+      "company": "한화생명",
+      "round": "9-4,9-5차",
+      "content": "접수마감",
+      "associationRegistrationDate": null
+    },
+    {
+      "id": "456",
+      "date": "2025-09-25",
       "title": "[굿리치] - 마감(PM18:00)",
       "type": "goodrich",
       "category": "[굿리치]",
@@ -6565,7 +7072,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "456",
+      "id": "457",
       "date": "2025-09-26",
       "title": "[협회] - 사용인 등록_손보(메리츠,롯데)",
       "type": "session",
@@ -6576,7 +7083,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "457",
+      "id": "458",
       "date": "2025-09-26",
       "title": "[해촉] - 라이나(9/29반영), 동양(9/29반영)",
       "type": "company",
@@ -6587,7 +7094,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "458",
+      "id": "459",
       "date": "2025-09-26",
       "title": "[위촉] IM라이프 - 접수마감",
       "type": "company",
@@ -6598,18 +7105,18 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "459",
+      "id": "460",
       "date": "2025-09-26",
-      "title": "[위촉] 신한라이프 - 접수마감",
+      "title": "[위촉] 신한라��프 - 접수마감",
       "type": "company",
       "category": "[위촉]",
-      "company": "신한라이프",
+      "company": "신한라��프",
       "round": "10-1차",
       "content": "접수마감",
       "associationRegistrationDate": null
     },
     {
-      "id": "460",
+      "id": "461",
       "date": "2025-09-26",
       "title": "[위촉] DB생명 - 접수마감",
       "type": "company",
@@ -6620,7 +7127,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "461",
+      "id": "462",
       "date": "2025-09-29",
       "title": "[위촉] 미래에셋 - 접수마감",
       "type": "company",
@@ -6631,7 +7138,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "462",
+      "id": "463",
       "date": "2025-09-29",
       "title": "[협회] - 사용인 등록_생보(KB)",
       "type": "session",
@@ -6642,7 +7149,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "463",
+      "id": "464",
       "date": "2025-09-29",
       "title": "[굿리치] - 전산승인마감(PM2:00)\n▶10월2차[위촉]: 10/20(월) GP 오픈 예정 (PM16:00)",
       "type": "goodrich",
@@ -6653,7 +7160,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "464",
+      "id": "465",
       "date": "2025-09-29",
       "title": "[위촉] KB라이프 - 접수마감",
       "type": "company",
@@ -6664,7 +7171,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "465",
+      "id": "466",
       "date": "2025-09-29",
       "title": "[위촉] 처브라이프 - 접수마감",
       "type": "company",
@@ -6675,7 +7182,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "466",
+      "id": "467",
       "date": "2025-09-29",
       "title": "[위촉] 하나생명 - 접수마감",
       "type": "company",
@@ -6686,7 +7193,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "467",
+      "id": "468",
       "date": "2025-09-29",
       "title": "[위촉] 흥국생명 - 접수마감",
       "type": "company",
@@ -6697,7 +7204,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "468",
+      "id": "469",
       "date": "2025-09-29",
       "title": "[위촉] 동양생명 - 접수마감",
       "type": "company",
@@ -6708,18 +7215,18 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "469",
+      "id": "470",
       "date": "2025-09-30",
-      "title": "[위촉] ABL생명 - 접수마감",
+      "title": "[위촉] ABL생�� - 접수마감",
       "type": "company",
       "category": "[위촉]",
-      "company": "ABL생명",
+      "company": "ABL생��",
       "round": "9-4,9-5차",
       "content": "접수마감",
       "associationRegistrationDate": null
     },
     {
-      "id": "470",
+      "id": "471",
       "date": "2025-09-30",
       "title": "[위촉] 메트라이프 - 접수마감",
       "type": "company",
@@ -6730,7 +7237,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "471",
+      "id": "472",
       "date": "2025-09-30",
       "title": "[굿리치] - 마감(PM18:00)",
       "type": "goodrich",
@@ -6741,7 +7248,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "472",
+      "id": "473",
       "date": "2025-09-30",
       "title": "[위촉] KDB생명 - 접수마감",
       "type": "company",
@@ -6752,7 +7259,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "473",
+      "id": "474",
       "date": "2025-09-30",
       "title": "[위촉] 농협생명 - 접수마감",
       "type": "company",
@@ -6763,7 +7270,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "474",
+      "id": "475",
       "date": "2025-09-30",
       "title": "[위촉] IBK연금 - 접수마감",
       "type": "company",
@@ -6774,7 +7281,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "475",
+      "id": "476",
       "date": "2025-10-01",
       "title": "[해촉] - ABL(10/10반영), 메트(10/15반영), 미래(10/15반영)",
       "type": "company",
@@ -6785,7 +7292,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "476",
+      "id": "477",
       "date": "2025-10-01",
       "title": "[해촉] 신한라이프 - 신한(10/15반영)",
       "type": "company",
@@ -6796,7 +7303,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "477",
+      "id": "478",
       "date": "2025-10-01",
       "title": "[해촉] KDB생명 - KDB(10/16반영)",
       "type": "company",
@@ -6807,7 +7314,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "478",
+      "id": "479",
       "date": "2025-10-01",
       "title": "[해촉] KB라이프 - KB(10/13반영)",
       "type": "company",
@@ -6818,7 +7325,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "479",
+      "id": "480",
       "date": "2025-10-01",
       "title": "[해촉] 농협생명 - 농협(10/16반영)",
       "type": "company",
@@ -6829,7 +7336,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "480",
+      "id": "481",
       "date": "2025-10-01",
       "title": "[해촉] 처브라이프 - 처브(10/02반영)",
       "type": "company",
@@ -6840,7 +7347,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "481",
+      "id": "482",
       "date": "2025-10-01",
       "title": "[위촉] 카디프생명 - 접수마감",
       "type": "company",
@@ -6851,7 +7358,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "482",
+      "id": "483",
       "date": "2025-10-01",
       "title": "[위촉] 삼성생명 - 접수마감",
       "type": "company",
@@ -6862,7 +7369,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "483",
+      "id": "484",
       "date": "2025-10-02",
       "title": "[해촉] - AIA(10월말반영)",
       "type": "company",
@@ -6873,7 +7380,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "484",
+      "id": "485",
       "date": "2025-10-02",
       "title": "[협회] - 사용인 등록_손보(메리츠,롯데)",
       "type": "session",
@@ -6884,7 +7391,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "485",
+      "id": "486",
       "date": "2025-10-02",
       "title": "[위촉] DB생명 - 접수마감",
       "type": "company",
@@ -6895,7 +7402,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "486",
+      "id": "487",
       "date": "2025-10-02",
       "title": "[위촉] 푸본현대 - 접수마감",
       "type": "company",
@@ -6906,7 +7413,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "487",
+      "id": "488",
       "date": "2025-10-03",
       "title": "[휴일] - 개천절",
       "type": "company",
@@ -6917,7 +7424,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "488",
+      "id": "489",
       "date": "2025-10-06",
       "title": "[휴일] - 추석",
       "type": "company",
@@ -6928,7 +7435,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "489",
+      "id": "490",
       "date": "2025-10-07",
       "title": "[휴일] - 추석연휴",
       "type": "company",
@@ -6939,7 +7446,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "490",
+      "id": "491",
       "date": "2025-10-08",
       "title": "[휴일] - 대체휴일",
       "type": "company",
@@ -6950,7 +7457,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "491",
+      "id": "492",
       "date": "2025-10-09",
       "title": "[휴일] - 한글날",
       "type": "company",
@@ -6961,7 +7468,18 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "492",
+      "id": "493",
+      "date": "2025-10-10",
+      "title": "[위촉] 한화생명 - 접수마감",
+      "type": "company",
+      "category": "[위촉]",
+      "company": "한화생명",
+      "round": "10-1차",
+      "content": "접수마감",
+      "associationRegistrationDate": null
+    },
+    {
+      "id": "494",
       "date": "2025-10-10",
       "title": "[굿리치] - 패밀리데이(PM4:00업무종료)",
       "type": "goodrich",
@@ -6972,7 +7490,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "493",
+      "id": "495",
       "date": "2025-10-13",
       "title": "[위촉] IM라이프 - 접수마감",
       "type": "company",
@@ -6983,7 +7501,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "494",
+      "id": "496",
       "date": "2025-10-13",
       "title": "[위촉] KB라이프 - 접수마감",
       "type": "company",
@@ -6994,7 +7512,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "495",
+      "id": "497",
       "date": "2025-10-13",
       "title": "[위촉] 하나생명 - 접수마감",
       "type": "company",
@@ -7005,7 +7523,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "496",
+      "id": "498",
       "date": "2025-10-13",
       "title": "[협회] - 사용인 등록_생보(KB)",
       "type": "session",
@@ -7016,7 +7534,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "497",
+      "id": "499",
       "date": "2025-10-13",
       "title": "[굿리치] - GP 오픈 예정 (PM16:00)",
       "type": "goodrich",
@@ -7027,7 +7545,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "498",
+      "id": "500",
       "date": "2025-10-14",
       "title": "[위촉] KDB생명 - 접수마감",
       "type": "company",
@@ -7038,7 +7556,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "499",
+      "id": "501",
       "date": "2025-10-14",
       "title": "[위촉] 라이나생명 - 접수마감",
       "type": "company",
@@ -7049,7 +7567,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "500",
+      "id": "502",
       "date": "2025-10-14",
       "title": "[위촉] 흥국생명 - 접수마감",
       "type": "company",
@@ -7060,7 +7578,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "501",
+      "id": "503",
       "date": "2025-10-14",
       "title": "[위촉] 동양생명 - 접수마감",
       "type": "company",
@@ -7071,7 +7589,18 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "502",
+      "id": "504",
+      "date": "2025-10-15",
+      "title": "[위촉] 교보생명 - 접수마감",
+      "type": "company",
+      "category": "[위촉]",
+      "company": "교보생명",
+      "round": "10-1차",
+      "content": "접수마감",
+      "associationRegistrationDate": null
+    },
+    {
+      "id": "505",
       "date": "2025-10-15",
       "title": "[해촉] KDB생명 - KDB(10/23반영)",
       "type": "company",
@@ -7082,7 +7611,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "503",
+      "id": "506",
       "date": "2025-10-15",
       "title": "[굿리치] - 전산승인마감(PM2:00)\n▶10월3차[위촉]: 10/27(월) GP 오픈 예정 (PM16:00)",
       "type": "goodrich",
@@ -7093,7 +7622,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "504",
+      "id": "507",
       "date": "2025-10-16",
       "title": "[해촉] - ABL(10/20반영), 미래(10/27반영)",
       "type": "company",
@@ -7104,7 +7633,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "505",
+      "id": "508",
       "date": "2025-10-16",
       "title": "[해촉] IM라이프 - IM(10/23반영)",
       "type": "company",
@@ -7115,7 +7644,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "506",
+      "id": "509",
       "date": "2025-10-16",
       "title": "[해촉] 신한라이프 - 신한(10/27반영)",
       "type": "company",
@@ -7126,7 +7655,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "507",
+      "id": "510",
       "date": "2025-10-16",
       "title": "[해촉] KB라이프 - KB(10/27반영)",
       "type": "company",
@@ -7137,7 +7666,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "508",
+      "id": "511",
       "date": "2025-10-16",
       "title": "[위촉] 처브라이프 - 접수마감",
       "type": "company",
@@ -7148,7 +7677,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "509",
+      "id": "512",
       "date": "2025-10-16",
       "title": "[위촉] 카디프생명 - 접수마감",
       "type": "company",
@@ -7159,7 +7688,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "510",
+      "id": "513",
       "date": "2025-10-16",
       "title": "[위촉] 삼성생명 - 접수마감",
       "type": "company",
@@ -7170,7 +7699,18 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "511",
+      "id": "514",
+      "date": "2025-10-17",
+      "title": "[위촉] 한화생명 - 접수마감",
+      "type": "company",
+      "category": "[위촉]",
+      "company": "한화생명",
+      "round": "10-2차",
+      "content": "접수마감",
+      "associationRegistrationDate": null
+    },
+    {
+      "id": "515",
       "date": "2025-10-17",
       "title": "[해촉] - 교보(11/3반영), 메트(10/27반영)",
       "type": "company",
@@ -7181,7 +7721,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "512",
+      "id": "516",
       "date": "2025-10-17",
       "title": "[위촉] 신한라이프 - 접수마감",
       "type": "company",
@@ -7192,7 +7732,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "513",
+      "id": "517",
       "date": "2025-10-17",
       "title": "[해촉] 처브라이프 - 처브(10/24반영)",
       "type": "company",
@@ -7203,7 +7743,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "514",
+      "id": "518",
       "date": "2025-10-17",
       "title": "[협회] - 사용인 등록_손보(메리츠,롯데)",
       "type": "session",
@@ -7214,7 +7754,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "515",
+      "id": "519",
       "date": "2025-10-17",
       "title": "[위촉] DB생명 - 접수마감",
       "type": "company",
@@ -7225,7 +7765,40 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "516",
+      "id": "520",
+      "date": "2025-10-20",
+      "title": "[위촉] ABL생명 - 접수마감",
+      "type": "company",
+      "category": "[위촉]",
+      "company": "ABL생명",
+      "round": "10-1,10-2차",
+      "content": "접수마감",
+      "associationRegistrationDate": null
+    },
+    {
+      "id": "521",
+      "date": "2025-10-20",
+      "title": "[위촉] 메트라이프 - 접수마감",
+      "type": "company",
+      "category": "[위촉]",
+      "company": "메트라이프",
+      "round": "10-2,10-3차",
+      "content": "접수마감",
+      "associationRegistrationDate": null
+    },
+    {
+      "id": "522",
+      "date": "2025-10-20",
+      "title": "[위촉] 미래에셋 - 접수마감",
+      "type": "company",
+      "category": "[위촉]",
+      "company": "미래에셋",
+      "round": "10-1,10-2차",
+      "content": "접수마감",
+      "associationRegistrationDate": null
+    },
+    {
+      "id": "523",
       "date": "2025-10-20",
       "title": "[위촉] KB라이프 - 접수마감",
       "type": "company",
@@ -7236,7 +7809,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "517",
+      "id": "524",
       "date": "2025-10-20",
       "title": "[위촉] 농협생명 - 접수마감",
       "type": "company",
@@ -7247,7 +7820,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "518",
+      "id": "525",
       "date": "2025-10-20",
       "title": "[위촉] 하나생명 - 접수마감",
       "type": "company",
@@ -7258,7 +7831,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "519",
+      "id": "526",
       "date": "2025-10-20",
       "title": "[해촉] 하나생명 - 하나(10/31반영), 카디프(10/31반영), 삼성(11/4반영)",
       "type": "company",
@@ -7269,7 +7842,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "520",
+      "id": "527",
       "date": "2025-10-20",
       "title": "[협회] - 사용인 등록_생보(KB)",
       "type": "session",
@@ -7280,7 +7853,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "521",
+      "id": "528",
       "date": "2025-10-20",
       "title": "[굿리치] - GP 오픈 예정 (PM16:00)",
       "type": "goodrich",
@@ -7291,7 +7864,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "522",
+      "id": "529",
       "date": "2025-10-21",
       "title": "[해촉] 농협생명 - 농협(10/29반영), IBK(10/23반영)",
       "type": "company",
@@ -7302,7 +7875,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "523",
+      "id": "530",
       "date": "2025-10-21",
       "title": "[굿리치] - 수수료계좌변경신청마감",
       "type": "goodrich",
@@ -7313,7 +7886,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "524",
+      "id": "531",
       "date": "2025-10-21",
       "title": "[위촉] 라이나생명 - 접수마감",
       "type": "company",
@@ -7324,7 +7897,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "525",
+      "id": "532",
       "date": "2025-10-21",
       "title": "[위촉] IBK연금 - 접수마감",
       "type": "company",
@@ -7335,7 +7908,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "526",
+      "id": "533",
       "date": "2025-10-21",
       "title": "[위촉] 푸본현대 - 접수마감",
       "type": "company",
@@ -7346,7 +7919,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "527",
+      "id": "534",
       "date": "2025-10-22",
       "title": "[해촉] - 한화(11/3반영), DB생명(10/30반영)",
       "type": "company",
@@ -7357,7 +7930,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "528",
+      "id": "535",
       "date": "2025-10-22",
       "title": "[굿리치] - 10월 당사 해촉 마감",
       "type": "goodrich",
@@ -7368,7 +7941,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "529",
+      "id": "536",
       "date": "2025-10-22",
       "title": "[굿리치] - 전산승인마감(PM2:00)\n▶11월1차[위촉]: 11/3(월) GP 오픈 예정 (PM16:00)",
       "type": "goodrich",
@@ -7379,7 +7952,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "530",
+      "id": "537",
       "date": "2025-10-23",
       "title": "[위촉] 카디프생명 - 접수마감",
       "type": "company",
@@ -7390,7 +7963,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "531",
+      "id": "538",
       "date": "2025-10-23",
       "title": "[해촉] - 흥국(10/30반영), 동양(10/30반영)",
       "type": "company",
@@ -7401,7 +7974,18 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "532",
+      "id": "539",
+      "date": "2025-10-24",
+      "title": "[위촉] 한화생명 - 접수마감",
+      "type": "company",
+      "category": "[위촉]",
+      "company": "한화생명",
+      "round": "10-3차",
+      "content": "접수마감",
+      "associationRegistrationDate": null
+    },
+    {
+      "id": "540",
       "date": "2025-10-24",
       "title": "[협회] - 사용인 등록_손보(메리츠,롯데) / 생보(메트)",
       "type": "session",
@@ -7412,7 +7996,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "533",
+      "id": "541",
       "date": "2025-10-24",
       "title": "[해촉] - 푸본(10/31반영), 라이나(10/27반영)",
       "type": "company",
@@ -7423,18 +8007,29 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "534",
+      "id": "542",
       "date": "2025-10-24",
-      "title": "[위촉] 신한라이프 - 접수마감",
+      "title": "[위촉] 신한라이프 - ���수마감",
       "type": "company",
       "category": "[위촉]",
       "company": "신한라이프",
       "round": "11-1차",
+      "content": "���수마감",
+      "associationRegistrationDate": null
+    },
+    {
+      "id": "543",
+      "date": "2025-10-27",
+      "title": "[위촉] 교보생명 - 접수마감",
+      "type": "company",
+      "category": "[위촉]",
+      "company": "교보생명",
+      "round": "10-3차",
       "content": "접수마감",
       "associationRegistrationDate": null
     },
     {
-      "id": "535",
+      "id": "544",
       "date": "2025-10-27",
       "title": "[굿리치] - GP 오픈 예정 (PM16:00)",
       "type": "goodrich",
@@ -7445,7 +8040,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "536",
+      "id": "545",
       "date": "2025-10-27",
       "title": "[위촉] 농협생명 - 접수마감",
       "type": "company",
@@ -7456,7 +8051,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "537",
+      "id": "546",
       "date": "2025-10-27",
       "title": "[위촉] KB라이프 - 접수마감",
       "type": "company",
@@ -7467,7 +8062,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "538",
+      "id": "547",
       "date": "2025-10-27",
       "title": "[위촉] KDB생명 - 접수마감",
       "type": "company",
@@ -7478,7 +8073,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "539",
+      "id": "548",
       "date": "2025-10-27",
       "title": "[위촉] 처브라이프 - 접수마감",
       "type": "company",
@@ -7489,7 +8084,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "540",
+      "id": "549",
       "date": "2025-10-27",
       "title": "[위촉] IM라이프 - 접수마감",
       "type": "company",
@@ -7500,7 +8095,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "541",
+      "id": "550",
       "date": "2025-10-27",
       "title": "[위촉] 삼성생명 - 접수마감",
       "type": "company",
@@ -7511,7 +8106,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "542",
+      "id": "551",
       "date": "2025-10-27",
       "title": "[위촉] 흥국생명 - 접수마감",
       "type": "company",
@@ -7522,7 +8117,18 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "543",
+      "id": "552",
+      "date": "2025-10-28",
+      "title": "[위촉] 메트라이프 - 접수마감",
+      "type": "company",
+      "category": "[위촉]",
+      "company": "메트라이프",
+      "round": "11-1차",
+      "content": "접수마감",
+      "associationRegistrationDate": null
+    },
+    {
+      "id": "553",
       "date": "2025-10-28",
       "title": "[위촉] 라이나생명 - 접수마감",
       "type": "company",
@@ -7533,7 +8139,29 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "544",
+      "id": "554",
+      "date": "2025-10-29",
+      "title": "[위촉] ABL생명 - 접수마감",
+      "type": "company",
+      "category": "[위촉]",
+      "company": "ABL생명",
+      "round": "10-3차",
+      "content": "접수마감",
+      "associationRegistrationDate": null
+    },
+    {
+      "id": "555",
+      "date": "2025-10-29",
+      "title": "[위촉] 미래에셋 - 접수마감",
+      "type": "company",
+      "category": "[위촉]",
+      "company": "미래에셋",
+      "round": "10-3,11-1차",
+      "content": "접수마감",
+      "associationRegistrationDate": null
+    },
+    {
+      "id": "556",
       "date": "2025-10-29",
       "title": "[굿리치] - 전산승인마감(PM2:00)\n▶11월2차[위촉]: 11/10(월) GP 오픈 예정 (PM16:00)",
       "type": "goodrich",
@@ -7544,7 +8172,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "545",
+      "id": "557",
       "date": "2025-10-29",
       "title": "[위촉] 동양생명 - 접수마감",
       "type": "company",
@@ -7555,7 +8183,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "546",
+      "id": "558",
       "date": "2025-10-30",
       "title": "[위촉] IBK연금 - 접수마감",
       "type": "company",
@@ -7566,7 +8194,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "547",
+      "id": "559",
       "date": "2025-10-31",
       "title": "[협회] - 사용인 등록_손보(메리츠,롯데)",
       "type": "session",
@@ -7577,7 +8205,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "548",
+      "id": "560",
       "date": "2025-10-31",
       "title": "[위촉] 푸본현대 - 접수마감",
       "type": "company",
@@ -7588,7 +8216,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "549",
+      "id": "561",
       "date": "2025-10-31",
       "title": "[위촉] DB생명 - 접수마감",
       "type": "company",
@@ -7599,7 +8227,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "550",
+      "id": "562",
       "date": "2025-11-03",
       "title": "[위촉] 농협생명 - 접수마감",
       "type": "company",
@@ -7610,7 +8238,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "551",
+      "id": "563",
       "date": "2025-11-03",
       "title": "[해촉] 농협생명 - 농협(11/6반영)",
       "type": "company",
@@ -7621,7 +8249,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "552",
+      "id": "564",
       "date": "2025-11-03",
       "title": "[위촉] KB라이프 - 접수마감",
       "type": "company",
@@ -7632,7 +8260,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "553",
+      "id": "565",
       "date": "2025-11-03",
       "title": "[위촉] KDB생명 - 접수마감",
       "type": "company",
@@ -7643,7 +8271,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "554",
+      "id": "566",
       "date": "2025-11-03",
       "title": "[해촉] KDB생명 - KDB(11/5반영)",
       "type": "company",
@@ -7654,7 +8282,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "555",
+      "id": "567",
       "date": "2025-11-03",
       "title": "[해촉] 처브라이프 - 처브(11/4반영)",
       "type": "company",
@@ -7665,7 +8293,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "556",
+      "id": "568",
       "date": "2025-11-03",
       "title": "[위촉] 하나생명 - 접수마감",
       "type": "company",
@@ -7676,7 +8304,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "557",
+      "id": "569",
       "date": "2025-11-03",
       "title": "[위촉] IM라이프 - 접수마감",
       "type": "company",
@@ -7687,7 +8315,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "558",
+      "id": "570",
       "date": "2025-11-03",
       "title": "[협회] - 사용인 등록_생보(KB)",
       "type": "session",
@@ -7698,7 +8326,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "559",
+      "id": "571",
       "date": "2025-11-03",
       "title": "[해촉] - 흥국(11/14반영), DB생명(11/13반영)",
       "type": "company",
@@ -7709,7 +8337,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "560",
+      "id": "572",
       "date": "2025-11-03",
       "title": "[굿리치] - GP 오픈 예정 (PM16:00)",
       "type": "goodrich",
@@ -7720,7 +8348,18 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "561",
+      "id": "573",
+      "date": "2025-11-04",
+      "title": "[위촉] 한화생명 - 접수마감",
+      "type": "company",
+      "category": "[위촉]",
+      "company": "한화생명",
+      "round": "11-1차",
+      "content": "접수마감",
+      "associationRegistrationDate": null
+    },
+    {
+      "id": "574",
       "date": "2025-11-04",
       "title": "[해촉] - ABL(11/7반영), 미래(11/6반영)",
       "type": "company",
@@ -7731,7 +8370,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "562",
+      "id": "575",
       "date": "2025-11-04",
       "title": "[해촉] KB라이프 - KB(11/10반영)",
       "type": "company",
@@ -7742,7 +8381,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "563",
+      "id": "576",
       "date": "2025-11-04",
       "title": "[위촉] 처브라이프 - 접수마감",
       "type": "company",
@@ -7753,7 +8392,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "564",
+      "id": "577",
       "date": "2025-11-04",
       "title": "[해촉] IM라이프 - IM(11/13반영)",
       "type": "company",
@@ -7764,7 +8403,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "565",
+      "id": "578",
       "date": "2025-11-04",
       "title": "[위촉] 흥국생명 - 접수마감",
       "type": "company",
@@ -7775,7 +8414,18 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "566",
+      "id": "579",
+      "date": "2025-11-05",
+      "title": "[위촉] 미래에셋 - 접수마감",
+      "type": "company",
+      "category": "[위촉]",
+      "company": "미래에셋",
+      "round": "11-2차",
+      "content": "접수마감",
+      "associationRegistrationDate": null
+    },
+    {
+      "id": "580",
       "date": "2025-11-05",
       "title": "[해촉] - AIA(11월말반영), 메트(11/15반영)",
       "type": "company",
@@ -7786,7 +8436,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "567",
+      "id": "581",
       "date": "2025-11-05",
       "title": "[위촉] 동양생명 - 접수마감",
       "type": "company",
@@ -7797,7 +8447,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "568",
+      "id": "582",
       "date": "2025-11-05",
       "title": "[굿리치] - 전산승인마감(PM2:00)\n▶11월3차[위촉]: 11/17(월) GP 오픈 예정 (PM16:00)",
       "type": "goodrich",
@@ -7808,7 +8458,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "569",
+      "id": "583",
       "date": "2025-11-06",
       "title": "[위촉] 교보생명 - 접수마감",
       "type": "company",
@@ -7819,7 +8469,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "570",
+      "id": "584",
       "date": "2025-11-06",
       "title": "[위촉] 삼성생명 - 접수마감",
       "type": "company",
@@ -7830,7 +8480,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "571",
+      "id": "585",
       "date": "2025-11-06",
       "title": "[위촉] 카디프생명 - 접수마감",
       "type": "company",
@@ -7841,7 +8491,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "572",
+      "id": "586",
       "date": "2025-11-07",
       "title": "[위촉] 신한라이프 - 접수마감",
       "type": "company",
@@ -7852,7 +8502,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "573",
+      "id": "587",
       "date": "2025-11-07",
       "title": "[해촉] 신한라이프 - 신한(11/17반영)",
       "type": "company",
@@ -7863,7 +8513,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "574",
+      "id": "588",
       "date": "2025-11-07",
       "title": "[위촉] DB생명 - 접수마감",
       "type": "company",
@@ -7874,7 +8524,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "575",
+      "id": "589",
       "date": "2025-11-07",
       "title": "[협회] - 사용인 등록_손보(메리츠,롯데)",
       "type": "session",
@@ -7885,7 +8535,29 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "576",
+      "id": "590",
+      "date": "2025-11-10",
+      "title": "[위촉] ABL생명 - 접수마감",
+      "type": "company",
+      "category": "[위촉]",
+      "company": "ABL생명",
+      "round": "11-1,11-2차",
+      "content": "접수마감",
+      "associationRegistrationDate": null
+    },
+    {
+      "id": "591",
+      "date": "2025-11-10",
+      "title": "[위촉] 메트라이프 - 접수마감",
+      "type": "company",
+      "category": "[위촉]",
+      "company": "메트라이프",
+      "round": "11-2,11-3차",
+      "content": "접수마감",
+      "associationRegistrationDate": null
+    },
+    {
+      "id": "592",
       "date": "2025-11-10",
       "title": "[위촉] KB라이프 - 접수마감",
       "type": "company",
@@ -7896,7 +8568,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "577",
+      "id": "593",
       "date": "2025-11-10",
       "title": "[위촉] KDB생명 - 접수마감",
       "type": "company",
@@ -7907,7 +8579,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "578",
+      "id": "594",
       "date": "2025-11-10",
       "title": "[위촉] IM라이프 - 접수마감",
       "type": "company",
@@ -7918,7 +8590,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "579",
+      "id": "595",
       "date": "2025-11-10",
       "title": "[협회] - 사용인 등록_생보(KB)",
       "type": "session",
@@ -7929,7 +8601,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "580",
+      "id": "596",
       "date": "2025-11-10",
       "title": "[굿리치] - GP 오픈 예정 (PM16:00)",
       "type": "goodrich",
@@ -7940,7 +8612,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "581",
+      "id": "597",
       "date": "2025-11-11",
       "title": "[위촉] 라이나생명 - 접수마감",
       "type": "company",
@@ -7951,7 +8623,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "582",
+      "id": "598",
       "date": "2025-11-11",
       "title": "[위촉] IBK연금 - 접수마감",
       "type": "company",
@@ -7962,7 +8634,18 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "583",
+      "id": "599",
+      "date": "2025-11-12",
+      "title": "[위촉] 미래에셋 - 접수마감",
+      "type": "company",
+      "category": "[위촉]",
+      "company": "미래에셋",
+      "round": "11-3차",
+      "content": "접수마감",
+      "associationRegistrationDate": null
+    },
+    {
+      "id": "600",
       "date": "2025-11-12",
       "title": "[굿리치] - 패밀리데이(PM4:00업무종료)",
       "type": "goodrich",
@@ -7973,7 +8656,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "584",
+      "id": "601",
       "date": "2025-11-12",
       "title": "[위촉] 흥국생명 - 접수마감",
       "type": "company",
@@ -7984,7 +8667,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "585",
+      "id": "602",
       "date": "2025-11-12",
       "title": "[위촉] 동양생명 - 접수마감",
       "type": "company",
@@ -7995,7 +8678,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "586",
+      "id": "603",
       "date": "2025-11-12",
       "title": "[위촉] 푸본현대 - 접수마감",
       "type": "company",
@@ -8006,7 +8689,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "587",
+      "id": "604",
       "date": "2025-11-12",
       "title": "[굿리치] - 전산승인마감(PM2:00)\n▶11월4차[위촉]: 11/24(월) GP 오픈 예정 (PM16:00)",
       "type": "goodrich",
@@ -8017,7 +8700,18 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "588",
+      "id": "605",
+      "date": "2025-11-13",
+      "title": "[위촉] 한화생명 - 접수마감",
+      "type": "company",
+      "category": "[위촉]",
+      "company": "한화생명",
+      "round": "11-2,11-3차",
+      "content": "접수마감",
+      "associationRegistrationDate": null
+    },
+    {
+      "id": "606",
       "date": "2025-11-13",
       "title": "[위촉] 삼성생명 - 접수마감",
       "type": "company",
@@ -8028,7 +8722,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "589",
+      "id": "607",
       "date": "2025-11-13",
       "title": "[위촉] 카디프생명 - 접수마감",
       "type": "company",
@@ -8039,7 +8733,18 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "590",
+      "id": "608",
+      "date": "2025-11-14",
+      "title": "[위촉] 교보생명 - 접수마감",
+      "type": "company",
+      "category": "[위촉]",
+      "company": "교보생명",
+      "round": "11-3차",
+      "content": "접수마감",
+      "associationRegistrationDate": null
+    },
+    {
+      "id": "609",
       "date": "2025-11-14",
       "title": "[위촉] 신한라이프 - 접수마감",
       "type": "company",
@@ -8050,7 +8755,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "591",
+      "id": "610",
       "date": "2025-11-14",
       "title": "[위촉] 처브라이프 - 접수마감",
       "type": "company",
@@ -8061,7 +8766,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "592",
+      "id": "611",
       "date": "2025-11-14",
       "title": "[협회] - 사용인 등록_손보(메리츠,롯데) / 생보(메트)",
       "type": "session",
@@ -8072,7 +8777,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "593",
+      "id": "612",
       "date": "2025-11-14",
       "title": "[위촉] DB생명 - 접수마감",
       "type": "company",
@@ -8083,7 +8788,18 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "594",
+      "id": "613",
+      "date": "2025-11-17",
+      "title": "[위촉] 메트라이프 - 접수마감",
+      "type": "company",
+      "category": "[위촉]",
+      "company": "메트라이프",
+      "round": "11-4차",
+      "content": "접수마감",
+      "associationRegistrationDate": null
+    },
+    {
+      "id": "614",
       "date": "2025-11-17",
       "title": "[해촉] - 교보(12/1반영), 미래(10/20반영)",
       "type": "company",
@@ -8094,7 +8810,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "595",
+      "id": "615",
       "date": "2025-11-17",
       "title": "[위촉] 농협생명 - 접수마감",
       "type": "company",
@@ -8105,7 +8821,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "596",
+      "id": "616",
       "date": "2025-11-17",
       "title": "[위촉] KB라이프 - 접수마감",
       "type": "company",
@@ -8116,7 +8832,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "597",
+      "id": "617",
       "date": "2025-11-17",
       "title": "[해촉] KB라이프 - KB(11/24반영), 카디프(11/28반영)",
       "type": "company",
@@ -8127,7 +8843,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "598",
+      "id": "618",
       "date": "2025-11-17",
       "title": "[해촉] 신한라이프 - 신한(11/25반영)",
       "type": "company",
@@ -8138,7 +8854,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "599",
+      "id": "619",
       "date": "2025-11-17",
       "title": "[해촉] KDB생명 - KDB(11/09반영)",
       "type": "company",
@@ -8149,7 +8865,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "600",
+      "id": "620",
       "date": "2025-11-17",
       "title": "[해촉] 처브라이프 - 처브(11/24반영)",
       "type": "company",
@@ -8160,7 +8876,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "601",
+      "id": "621",
       "date": "2025-11-17",
       "title": "[위촉] 하나생명 - 접수마감",
       "type": "company",
@@ -8171,7 +8887,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "602",
+      "id": "622",
       "date": "2025-11-17",
       "title": "[해촉] 하나생명 - 하나(11/28반영)",
       "type": "company",
@@ -8182,7 +8898,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "603",
+      "id": "623",
       "date": "2025-11-17",
       "title": "[굿리치] - GP 오픈 예정 (PM16:00)",
       "type": "goodrich",
@@ -8193,7 +8909,18 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "604",
+      "id": "624",
+      "date": "2025-11-18",
+      "title": "[위촉] ABL생명 - 접수마감",
+      "type": "company",
+      "category": "[위촉]",
+      "company": "ABL생명",
+      "round": "11-3차",
+      "content": "접수마감",
+      "associationRegistrationDate": null
+    },
+    {
+      "id": "625",
       "date": "2025-11-18",
       "title": "[해촉] - ABL(11/21반영), 메트(11/25반영)",
       "type": "company",
@@ -8204,7 +8931,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "605",
+      "id": "626",
       "date": "2025-11-18",
       "title": "[해촉] 농협생명 - 농협(11/26반영)",
       "type": "company",
@@ -8215,7 +8942,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "606",
+      "id": "627",
       "date": "2025-11-18",
       "title": "[해촉] - 삼성(12/4반영), DB생명(11/27반영)",
       "type": "company",
@@ -8226,7 +8953,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "607",
+      "id": "628",
       "date": "2025-11-18",
       "title": "[위촉] 라이나생명 - 접수마감",
       "type": "company",
@@ -8237,7 +8964,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "608",
+      "id": "629",
       "date": "2025-11-19",
       "title": "[해촉] - 한화(12/1반영)",
       "type": "company",
@@ -8248,7 +8975,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "609",
+      "id": "630",
       "date": "2025-11-19",
       "title": "[위촉] IBK연금 - 접수마감",
       "type": "company",
@@ -8259,7 +8986,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "610",
+      "id": "631",
       "date": "2025-11-19",
       "title": "[굿리치] - 전산승인마감(PM2:00)\n▶12월1차[위촉]: 12/1(월) GP 오픈 예정 (PM16:00)",
       "type": "goodrich",
@@ -8270,7 +8997,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "611",
+      "id": "632",
       "date": "2025-11-20",
       "title": "[해촉] - 동양(12/01반영), IBK연금(11/21반영)",
       "type": "company",
@@ -8281,7 +9008,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "612",
+      "id": "633",
       "date": "2025-11-20",
       "title": "[위촉] 푸본현대 - 접수마감",
       "type": "company",
@@ -8292,7 +9019,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "613",
+      "id": "634",
       "date": "2025-11-20",
       "title": "[위촉] 카디프생명 - 접수마감",
       "type": "company",
@@ -8303,7 +9030,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "614",
+      "id": "635",
       "date": "2025-11-21",
       "title": "[굿리치] - 수수료계좌변경 신청마감",
       "type": "goodrich",
@@ -8314,7 +9041,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "615",
+      "id": "636",
       "date": "2025-11-21",
       "title": "[해촉] - 라이나(11/24반영), 푸본(11/28반영)",
       "type": "company",
@@ -8325,7 +9052,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "616",
+      "id": "637",
       "date": "2025-11-21",
       "title": "[협회] - 사용인 등록_손보(메리츠,롯데)",
       "type": "session",
@@ -8336,7 +9063,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "617",
+      "id": "638",
       "date": "2025-11-24",
       "title": "[협회] - 사용인 등록_생보(메트)",
       "type": "session",
@@ -8347,7 +9074,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "618",
+      "id": "639",
       "date": "2025-11-24",
       "title": "[굿리치] - 11월 당사 해촉 마감",
       "type": "goodrich",
@@ -8358,7 +9085,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "619",
+      "id": "640",
       "date": "2025-11-24",
       "title": "[굿리치] - GP 오픈 예정 (PM16:00)",
       "type": "goodrich",
@@ -8369,7 +9096,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "620",
+      "id": "641",
       "date": "2025-11-25",
       "title": "[위촉] 라이나생명 - 접수마감",
       "type": "company",
@@ -8380,7 +9107,238 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "621",
+      "id": "642",
+      "date": "2025-11-25",
+      "title": "[위촉] 한화생명 - 접수마감",
+      "type": "company",
+      "category": "[위촉]",
+      "company": "한화생명",
+      "round": "11-4차",
+      "content": "접수마감",
+      "associationRegistrationDate": null
+    },
+    {
+      "id": "643",
+      "date": "2025-11-26",
+      "title": "[위촉] 교보생명 - 접수마감",
+      "type": "company",
+      "category": "[위촉]",
+      "company": "교보생명",
+      "round": "11-4차",
+      "content": "접수마감",
+      "associationRegistrationDate": null
+    },
+    {
+      "id": "644",
+      "date": "2025-11-26",
+      "title": "[위촉] 미래에��� - 접수마감",
+      "type": "company",
+      "category": "[위촉]",
+      "company": "미래에���",
+      "round": "11-4,12-1차",
+      "content": "접수마감",
+      "associationRegistrationDate": null
+    },
+    {
+      "id": "645",
+      "date": "2025-11-27",
+      "title": "[위촉] 메트라이프 - 접수마감",
+      "type": "company",
+      "category": "[위촉]",
+      "company": "메트라이프",
+      "round": "12-1차",
+      "content": "접수마감",
+      "associationRegistrationDate": null
+    },
+    {
+      "id": "646",
+      "date": "2025-11-28",
+      "title": "[위촉] ABL생명 - 접수마감",
+      "type": "company",
+      "category": "[위촉]",
+      "company": "ABL생명",
+      "round": "11-4,12-1차",
+      "content": "접수마감",
+      "associationRegistrationDate": null
+    },
+    {
+      "id": "647",
+      "date": "2025-12-01",
+      "title": "[해촉] - ABL(12/4반영), 미래(12/5반영)",
+      "type": "company",
+      "category": "[해촉]",
+      "company": "",
+      "round": "",
+      "content": "ABL(12/4반영), 미래(12/5반영)",
+      "associationRegistrationDate": null
+    },
+    {
+      "id": "648",
+      "date": "2025-12-02",
+      "title": "[해촉] - 메트(12/15반영)",
+      "type": "company",
+      "category": "[해촉]",
+      "company": "",
+      "round": "",
+      "content": "메트(12/15반영)",
+      "associationRegistrationDate": null
+    },
+    {
+      "id": "649",
+      "date": "2025-12-04",
+      "title": "[위촉] 교보생명 - 접수마감",
+      "type": "company",
+      "category": "[위촉]",
+      "company": "교보생명",
+      "round": "12-1,12-2차",
+      "content": "접수마감",
+      "associationRegistrationDate": null
+    },
+    {
+      "id": "650",
+      "date": "2025-12-05",
+      "title": "[위촉] 한화생명 - 접수마감",
+      "type": "company",
+      "category": "[위촉]",
+      "company": "한화생명",
+      "round": "12-1,12-2차",
+      "content": "접수마감",
+      "associationRegistrationDate": null
+    },
+    {
+      "id": "651",
+      "date": "2025-12-05",
+      "title": "[해촉] - AIA(12월말반영)",
+      "type": "company",
+      "category": "[해촉]",
+      "company": "",
+      "round": "",
+      "content": "AIA(12월말반영)",
+      "associationRegistrationDate": null
+    },
+    {
+      "id": "652",
+      "date": "2025-12-08",
+      "title": "[위촉] ABL생명 - 접수마감",
+      "type": "company",
+      "category": "[위촉]",
+      "company": "ABL생명",
+      "round": "12-2차",
+      "content": "접수마감",
+      "associationRegistrationDate": null
+    },
+    {
+      "id": "653",
+      "date": "2025-12-08",
+      "title": "[위촉] 메트라이프 - 접수마감",
+      "type": "company",
+      "category": "[위촉]",
+      "company": "메트라이프",
+      "round": "12-2,12-3차",
+      "content": "접수마감",
+      "associationRegistrationDate": null
+    },
+    {
+      "id": "654",
+      "date": "2025-12-10",
+      "title": "[위촉] 미래에셋 - 접수마감",
+      "type": "company",
+      "category": "[위촉]",
+      "company": "미래에셋",
+      "round": "12-2,12-3차",
+      "content": "접수마감",
+      "associationRegistrationDate": null
+    },
+    {
+      "id": "655",
+      "date": "2025-12-15",
+      "title": "[위촉] 한화생명 - 접수마감",
+      "type": "company",
+      "category": "[위촉]",
+      "company": "한화생명",
+      "round": "12-3차",
+      "content": "접수마감",
+      "associationRegistrationDate": null
+    },
+    {
+      "id": "656",
+      "date": "2025-12-16",
+      "title": "[위촉] 교보생명 - 접수마감",
+      "type": "company",
+      "category": "[위촉]",
+      "company": "교보생명",
+      "round": "12-3차",
+      "content": "접수마감",
+      "associationRegistrationDate": null
+    },
+    {
+      "id": "657",
+      "date": "2025-12-16",
+      "title": "[위촉] 미래에셋 - 접수마감",
+      "type": "company",
+      "category": "[위촉]",
+      "company": "미래에셋",
+      "round": "12-4차",
+      "content": "접수마감",
+      "associationRegistrationDate": null
+    },
+    {
+      "id": "658",
+      "date": "2025-12-16",
+      "title": "[해촉] - 교보(1/2반영), 미래(12/24반영)",
+      "type": "company",
+      "category": "[해촉]",
+      "company": "",
+      "round": "",
+      "content": "교보(1/2반영), 미래(12/24반영)",
+      "associationRegistrationDate": null
+    },
+    {
+      "id": "659",
+      "date": "2025-12-17",
+      "title": "[위촉] 메트라이프 - 접수마감",
+      "type": "company",
+      "category": "[위촉]",
+      "company": "메트라이프",
+      "round": "12-4차",
+      "content": "접수마감",
+      "associationRegistrationDate": null
+    },
+    {
+      "id": "660",
+      "date": "2025-12-17",
+      "title": "[해촉] - ABL(12/19반영), 메트(12/26반영)",
+      "type": "company",
+      "category": "[해촉]",
+      "company": "",
+      "round": "",
+      "content": "ABL(12/19반영), 메트(12/26반영)",
+      "associationRegistrationDate": null
+    },
+    {
+      "id": "661",
+      "date": "2025-12-18",
+      "title": "[해촉] - 한화(1/2반영)",
+      "type": "company",
+      "category": "[해촉]",
+      "company": "",
+      "round": "",
+      "content": "한화(1/2반영)",
+      "associationRegistrationDate": null
+    },
+    {
+      "id": "662",
+      "date": "2025-12-19",
+      "title": "[위촉] ABL생명 - 접수마감",
+      "type": "company",
+      "category": "[위촉]",
+      "company": "ABL생명",
+      "round": "12-3,12-4차",
+      "content": "접수마감",
+      "associationRegistrationDate": null
+    },
+    {
+      "id": "663",
       "date": "2025-11-26",
       "title": "[굿리치] - 전산승인마감(PM2:00)\n▶12월2차[위촉]: 12/8(월) GP 오픈 예정 (PM16:00)",
       "type": "goodrich",
@@ -8391,7 +9349,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "622",
+      "id": "664",
       "date": "2025-11-28",
       "title": "[협회] - 사용인 등록_손보(메리츠,롯데)",
       "type": "session",
@@ -8402,7 +9360,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "623",
+      "id": "665",
       "date": "2025-12-01",
       "title": "[굿리치] - GP 오픈 예정 (PM16:00)",
       "type": "goodrich",
@@ -8413,7 +9371,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "624",
+      "id": "666",
       "date": "2025-12-03",
       "title": "[굿리치] - 전산승인마감(PM2:00)\n▶12월3차[위촉]: 12/15(월) GP 오픈 예정 (PM16:00)",
       "type": "goodrich",
@@ -8424,7 +9382,7 @@
       "associationRegistrationDate": null
     },
     {
-      "id": "625",
+      "id": "667",
       "date": "2025-12-05",
       "title": "[협회] - 사용인 등록_손보(메리츠,롯데)",
       "type": "session",
@@ -8432,6 +9390,743 @@
       "company": "",
       "round": "12-2차",
       "content": "사용인 등록_손보(메리츠,롯데)",
+      "associationRegistrationDate": null
+    },
+    {
+      "id": "668",
+      "date": "2025-11-21",
+      "title": "[위촉] 신한라이프 - 접수마감",
+      "type": "company",
+      "category": "[위촉]",
+      "company": "신한라이프",
+      "round": "12-1차",
+      "content": "접수마감",
+      "associationRegistrationDate": null
+    },
+    {
+      "id": "669",
+      "date": "2025-12-04",
+      "title": "[위촉] 신한라이프 - 접수마감",
+      "type": "company",
+      "category": "[위촉]",
+      "company": "신한라이프",
+      "round": "12-2,12-3차",
+      "content": "접수마감",
+      "associationRegistrationDate": null
+    },
+    {
+      "id": "670",
+      "date": "2025-12-15",
+      "title": "[위촉] 신한라이프 - 접수마감",
+      "type": "company",
+      "category": "[위촉]",
+      "company": "신한라이프",
+      "round": "12-4차",
+      "content": "접수마감",
+      "associationRegistrationDate": null
+    },
+    {
+      "id": "671",
+      "date": "2025-12-04",
+      "title": "[해촉] 신한라이프 - 신한(12/15반영)",
+      "type": "company",
+      "category": "[해촉]",
+      "company": "신한라이프",
+      "round": "",
+      "content": "신한(12/15반영)",
+      "associationRegistrationDate": null
+    },
+    {
+      "id": "672",
+      "date": "2025-12-16",
+      "title": "[해촉] 신한라이프 - 신한(12/26반영)",
+      "type": "company",
+      "category": "[해촉]",
+      "company": "신한라이프",
+      "round": "",
+      "content": "신한(12/26반영)",
+      "associationRegistrationDate": null
+    },
+    {
+      "id": "673",
+      "date": "2025-11-27",
+      "title": "[위촉] KB라이프 - 접수마감",
+      "type": "company",
+      "category": "[위촉]",
+      "company": "KB라이프",
+      "round": "12-1차",
+      "content": "접수마감",
+      "associationRegistrationDate": null
+    },
+    {
+      "id": "674",
+      "date": "2025-12-03",
+      "title": "[위촉] KB라이프 - 접수마감",
+      "type": "company",
+      "category": "[위촉]",
+      "company": "KB라이프",
+      "round": "12-2차",
+      "content": "접수마감",
+      "associationRegistrationDate": null
+    },
+    {
+      "id": "675",
+      "date": "2025-12-10",
+      "title": "[위촉] KB라이프 - 접수마감",
+      "type": "company",
+      "category": "[위촉]",
+      "company": "KB라이프",
+      "round": "12-3차",
+      "content": "접수마감",
+      "associationRegistrationDate": null
+    },
+    {
+      "id": "676",
+      "date": "2025-12-17",
+      "title": "[위촉] KB라이프 - 접수마감",
+      "type": "company",
+      "category": "[위촉]",
+      "company": "KB라이프",
+      "round": "12-4차",
+      "content": "접수마감",
+      "associationRegistrationDate": null
+    },
+    {
+      "id": "677",
+      "date": "2025-12-02",
+      "title": "[해촉] KB라이프 - KB(12/8반영)",
+      "type": "company",
+      "category": "[해촉]",
+      "company": "KB라이프",
+      "round": "",
+      "content": "KB(12/8반영)",
+      "associationRegistrationDate": null
+    },
+    {
+      "id": "678",
+      "date": "2025-12-16",
+      "title": "[해촉] KB라이프 - KB(12/22반영)",
+      "type": "company",
+      "category": "[해촉]",
+      "company": "KB라이프",
+      "round": "",
+      "content": "KB(12/22반영)",
+      "associationRegistrationDate": null
+    },
+    {
+      "id": "679",
+      "date": "2025-11-24",
+      "title": "[위촉] IM라이프 - 접수마감",
+      "type": "company",
+      "category": "[위촉]",
+      "company": "IM라이프",
+      "round": "11-3차,11-4차",
+      "content": "접수마감",
+      "associationRegistrationDate": null
+    },
+    {
+      "id": "680",
+      "date": "2025-12-01",
+      "title": "[위촉] IM라이프 - 접수마감",
+      "type": "company",
+      "category": "[위촉]",
+      "company": "IM라이프",
+      "round": "12-1차",
+      "content": "접수마감",
+      "associationRegistrationDate": null
+    },
+    {
+      "id": "681",
+      "date": "2025-12-08",
+      "title": "[위촉] IM라이프 - 접수마감",
+      "type": "company",
+      "category": "[위촉]",
+      "company": "IM라이프",
+      "round": "12-2차",
+      "content": "접수마감",
+      "associationRegistrationDate": null
+    },
+    {
+      "id": "682",
+      "date": "2025-12-01",
+      "title": "[해촉] IM라이프 - IM(12/11반영)",
+      "type": "company",
+      "category": "[해촉]",
+      "company": "IM라이프",
+      "round": "",
+      "content": "IM(12/11반영)",
+      "associationRegistrationDate": null
+    },
+    {
+      "id": "683",
+      "date": "2025-11-24",
+      "title": "[위촉] KDB생명 - 접수마감",
+      "type": "company",
+      "category": "[위촉]",
+      "company": "KDB생명",
+      "round": "11-4차,12-1차",
+      "content": "접수마감",
+      "associationRegistrationDate": null
+    },
+    {
+      "id": "684",
+      "date": "2025-12-01",
+      "title": "[위촉] KDB생명 - 접수마감",
+      "type": "company",
+      "category": "[위촉]",
+      "company": "KDB생명",
+      "round": "12-2차",
+      "content": "접수마감",
+      "associationRegistrationDate": null
+    },
+    {
+      "id": "685",
+      "date": "2025-12-08",
+      "title": "[위촉] KDB생명 - 접수마감",
+      "type": "company",
+      "category": "[위촉]",
+      "company": "KDB생명",
+      "round": "12-3차",
+      "content": "접수마감",
+      "associationRegistrationDate": null
+    },
+    {
+      "id": "686",
+      "date": "2025-12-04",
+      "title": "[해촉] KDB생명 - KDB(12/10반영)",
+      "type": "company",
+      "category": "[해촉]",
+      "company": "KDB생명",
+      "round": "",
+      "content": "KDB(12/10반영)",
+      "associationRegistrationDate": null
+    },
+    {
+      "id": "687",
+      "date": "2025-12-15",
+      "title": "[해촉] KDB생명 - KDB(12/17반영)",
+      "type": "company",
+      "category": "[해촉]",
+      "company": "KDB생명",
+      "round": "",
+      "content": "KDB(12/17반영)",
+      "associationRegistrationDate": null
+    },
+    {
+      "id": "688",
+      "date": "2025-11-25",
+      "title": "[위촉] 처브라이프 - 접수마감",
+      "type": "company",
+      "category": "[위촉]",
+      "company": "처브라이프",
+      "round": "12-1차",
+      "content": "접수마감",
+      "associationRegistrationDate": null
+    },
+    {
+      "id": "689",
+      "date": "2025-12-04",
+      "title": "[위촉] 처브라이프 - 접수마감",
+      "type": "company",
+      "category": "[위촉]",
+      "company": "처브라이프",
+      "round": "12-2차,12-3차",
+      "content": "접수마감",
+      "associationRegistrationDate": null
+    },
+    {
+      "id": "690",
+      "date": "2025-12-15",
+      "title": "[위촉] 처브라이프 - 접수마감",
+      "type": "company",
+      "category": "[위촉]",
+      "company": "처브라이프",
+      "round": "12-4차",
+      "content": "접수마감",
+      "associationRegistrationDate": null
+    },
+    {
+      "id": "691",
+      "date": "2025-12-02",
+      "title": "[해촉] 처브라이프 - 처브(12/4반영)",
+      "type": "company",
+      "category": "[해촉]",
+      "company": "처브라이프",
+      "round": "",
+      "content": "처브(12/4반영)",
+      "associationRegistrationDate": null
+    },
+    {
+      "id": "692",
+      "date": "2025-12-17",
+      "title": "[해촉] 처브라이프 - 처브(12/24반영)",
+      "type": "company",
+      "category": "[해촉]",
+      "company": "처브라이프",
+      "round": "",
+      "content": "처브(12/24반영)",
+      "associationRegistrationDate": null
+    },
+    {
+      "id": "693",
+      "date": "2025-11-28",
+      "title": "[위촉] 농협생명 - 접수마감",
+      "type": "company",
+      "category": "[위촉]",
+      "company": "농협생명",
+      "round": "12-1차,12-2차",
+      "content": "접수마감",
+      "associationRegistrationDate": null
+    },
+    {
+      "id": "694",
+      "date": "2025-12-05",
+      "title": "[위촉] 농협생명 - 접수마감",
+      "type": "company",
+      "category": "[위촉]",
+      "company": "농협생명",
+      "round": "12-3차",
+      "content": "접수마감",
+      "associationRegistrationDate": null
+    },
+    {
+      "id": "695",
+      "date": "2025-12-12",
+      "title": "[위촉] 농협생명 - 접수마감",
+      "type": "company",
+      "category": "[위촉]",
+      "company": "농협생명",
+      "round": "12-4차",
+      "content": "접수마감",
+      "associationRegistrationDate": null
+    },
+    {
+      "id": "696",
+      "date": "2025-12-03",
+      "title": "[해촉] 농협생명 - 농협(12/11반영)",
+      "type": "company",
+      "category": "[해촉]",
+      "company": "농협생명",
+      "round": "",
+      "content": "농협(12/11반영)",
+      "associationRegistrationDate": null
+    },
+    {
+      "id": "697",
+      "date": "2025-12-17",
+      "title": "[해촉] 농협생명 - 농협(12/24반영)",
+      "type": "company",
+      "category": "[해촉]",
+      "company": "농협생명",
+      "round": "",
+      "content": "농협(12/24반영)",
+      "associationRegistrationDate": null
+    },
+    {
+      "id": "698",
+      "date": "2025-12-01",
+      "title": "[위촉] 하나생명 - 접수마감",
+      "type": "company",
+      "category": "[위촉]",
+      "company": "하나생명",
+      "round": "11-4차,12-1차",
+      "content": "접수마감",
+      "associationRegistrationDate": null
+    },
+    {
+      "id": "699",
+      "date": "2025-12-15",
+      "title": "[위촉] 하나생명 - 접수마감",
+      "type": "company",
+      "category": "[위촉]",
+      "company": "하나생명",
+      "round": "12-2차,12-3차",
+      "content": "접수마감",
+      "associationRegistrationDate": null
+    },
+    {
+      "id": "700",
+      "date": "2025-12-18",
+      "title": "[해촉] 하나생명 - 하나(12/31반영)",
+      "type": "company",
+      "category": "[해촉]",
+      "company": "하나생명",
+      "round": "",
+      "content": "하나(12/31반영)",
+      "associationRegistrationDate": null
+    },
+    {
+      "id": "701",
+      "date": "2025-12-08",
+      "title": "[굿리치] - GP 오픈 예정 (PM16:00)",
+      "type": "goodrich",
+      "category": "[굿리치]",
+      "company": "",
+      "round": "12-2차",
+      "content": "GP 오픈 예정 (PM16:00)",
+      "associationRegistrationDate": null
+    },
+    {
+      "id": "702",
+      "date": "2025-12-15",
+      "title": "[굿리치] - GP 오픈 예정 (PM16:00)",
+      "type": "goodrich",
+      "category": "[굿리치]",
+      "company": "",
+      "round": "12-3차",
+      "content": "GP 오픈 예정 (PM16:00)",
+      "associationRegistrationDate": null
+    },
+    {
+      "id": "703",
+      "date": "2025-12-22",
+      "title": "[굿리치] - GP 오픈 예정 (PM16:00)",
+      "type": "goodrich",
+      "category": "[굿리치]",
+      "company": "",
+      "round": "12-4차",
+      "content": "GP 오픈 예정 (PM16:00)",
+      "associationRegistrationDate": null
+    },
+    {
+      "id": "704",
+      "date": "2025-12-29",
+      "title": "[굿리치] - GP 오픈 예정 (PM16:00)",
+      "type": "goodrich",
+      "category": "[굿리치]",
+      "company": "",
+      "round": "12-5차",
+      "content": "GP 오픈 예정 (PM16:00)",
+      "associationRegistrationDate": null
+    },
+    {
+      "id": "705",
+      "date": "2025-12-10",
+      "title": "[굿리치] - 패밀리데이(PM4:00업무종료)",
+      "type": "goodrich",
+      "category": "[굿리치]",
+      "company": "",
+      "round": "",
+      "content": "패밀리데이(PM4:00업무종료)",
+      "associationRegistrationDate": null
+    },
+    {
+      "id": "706",
+      "date": "2025-12-17",
+      "title": "[굿리치] - ���산승인마감(PM2:00)\n▶12월5차[위촉]: 12/22(월) GP 오픈 예정 (PM16:00)",
+      "type": "goodrich",
+      "category": "[굿리치]",
+      "company": "",
+      "round": "12-5차",
+      "content": "���산승인마감(PM2:00)\n▶12월5차[위촉]: 12/22(월) GP 오픈 예정 (PM16:00)",
+      "associationRegistrationDate": null
+    },
+    {
+      "id": "707",
+      "date": "2025-12-23",
+      "title": "[굿리치] - 전산승인마감(PM2:00)\n▶1월1차[위촉]: 1/5(월) GP 오픈 예정 (PM16:00)",
+      "type": "goodrich",
+      "category": "[굿리치]",
+      "company": "",
+      "round": "1-1차",
+      "content": "전산승인마감(PM2:00)\n▶1월1차[위촉]: 1/5(월) GP 오픈 예정 (PM16:00)",
+      "associationRegistrationDate": null
+    },
+    {
+      "id": "708",
+      "date": "2025-12-30",
+      "title": "[굿리치] - 전산승인마감(PM2:00)\n▶1월2차[위촉]: 1/12(월) GP 오픈 예정 (PM16:00)",
+      "type": "goodrich",
+      "category": "[굿리치]",
+      "company": "",
+      "round": "1-2차",
+      "content": "전산승인마감(PM2:00)\n▶1월2차[위촉]: 1/12(월) GP 오픈 예정 (PM16:00)",
+      "associationRegistrationDate": null
+    },
+    {
+      "id": "709",
+      "date": "2025-12-04",
+      "title": "[굿리치] - 자격추가 마감\n▶12월3차 위촉: 12/15(월) GP 오픈 예정 (PM16:00)",
+      "type": "goodrich",
+      "category": "[굿리치]",
+      "company": "",
+      "round": "",
+      "content": "자격추가 마감\n▶12월3차 위촉: 12/15(월) GP 오픈 예정 (PM16:00)",
+      "associationRegistrationDate": null
+    },
+    {
+      "id": "710",
+      "date": "2025-12-10",
+      "title": "[굿리치] - 전산승인마감(PM2:00)\n▶12월4차[위촉]: 1/22(월) GP 오픈 예정 (PM16:00)",
+      "type": "goodrich",
+      "category": "[굿리치]",
+      "company": "",
+      "round": "12-4차",
+      "content": "전산승인마감(PM2:00)\n▶12월4차[위촉]: 1/22(월) GP 오픈 예정 (PM16:00)",
+      "associationRegistrationDate": null
+    },
+    {
+      "id": "711",
+      "date": "2025-12-18",
+      "title": "[굿리치] - 자격추가 마감\n▶12월5차 위촉: 12/29(월) GP 오픈 예정 (PM16:00)",
+      "type": "goodrich",
+      "category": "[굿리치]",
+      "company": "",
+      "round": "",
+      "content": "자격추가 마감\n▶12월5차 위촉: 12/29(월) GP 오픈 예정 (PM16:00)",
+      "associationRegistrationDate": null
+    },
+    {
+      "id": "712",
+      "date": "2025-12-24",
+      "title": "[굿리치] - 자격추가 마감\n▶1월1차 위촉: 1/5(월) GP 오픈 예정 (PM16:00)",
+      "type": "goodrich",
+      "category": "[굿리치]",
+      "company": "",
+      "round": "",
+      "content": "자격추가 마감\n▶1월1차 위촉: 1/5(월) GP 오픈 예정 (PM16:00)",
+      "associationRegistrationDate": null
+    },
+    {
+      "id": "713",
+      "date": "2025-12-31",
+      "title": "[굿리치] - 자격추가 마감\n▶1월2차 위촉: 1/12(월) GP 오픈 예정 (PM16:00)",
+      "type": "goodrich",
+      "category": "[굿리치]",
+      "company": "",
+      "round": "",
+      "content": "자격추가 마감\n▶1월2차 위촉: 1/12(월) GP 오픈 예정 (PM16:00)",
+      "associationRegistrationDate": null
+    },
+    {
+      "id": "714",
+      "date": "2025-12-12",
+      "title": "[협회] - 사용인 등록_손보(메리츠,롯데)",
+      "type": "session",
+      "category": "[협회]",
+      "company": "",
+      "round": "12-3차",
+      "content": "사용인 등록_손보(메리츠,롯데)",
+      "associationRegistrationDate": null
+    },
+    {
+      "id": "715",
+      "date": "2025-12-19",
+      "title": "[협회] - 사용인 등록_손보(메리츠,롯데)",
+      "type": "session",
+      "category": "[협회]",
+      "company": "",
+      "round": "12-4차",
+      "content": "사용인 등록_손보(메리츠,롯데)",
+      "associationRegistrationDate": null
+    },
+    {
+      "id": "716",
+      "date": "2025-12-26",
+      "title": "[협회] - 사용인 등록_손보(메리츠,롯데)",
+      "type": "session",
+      "category": "[협회]",
+      "company": "",
+      "round": "12-5차",
+      "content": "사용인 등록_손보(메리츠,롯데)",
+      "associationRegistrationDate": null
+    },
+    {
+      "id": "717",
+      "date": "2026-01-02",
+      "title": "[협회] - 사용인 등록_손보(메리츠,롯데)",
+      "type": "session",
+      "category": "[협회]",
+      "company": "",
+      "round": "1-1차",
+      "content": "사용인 등록_손보(메리츠,롯데)",
+      "associationRegistrationDate": null
+    },
+    {
+      "id": "718",
+      "date": "2025-12-25",
+      "title": "[휴일] - 성탄절",
+      "type": "company",
+      "category": "[휴일]",
+      "company": "",
+      "round": "",
+      "content": "성탄절",
+      "associationRegistrationDate": null
+    },
+    {
+      "id": "719",
+      "date": "2026-01-01",
+      "title": "[휴일] - 신정",
+      "type": "company",
+      "category": "[휴일]",
+      "company": "",
+      "round": "",
+      "content": "신정",
+      "associationRegistrationDate": null
+    },
+    {
+      "id": "720",
+      "date": "2025-12-22",
+      "title": "[굿리치] - 12월 당사 해촉 마감",
+      "type": "goodrich",
+      "category": "[굿리치]",
+      "company": "",
+      "round": "",
+      "content": "12월 당사 해촉 마감",
+      "associationRegistrationDate": null
+    },
+    {
+      "id": "721",
+      "date": "2025-12-19",
+      "title": "[굿리치] - 수수료계좌변경신청마감",
+      "type": "goodrich",
+      "category": "[굿리치]",
+      "company": "",
+      "round": "",
+      "content": "수수료계좌변경신청마감",
+      "associationRegistrationDate": null
+    },
+    {
+      "id": "722",
+      "date": "2025-12-11",
+      "title": "[굿리치] - 자격추가 마감\n▶12월4차 위촉: 12/22(월) GP 오픈 예정 (PM16:00)",
+      "type": "goodrich",
+      "category": "[굿리치]",
+      "company": "",
+      "round": "",
+      "content": "자격추가 마감\n▶12월4차 위촉: 12/22(월) GP 오픈 예정 (PM16:00)",
+      "associationRegistrationDate": null
+    },
+    {
+      "id": "723",
+      "date": "2025-12-01",
+      "title": "[협회] - 사용인 등록_생보(KB)",
+      "type": "session",
+      "category": "[협회]",
+      "company": "",
+      "round": "12-1차",
+      "content": "사용인 등록_생보(KB)",
+      "associationRegistrationDate": null
+    },
+    {
+      "id": "724",
+      "date": "2025-12-08",
+      "title": "[협회] - 사용인 등록_생보(KB)",
+      "type": "session",
+      "category": "[협회]",
+      "company": "",
+      "round": "12-2차",
+      "content": "사용인 등록_생보(KB)",
+      "associationRegistrationDate": null
+    },
+    {
+      "id": "725",
+      "date": "2025-12-12",
+      "title": "[협회] - 사용인 등록_생보(메트)",
+      "type": "session",
+      "category": "[협회]",
+      "company": "",
+      "round": "12-3차",
+      "content": "사용인 등록_생보(메트)",
+      "associationRegistrationDate": null
+    },
+    {
+      "id": "726",
+      "date": "2025-12-22",
+      "title": "[협회] - 사용인 등록_생보(KB)",
+      "type": "session",
+      "category": "[협회]",
+      "company": "",
+      "round": "12-4차",
+      "content": "사용인 등록_생보(KB)",
+      "associationRegistrationDate": null
+    },
+    {
+      "id": "727",
+      "date": "2025-11-25",
+      "title": "[위촉] 삼성생명 - 접수마감",
+      "type": "company",
+      "category": "[위촉]",
+      "company": "삼성생명",
+      "round": "11-4차",
+      "content": "접수마감",
+      "associationRegistrationDate": null
+    },
+    {
+      "id": "728",
+      "date": "2025-12-04",
+      "title": "[위촉] 삼성생명 - 접수마감",
+      "type": "company",
+      "category": "[위촉]",
+      "company": "삼성생명",
+      "round": "12-1,12-2차",
+      "content": "접수마감",
+      "associationRegistrationDate": null
+    },
+    {
+      "id": "729",
+      "date": "2025-12-11",
+      "title": "[위촉] 삼성생명 - 접수마감",
+      "type": "company",
+      "category": "[위촉]",
+      "company": "삼성생명",
+      "round": "12-3차",
+      "content": "접수마감",
+      "associationRegistrationDate": null
+    },
+    {
+      "id": "730",
+      "date": "2025-11-24",
+      "title": "[위촉] 흥국생명 - 접수마감",
+      "type": "company",
+      "category": "[위촉]",
+      "company": "흥국생명",
+      "round": "11-4차",
+      "content": "접수마감",
+      "associationRegistrationDate": null
+    },
+    {
+      "id": "731",
+      "date": "2025-12-03",
+      "title": "[위촉] 흥국생명 - 접수마감",
+      "type": "company",
+      "category": "[위촉]",
+      "company": "흥국생명",
+      "round": "12-1,12-2차",
+      "content": "접수마감",
+      "associationRegistrationDate": null
+    },
+    {
+      "id": "732",
+      "date": "2025-12-11",
+      "title": "[위촉] 흥국생명 - 접수마감",
+      "type": "company",
+      "category": "[위촉]",
+      "company": "흥국생명",
+      "round": "12-3차",
+      "content": "접수마감",
+      "associationRegistrationDate": null
+    },
+    {
+      "id": "733",
+      "date": "2025-12-01",
+      "title": "[해촉] - 흥국(12/4반영)",
+      "type": "company",
+      "category": "[해촉]",
+      "company": "",
+      "round": "",
+      "content": "흥국(12/4반영)",
+      "associationRegistrationDate": null
+    },
+    {
+      "id": "734",
+      "date": "2025-12-10",
+      "title": "[해촉] - 흥국(12/17반영)",
+      "type": "company",
+      "category": "[해촉]",
+      "company": "",
+      "round": "",
+      "content": "흥국(12/17반영)",
       "associationRegistrationDate": null
     }
   ]

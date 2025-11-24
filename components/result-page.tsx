@@ -17,9 +17,12 @@ export default function ResultPage({ selectedDate }: ResultPageProps) {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const basePath = process.env.__NEXT_ROUTER_BASEPATH || '';
-    fetch(`${basePath}/data.json`)
-      .then(res => res.json())
+    console.log('🔄 Google Sheets에서 실시간 데이터 로딩 중...');
+    fetch('/api/sheets')
+      .then(res => {
+        if (!res.ok) throw new Error("데이터 로딩 실패");
+        return res.json();
+      })
       .then((data: SheetData) => {
         if (!data.schedules || data.schedules.length === 0) {
           setLoading(false);

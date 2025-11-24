@@ -31,26 +31,17 @@ export default function MainPage() {
   const [showTutorial, setShowTutorial] = useState(false);
 
   useEffect(() => {
-    console.log('MainPage useEffect 실행');
-
-    // fetch를 사용하여 데이터 로드
     const loadData = async () => {
       try {
-        console.log('데이터 fetch 시작');
-        const basePath = process.env.__NEXT_ROUTER_BASEPATH || '';
-        const response = await fetch(`${basePath}/data.json`);
-        console.log('fetch 응답:', response);
-        
-        if (!response.ok) {
-          throw new Error(`HTTP error! status: ${response.status}`);
-        }
-        
-        const jsonData = await response.json();
-        console.log('데이터 로딩 성공:', jsonData);
-        setData(jsonData as SheetData);
-        setLoading(false);
+        console.log('🔄 Google Sheets에서 실시간 데이터 로딩 중...');
+        const response = await fetch('/api/sheets');
+        if (!response.ok) throw new Error("데이터 로딩 실패");
+        const json = (await response.json()) as SheetData;
+        console.log('✅ 데이터 로딩 완료:', json.schedules.length, '개 차수');
+        setData(json);
       } catch (error) {
-        console.error('데이터 로딩 실패:', error);
+        console.error("데이터 로딩 실패", error);
+      } finally {
         setLoading(false);
       }
     };
