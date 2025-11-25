@@ -16,7 +16,6 @@ import type { SheetData } from "@/lib/types";
 import CalendarModal from "@/components/calendar-modal";
 import TutorialOverlay from "@/components/tutorial-overlay";
 import NavigationHeader from "@/components/navigation-header";
-import { fetchSheetsDataClient } from "@/lib/fetch-sheets-client";
 // import BottomNavigation from "@/components/BottomNavigation";
 // import sheetDataJson from "@/public/data.json";
 
@@ -34,23 +33,10 @@ export default function MainPage() {
   useEffect(() => {
     const loadData = async () => {
       try {
-        // 개발 환경에서는 API Route 사용, 프로덕션에서는 클라이언트에서 구글시트 직접 호출
-        const isDev = process.env.NODE_ENV === 'development';
-        
-        let json: SheetData;
-        
-        if (isDev) {
-          // 개발환경: API Route 사용
-          console.log(`🔄 데이터 로딩 중... (API Route)`);
-          const response = await fetch('/api/sheets');
-          if (!response.ok) throw new Error("데이터 로딩 실패");
-          json = (await response.json()) as SheetData;
-        } else {
-          // 프로덕션: 클라이언트에서 구글시트 직접 호출
-          console.log(`🔄 데이터 로딩 중... (구글시트 직접 호출)`);
-          json = await fetchSheetsDataClient() as SheetData;
-        }
-        
+        console.log('🔄 Google Sheets에서 실시간 데이터 로딩 중...');
+        // 클라이언트에서 직접 Google Sheets 가져오기 (GitHub Pages 호환)
+        const { fetchSheetsDataClient } = await import('@/lib/fetch-sheets-client');
+        const json = await fetchSheetsDataClient();
         console.log('✅ 데이터 로딩 완료:', json.schedules.length, '개 차수');
         setData(json);
       } catch (error) {

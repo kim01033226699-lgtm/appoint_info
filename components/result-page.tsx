@@ -6,7 +6,6 @@ import { ArrowLeft, Download, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import type { RecruitmentSchedule, SheetData } from "@/lib/types";
-import { fetchSheetsDataClient } from "@/lib/fetch-sheets-client";
 
 interface ResultPageProps {
   selectedDate: string;
@@ -18,33 +17,12 @@ export default function ResultPage({ selectedDate }: ResultPageProps) {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // 개발 환경에서는 API Route 사용, 프로덕션에서는 클라이언트에서 구글시트 직접 호출
-    const isDev = process.env.NODE_ENV === 'development';
-    
-    console.log(`🔄 데이터 로딩 중... (${isDev ? 'API Route' : '구글시트 직접 호출'})`);
-    
     const loadData = async () => {
       try {
-        let data: SheetData;
-        
-        if (isDev) {
-          // 개발환경: API Route 사용
-          const response = await fetch('/api/sheets');
-          if (!response.ok) throw new Error("데이터 로딩 실패");
-          data = await response.json();
-        } else {
-          // 프로덕션: 클라이언트에서 구글시트 직접 호출
-          data = await fetchSheetsDataClient() as SheetData;
-        }
-        
-        processData(data);
-      } catch (error) {
-        console.error("데이터 로딩 실패", error);
-        setLoading(false);
-      }
-    };
-    
-    const processData = (data: SheetData) => {
+        console.log('🔄 Google Sheets에서 실시간 데이터 로딩 중...');
+        // 클라이언트에서 직접 Google Sheets 가져오기 (GitHub Pages 호환)
+        const { fetchSheetsDataClient } = await import('@/lib/fetch-sheets-client');
+        const data = await fetchSheetsDataClient();
         if (!data.schedules || data.schedules.length === 0) {
           setLoading(false);
           return;
@@ -102,8 +80,12 @@ export default function ResultPage({ selectedDate }: ResultPageProps) {
 
         setSchedule(foundSchedule);
         setLoading(false);
+      } catch (err) {
+        console.error('데이터 로드 실패:', err);
+        setLoading(false);
+      }
     };
-    
+
     loadData();
   }, [selectedDate]);
 

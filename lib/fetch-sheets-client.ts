@@ -1,5 +1,7 @@
-// 클라이언트 사이드에서 구글시트 데이터를 가져오는 함수
-// 프로덕션에서도 실시간으로 구글시트 데이터를 가져올 수 있도록 함
+/**
+ * 클라이언트에서 Google Sheets를 직접 가져오는 함수
+ * GitHub Pages 같은 정적 호스팅에서도 작동합니다.
+ */
 
 const SPREADSHEET_ID = '1y3-9-GswYKhSYGKHo_3yMGZvO3EHO2bzfJKkG2MNedQ';
 
@@ -11,12 +13,12 @@ const SHEET_NAMES = {
 
 async function fetchSheetAsCSV(spreadsheetId: string, sheetName: string): Promise<string> {
   const url = `https://docs.google.com/spreadsheets/d/${spreadsheetId}/gviz/tq?tqx=out:csv&sheet=${encodeURIComponent(sheetName)}`;
-  
+
   const response = await fetch(url);
   if (!response.ok) {
     throw new Error(`Failed to fetch sheet: ${response.statusText}`);
   }
-  
+
   return response.text();
 }
 
@@ -70,65 +72,41 @@ function parseSheetDate(value: any): Date | null {
       return null;
     }
 
-    if (value instanceof Date && !isNaN(value.getTime())) {
-      return new Date(Date.UTC(value.getUTCFullYear(), value.getUTCMonth(), value.getUTCDate()));
-    }
-
-    if (typeof value === 'number') {
-      const excelEpoch = new Date(Date.UTC(1899, 11, 30));
-      const date = new Date(excelEpoch.getTime() + value * 86400000);
-      if (!isNaN(date.getTime())) {
-        return new Date(Date.UTC(date.getUTCFullYear(), date.getUTCMonth(), date.getUTCDate()));
-      }
-    }
-
     if (typeof value === 'string') {
       const dateStr = value.trim();
       if (!dateStr) return null;
 
-      // "2025. 4. 25" 형식 처리
+      // "2025. 11. 25" 형식
       const dotFormatMatch = dateStr.match(/^(\d{4})\.\s*(\d{1,2})\.\s*(\d{1,2})$/);
       if (dotFormatMatch) {
-        const [, year, month, day] = dotFormatMatch.map(p => parseInt(p, 10));
-        const d = new Date(Date.UTC(year, month - 1, day));
-        if (d.getUTCFullYear() === year && d.getUTCMonth() === month - 1 && d.getUTCDate() === day) {
-          return d;
-        }
+        const [, year, month, day] = dotFormatMatch;
+        const d = new Date(Date.UTC(parseInt(year), parseInt(month) - 1, parseInt(day)));
+        return d;
       }
 
+      // "11/25" 형식
       const shortFormatMatch = dateStr.match(/^(\d{1,2})\/(\d{1,2})$/);
       if (shortFormatMatch) {
-        const [, month, day] = shortFormatMatch.map(p => parseInt(p, 10));
+        const [, month, day] = shortFormatMatch;
         const currentYear = new Date().getFullYear();
-        const d = new Date(Date.UTC(currentYear, month - 1, day));
-        if (d.getUTCFullYear() === currentYear && d.getUTCMonth() === month - 1 && d.getUTCDate() === day) {
-          return d;
-        }
+        const d = new Date(Date.UTC(currentYear, parseInt(month) - 1, parseInt(day)));
+        return d;
       }
 
+      // 기본 파싱 시도
       const parts = dateStr.split(/[.\-\/]/).map(p => parseInt(p, 10));
       if (parts.length === 3 && parts.every(p => !isNaN(p))) {
         let [year, month, day] = parts;
-        if (year < 100) {
-          year += 2000;
-        }
+        if (year < 100) year += 2000;
         if (year > 1900 && month >= 1 && month <= 12 && day >= 1 && day <= 31) {
           const d = new Date(Date.UTC(year, month - 1, day));
-          if (d.getUTCFullYear() === year && d.getUTCMonth() === month - 1 && d.getUTCDate() === day) {
-            return d;
-          }
+          return d;
         }
-      }
-
-      const directParse = new Date(dateStr);
-      if (!isNaN(directParse.getTime())) {
-        return new Date(Date.UTC(directParse.getUTCFullYear(), directParse.getUTCMonth(), directParse.getUTCDate()));
       }
     }
 
     return null;
   } catch (error) {
-    console.warn(`날짜 파싱 실패: '${value}'. 오류: ${error}`);
     return null;
   }
 }
@@ -147,32 +125,29 @@ function formatDateISO(date: Date | null): string {
   return `${year}-${month}-${day}`;
 }
 
-interface MemoInfo {
-  memo: string;
-  manager: string;
-}
-
 function matchRound(targetRound: string, roundField: string): boolean {
   if (!targetRound || !roundField) return false;
 
-  // 타겟 차수 정규화: "9-4차" -> "9-4"
   const normalizedTargetRound = targetRound.trim()
-    .replace(/\s/g, '') // 공백 제거
-    .replace(/[차치]/g, ''); // "차", "치" 제거
+    .replace(/\s/g, '')
+    .replace(/[차치]/g, '');
 
-  // 입력 필드 정규화
   const normalizedField = String(roundField)
-    .replace(/\s/g, '') // 공백 제거
-    .replace(/[차치]/g, '') // "차", "치" 모두 제거
-    .replace(/[/|]/g, ','); // "/" 또는 "|"를 ","로 변환
+    .replace(/\s/g, '')
+    .replace(/[차치]/g, '')
+    .replace(/[/|]/g, ',');
 
-  // 쉼표로 분리
   const roundList = normalizedField.split(',').filter(r => r.trim() !== '');
 
   return roundList.some(r => {
     const normalizedRoundItem = r.trim();
     return normalizedRoundItem !== '' && normalizedRoundItem === normalizedTargetRound;
   });
+}
+
+interface MemoInfo {
+  memo: string;
+  manager: string;
 }
 
 function buildMemoMap(memoRows: string[][]): Record<string, MemoInfo> {
@@ -191,70 +166,6 @@ function buildMemoMap(memoRows: string[][]): Record<string, MemoInfo> {
     };
   }
   return map;
-}
-
-function parseAdminSettings(rows: string[][]) {
-  const defaults = {
-    checklist: [
-      { id: '1', text: '위촉서류 제출' },
-      { id: '2', text: '굿리치 앱 설치 및 프로필 설정' },
-    ],
-    guidance: '환영합니다! 굿리치 전문가로의 첫 걸음을 응원합니다.',
-    recipients: [],
-  };
-
-  if (!rows) return defaults;
-
-  const settings = {
-    checklist: [] as { id: string; text: string }[],
-    guidance: '',
-    recipients: [] as { company: string; address: string }[],
-  };
-
-  let isInRecipientSection = false;
-
-  rows.forEach((row) => {
-    const key = (row?.[0] || '').toString().trim().replace(/`/g, '');
-    const value = (row?.[1] || '').toString().trim();
-
-    if (!key) return;
-
-    if (key === '수신') {
-      isInRecipientSection = true;
-      return;
-    }
-
-    if (isInRecipientSection) {
-      if (key === '위촉필요서류' || key === '체크리스트') {
-        isInRecipientSection = false;
-      } else {
-        if (value) {
-          settings.recipients.push({
-            company: key,
-            address: value
-          });
-        }
-        return;
-      }
-    }
-
-    if (!value) return;
-
-    switch (key) {
-      case '위촉필요서류':
-        settings.guidance = value;
-        break;
-      case '체크리스트':
-        settings.checklist.push({ id: `${settings.checklist.length + 1}`, text: value });
-        break;
-    }
-  });
-
-  return {
-    checklist: settings.checklist.length > 0 ? settings.checklist : defaults.checklist,
-    guidance: settings.guidance || defaults.guidance,
-    recipients: settings.recipients,
-  };
 }
 
 function parseSchedules(inputRows: string[][], memoMap: Record<string, MemoInfo>) {
@@ -352,7 +263,6 @@ function parseSchedules(inputRows: string[][], memoMap: Record<string, MemoInfo>
           recruitmentMethod: info.memo,
           manager: info.manager,
         });
-        // break 제거: 모든 매칭되는 차수에 추가
       }
     }
   }
@@ -360,7 +270,7 @@ function parseSchedules(inputRows: string[][], memoMap: Record<string, MemoInfo>
   return Array.from(scheduleMap.values());
 }
 
-function parseCalendarEvents(inputRows: string[][]): any[] {
+function parseCalendarEvents(inputRows: string[][]) {
   if (!inputRows || inputRows.length === 0) return [];
 
   const events = [];
@@ -379,8 +289,13 @@ function parseCalendarEvents(inputRows: string[][]): any[] {
     if (!content) continue;
 
     // 타이틀 생성
-    const titlePrefix = [category, company].filter(Boolean).join(' ');
-    const title = [titlePrefix, content].filter(Boolean).join(' - ');
+    const titleParts = [];
+    if (round) titleParts.push(`▶${round}`);
+    if (category) titleParts.push(`[${category}]`);
+    if (company) titleParts.push(company);
+    if (content) titleParts.push(content);
+
+    const title = titleParts.join(' ');
 
     // 타입 결정
     let type: 'goodrich' | 'company' | 'session' = 'company';
@@ -390,38 +305,111 @@ function parseCalendarEvents(inputRows: string[][]): any[] {
       type = 'session';
     }
 
-    // 협회등록일 파싱 (생명보험협회 등록일 정보가 content에 포함된 경우)
-    let associationRegistrationDate: string | null = null;
-    const assocMatch = content.match(/생명보험협회\s*등록일\s*(\d{1,2})\/(\d{1,2})/);
-    if (assocMatch) {
-      const month = parseInt(assocMatch[1], 10);
-      const day = parseInt(assocMatch[2], 10);
-      const currentYear = new Date().getFullYear();
-      const assocDate = new Date(Date.UTC(currentYear, month - 1, day));
-      associationRegistrationDate = formatDateISO(assocDate);
-    }
-
     events.push({
       id: String(eventId++),
       date: formatDateISO(date),
       title: title,
       type: type,
-      category: category,
-      company: company,
-      round: round,
-      content: content,
-      associationRegistrationDate: associationRegistrationDate,
+      description: content,
     });
   }
 
   return events;
 }
 
-export async function fetchSheetsDataClient() {
-  try {
-    console.log('🔄 클라이언트에서 구글시트 데이터 가져오는 중...');
+interface Recipient {
+  company: string;
+  address: string;
+}
 
-    // 모든 시트 가져오기
+function parseAdminSettings(rows: string[][]) {
+  const defaults = {
+    checklist: [
+      { id: '1', text: '위촉서류 제출' },
+      { id: '2', text: '굿리치 앱 설치 및 프로필 설정' },
+    ],
+    guidance: '환영합니다! 굿리치 전문가로의 첫 걸음을 응원합니다.',
+    recipients: [] as Recipient[],
+  };
+
+  if (!rows) return defaults;
+
+  const settings = {
+    checklist: [] as { id: string; text: string }[],
+    guidance: '',
+    recipients: [] as Recipient[],
+  };
+
+  let isInRecipientSection = false;
+
+  rows.forEach((row) => {
+    const key = (row?.[0] || '').toString().trim().replace(/`/g, '');
+    const value = (row?.[1] || '').toString().trim();
+
+    if (!key) return;
+
+    // A열에 "수신"이 나오면 수신처 섹션 시작
+    if (key === '수신') {
+      isInRecipientSection = true;
+      return;
+    }
+
+    // 수신처 섹션 내에서 데이터 수집
+    if (isInRecipientSection) {
+      // A열에 다른 키워드가 나오면 수신처 섹션 종료
+      if (key === '위촉필요서류' || key === '체크리스트') {
+        isInRecipientSection = false;
+      } else {
+        // A열: 회사명, B열: 주소
+        if (value) {
+          settings.recipients.push({
+            company: key,
+            address: value
+          });
+        }
+        return;
+      }
+    }
+
+    if (!value) return;
+
+    switch (key) {
+      case '위촉필요서류':
+        settings.guidance = value;
+        break;
+      case '체크리스트':
+        settings.checklist.push({
+          id: `${settings.checklist.length + 1}`,
+          text: value
+        });
+        break;
+    }
+  });
+
+  return {
+    checklist: settings.checklist.length > 0 ? settings.checklist : defaults.checklist,
+    guidance: settings.guidance || defaults.guidance,
+    recipients: settings.recipients,
+  };
+}
+
+export interface SheetData {
+  requiredDocuments: string;
+  checklist: { id: string; text: string }[];
+  recipients: { company: string; address: string }[];
+  schedules: any[];
+  calendarEvents: any[];
+}
+
+/**
+ * 클라이언트에서 Google Sheets를 직접 가져와서 파싱하는 함수
+ * GitHub Pages 같은 정적 호스팅에서도 작동합니다.
+ */
+export async function fetchSheetsDataClient(): Promise<SheetData> {
+  try {
+    console.log('🔄 Google Sheets에서 데이터 가져오는 중...');
+
+    // Fetch all sheets
     const [inputCSV, memoCSV, adminCSV] = await Promise.all([
       fetchSheetAsCSV(SPREADSHEET_ID, SHEET_NAMES.INPUT),
       fetchSheetAsCSV(SPREADSHEET_ID, SHEET_NAMES.MEMO),
@@ -438,7 +426,7 @@ export async function fetchSheetsDataClient() {
     const schedules = parseSchedules(inputRows, memoMap);
     const calendarEvents = parseCalendarEvents(inputRows);
 
-    const data = {
+    const data: SheetData = {
       requiredDocuments: adminSettings.guidance,
       checklist: adminSettings.checklist,
       recipients: adminSettings.recipients,
@@ -446,11 +434,12 @@ export async function fetchSheetsDataClient() {
       calendarEvents: calendarEvents,
     };
 
-    console.log(`✅ 클라이언트 데이터 로딩 완료: ${schedules.length}개 차수, ${calendarEvents.length}개 이벤트`);
+    console.log(`✅ 데이터 가져오기 완료: ${schedules.length}개 차수, ${calendarEvents.length}개 이벤트`);
 
     return data;
+
   } catch (error) {
-    console.error('❌ 클라이언트에서 구글시트 데이터 가져오기 실패:', error);
+    console.error('❌ Google Sheets 데이터 가져오기 실패:', error);
     throw error;
   }
 }

@@ -9,7 +9,6 @@ import { ArrowLeft, CalendarIcon } from "lucide-react";
 import { format } from "date-fns";
 import { ko } from "date-fns/locale";
 import { cn } from "@/lib/utils";
-import { fetchSheetsDataClient } from "@/lib/fetch-sheets-client";
 
 interface PersonalInfo {
   company: string;
@@ -55,21 +54,10 @@ export default function PersonalInfoForm({ onComplete, onBack, selectedResults }
     // 구글시트에서 가져온 수신처 데이터 로드
     const loadRecipients = async () => {
       try {
-        // 개발 환경에서는 API Route 사용, 프로덕션에서는 클라이언트에서 구글시트 직접 호출
-        const isDev = process.env.NODE_ENV === 'development';
-        
-        let data: any;
-        
-        if (isDev) {
-          // 개발환경: API Route 사용
-          const response = await fetch('/api/sheets');
-          if (!response.ok) throw new Error("데이터 로딩 실패");
-          data = await response.json();
-        } else {
-          // 프로덕션: 클라이언트에서 구글시트 직접 호출
-          data = await fetchSheetsDataClient();
-        }
-        
+        console.log('🔄 Google Sheets에서 수신처 데이터 로딩 중...');
+        // 클라이언트에서 직접 Google Sheets 가져오기 (GitHub Pages 호환)
+        const { fetchSheetsDataClient } = await import('@/lib/fetch-sheets-client');
+        const data = await fetchSheetsDataClient();
         setRecipients(data.recipients || []);
       } catch (error) {
         console.error('수신처 데이터 로딩 실패:', error);

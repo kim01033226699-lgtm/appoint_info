@@ -4,9 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "prebuild": "node scripts/pre-build.js",
     "build": "next build",
-    "postbuild": "node scripts/post-build.js",
     "start": "next start",
     "lint": "next lint",
     "fetch-data": "node scripts/fetch-sheets-data-public.js"

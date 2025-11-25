@@ -28,9 +28,15 @@ export interface CalendarEvent {
   description?: string;
 }
 
+export interface Recipient {
+  company: string;
+  address: string;
+}
+
 export interface SheetData {
   requiredDocuments: string;
   checklist: ChecklistItem[];
+  recipients: Recipient[];
   schedules: RecruitmentSchedule[];
   calendarEvents: CalendarEvent[];
 }
