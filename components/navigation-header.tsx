@@ -14,10 +14,15 @@ export default function NavigationHeader() {
     { name: '위촉차수조회', path: '/' },
     { name: '등록교육', path: '/education-flow' },
     { name: '협회말소', path: '/application-flow' },
+    { name: '시험교재', path: 'https://drive.google.com/drive/folders/1y1e53Kmtuj31YjK4__YZQOfrzN1KH8bY', isExternal: true },
   ];
 
-  const handleNavigate = (path: string) => {
-    router.push(path);
+  const handleNavigate = (item: typeof navigationItems[0]) => {
+    if (item.isExternal) {
+      window.open(item.path, '_blank');
+    } else {
+      router.push(item.path);
+    }
     setIsMenuOpen(false);
   };
 
@@ -36,7 +41,10 @@ export default function NavigationHeader() {
             {/* 메인 제목 - Good과 Rich만 굿리치 옐로우, 클릭시 위촉차수조회로 이동 */}
             <h1
               className="text-lg sm:text-xl md:text-2xl font-bold whitespace-nowrap cursor-pointer hover:opacity-80 transition-opacity"
-              onClick={() => handleNavigate('/')}
+              onClick={() => {
+                router.push('/');
+                setIsMenuOpen(false);
+              }}
             >
               <span className="text-gray-900">Start </span>
               <span className="text-goodrich-yellow">Good</span>
@@ -50,13 +58,12 @@ export default function NavigationHeader() {
               {navigationItems.map((item) => (
                 <Button
                   key={item.path}
-                  onClick={() => handleNavigate(item.path)}
+                  onClick={() => handleNavigate(item)}
                   variant={isActive(item.path) ? "default" : "outline"}
-                  className={`transition-all duration-150 active:scale-95 whitespace-nowrap ${
-                    isActive(item.path)
+                  className={`transition-all duration-150 active:scale-95 whitespace-nowrap ${isActive(item.path)
                       ? 'bg-goodrich-yellow hover:opacity-90 text-white'
                       : 'hover:bg-gray-100'
-                  }`}
+                    }`}
                 >
                   {item.name}
                 </Button>
@@ -87,18 +94,17 @@ export default function NavigationHeader() {
             <X className="h-8 w-8 text-white" />
           </button>
 
-          <nav className="flex flex-col gap-4 w-64">
+          <nav className="flex flex-col gap-4 w-96">
             {navigationItems.map((item) => (
               <Button
                 key={item.path}
-                onClick={() => handleNavigate(item.path)}
+                onClick={() => handleNavigate(item)}
                 variant={isActive(item.path) ? "default" : "outline"}
                 size="lg"
-                className={`w-full justify-center text-lg transition-all duration-150 active:scale-95 ${
-                  isActive(item.path)
+                className={`w-full justify-center text-lg transition-all duration-150 active:scale-95 ${isActive(item.path)
                     ? 'bg-goodrich-yellow-light hover:opacity-90 text-white'
                     : 'bg-white hover:bg-gray-100 text-gray-900'
-                }`}
+                  }`}
               >
                 {item.name}
               </Button>

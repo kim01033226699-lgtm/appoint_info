@@ -114,8 +114,8 @@ export default function MainPage() {
           <h2 className="text-xl font-semibold text-gray-800 mb-2">데이터 로딩 실패</h2>
           <p className="text-gray-600 mb-4">데이터를 불러올 수 없습니다.</p>
           <p className="text-sm text-gray-500 mb-4">브라우저 개발자 도구 콘솔을 확인해주세요.</p>
-          <button 
-            onClick={() => window.location.reload()} 
+          <button
+            onClick={() => window.location.reload()}
             className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700"
           >
             페이지 새로고침
@@ -167,106 +167,106 @@ export default function MainPage() {
             </Button>
           </div>
 
-        {/* 위촉필요서류 */}
-        <Card className="mb-6" data-tutorial="required-documents">
-          <CardHeader>
-            <CardTitle>위촉필요서류</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <CardDescription className="text-base">
-              {data.requiredDocuments}
-            </CardDescription>
-          </CardContent>
-        </Card>
+          {/* 위촉필요서류 */}
+          <Card className="mb-6" data-tutorial="required-documents">
+            <CardHeader>
+              <CardTitle>위촉필요서류</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <CardDescription className="text-base">
+                {data.requiredDocuments}
+              </CardDescription>
+            </CardContent>
+          </Card>
 
-        {/* 위촉 체크리스트 */}
-        <Card className="mb-6" data-tutorial="checklist">
-          <CardHeader>
-            <CardTitle>위촉 체크리스트</CardTitle>
-          </CardHeader>
-          <CardContent className="space-y-4">
-            {data.checklist.map((item) => (
-              <div key={item.id} className="flex items-center space-x-3">
-                <Checkbox
-                  id={item.id}
-                  checked={checkedItems.has(item.id)}
-                  onCheckedChange={(checked) =>
-                    handleCheckChange(item.id, checked as boolean)
-                  }
-                />
-                <label
-                  htmlFor={item.id}
-                  className="text-base leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 cursor-pointer"
-                >
-                  {item.text}
-                </label>
-              </div>
-            ))}
-          </CardContent>
-        </Card>
-
-        {/* 위촉예정일 조회 */}
-        <Card>
-          <CardHeader>
-            <CardTitle>위촉예정일 조회</CardTitle>
-            <CardDescription>
-              붉은색으로 표시된 전산승인마감일을 선택해 주세요. 해당 날짜에 맞춰 위촉일정을 확인하실 수 있습니다.
-            </CardDescription>
-          </CardHeader>
-          <CardContent>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Popover open={isCalendarOpen} onOpenChange={setIsCalendarOpen}>
-                <PopoverTrigger asChild>
-                  <Button
-                    variant="outline"
-                    className={cn(
-                      "flex-1 justify-start text-left font-normal",
-                      !selectedDate && "text-muted-foreground"
-                    )}
-                    disabled={!allChecked}
-                    data-tutorial="date-selector"
-                  >
-                    <CalendarIcon className="mr-2 h-4 w-4" />
-                    {selectedDate ? (
-                      format(selectedDate, "PPP", { locale: ko })
-                    ) : (
-                      <span>업로드완료일선택</span>
-                    )}
-                  </Button>
-                </PopoverTrigger>
-                <PopoverContent className="w-auto p-0" align="start" side="top">
-                  <Calendar
-                    mode="single"
-                    selected={selectedDate}
-                    onSelect={(date) => {
-                      setSelectedDate(date);
-                      setIsCalendarOpen(false);
-                    }}
-                    disabled={disableNonSubmissionDates}
-                    initialFocus
-                    locale={ko}
-                    modifiers={{
-                      submissionDeadline: (date) => isSubmissionDeadline(date),
-                    }}
-                    modifiersClassNames={{
-                      submissionDeadline: "text-red-600 font-extrabold bg-red-50",
-                    }}
+          {/* 위촉 체크리스트 */}
+          <Card className="mb-6" data-tutorial="checklist">
+            <CardHeader>
+              <CardTitle>위촉 체크리스트</CardTitle>
+            </CardHeader>
+            <CardContent className="space-y-4">
+              {data.checklist.map((item) => (
+                <div key={item.id} className="flex items-center space-x-3">
+                  <Checkbox
+                    id={item.id}
+                    checked={checkedItems.has(item.id)}
+                    onCheckedChange={(checked) =>
+                      handleCheckChange(item.id, checked as boolean)
+                    }
                   />
-                </PopoverContent>
-              </Popover>
+                  <label
+                    htmlFor={item.id}
+                    className="text-base leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 cursor-pointer"
+                  >
+                    {item.text}
+                  </label>
+                </div>
+              ))}
+            </CardContent>
+          </Card>
 
-              <Button
-                className="gap-2 bg-goodrich-yellow-light hover:opacity-90 transition-all duration-150 active:scale-95"
-                disabled={!allChecked || !selectedDate}
-                onClick={handleSearch}
-                data-tutorial="search-button"
-              >
-                <Search className="h-4 w-4" />
-                조회
-              </Button>
-            </div>
-          </CardContent>
-        </Card>
+          {/* 위촉예정일 조회 */}
+          <Card>
+            <CardHeader>
+              <CardTitle>위촉예정일 조회</CardTitle>
+              <CardDescription>
+                붉은색으로 표시된 전산승인마감일을 선택해 주세요. 해당 날짜에 맞춰 위촉일정을 확인하실 수 있습니다.
+              </CardDescription>
+            </CardHeader>
+            <CardContent>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Popover open={isCalendarOpen} onOpenChange={setIsCalendarOpen}>
+                  <PopoverTrigger asChild>
+                    <Button
+                      variant="outline"
+                      className={cn(
+                        "flex-1 justify-start text-left font-normal",
+                        !selectedDate && "text-muted-foreground"
+                      )}
+                      disabled={!allChecked}
+                      data-tutorial="date-selector"
+                    >
+                      <CalendarIcon className="mr-2 h-4 w-4" />
+                      {selectedDate ? (
+                        format(selectedDate, "PPP", { locale: ko })
+                      ) : (
+                        <span>업로드완료일선택</span>
+                      )}
+                    </Button>
+                  </PopoverTrigger>
+                  <PopoverContent className="w-auto p-0" align="start" side="top">
+                    <Calendar
+                      mode="single"
+                      selected={selectedDate}
+                      onSelect={(date) => {
+                        setSelectedDate(date);
+                        setIsCalendarOpen(false);
+                      }}
+                      disabled={disableNonSubmissionDates}
+                      initialFocus
+                      locale={ko}
+                      modifiers={{
+                        submissionDeadline: (date) => isSubmissionDeadline(date),
+                      }}
+                      modifiersClassNames={{
+                        submissionDeadline: "text-red-600 font-extrabold bg-red-50",
+                      }}
+                    />
+                  </PopoverContent>
+                </Popover>
+
+                <Button
+                  className="gap-2 bg-goodrich-yellow-light hover:opacity-90 transition-all duration-150 active:scale-95"
+                  disabled={!allChecked || !selectedDate}
+                  onClick={handleSearch}
+                  data-tutorial="search-button"
+                >
+                  <Search className="h-4 w-4" />
+                  조회
+                </Button>
+              </div>
+            </CardContent>
+          </Card>
         </div>
       </div>
 
