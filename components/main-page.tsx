@@ -1,23 +1,30 @@
-'use client'
+"use client";
 
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import { Calendar as CalendarIcon, Search } from "lucide-react";
 import { format, isWednesday } from "date-fns";
 import { ko } from "date-fns/locale";
 
-import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Checkbox } from "@/components/ui/checkbox";
-import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
-import { Calendar } from "@/components/ui/calendar";
-import { cn } from "@/lib/utils";
-import type { SheetData } from "@/lib/types";
+import { BASE_PATH } from "@/lib/utils";
+import BottomNavigation from "@/components/BottomNavigation";
 import CalendarModal from "@/components/calendar-modal";
+import NavigationHeader from "@/components/NavigationHeader";
 import TutorialOverlay from "@/components/tutorial-overlay";
-import NavigationHeader from "@/components/navigation-header";
-// import BottomNavigation from "@/components/BottomNavigation";
-// import sheetDataJson from "@/public/data.json";
+import { Button } from "@/components/ui/button";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { Checkbox } from "@/components/ui/checkbox";
+import { Calendar } from "@/components/ui/calendar";
+import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
+import type { SheetData } from "@/lib/types";
+import { cn } from "@/lib/utils";
+import { fetchSheetsDataClient } from "@/lib/fetch-sheets-client";
 
 export default function MainPage() {
   const router = useRouter();
@@ -35,7 +42,6 @@ export default function MainPage() {
       try {
         console.log('🔄 Google Sheets에서 실시간 데이터 로딩 중...');
         // 클라이언트에서 직접 Google Sheets 가져오기 (GitHub Pages 호환)
-        const { fetchSheetsDataClient } = await import('@/lib/fetch-sheets-client');
         const json = await fetchSheetsDataClient();
         console.log('✅ 데이터 로딩 완료:', json.schedules.length, '개 차수');
         setData(json);
@@ -48,41 +54,40 @@ export default function MainPage() {
 
     loadData();
 
-    // 최초 방문 체크
-    const hasSeenTutorial = localStorage.getItem('hasSeenTutorial');
-    if (!hasSeenTutorial) {
-      // 데이터 로딩 후 튜토리얼 표시
-      setTimeout(() => {
-        setShowTutorial(true);
-      }, 500);
+    if (typeof window !== "undefined") {
+      const hasSeenTutorial = localStorage.getItem("hasSeenTutorial");
+      if (!hasSeenTutorial) {
+        setTimeout(() => setShowTutorial(true), 500);
+      }
     }
   }, []);
 
   const handleCloseTutorial = () => {
     setShowTutorial(false);
-    localStorage.setItem('hasSeenTutorial', 'true');
+    if (typeof window !== "undefined") {
+      localStorage.setItem("hasSeenTutorial", "true");
+    }
   };
 
   const allChecked = data ? checkedItems.size === data.checklist.length : false;
 
   const handleCheckChange = (id: string, checked: boolean) => {
-    const newChecked = new Set(checkedItems);
+    const next = new Set(checkedItems);
     if (checked) {
-      newChecked.add(id);
+      next.add(id);
     } else {
-      newChecked.delete(id);
+      next.delete(id);
     }
-    setCheckedItems(newChecked);
+    setCheckedItems(next);
   };
 
   const handleSearch = () => {
-    if (selectedDate) {
-      setIsSearching(true);
-      const dateStr = format(selectedDate, 'yyyy-MM-dd');
-      setTimeout(() => {
-        router.push(`/result?date=${dateStr}`);
-      }, 1300);
-    }
+    if (!selectedDate) return;
+    setIsSearching(true);
+    const dateStr = format(selectedDate, "yyyy-MM-dd");
+    setTimeout(() => {
+      router.push(`/info-appoint/result?date=${dateStr}`);
+    }, 800);
   };
 
   // "전산승인마감" 일정이 있는 날짜인지 확인
@@ -100,26 +105,20 @@ export default function MainPage() {
 
   if (loading) {
     return (
-      <div className="min-h-screen bg-gray-50 p-4 md:p-8 flex items-center justify-center">
-        <div className="text-gray-600">데이터 로딩 중...</div>
+      <div className="flex min-h-screen items-center justify-center bg-gray-50 p-4">
+        <div className="text-gray-600">데이터 로딩 중..</div>
       </div>
     );
   }
 
   if (!data) {
     return (
-      <div className="min-h-screen bg-gray-50 p-4 md:p-8 flex items-center justify-center">
+      <div className="flex min-h-screen items-center justify-center bg-gray-50 p-4">
         <div className="text-center">
-          <div className="text-red-500 text-6xl mb-4">⚠️</div>
-          <h2 className="text-xl font-semibold text-gray-800 mb-2">데이터 로딩 실패</h2>
-          <p className="text-gray-600 mb-4">데이터를 불러올 수 없습니다.</p>
-          <p className="text-sm text-gray-500 mb-4">브라우저 개발자 도구 콘솔을 확인해주세요.</p>
-          <button
-            onClick={() => window.location.reload()}
-            className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700"
-          >
-            페이지 새로고침
-          </button>
+          <div className="mb-4 text-6xl text-red-500">⚠️</div>
+          <h2 className="mb-2 text-xl font-semibold text-gray-800">데이터 로딩 실패</h2>
+          <p className="mb-4 text-gray-600">데이터를 불러올 수 없습니다.</p>
+          <Button onClick={() => window.location.reload()}>페이지 새로고침</Button>
         </div>
       </div>
     );
@@ -127,10 +126,10 @@ export default function MainPage() {
 
   if (isSearching) {
     return (
-      <div className="min-h-screen bg-gray-50 p-4 md:p-8 flex items-center justify-center">
+      <div className="flex min-h-screen items-center justify-center bg-gray-50 p-4">
         <div className="text-center">
-          <div className="text-xl font-semibold text-gray-900 mb-2">위촉일정 조회 중</div>
-          <div className="text-gray-600">잠시만 기다려 주세요...</div>
+          <div className="mb-2 text-xl font-semibold text-gray-900">위촉일정 조회 중</div>
+          <div className="text-gray-600">잠시만 기다려 주세요..</div>
         </div>
       </div>
     );
@@ -140,15 +139,11 @@ export default function MainPage() {
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-indigo-50">
       <NavigationHeader />
 
-      <div className="py-8 px-4">
-        <div className="max-w-4xl mx-auto">
-          {/* 제목 */}
-          <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8">
-            굿리치 위촉일정
-          </h1>
+      <div className="px-4 py-8">
+        <div className="mx-auto max-w-4xl">
 
-          {/* 상단 버튼 영역 */}
-          <div className="flex justify-end gap-2 mb-8">
+
+          <div className="mb-8 flex justify-end gap-2">
             <Button
               variant="outline"
               className="gap-2 transition-all duration-150 active:scale-95"
@@ -159,44 +154,38 @@ export default function MainPage() {
               <span className="hidden md:inline">전체위촉일정보기</span>
             </Button>
             <Button
-              variant="default"
-              className="gap-2 bg-goodrich-yellow-light hover:opacity-90 transition-all duration-150 active:scale-95"
-              onClick={() => router.push('/application-flow')}
+              className="gap-2 bg-goodrich-yellow-light transition-all duration-150 active:scale-95 hover:opacity-90"
+              onClick={() => router.push("/application-flow")}
             >
               협회말소하셨나요?
             </Button>
           </div>
 
-          {/* 위촉필요서류 */}
           <Card className="mb-6" data-tutorial="required-documents">
             <CardHeader>
               <CardTitle>위촉필요서류</CardTitle>
             </CardHeader>
             <CardContent>
-              <CardDescription className="text-base">
-                {data.requiredDocuments}
-              </CardDescription>
+              <CardDescription className="text-base">{data.requiredDocuments}</CardDescription>
             </CardContent>
           </Card>
 
-          {/* 위촉 체크리스트 */}
-          <Card className="mb-6" data-tutorial="checklist">
+          <Card className="mb-10" data-tutorial="checklist">
             <CardHeader>
               <CardTitle>위촉 체크리스트</CardTitle>
             </CardHeader>
             <CardContent className="space-y-4">
               {data.checklist.map((item) => (
-                <div key={item.id} className="flex items-center space-x-3">
+                <div key={item.id} className="flex items-start space-x-3">
                   <Checkbox
                     id={item.id}
+                    className="mt-1"
                     checked={checkedItems.has(item.id)}
-                    onCheckedChange={(checked) =>
-                      handleCheckChange(item.id, checked as boolean)
-                    }
+                    onCheckedChange={(checked) => handleCheckChange(item.id, Boolean(checked))}
                   />
                   <label
                     htmlFor={item.id}
-                    className="text-base leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 cursor-pointer"
+                    className="cursor-pointer text-base py-1 peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
                   >
                     {item.text}
                   </label>
@@ -205,22 +194,21 @@ export default function MainPage() {
             </CardContent>
           </Card>
 
-          {/* 위촉예정일 조회 */}
-          <Card>
+          <Card className="mb-10">
             <CardHeader>
-              <CardTitle>위촉예정일 조회</CardTitle>
+              <CardTitle>위촉일정 조회</CardTitle>
               <CardDescription>
                 붉은색으로 표시된 전산승인마감일을 선택해 주세요. 해당 날짜에 맞춰 위촉일정을 확인하실 수 있습니다.
               </CardDescription>
             </CardHeader>
             <CardContent>
-              <div className="flex flex-col sm:flex-row gap-4">
+              <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-start">
                 <Popover open={isCalendarOpen} onOpenChange={setIsCalendarOpen}>
                   <PopoverTrigger asChild>
                     <Button
                       variant="outline"
                       className={cn(
-                        "flex-1 justify-start text-left font-normal",
+                        "w-full sm:w-[240px] justify-start text-left font-normal",
                         !selectedDate && "text-muted-foreground"
                       )}
                       disabled={!allChecked}
@@ -230,7 +218,7 @@ export default function MainPage() {
                       {selectedDate ? (
                         format(selectedDate, "PPP", { locale: ko })
                       ) : (
-                        <span>업로드완료일선택</span>
+                        <span>서류완료일선택</span>
                       )}
                     </Button>
                   </PopoverTrigger>
@@ -256,7 +244,7 @@ export default function MainPage() {
                 </Popover>
 
                 <Button
-                  className="gap-2 bg-goodrich-yellow-light hover:opacity-90 transition-all duration-150 active:scale-95"
+                  className="gap-2 bg-orange-500 text-white transition-all duration-150 active:scale-95 hover:bg-orange-600 sm:w-auto"
                   disabled={!allChecked || !selectedDate}
                   onClick={handleSearch}
                   data-tutorial="search-button"
@@ -270,28 +258,15 @@ export default function MainPage() {
         </div>
       </div>
 
-      {/* 전체 캘린더 모달 */}
       <CalendarModal
         open={isAllCalendarOpen}
         onOpenChange={setIsAllCalendarOpen}
         events={data.calendarEvents}
       />
 
-      {/* 튜토리얼 오버레이 */}
-      <TutorialOverlay
-        open={showTutorial}
-        onClose={handleCloseTutorial}
-      />
+      <TutorialOverlay open={showTutorial} onClose={handleCloseTutorial} />
 
-      {/* 모바일 하단 네비게이션 */}
-      {/* <BottomNavigation
-        items={[
-          { label: '지원금', icon: '💰', url: 'https://kim01033226699-lgtm.github.io/goodrich-info-a/', path: '/goodrich-info-a' },
-          { label: '금융캠퍼스', icon: '🎓', url: 'https://kim01033226699-lgtm.github.io/gfe', path: '/gfe' },
-          { label: '스마트위촉', icon: '📋', url: 'https://kim01033226699-lgtm.github.io/appoint_info/', path: '/appoint_info' }
-        ]}
-        currentPath="/appoint_info"
-      /> */}
+      <BottomNavigation />
     </div>
   );
 }

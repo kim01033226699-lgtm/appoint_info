@@ -1,4 +1,4 @@
-'use client'
+'use client';
 
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
@@ -6,6 +6,8 @@ import { ArrowLeft, Download, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import type { RecruitmentSchedule, SheetData } from "@/lib/types";
+import { fetchSheetsDataClient } from "@/lib/fetch-sheets-client";
+import { BASE_PATH } from "@/lib/utils";
 
 interface ResultPageProps {
   selectedDate: string;
@@ -21,7 +23,6 @@ export default function ResultPage({ selectedDate }: ResultPageProps) {
       try {
         console.log('🔄 Google Sheets에서 실시간 데이터 로딩 중...');
         // 클라이언트에서 직접 Google Sheets 가져오기 (GitHub Pages 호환)
-        const { fetchSheetsDataClient } = await import('@/lib/fetch-sheets-client');
         const data = await fetchSheetsDataClient();
         if (!data.schedules || data.schedules.length === 0) {
           setLoading(false);
@@ -37,13 +38,13 @@ export default function ResultPage({ selectedDate }: ResultPageProps) {
           const normalizedEventDate = new Date(Date.UTC(eventDate.getFullYear(), eventDate.getMonth(), eventDate.getDate()));
 
           const isCandidateContent = event.title.includes('자격추가/전산승인마감') ||
-                                     event.title.includes('자격추가') ||
-                                     event.title.includes('전산승인마감');
+            event.title.includes('자격추가') ||
+            event.title.includes('전산승인마감');
 
           return normalizedEventDate.getTime() >= normalizedSelectedDate.getTime() &&
-                 event.type === 'goodrich' &&
-                 isCandidateContent &&
-                 event.title.match(/(\d+)월(\d+)차/);
+            event.type === 'goodrich' &&
+            isCandidateContent &&
+            event.title.match(/(\d+)월(\d+)차/);
         });
 
         if (candidates.length === 0) {
@@ -154,9 +155,14 @@ export default function ResultPage({ selectedDate }: ResultPageProps) {
       <div className="max-w-6xl mx-auto">
         <div id="result-content">
           {/* 헤더 */}
-          <h1 className="text-2xl md:text-3xl font-bold text-center mb-8">
-            위촉일정:{schedule.round}차({schedule.gpOpenDate})
-          </h1>
+          <div className="flex flex-col items-center mb-2">
+            <div className="mb-2">
+              <img src={`${BASE_PATH}/images/GR-img.png`} alt="GoodRich" className="h-[20px] w-auto" />
+            </div>
+            <h1 className="text-xl font-extrabold text-center">
+              위촉일정:{schedule.round}차({schedule.gpOpenDate})
+            </h1>
+          </div>
 
           {/* 굿리치/손보코드 */}
           <Card className="mb-6">
@@ -232,7 +238,7 @@ export default function ResultPage({ selectedDate }: ResultPageProps) {
           <Button
             variant="outline"
             className="gap-2"
-            onClick={() => router.push('/')}
+            onClick={() => router.push('/info-appoint')}
           >
             <ArrowLeft className="h-4 w-4" />
             이전으로
