@@ -8,6 +8,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import type { RecruitmentSchedule, SheetData } from "@/lib/types";
 import { fetchSheetsDataClient } from "@/lib/fetch-sheets-client";
 import { BASE_PATH } from "@/lib/utils";
+import { isGPApp, downloadFile } from '@/lib/gp-bridge';
 
 interface ResultPageProps {
   selectedDate: string;
@@ -167,10 +168,44 @@ export default function ResultPage({ selectedDate }: ResultPageProps) {
 
       const fileName = `위촉일정_${schedule.round}.pdf`;
       console.log('PDF 저장:', fileName);
-      pdf.save(fileName);
 
-      console.log('✅ PDF 다운로드 완료!');
-      alert('PDF가 다운로드되었습니다.');
+      // GP 앱과 일반 브라우저 분기 처리
+      if (isGPApp()) {
+        console.log('GP 앱 감지 - R2 업로드 방식 사용');
+        try {
+          const pdfBlob = pdf.output('blob');
+
+          // R2에 업로드
+          const formData = new FormData();
+          formData.append('pdf', pdfBlob, fileName);
+          formData.append('fileName', fileName);
+
+          const response = await fetch('/api/pdf/upload', {
+            method: 'POST',
+            body: formData,
+          });
+
+          if (!response.ok) {
+            throw new Error('Upload failed');
+          }
+
+          const { downloadUrl } = await response.json();
+          console.log('R2 업로드 완료:', downloadUrl);
+
+          // GP 앱의 downloadFile로 다운로드
+          downloadFile(downloadUrl, fileName);
+          console.log('✅ GP 앱 다운로드 완료!');
+        } catch (uploadError) {
+          console.error('R2 업로드 실패:', uploadError);
+          alert('파일 업로드에 실패했습니다. 다시 시도해주세요.');
+          return;
+        }
+      } else {
+        // 일반 브라우저: 직접 다운로드
+        pdf.save(fileName);
+        console.log('✅ PDF 다운로드 완료!');
+        alert('PDF가 다운로드되었습니다.');
+      }
     } catch (error) {
       console.error('❌ PDF 생성 실패:', error);
       alert(`PDF 생성 중 오류가 발생했습니다.\n${error instanceof Error ? error.message : '알 수 없는 오류'}`);
