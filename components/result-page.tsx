@@ -276,7 +276,7 @@ export default function ResultPage({ selectedDate }: ResultPageProps) {
             </CardHeader>
             <CardContent>
               <div className="text-sm text-orange-600 space-y-1 mb-4">
-                <div>* 동양생명/라이나생명/저브라이프생명은 위촉 시 제출한 보험사 서류로 진행합니다.(별도 위촉 문자/알림톡 없음)</div>
+                <div>* 동양생명/라이나생명/처브라이프생명은 위촉 시 제출한 보험사 서류로 진행합니다.(별도 위촉 문자/알림톡 없음)</div>
                 <div>* 차수별 일정표의 보험사 위촉 마감일 이후 D+1~2일 이내에 위촉안내가 문자·알림톡으로 발송됩니다.(회사별 방법 참고)</div>
                 <div>* 문자·알림톡을 확인하시고 회사별로 위촉 진행을 반드시 해 주셔야 보험사 코드 발급이 진행됩니다.</div>
               </div>
