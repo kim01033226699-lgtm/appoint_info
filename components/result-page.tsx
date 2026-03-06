@@ -195,6 +195,11 @@ export default function ResultPage({ selectedDate }: ResultPageProps) {
           // GP 앱의 downloadFile로 다운로드
           downloadFile(downloadUrl, fileName);
           console.log('✅ GP 앱 다운로드 완료!');
+
+          // 다운로드 시작 후 메시지 표시 (약간의 딜레이)
+          setTimeout(() => {
+            alert('📥 PDF가 다운로드 폴더(파일 앱)에 저장되었습니다.');
+          }, 1500);
         } catch (uploadError) {
           console.error('R2 업로드 실패:', uploadError);
           alert('파일 업로드에 실패했습니다. 다시 시도해주세요.');
