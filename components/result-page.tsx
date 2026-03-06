@@ -91,47 +91,70 @@ export default function ResultPage({ selectedDate }: ResultPageProps) {
   }, [selectedDate]);
 
   const handlePdfDownload = async () => {
-    if (!schedule) return;
+    // 위촉일정이 없을 때 처리
+    if (!schedule || !schedule.companies || schedule.companies.length === 0) {
+      alert('위촉일정이 없습니다.');
+      return;
+    }
 
-    const { jsPDF } = await import('jspdf');
-    const html2canvas = (await import('html2canvas')).default;
+    try {
+      const { jsPDF } = await import('jspdf');
+      const html2canvas = (await import('html2canvas')).default;
 
-    const element = document.getElementById('result-content');
-    const container = element?.parentElement;
-    if (!element || !container) return;
+      const element = document.getElementById('result-content');
+      const container = element?.parentElement;
+      if (!element || !container) {
+        alert('PDF 생성에 실패했습니다.');
+        return;
+      }
 
-    // PDF 저장을 위해 임시로 PC 버전 고정 너비 설정
-    const originalMaxWidth = container.style.maxWidth;
-    const originalWidth = (container as HTMLElement).style.width;
-    container.style.maxWidth = '1200px';
-    (container as HTMLElement).style.width = '1200px';
+      // PDF 저장을 위해 임시로 PC 버전 고정 너비 설정 (화면에 보이지 않도록 처리)
+      const originalMaxWidth = container.style.maxWidth;
+      const originalWidth = (container as HTMLElement).style.width;
+      const originalPosition = (container as HTMLElement).style.position;
+      const originalLeft = (container as HTMLElement).style.left;
+      const originalTop = (container as HTMLElement).style.top;
 
-    // 약간의 지연을 두고 렌더링 완료 대기
-    await new Promise(resolve => setTimeout(resolve, 100));
+      // 화면 밖으로 이동하여 사용자에게 보이지 않게 처리
+      (container as HTMLElement).style.position = 'fixed';
+      (container as HTMLElement).style.left = '-10000px';
+      (container as HTMLElement).style.top = '0';
+      container.style.maxWidth = '1200px';
+      (container as HTMLElement).style.width = '1200px';
 
-    const canvas = await html2canvas(element, {
-      scale: 2,
-      logging: false,
-      useCORS: true,
-      width: 1200,
-    });
+      // 약간의 지연을 두고 렌더링 완료 대기
+      await new Promise(resolve => setTimeout(resolve, 100));
 
-    // 원래 상태로 복원
-    container.style.maxWidth = originalMaxWidth;
-    (container as HTMLElement).style.width = originalWidth;
+      const canvas = await html2canvas(element, {
+        scale: 2,
+        logging: false,
+        useCORS: true,
+        width: 1200,
+      });
 
-    const imgData = canvas.toDataURL('image/png');
-    const pdf = new jsPDF({
-      orientation: 'portrait',
-      unit: 'mm',
-      format: 'a4',
-    });
+      // 원래 상태로 복원
+      container.style.maxWidth = originalMaxWidth;
+      (container as HTMLElement).style.width = originalWidth;
+      (container as HTMLElement).style.position = originalPosition;
+      (container as HTMLElement).style.left = originalLeft;
+      (container as HTMLElement).style.top = originalTop;
 
-    const imgWidth = 210;
-    const imgHeight = (canvas.height * imgWidth) / canvas.width;
+      const imgData = canvas.toDataURL('image/png');
+      const pdf = new jsPDF({
+        orientation: 'portrait',
+        unit: 'mm',
+        format: 'a4',
+      });
 
-    pdf.addImage(imgData, 'PNG', 0, 0, imgWidth, imgHeight);
-    pdf.save(`위촉일정_${schedule.round}.pdf`);
+      const imgWidth = 210;
+      const imgHeight = (canvas.height * imgWidth) / canvas.width;
+
+      pdf.addImage(imgData, 'PNG', 0, 0, imgWidth, imgHeight);
+      pdf.save(`위촉일정_${schedule.round}.pdf`);
+    } catch (error) {
+      console.error('PDF 생성 실패:', error);
+      alert('PDF 생성 중 오류가 발생했습니다.');
+    }
   };
 
   if (loading) {
