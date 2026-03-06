@@ -98,48 +98,61 @@ export default function ResultPage({ selectedDate }: ResultPageProps) {
     }
 
     try {
+      console.log('PDF 다운로드 시작...');
+
       const { jsPDF } = await import('jspdf');
       const html2canvas = (await import('html2canvas')).default;
+      console.log('라이브러리 로드 완료');
 
       const element = document.getElementById('result-content');
-      const container = element?.parentElement;
-      if (!element || !container) {
-        alert('PDF 생성에 실패했습니다.');
+      console.log('Element 찾기:', element ? '성공' : '실패');
+
+      if (!element) {
+        alert('PDF 생성할 요소를 찾을 수 없습니다.');
         return;
       }
 
-      // PDF 저장을 위해 임시로 PC 버전 고정 너비 설정 (화면에 보이지 않도록 처리)
-      const originalMaxWidth = container.style.maxWidth;
-      const originalWidth = (container as HTMLElement).style.width;
-      const originalPosition = (container as HTMLElement).style.position;
-      const originalLeft = (container as HTMLElement).style.left;
-      const originalTop = (container as HTMLElement).style.top;
+      // 현재 스타일 저장
+      const originalStyle = {
+        position: element.style.position,
+        left: element.style.left,
+        top: element.style.top,
+        width: element.style.width,
+        transform: element.style.transform,
+      };
 
-      // 화면 밖으로 이동하여 사용자에게 보이지 않게 처리
-      (container as HTMLElement).style.position = 'fixed';
-      (container as HTMLElement).style.left = '-10000px';
-      (container as HTMLElement).style.top = '0';
-      container.style.maxWidth = '1200px';
-      (container as HTMLElement).style.width = '1200px';
+      // PDF 생성을 위한 임시 스타일 적용
+      element.style.position = 'fixed';
+      element.style.left = '-9999px';
+      element.style.top = '0';
+      element.style.width = '1200px';
+      element.style.transform = 'none';
 
-      // 약간의 지연을 두고 렌더링 완료 대기
-      await new Promise(resolve => setTimeout(resolve, 100));
+      console.log('스타일 적용 완료, 렌더링 대기...');
+      await new Promise(resolve => setTimeout(resolve, 300));
 
+      console.log('Canvas 생성 시작...');
       const canvas = await html2canvas(element, {
         scale: 2,
-        logging: false,
+        logging: true,
         useCORS: true,
+        allowTaint: true,
         width: 1200,
       });
+      console.log('Canvas 생성 완료:', canvas.width, 'x', canvas.height);
 
-      // 원래 상태로 복원
-      container.style.maxWidth = originalMaxWidth;
-      (container as HTMLElement).style.width = originalWidth;
-      (container as HTMLElement).style.position = originalPosition;
-      (container as HTMLElement).style.left = originalLeft;
-      (container as HTMLElement).style.top = originalTop;
+      // 스타일 복원
+      element.style.position = originalStyle.position;
+      element.style.left = originalStyle.left;
+      element.style.top = originalStyle.top;
+      element.style.width = originalStyle.width;
+      element.style.transform = originalStyle.transform;
 
+      console.log('이미지 데이터 변환 중...');
       const imgData = canvas.toDataURL('image/png');
+      console.log('이미지 데이터 길이:', imgData.length);
+
+      console.log('PDF 생성 중...');
       const pdf = new jsPDF({
         orientation: 'portrait',
         unit: 'mm',
@@ -148,12 +161,19 @@ export default function ResultPage({ selectedDate }: ResultPageProps) {
 
       const imgWidth = 210;
       const imgHeight = (canvas.height * imgWidth) / canvas.width;
+      console.log('PDF 크기:', imgWidth, 'x', imgHeight);
 
       pdf.addImage(imgData, 'PNG', 0, 0, imgWidth, imgHeight);
-      pdf.save(`위촉일정_${schedule.round}.pdf`);
+
+      const fileName = `위촉일정_${schedule.round}.pdf`;
+      console.log('PDF 저장:', fileName);
+      pdf.save(fileName);
+
+      console.log('✅ PDF 다운로드 완료!');
+      alert('PDF가 다운로드되었습니다.');
     } catch (error) {
-      console.error('PDF 생성 실패:', error);
-      alert('PDF 생성 중 오류가 발생했습니다.');
+      console.error('❌ PDF 생성 실패:', error);
+      alert(`PDF 생성 중 오류가 발생했습니다.\n${error instanceof Error ? error.message : '알 수 없는 오류'}`);
     }
   };
 
@@ -257,7 +277,7 @@ export default function ResultPage({ selectedDate }: ResultPageProps) {
         </div>
 
         {/* 버튼들 */}
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+        <div className="flex flex-row gap-4 justify-center">
           <Button
             variant="outline"
             className="gap-2"
@@ -271,7 +291,7 @@ export default function ResultPage({ selectedDate }: ResultPageProps) {
             onClick={handlePdfDownload}
           >
             <Download className="h-4 w-4" />
-            위촉차수PDF저장
+            PDF저장
           </Button>
         </div>
       </div>
