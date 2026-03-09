@@ -113,41 +113,14 @@ export default function ResultPage({ selectedDate }: ResultPageProps) {
         return;
       }
 
-      // 현재 스타일 저장
-      const originalStyle = {
-        position: element.style.position,
-        left: element.style.left,
-        top: element.style.top,
-        width: element.style.width,
-        transform: element.style.transform,
-      };
-
-      // PDF 생성을 위한 임시 스타일 적용
-      element.style.position = 'fixed';
-      element.style.left = '-9999px';
-      element.style.top = '0';
-      element.style.width = '1200px';
-      element.style.transform = 'none';
-
-      console.log('스타일 적용 완료, 렌더링 대기...');
-      await new Promise(resolve => setTimeout(resolve, 300));
-
       console.log('Canvas 생성 시작...');
       const canvas = await html2canvas(element, {
         scale: 2,
-        logging: true,
+        logging: false,
         useCORS: true,
         allowTaint: true,
-        width: 1200,
       });
       console.log('Canvas 생성 완료:', canvas.width, 'x', canvas.height);
-
-      // 스타일 복원
-      element.style.position = originalStyle.position;
-      element.style.left = originalStyle.left;
-      element.style.top = originalStyle.top;
-      element.style.width = originalStyle.width;
-      element.style.transform = originalStyle.transform;
 
       console.log('이미지 데이터 변환 중...');
       const imgData = canvas.toDataURL('image/png');
