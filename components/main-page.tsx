@@ -194,7 +194,7 @@ export default function MainPage() {
             </CardContent>
           </Card>
 
-          <Card className="mb-[50px]">
+          <Card className="mb-32">
             <CardHeader>
               <CardTitle>위촉일정 조회</CardTitle>
               <CardDescription>
