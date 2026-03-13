@@ -18,6 +18,9 @@ export default function ResultPage({ selectedDate }: ResultPageProps) {
   const router = useRouter();
   const [schedule, setSchedule] = useState<RecruitmentSchedule | null>(null);
   const [loading, setLoading] = useState(true);
+  const [errorMsg, setErrorMsg] = useState<string | null>(null);
+  const [downloading, setDownloading] = useState(false);
+  const [downloadSuccess, setDownloadSuccess] = useState(false);
 
   useEffect(() => {
     const loadData = async () => {
@@ -94,7 +97,7 @@ export default function ResultPage({ selectedDate }: ResultPageProps) {
   const handlePdfDownload = async () => {
     // 위촉일정이 없을 때 처리
     if (!schedule || !schedule.companies || schedule.companies.length === 0) {
-      alert('위촉일정이 없습니다.');
+      setErrorMsg('위촉일정이 없습니다.');
       return;
     }
 
@@ -109,9 +112,13 @@ export default function ResultPage({ selectedDate }: ResultPageProps) {
       console.log('Element 찾기:', element ? '성공' : '실패');
 
       if (!element) {
-        alert('PDF 생성할 요소를 찾을 수 없습니다.');
+        setErrorMsg('PDF 생성할 요소를 찾을 수 없습니다.');
         return;
       }
+      
+      setDownloading(true);
+      setErrorMsg(null);
+      setDownloadSuccess(false);
 
       console.log('Canvas 생성 시작...');
       const canvas = await html2canvas(element, {
@@ -165,28 +172,29 @@ export default function ResultPage({ selectedDate }: ResultPageProps) {
           const { downloadUrl } = await response.json();
           console.log('R2 업로드 완료:', downloadUrl);
 
-          // GP 앱의 downloadFile로 다운로드
+          // R2 업로드 완료 후 GP 앱의 downloadFile로 다운로드
           downloadFile(downloadUrl, fileName);
-          console.log('✅ GP 앱 다운로드 완료!');
+          console.log('✅ GP 앱 다운로드 명령 전송!');
 
-          // 다운로드 시작 후 메시지 표시 (약간의 딜레이)
-          setTimeout(() => {
-            alert('📥 PDF가 다운로드 폴더(파일 앱)에 저장되었습니다.');
-          }, 1500);
+          setDownloadSuccess(true);
+          setDownloading(false);
         } catch (uploadError) {
           console.error('R2 업로드 실패:', uploadError);
-          alert('파일 업로드에 실패했습니다. 다시 시도해주세요.');
+          setErrorMsg('파일 업로드에 실패했습니다. 다시 시도해주세요.');
+          setDownloading(false);
           return;
         }
       } else {
         // 일반 브라우저: 직접 다운로드
         pdf.save(fileName);
         console.log('✅ PDF 다운로드 완료!');
-        alert('PDF가 다운로드되었습니다.');
+        setDownloadSuccess(true);
+        setDownloading(false);
       }
     } catch (error) {
       console.error('❌ PDF 생성 실패:', error);
-      alert(`PDF 생성 중 오류가 발생했습니다.\n${error instanceof Error ? error.message : '알 수 없는 오류'}`);
+      setErrorMsg(`PDF 생성 중 오류가 발생했습니다.`);
+      setDownloading(false);
     }
   };
 
@@ -300,13 +308,40 @@ export default function ResultPage({ selectedDate }: ResultPageProps) {
             이전으로
           </Button>
           <Button
-            className="gap-2 bg-blue-500 hover:bg-blue-600"
+            className="gap-2 bg-blue-500 hover:bg-blue-600 min-w-[120px]"
             onClick={handlePdfDownload}
+            disabled={downloading}
           >
-            <Download className="h-4 w-4" />
-            PDF저장
+            {downloading ? (
+                <>
+                    <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-white"></div>
+                    ⏳ 생성중
+                </>
+            ) : downloadSuccess ? (
+                <>
+                    <Star className="h-4 w-4 fill-white" />
+                    완료됨
+                </>
+            ) : (
+                <>
+                    <Download className="h-4 w-4" />
+                    PDF저장
+                </>
+            )}
           </Button>
         </div>
+        
+        {/* 에러 또는 안내 문구 출력 */}
+        {errorMsg && (
+            <div className="mt-4 p-3 bg-red-50 text-red-600 text-center rounded-lg text-sm">
+                {errorMsg}
+            </div>
+        )}
+        {downloadSuccess && (
+            <div className="mt-4 p-3 bg-green-50 text-green-700 text-center rounded-lg text-sm">
+                {isGPApp() ? 'PDF가 다운로드 폴더(파일 앱)에 저장되었습니다.' : 'PDF 다운로드가 완료되었습니다.'}
+            </div>
+        )}
       </div>
     </div>
   );
